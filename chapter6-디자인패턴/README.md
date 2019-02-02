@@ -1,45 +1,45 @@
 # Design Pattern
 
-### Iterator Pattern
+## :paperclip:Iterator Pattern
 
-### Adapter Pattern
+## :paperclip:Adapter Pattern
 
-### Template Method Pattern
+## :paperclip:Template Method Pattern
 
-### Factory Method Pattern
+## :paperclip:Factory Method Pattern
 
-### Singleton Pattern
+## :paperclip:Singleton Pattern
 
-### Prototype Pattern
+## :paperclip:Prototype Pattern
 
-### Builder Pattern
+## :paperclip:Builder Pattern
 
-### Abstact Factory Pattern
+## :paperclip:Abstact Factory Pattern
 
-### Bridge Pattern
+## :paperclip:Bridge Pattern
 
-### Strategy Pattern
+## :paperclip:Strategy Pattern
 
-### Composite Pattern
+## :paperclip:Composite Pattern
 
-### Decorator Pattern
+## :paperclip:Decorator Pattern
 
-### Visitor Pattern
+## :paperclip:Visitor Pattern
 
-### Chain of Responsibility Pattern
+## :paperclip:Chain of Responsibility Pattern
 
-### Facade Pattern
+## :paperclip:Facade Pattern
 
-### Mediator Pattern
+## :paperclip:Mediator Pattern
 
-### Observer Pattern
+## :paperclip:Observer Pattern
 
-### Memento Pattern
+## :paperclip:Memento Pattern
 
-### State Pattern
+## :paperclip:State Pattern
 
-### Proxy Pattern
+## :paperclip:Proxy Pattern
 
-### Command Pattern
+## :paperclip:Command Pattern
 
-### Interpreter Pattern
+## :paperclip:Interpreter Pattern

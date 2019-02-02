@@ -1,6 +1,4 @@
-# Spring Framework의 기초를 설명할 수 있다.
-
-# 자바 스프링 프레임워크
+# Java-Spring Framework
 
 # DI(Dependency Injection)
 

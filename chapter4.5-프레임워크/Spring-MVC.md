@@ -1,5 +1,3 @@
-# Spring-MVC에 대해 설명할 수 있다.
-
 # Spring-MVC-basic
 
 # 웹 어플리케이션 구조

@@ -1,4 +1,4 @@
-[Process와 Thread의 차이점](Process-Thread.md)
+## :paperclip:[Process와 Thread의 차이점](Process-Thread.md)
 
 ## :book:Context-Switching에 대해 설명하시오.
 **CPU에서 여러 프로세스를 돌아가면서 작업을 처리하는 데 이 과정**
@@ -101,22 +101,30 @@ ref : http://blog.naver.com/PostView.nhn?blogId=yeop9657&logNo=220728971005&pare
 <hr>
 
 ### CISC(Complex Instruction Set Computer)
-- 전통적 Von Neumann 방식의 명령어 내장 방식
-- 컴퓨터가 지원하는 명령어가 많을수록 프로그램내의 Instruction count는 줄어듦
-- 명령어의 길이가 상이
-- Micro programming control
+**모든 고급언어 문장들에 대해 각각 기계 명령어가 대응되도록 하는것**
+- 장점
+  - 컴파일러 작성이 쉽다.
+  - 복잡한 명령도 마이크로코드(microcode)이므로 실행효율이 좋다.
+  - 호환성이 좋다.
+- 단점
+  - 하나의 명령어가 복잡하여 해석(디코딩)에 시간이 오래걸리며, 해석에 필요한 회로가 복잡하다.
+  - 적은 수의 일부 명령어만 주로 쓰인다.
+  - 명령어의 길이가 달라서 동시의 여러개의 명령처리는 어렵다.
 
 <hr>
 
 ### RISC(Reduced Instruction Set Computer)
-- 자주 사용하지 않는 명령어 제거 및 단순화
-- 모든 명령어의 길이를 일정하게 만듦
-- 하나의 Cycle에 여러 명령어 수행
-- Hardwired control
+**CISC의 많은 명령어중 주로 쓰이는것만을 추려서 하드웨어로 구현하는 것**
+- 장점
+  - 각 명령어가 한 클럭에 실행되도록 고정되어, 파이프라인 성능에 최적화 됨
+  - 고정된 명령어이기 때문에 해석(디코딩)속도가 빠르며, 여러개의 명령어를 처리할 수 있다.
+- 단점
+  - 컴파일러의 최적화 과정이 복잡해진다.
+  - 명령길이가 고정되어 있기 때문에 코드효율이 낮다.
 
 <hr>
 
-## :book:CPU Scheduling에 대해 설명하시오.
+## :paperclip:[CPU Scheduling에 대해 설명하시오.](cpu_scheduling.md)
 
 ## :book:Sync와 Async의 차이점
 
