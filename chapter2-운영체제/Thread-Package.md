@@ -1,12 +1,12 @@
 # User Thread와 Kernel Thread
 
-## Thread-Package Architectures의 종류
+## :book:Thread-Package Architectures의 종류
 - User-level threads
 - Kernel-level threads
 - Multiplexed threads
 - Kernel-supported User-level threads
 
-## User-level threads
+## :book:User-level threads
 - User-Level threads는 응용 프로그램과 Link/Load가 되는 라이브러리로 구현되어진다.
   - 이 라이브러리에 동기화, 스케줄링 기능을 모두 담고 있습니다.
 - 커널에서는 아무런 지원을 해주지 않으며, 커널이 보기에는 단지 그냥 Single process이다.
@@ -27,7 +27,7 @@
 
 <hr>
 
-## Kernel-level threads
+## :book:Kernel-level threads
 - Kernel-level에 있는 Threads는 독립적으로 스케줄되므로 특정 Thread에서의 Blocking이 process로 전파되지 않는다.
   - 그래서 Blocking System Calls를 이용할수 있으며 각 Threads끼리 Signal을 주고 받을 수 있다.
 - Kernel-level threads는 특별히 고려할만한 장애를 가지고 있지는 않다. 물론 마찬가지로 Thread-Safe해야 하지만, OS 개발자들은 대개의 표준 라이브러리를 Thread-Safe하게(재진입해도 문제없겠끔) 만들기에 User-level threads보다 문제가 적다.
@@ -38,7 +38,7 @@
 
 <hr>
 
-## multiplexed threads
+## :book:Multiplexed threads
 - User-level threads와 Kernel-level threads를 섞은 방법이다.
 - User-level thread(줄여서 Thread)는 LWP(가벼워진 프로세스, Lightweight Processes)에 의해 multiplex 된다.
   - 커널은 LWP를 스케줄링/실행하고, LWP는 대기중인 thread를 골라서 실행한다.
@@ -56,7 +56,7 @@
 
 <hr>
 
-## Scheduler Activation(kernel-supported user-level threads)
+## :book:Scheduler Activation(kernel-supported user-level threads)
  - User-level threads들을 위한 특별한 지원을 kernel이 해준다.
   - Scheduler Activation이라 하며 User-level threads 라이브러리는 커널에게 프로세스를 요구할때와 양도할때를 알려준다.
   - 커널의 Scheduler Activation은 이것을 커널에 의한 프로세스 주소 공간으로 할당된 Virtual Processor로 표현한다.
