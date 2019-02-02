@@ -1,10 +1,10 @@
 [Process와 Thread의 차이점](Process-Thread.md)
 
-## Context-Switching에 대해 설명하시오.
+## :book:Context-Switching에 대해 설명하시오.
 **CPU에서 여러 프로세스를 돌아가면서 작업을 처리하는 데 이 과정**
 - 동작 중인 프로세스가 대기를 하면서 해당 프로세스의 상태(Context)를 보관, 대기하던 다음 프로세스가 동작하면서 이전에 보관한 프로세스의 상태를 복구하는 작업을 말한다.
 
-## Deadlock에 대해 설명하시오.
+## :book:Deadlock에 대해 설명하시오.
 **교착 상태. 운영체제 혹은 소프트웨어의 잘못된 자원 관리로 인하여 둘 이상의 프로세스(심하면 운영체제 자체도 포함해서)가 함께 멈추어 버리는 현상**
 
 ### 발생조건
@@ -19,7 +19,7 @@
 
 <hr>
 
-## Mutex와 Semaphore, Monitor의 차이점
+## :book:Mutex와 Semaphore, Monitor의 차이점
 **교착 상태를 해결하기 위한 방법들**
 
 ### Mutex
@@ -41,7 +41,7 @@
 
 <hr>
 
-## Memory Hierarchy에 대해 설명하시오.
+## :book:Memory Hierarchy에 대해 설명하시오.
 ![Memory_Hierarchy](Memory_Hierarchy.jpg "Memory_Hierarchy")
 **CPU가 메모리에 더 빨리 접근하기 위해 필요에 따라 나눈 메모리 계층 구조(Memory hierarchy)**
 - 레지스터와 캐시는 CPU 내부에 존재한다.
@@ -51,10 +51,10 @@
 - 하드 디스크는 CPU가 직접 접근할 방법조차 없다.
   - CPU는 하드 디스크의 데이터를 메모리로 이동시키고, 메모리에서 접근해야 하므로 아주 느린 접근 밖에 불가능하다.
 
-## 메모리 관리 전략에 대해 설명하시오.
+## :book:메모리 관리 전략에 대해 설명하시오.
 ref : http://blog.naver.com/PostView.nhn?blogId=yeop9657&logNo=220728971005&parentCategoryNo=&categoryNo=123&viewDate=&isShowPopularPosts=true&from=search
 
-## 메모리 할당 알고리즘에 대해 설명하시오.
+## :book:메모리 할당 알고리즘에 대해 설명하시오.
 **새로 적재되어야 할 데이터를 주기억장치 영역 중 어느 곳에 배치할지를 결정하는 전략**
 - 페이지, 세그먼트 따위가 적재될 위치를 결정하는 정책
 
@@ -78,7 +78,7 @@ ref : http://blog.naver.com/PostView.nhn?blogId=yeop9657&logNo=220728971005&pare
 
 <hr>
 
-## 페이지 교체 알고리즘에 대해 설명하시오.
+## :book:페이지 교체 알고리즘에 대해 설명하시오.
 **페이지 부재 발생 시 새로운 페이지를 할당하기 위해 현재 할당된 페이지 중 어느 것과 교체할지를 결정하는 전략**
 - OPT 페이지 교체 :	이론상 최적 알고리즘
 - NRU 페이지 교체 :	not recently used. 최근 미사용 페이지 교체
@@ -91,7 +91,7 @@ ref : http://blog.naver.com/PostView.nhn?blogId=yeop9657&logNo=220728971005&pare
 - 에이징
 - 참조비트 없는 하드웨어 기법
 
-## CISC, RISC의 차이점
+## :book:CISC, RISC의 차이점
 
 ### Instruction Set
 **Computer Hardware가 직접 해독∙실행이 가능한 명령어 집합**
@@ -116,10 +116,10 @@ ref : http://blog.naver.com/PostView.nhn?blogId=yeop9657&logNo=220728971005&pare
 
 <hr>
 
-## CPU Scheduling에 대해 설명하시오.
+## :book:CPU Scheduling에 대해 설명하시오.
 
-## Sync와 Async의 차이점
+## :book:Sync와 Async의 차이점
 
-## Virtual Memory에 대해 설명하시오.
+## :book:Virtual Memory에 대해 설명하시오.
 
-## Cache Memory에 대해 설명하시오.
+## :book:Cache Memory에 대해 설명하시오.
