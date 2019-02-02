@@ -1,7 +1,7 @@
 ## :paperclip:[Process와 Thread의 차이점](Process-Thread.md)
 
 ## :book:Context-Switching에 대해 설명하시오.
-**CPU에서 여러 프로세스를 돌아가면서 작업을 처리하 과정**
+**CPU에서 여러 프로세스를 돌아가면서 작업을 처리하는 과정**
 - 동작 중인 프로세스가 대기를 하면서 해당 프로세스의 상태(Context)를 보관, 대기하던 다음 프로세스가 동작하면서 이전에 보관한 프로세스의 상태를 복구하는 작업을 말한다.
 
 ## :book:Deadlock에 대해 설명하시오.
