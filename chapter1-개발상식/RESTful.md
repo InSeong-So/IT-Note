@@ -1,6 +1,5 @@
 # RESTful(Representational State Transfer~ful)
 
-- [ ] 숙지 완료
 ## RESTful에 대해 설명하시오.
 - REST는 Representational State Transfer라는 용어의 약자로서 웹의 장점을 최대한 활용할 수 있는 아키텍처이다.
   - 최근의 서버 프로그램은 다양한 브라우저와 안드로이폰, 아이폰과 같은 모바일 디바이스에서도 통신을 할 수 있어야 한다.
@@ -33,7 +32,6 @@
 - 표현(Representations)
 
 
-- [ ] 숙지 완료
 ## RESTful API에 대해 설명하시오.
 
 ### RESTful API 설계

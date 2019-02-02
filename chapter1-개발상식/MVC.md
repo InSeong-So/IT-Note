@@ -1,6 +1,5 @@
 # MVC Pattern
 
-- [ ] 숙지 완료
 ## MVC 패턴에 대해 설명하시오.
 ![MVC Pattern](mvc.jpg "MVC Pattern")
 
@@ -20,7 +19,6 @@
 - 뷰는 사용자가 볼 결과물을 생성하기 위해 모델로부터 정보를 얻어 온다.
 
 
-- [ ] 숙지 완료
 ## Model 1과 Model 2의 차이점
 
 ### Model1
