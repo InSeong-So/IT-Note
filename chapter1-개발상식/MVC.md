@@ -1,6 +1,6 @@
 # MVC Pattern
 
-## MVC 패턴에 대해 설명하시오.
+## :book:MVC 패턴에 대해 설명하시오.
 ![MVC Pattern](mvc.jpg "MVC Pattern")
 
 ### 개념
@@ -19,7 +19,7 @@
 - 뷰는 사용자가 볼 결과물을 생성하기 위해 모델로부터 정보를 얻어 온다.
 
 
-## Model 1과 Model 2의 차이점
+## :book:Model 1과 Model 2의 차이점
 
 ### Model1
 ![Model1](model1.JPG "Model1")
