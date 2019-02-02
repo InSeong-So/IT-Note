@@ -1,5 +1,6 @@
 # MVC Pattern
 
+- [ ] 숙지 완료
 ## MVC 패턴에 대해 설명하시오.
 ![MVC Pattern](mvc.jpg "MVC Pattern")
 
@@ -18,10 +19,12 @@
   - 어떤 MVC 구현에서는 통보 대신 뷰나 컨트롤러가 직접 모델의 상태를 읽어 오기도 한다.
 - 뷰는 사용자가 볼 결과물을 생성하기 위해 모델로부터 정보를 얻어 온다.
 
+
+- [ ] 숙지 완료
 ## Model 1과 Model 2의 차이점
 
 ### Model1
-![Model1](model1.jpg "Model1")
+![Model1](model1.JPG "Model1")
 
 **모든 클라이언트 요청과 응답을 JSP가 담당하는 구조**
 
@@ -36,7 +39,7 @@ JSP 페이지 안에서 모든 정보를 표현(View), 저장(Model), 처리(Con
 <hr>
 
 ### Model2
-![Model2](model2.jpg "Model2")
+![Model2](model2.JPG "Model2")
 
 **클라이언트의 요청, 응답, 비즈니스 로직 처리 부분을 모듈화한 구조**
 
