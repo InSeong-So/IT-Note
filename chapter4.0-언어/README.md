@@ -1,3 +1,3 @@
-# [Java](/Java)
+# [Java](/Java.md)
 
-# [Python](/Python)
+# [Python](/Python.md)
