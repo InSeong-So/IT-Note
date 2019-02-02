@@ -1,45 +1,45 @@
-# 디자인패턴을 구현할 수 있다.
+# Design Pattern
 
-# Iterator
+### Iterator Pattern
 
-# Adapter
+### Adapter Pattern
 
-# Template Method
+### Template Method Pattern
 
-# Factory Method
+### Factory Method Pattern
 
-# Singleton
+### Singleton Pattern
 
-# Prototype
+### Prototype Pattern
 
-# Builder
+### Builder Pattern
 
-# Abstact Factory
+### Abstact Factory Pattern
 
-# Bridge
+### Bridge Pattern
 
-# Strategy
+### Strategy Pattern
 
-# Composite
+### Composite Pattern
 
-# Decorator
+### Decorator Pattern
 
-# Visitor
+### Visitor Pattern
 
-# Chain of Responsibility
+### Chain of Responsibility Pattern
 
-# Facade
+### Facade Pattern
 
-# Mediator
+### Mediator Pattern
 
-# Observer
+### Observer Pattern
 
-# Memento
+### Memento Pattern
 
-# State
+### State Pattern
 
-# Proxy
+### Proxy Pattern
 
-# Command
+### Command Pattern
 
-# Interpreter
+### Interpreter Pattern

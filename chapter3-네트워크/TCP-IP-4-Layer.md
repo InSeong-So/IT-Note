@@ -1,4 +1,4 @@
-# TCP/IP 4 Layer에 대해 설명할 수 있다.
+# TCP/IP(Transmission Control Protocol/Internet Protocol)
 
 - [ ]  TCP/IP 4 Layer에 대해 설명하시오.
 - [ ]  TCP와 UDP의 차이점
