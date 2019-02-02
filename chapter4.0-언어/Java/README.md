@@ -1,0 +1,29 @@
+- [ ]  Java의 컴파일 과정에 대해 설명할 수 있다.
+- [ ]  JVM의 구조에 대해 설명할 수 있다.
+- [ ]  Garbage Collector의 동작 흐름에 대해 설명할 수 있다.
+- [ ]  Java의 Data Type에 대해 설명할 수 있다.
+- [ ]  Object에 대해 설명할 수 있다.
+- [ ]  상속에 대해 설명할 수 있다.
+- [ ]  다형성에 대해 설명할 수 있다.
+- [ ]  캡슐화와 은닉화의 차이점
+- [ ]  Class에 대해 설명할 수 있다.
+- [ ]  Access Modifier에 대해 설명할 수 있다.
+- [ ]  Static에 대해 설명할 수 있다.
+- [ ]  Interface와 Abstract class의 차이점
+- [ ]  String, StringBuilder, StringBuffer의 차이점
+- [ ]  Overloading과 Overriding의 차이점
+- [ ]  == 연산자와 equals() 메소드의 차이점
+- [ ]  equals와 hashCode()에 대해 설명할 수 있다.
+- [ ]  Reflection에 대해 설명할 수 있다.
+- [ ]  Generic에 대해 설명할 수 있다.
+- [ ]  Thread에 대해 설명할 수 있다.
+- [ ]  Sync Method에 대해 설명할 수 있다.
+- [ ]  Collection Framework에 대해 설명할 수 있다.
+- [ ]  List의 종류에 대해 설명할 수 있다.
+- [ ]  Set의 종류에 대해 설명할 수 있다.
+- [ ]  Map의 종류에 대해 설명할 수 있다.
+- [ ]  Vector와 ArrayList의 차이점
+- [ ]  Serialization에 대해 설명할 수 있다.
+- [ ]  Java와 Javascript의 차이점
+- [ ]  성능을 개선하기 위해 어떤 방법을 사용하는가
+- [ ]  소수 혹은 큰 숫자를 정확히 계산하는 방법

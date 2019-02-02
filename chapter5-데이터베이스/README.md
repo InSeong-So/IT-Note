@@ -1,0 +1,6 @@
+- [ ]  MySQL
+- [ ]  Oracle
+- [ ]  DB Normalization에 대해 설명할 수 있다.
+- [ ]  Merge에 대해 설명할 수 있다.
+- [ ]  Join에 대해 설명할 수 있다.
+- [ ]  Index에 대해 설명할 수 있다.
