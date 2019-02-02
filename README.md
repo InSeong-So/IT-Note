@@ -1,15 +1,15 @@
 # Developer's Note(수정 중)
 
-## **New Tasks**
+## :memo:**New Tasks**
 
 - 기술면접대비 답변지 정리
 - 이력서 작성
 
-## U**pcoming**
+## :memo:U**pcoming**
 
 - 면접 준비
 
-## **TODO**
+## :memo:**TODO**
 
 ### :cat:[개발상식](/chapter1-개발상식)
 
