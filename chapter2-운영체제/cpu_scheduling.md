@@ -1,4 +1,19 @@
 # CPU Scheduling
+
+<!-- TOC -->
+
+- [CPU Scheduling](#cpu-scheduling)
+    - [:book:단계](#book단계)
+    - [:book:결정 시점](#book결정-시점)
+    - [:book:비선점형과 선점형](#book비선점형과-선점형)
+        - [비선점형(Non-preemptive Scheduling)](#비선점형non-preemptive-scheduling)
+        - [비선점형 프로세스 알고리즘](#비선점형-프로세스-알고리즘)
+        - [선점형(Preemptive Scheduling)](#선점형preemptive-scheduling)
+        - [선점형 프로세스 알고리즘](#선점형-프로세스-알고리즘)
+    - [:book:평가 기준](#book평가-기준)
+
+<!-- /TOC -->
+
 **다중 프로그래밍을 가능하게 하는 운영 체제의 동작 기법으로 운영 체제는 자원 배정을 통해 시스템의 성능을 개선**
 - 장기, 중기, 단기 스케줄링이 있다.
 

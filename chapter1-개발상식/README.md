@@ -1,8 +1,23 @@
-## :paperclip:[RESTful에 대해 설명할 수 있다.](RESTful.md)
+# 개발상식
 
-## :paperclip:[OOP에 대해 설명할 수 있다.](OOP.md)
+<!-- TOC -->
 
-## :paperclip:[MVC 패턴에 대해 설명할 수 있다.](MVC.md)
+- [개발상식](#개발상식)
+    - [:book:[RESTful에 대해 설명할 수 있다.](RESTful.md)](#bookrestful에-대해-설명할-수-있다restfulmd)
+    - [:book:[OOP에 대해 설명할 수 있다.](OOP.md)](#bookoop에-대해-설명할-수-있다oopmd)
+    - [:book:[MVC 패턴에 대해 설명할 수 있다.](MVC.md)](#bookmvc-패턴에-대해-설명할-수-있다mvcmd)
+    - [:book:TDD에 대해 설명하시오.](#booktdd에-대해-설명하시오)
+    - [:book:함수형 프로그래밍에 대해 설명하시오.](#book함수형-프로그래밍에-대해-설명하시오)
+        - [명령형 프로그램과의 차이점](#명령형-프로그램과의-차이점)
+    - [:book:Git과 Github에 대해 설명하시오.](#bookgit과-github에-대해-설명하시오)
+
+<!-- /TOC -->
+
+## :book:[RESTful에 대해 설명할 수 있다.](RESTful.md)
+
+## :book:[OOP에 대해 설명할 수 있다.](OOP.md)
+
+## :book:[MVC 패턴에 대해 설명할 수 있다.](MVC.md)
 
 ## :book:TDD에 대해 설명하시오.
 **Test-driven Development, 테스트 주도 개발**

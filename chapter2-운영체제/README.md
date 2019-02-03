@@ -1,4 +1,36 @@
-## :paperclip:[Process와 Thread의 차이점](Process-Thread.md)
+# 운영체제
+
+<!-- TOC -->
+
+- [운영체제](#운영체제)
+    - [:book:[Process와 Thread의 차이점](Process-Thread.md)](#bookprocess와-thread의-차이점process-threadmd)
+    - [:book:Context-Switching에 대해 설명하시오.](#bookcontext-switching에-대해-설명하시오)
+    - [:book:Deadlock에 대해 설명하시오.](#bookdeadlock에-대해-설명하시오)
+        - [발생조건](#발생조건)
+    - [:book:Mutex와 Semaphore, Monitor의 차이점](#bookmutex와-semaphore-monitor의-차이점)
+        - [Mutex](#mutex)
+        - [Semaphore](#semaphore)
+        - [Monitor](#monitor)
+    - [:book:Memory Hierarchy에 대해 설명하시오.](#bookmemory-hierarchy에-대해-설명하시오)
+    - [:book:메모리 관리 전략에 대해 설명하시오.](#book메모리-관리-전략에-대해-설명하시오)
+    - [:book:메모리 할당 알고리즘에 대해 설명하시오.](#book메모리-할당-알고리즘에-대해-설명하시오)
+        - [first-fit(최초 적합)](#first-fit최초-적합)
+        - [best-fit(최적 적합)](#best-fit최적-적합)
+        - [worst-fit(최악 적합)](#worst-fit최악-적합)
+        - [성능](#성능)
+    - [:book:페이지 교체 알고리즘에 대해 설명하시오.](#book페이지-교체-알고리즘에-대해-설명하시오)
+    - [:book:CISC, RISC의 차이점](#bookcisc-risc의-차이점)
+        - [Instruction Set](#instruction-set)
+        - [CISC(Complex Instruction Set Computer)](#cisccomplex-instruction-set-computer)
+        - [RISC(Reduced Instruction Set Computer)](#riscreduced-instruction-set-computer)
+    - [:book:[CPU Scheduling에 대해 설명하시오.](cpu_scheduling.md)](#bookcpu-scheduling에-대해-설명하시오cpu_schedulingmd)
+    - [:book:Sync와 Async의 차이점](#booksync와-async의-차이점)
+    - [:book:Virtual Memory에 대해 설명하시오.](#bookvirtual-memory에-대해-설명하시오)
+    - [:book:Cache Memory에 대해 설명하시오.](#bookcache-memory에-대해-설명하시오)
+
+<!-- /TOC -->
+
+## :book:[Process와 Thread의 차이점](Process-Thread.md)
 
 ## :book:Context-Switching에 대해 설명하시오.
 **CPU에서 여러 프로세스를 돌아가면서 작업을 처리하는 과정**
@@ -124,7 +156,7 @@ ref : http://blog.naver.com/PostView.nhn?blogId=yeop9657&logNo=220728971005&pare
 
 <hr>
 
-## :paperclip:[CPU Scheduling에 대해 설명하시오.](cpu_scheduling.md)
+## :book:[CPU Scheduling에 대해 설명하시오.](cpu_scheduling.md)
 
 ## :book:Sync와 Async의 차이점
 
