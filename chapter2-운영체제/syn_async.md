@@ -1,5 +1,13 @@
 # Synchronous Vs Asynchronous
 
+<!-- TOC -->
+
+- [Synchronous Vs Asynchronous](#synchronous-vs-asynchronous)
+    - [Synchronous](#synchronous)
+    - [Asynchronous](#asynchronous)
+
+<!-- /TOC -->
+
 ## Synchronous
 동기식 전송은 한 문자 단위가 아니라 미리 정해진 수 만큼의 문자열을 한 묶음으로 만들어서 일시에 전송하는 방법. 이 방법에서는 데이터와는 별도로 송신측과 수신측이 하나의 기준 클록으로 동기 신호를 맞추어 동작함.
 수신측에서는 클록에 의해 비트를 구별하게 되므로, 동기식 전송을 위해서는 데이터와 클록을 위한 2회선이 필요하다. 송신측에서 2진 데이터들을 정상적인 속도로 내 보내면, 수신측에서는 클록의 한 사이클 간격으로 데이터를 인식하는 것이다. 

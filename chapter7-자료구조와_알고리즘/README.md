@@ -1,7 +1,5 @@
 # 자료구조와 알고리즘
 
-
-
 ## :book:Big-O 표기법
 ## :book:ArrayList와 LinkedList의 차이점
 ## :book:Stack과 Queue의 차이점

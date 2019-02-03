@@ -3,18 +3,18 @@
 <!-- TOC -->
 
 - [OOP(Object Oriented Programming)](#oopobject-oriented-programming)
-  - [:book:OOP에 대해 설명하시오.](#bookoop%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%98%EC%8B%9C%EC%98%A4)
-    - [OOP의 특징](#oop%EC%9D%98-%ED%8A%B9%EC%A7%95)
-  - [:book:OOP의 5가지 원칙(SOLID)에 대해 설명할 수 있다.](#bookoop%EC%9D%98-5%EA%B0%80%EC%A7%80-%EC%9B%90%EC%B9%99solid%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%A0-%EC%88%98-%EC%9E%88%EB%8B%A4)
-    - [S](#s)
-    - [O](#o)
-    - [L](#l)
-    - [I](#i)
-    - [D](#d)
+    - [OOP에 대해 설명하시오.](#oop에-대해-설명하시오)
+        - [OOP의 특징](#oop의-특징)
+    - [OOP의 5가지 원칙(SOLID)에 대해 설명할 수 있다.](#oop의-5가지-원칙solid에-대해-설명할-수-있다)
+        - [S](#s)
+        - [O](#o)
+        - [L](#l)
+        - [I](#i)
+        - [D](#d)
 
 <!-- /TOC -->
 
-## :book:OOP에 대해 설명하시오.
+## OOP에 대해 설명하시오.
 - 객체지향 프로그래밍의 요약어로, 데이터를 객체로 취급, 이를 기준으로 코드를 나누어 구현하는 프로그래밍 방법이다.
 - 순차적으로 프로그램이 동작하는 기존의 C언어 등(절차지향 언어)과는 달리 객체와 객체의 상호작용을 통해 프로그램이 동작한다.
 
@@ -27,7 +27,7 @@
   - Overloading(오버로딩)과 Overriding(오버라이딩)으로 표현한다. 하나의 지시(예를 들어 메소드를 실행하는 것)에 대해 여러 객체가 각자 다른 행위를 수행하는 것이다.
 
 
-## :book:OOP의 5가지 원칙(SOLID)에 대해 설명할 수 있다.
+## OOP의 5가지 원칙(SOLID)에 대해 설명할 수 있다.
 
 ### S
 > SRP(Single Responsibility Principle) : `단일 책임 원칙`

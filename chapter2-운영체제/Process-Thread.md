@@ -3,20 +3,20 @@
 <!-- TOC -->
 
 - [Process와 Thread](#process와-thread)
-    - [:book:Process에 대해 설명하시오.](#bookprocess에-대해-설명하시오)
+    - [Process에 대해 설명하시오.](#process에-대해-설명하시오)
         - [특징](#특징)
-    - [:book:Thread에 대해 설명하시오.](#bookthread에-대해-설명하시오)
+    - [Thread에 대해 설명하시오.](#thread에-대해-설명하시오)
         - [특징](#특징-1)
-    - [:book:Multi-Process에 대해 설명하시오.](#bookmulti-process에-대해-설명하시오)
+    - [Multi-Process에 대해 설명하시오.](#multi-process에-대해-설명하시오)
         - [장점](#장점)
         - [단점](#단점)
-    - [:book:Multi-Thread에 대해 설명하시오.](#bookmulti-thread에-대해-설명하시오)
+    - [Multi-Thread에 대해 설명하시오.](#multi-thread에-대해-설명하시오)
         - [장점](#장점-1)
         - [단점](#단점-1)
 
 <!-- /TOC -->
 
-## :book:Process에 대해 설명하시오.
+## Process에 대해 설명하시오.
 **컴퓨터에서 연속적으로 실행되고 있는 컴퓨터 프로그램**
 
 - 메모리에 올라와 실행되고 있는 프로그램의 인스턴스(독립적인 개체)
@@ -33,7 +33,7 @@
 
 <hr>
 
-## :book:Thread에 대해 설명하시오.
+## Thread에 대해 설명하시오.
 **프로세스 내에서 실행되는 여러 흐름의 단위**
 
 - 프로세스의 특정한 수행 경로
@@ -49,7 +49,7 @@
 
 <hr>
 
-## :book:Multi-Process에 대해 설명하시오.
+## Multi-Process에 대해 설명하시오.
 **하나의 응용프로그램을 여러 개의 프로세스로 구성하여 각 프로세스가 하나의 작업(태스크)을 처리**
 
 ### 장점
@@ -66,7 +66,7 @@
 
 <hr>
 
-## :book:Multi-Thread에 대해 설명하시오.
+## Multi-Thread에 대해 설명하시오.
 **하나의 프로그램에서 둘 이상의 프로세스가 필요할 때 사용**
 
 ### 장점
