@@ -9,7 +9,7 @@
         - [명령형 프로그램과의 차이점
     - Git과 Github에 대해 설명하시오.
 
-## :book:[RESTful에 대해 설명할 수 있다.](RESTful.md)Chapter3까지
+## :book:[RESTful에 대해 설명할 수 있다.](RESTful.md)
 
 ## :book:[OOP에 대해 설명할 수 있다.](OOP.md)
 
