@@ -3,12 +3,12 @@
 <!-- TOC -->
 
 - [RESTful(Representational State Transfer~ful)](#restfulrepresentational-state-transferful)
-    - [RESTful에 대해 설명하시오.](#restful에-대해-설명하시오)
-        - [REST의 특징](#rest의-특징)
-        - [REST의 구성](#rest의-구성)
-    - [RESTful API에 대해 설명하시오.](#restful-api에-대해-설명하시오)
-        - [RESTful API 설계](#restful-api-설계)
-        - [RESTful API 표준](#restful-api-표준)
+  - [RESTful에 대해 설명하시오.](#restful%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%98%EC%8B%9C%EC%98%A4)
+    - [REST의 특징](#rest%EC%9D%98-%ED%8A%B9%EC%A7%95)
+    - [REST의 구성](#rest%EC%9D%98-%EA%B5%AC%EC%84%B1)
+  - [RESTful API에 대해 설명하시오.](#restful-api%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%98%EC%8B%9C%EC%98%A4)
+    - [RESTful API 설계](#restful-api-%EC%84%A4%EA%B3%84)
+    - [RESTful API 표준](#restful-api-%ED%91%9C%EC%A4%80)
 
 <!-- /TOC -->
 
@@ -30,9 +30,9 @@
   - REST의 또 다른 큰 특징 중 하나는 REST API 메시지만 보고도 이를 쉽게 이해 할 수 있는 자체 표현 구조로 되어 있다는 것
 - **Client - Server Architecture (클라이언트 - 서버 구조)**
   - REST 서버는 API를 제공하고, 제공된 API를 이용해서 비즈니스 로직 처리 및 저장을 책임진다.
-  - 클라이언트의 경우 사용자 인증이나 컨택스트(세션,로그인 정보)등을 직접 관리하고 책임진다.
+  - 클라이언트의 경우 사용자 인증이나 컨택스트(세션, 로그인 정보)등을 직접 관리하고 책임진다.
   - 서로간의 의존성이 줄어들게 된다.
-- **계층형 구조**
+- **Layered System(Hierarchical System, 계층형 구조)**
   - 클라이언트 입장에서는 REST ApI 서버만 호출한다.
   - REST 서버는 다중 계층으로 구성될 수 있다. 예를 들어 보안, 로드 밸런싱, 암호화, 사용자 인증등등 추가하여 구조상의 유연성을 줄 수 있다.
 
