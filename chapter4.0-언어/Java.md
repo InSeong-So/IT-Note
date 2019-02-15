@@ -1,7 +1,5 @@
 # Java
 
-<!-- TOC -->
-
 - [Java](#java)
     - [Java의 특징에 대해 설명하시오.](#java의-특징에-대해-설명하시오)
     - [Java의 컴파일 과정에 대해 설명하시오.](#java의-컴파일-과정에-대해-설명하시오)
@@ -19,7 +17,7 @@
     - [Static에 대해 설명하시오.](#static에-대해-설명하시오)
     - [Access Modifier에 대해 설명하시오.](#access-modifier에-대해-설명하시오)
     - [Interface와 Abstract class의 차이점](#interface와-abstract-class의-차이점)
-    - [[Annotation에 대해 설명하시오.](Annotation.md)](#annotation에-대해-설명하시오annotationmd)
+    - [Annotation에 대해 설명하시오.](Annotation.md)
     - [Overloading과 Overriding의 차이점](#overloading과-overriding의-차이점)
     - [== 연산자와 equals() 메소드의 차이점](#-연산자와-equals-메소드의-차이점)
     - [equals와 hashCode()에 대해 설명하시오.](#equals와-hashcode에-대해-설명하시오)
@@ -39,8 +37,6 @@
     - [Java와 Javascript의 차이점](#java와-javascript의-차이점)
     - [성능을 개선하기 위해 어떤 방법을 사용하는가](#성능을-개선하기-위해-어떤-방법을-사용하는가)
     - [소수 혹은 큰 숫자를 정확히 계산하는 방법](#소수-혹은-큰-숫자를-정확히-계산하는-방법)
-
-<!-- /TOC -->
 
 ## Java의 특징에 대해 설명하시오.
 - 이식성이 높은 언어이다.
@@ -113,10 +109,6 @@
 - 물리적으로 존재하거나 추상적으로 생각할 수 있는 것 중에서 자신의 속성을 가지고 있고 다른 것과 식별 가능한 것을 말한다.
 - 객체는 속성과 동작으로 구성되어 있다. 이를 필드(field)와 메소드(method)라고 한다.
 - 현실 세계의 객체를 소프트웨어 객체로 설계하는 것을 객체 모델링(Object Modeling)이라고 한다.
----
-## 추상화에 대해 설명하시오.
-- 공통의 속성과 기능을 묶어 명명하는 것(클래스를 정의하는 것)이다.
-- 다른 객체들과 구분되는 핵심적인 특징에 집중하여 복잡도를 관리할 수 있게 해준다.
 ---
 ## 캡슐화에 대해 설명하시오.
 - 객체의 필드, 메소드를 하나로 묶어 실제 구현 내용을 감추는 것이다.
