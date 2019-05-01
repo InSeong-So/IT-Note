@@ -2,3 +2,4 @@
 
 ## :book:[Java](Java.md)
 ## :book:[Python](Python.md)
+## :book:~~[JavaScript](JavaScript.md)~~
