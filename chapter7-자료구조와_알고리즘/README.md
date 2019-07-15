@@ -2,12 +2,103 @@
 
 ## 자료구조
 ### :book:Big-O 표기법
+- 알고리즘(Algorithm)의 효율성을 나타내는 지표
+- 시간 복잡도(Time Complexity)
+  - Big-O 의 시간 개념으로 알고리즘의 수행시간이 얼마인지를 나타냄
+- 공간 복잡도(Space Complexity)
+  - Big-O 의 메모리 사용 개념으로 알고리즘의 메모리 효율을 나타냄
+
+<hr>
+<br>
+
 ### :book:ArrayList와 LinkedList의 차이점
+- ArrayList
+
+|장점|단점|
+|----|----|
+|데이터 참조가 쉬움|배열의 길이가 초기에 결정되면 변경이 불가능|
+|무작위 접근(Random Access) 가능|데이터 삭제 시 데이터의 이동(복사)이 많음|
+
+<br>
+
+- LinkedList
+
+|장점|단점|
+|----|----|
+|자료의 삽입 및 삭제 용이|포인터(Pointer)로 인해 저장 공간을 낭비|
+|리스트 내에서 자료의 이동이 없음|복잡한 알고리즘|
+|사용 후 기억 장소의 재사용 가능|특정 자료의 탐색 시간이 많이 소요|
+|연속적인 기억 장소의 할당 불필요|-|
+
+<br>
+
+- 비교 성능
+
+|항목|ArrayList|LinkedList|
+|----|---------|----------|
+|Indexing|Θ(1)|Θ(n)|
+|Insert/delete at beginning|Θ(n)|Θ(1)|
+|Insert/delete at end|Θ(1)|Θ(n)-last element is unknown / Θ(1)-last element is known|
+|Insert/delete in middle|Θ(n)|search time + Θ(1)|
+|Wasted space (average)|Θ(n)|Θ(n)|
+
+<hr>
+<br>
+
 ### :book:Stack과 Queue의 차이점
+- 스택(Stack)은 LIFO(Last-In, First-Out)으로 후입선출 구조라고 한다.
+  - 가장 마지막에 들어온 데이터가 가장 먼저 나간다.
+  - 재귀 알고리즘, 실행 취소, 후위 표기법 계산 등에 쓰인다.
+
+<br>
+
+- 큐(Queue)는 FIFO(First-In, First-Out)으로 선입선출 구조라고 한다.
+  - 가장 먼저 들어온 데이터가 가장 먼저 나간다.
+  - 프로세스 처리, CPU관리에서 많이 사용된다.
+
+<hr>
+<br>
+
 ### :book:Hash에 대해 설명하시오.
+- 임의의 크기를 가진 데이터를 고정된 데이터의 크기로 변환시키는 것
+  - Hash 를 사용하면 즉시 저장하거나 찾고자 하는 위치를 참조하므로 향상된 속도로 처리가 가능
+
+<hr>
+<br>
+
 ### :book:HashTable의 이중 해쉬에 대해 설명하시오.
 ### :book:Tree 구조에 대해 설명하시오.
+- 노드(Node)로 이루어진 자료구조
+  - 트리는 하나의 루트 노드를 보유
+  - 루트 노드는 0개 이상의 자식 노드를 보유
+  - 그 자식 노드 또한 0개 이상의 자식 노드를 보유하며 이는 반복적으로 정의됨
+
+<br>
+
+- 그래프의 한 종류로서 계층형 모델이자 '최소 연결 트리' 라고 부름
+
+<br>
+
+- 계층적인 데이터 형태들은 트리에 저장하면 자연스럽게 표현되며 더욱 효율적임
+
+<hr>
+<br>
+
 ### :book:Binary Tree에서 각 트리 순회법 전위, 중위, 후위 순회에 대해 설명하시오.
+- 이진 트리(Binary Tree)
+  - 각 노드가 최대 두 개의 자식을 갖는 트리
+  - 모든 트리가 이진 트리는 아님
+
+<br>
+
+- 이진 트리 순회 방식
+  - 전위 순회(pre-order traversal): 현재 노드 -> 왼쪽 가지 -> 오른쪽 가지
+  - 중위 순회(in-order traversal): 왼쪽 가지 -> 현재 노드 -> 오른쪽 가지
+  - 후위 순회(post-order traversal): 왼쪽 가지 -> 오른쪽 가지 -> 현재 노드
+
+<hr>
+<br>
+
 ### :book:Red-Black-Tree 구조에 대해 설명하시오.
 ### :book:B+ Tree 구조에 대해 설명하시오.
 ### :book:Heap 구조에 대해 설명하시오.
