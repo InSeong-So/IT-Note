@@ -12,7 +12,7 @@
     - [:book:URL Encode에 대해 설명할 수 있다.](#bookurl-encode에-대해-설명할-수-있다)
     - [:book:UTF-8에 대해 설명할 수 있다.](#bookutf-8에-대해-설명할-수-있다)
     - [:book:URL과 URI의 차이점](#bookurl과-uri의-차이점)
-    - [:book:Cookie와 Session에 대해 설명할 수 있다.](#bookcookie와-session에-대해-설명할-수-있다)
+    - [:book:Server의 인증방식에 대해 설명할 수 있다.](#bookServer의-인증방식에-대해-설명할-수-있다)
 
 <br>
 
@@ -177,5 +177,13 @@
   - URN
     > `<URN>` ::= "urn:" `<NID>` ":" `<NSS>`
 
-## :book:Cookie와 Session에 대해 설명할 수 있다.
+<br>
+
+## :book:Server의 인증방식에 대해 설명할 수 있다.
+### 인증이 필요한 이유
+- Front-end 관점 : 사용자의 로그인, 회원가입과 같이 사용자의 도입 부분을 가리킴
+- Server-side 관점 : 모든 API 요청에 대해 사용자를 확인하는 작업
+- 서버에서는 사용자가 보낸 요청을 받았을 때 그것이 누구의 요청인지 정확하게 알아야 함
+
+### Session과 Cookie
 - [링크](https://github.com/InSeong-So/My_IT_Note/blob/master/chapter4.5-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC/Spring-MVC.md#%EC%84%B8%EC%85%98session%EA%B3%BC-%EC%BF%A0%ED%82%A4cookie)
