@@ -3,6 +3,7 @@
 ## :memo:**New Tasks**
 - [ ] HCG 코어 분석
 - [ ] Vanity Fair Spring Boot 변환
+- [ ] ``인터랙티브 게시판 만들기``
 
 <br>
 
@@ -10,6 +11,7 @@
 - [ ] ``JavaScript 정리 및 커밋``
 - [ ] ``Oracle Database 정리 및 커밋``
 - [ ] ``알고리즘, 자료구조 연습``
+- [ ] ``신기술 트렌드 정보 수집``
 
 <br>
 
