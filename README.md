@@ -3,15 +3,16 @@
 ## :memo:**New Tasks**
 - [ ] HCG 코어 분석
 - [ ] Vanity Fair Spring Boot 변환
-- [ ] ``인터랙티브 게시판 만들기``
+- [ ] Deus Ex Machina 확장
+- [ ] `인터랙티브 게시판 만들기`
 
 <br>
 
 ## :memo:**TODO**
-- [ ] ``JavaScript 정리 및 커밋``
-- [ ] ``Oracle Database 정리 및 커밋``
-- [ ] ``알고리즘, 자료구조 연습``
-- [ ] ``신기술 트렌드 정보 수집``
+- [ ] `JavaScript 정리 및 커밋`
+- [ ] `Oracle Database 정리 및 커밋`
+- [ ] `알고리즘, 자료구조 연습`
+- [ ] `신기술 트렌드 정보 수집`
 
 <br>
 
@@ -49,5 +50,9 @@
 ### :frog:[디자인패턴](/chapter6-디자인패턴)
 
 ### :tiger:[자료구조와_알고리즘](/chapter7-자료구조와_알고리즘)
+
+### :penguin:[유닉스와_리눅스](/chapter8-유닉스와_리눅스)
+
+### ::dolphin::[정규표현식](/chapter9-정규표현식)
 
 <br>
