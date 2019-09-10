@@ -53,6 +53,6 @@
 
 ### :penguin:[유닉스와_리눅스](/chapter8-유닉스와_리눅스)
 
-### ::dolphin::[정규표현식](/chapter9-정규표현식)
+### :dolphin:[정규표현식](/chapter9-정규표현식)
 
 <br>
