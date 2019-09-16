@@ -83,13 +83,13 @@
 
 ## 사용자 및 그룹 관리
 - 사용자 또는 그룹 등록
-  - adduser tester1 : tester1이라는 사용자 생성
+  - `adduser [userId]` : userId라는 사용자 생성
     - **사용자를 생성할 수 있는 권한을 가진 건 root 계정**
-  - addgroup tester2 root : tester2라는 사용자를 root 그룹에 포함
+  - `addgroup [userId]` root : userId라는 사용자를 root 그룹에 포함
 
 - 사용자 또는 그룹 삭제
-  - deluser tester1 : tester1이라는 사용자 삭제
-  - delgroup tester1 : tester1이라는 그룹 삭제
+  - `deluser [userId]` : userId라는 사용자 삭제
+  - `delgroup [userId]` : userId라는 그룹 삭제
 
 - 자기 권한에 맞는 사용자만 등록 및 삭제 가능
   - root 계정으로 모든 사용자를 등록하거나 삭제할 수 있음
@@ -111,7 +111,7 @@
     - `sudo` : 쉘 명령어 라인에서 root의 권한을 잠시 사용
       - sudo 등록이 되어 있는 경우에만 가능
     
-    - `su -userid` : 다른 사용자의 권한 사용
+    - `su -userId` : 다른 사용자의 권한 사용
       - `su -` 명령은 `su -root` 와 동일
 
 - 명령어 메뉴얼
@@ -122,11 +122,11 @@
 <br>
 
 # 리눅스 파일 기본사항
-> 윈도우 OS의 파일을 폴더에 모아두는 개념과 마찬가지
->> 유닉스와 리눅스에서는 디렉토리와 파일의 개념을 사용
+> 윈도우 OS의 `파일(File)`을 `폴더(Folder)`에 모아두는 개념과 마찬가지
+>> 유닉스와 리눅스에서는 `디렉토리(Directory)`와 `파일(File)`의 개념을 사용
 
 ## 디렉토리, 절대/상대경로
-- 디렉토리의 위치는 `절대경로와` `상대경로로` 표시
+- 디렉토리의 위치는 `절대경로`와 `상대경로`로 표시
 
 - 최상위 경로는 역슬래쉬 `/` 로 `루트 디렉토리(root directory)`라고 읽음
 
@@ -146,12 +146,77 @@
 
 # 파일과 디렉토리
 ## 파일 탐색
+- `pwd` :  현재 작업 디렉토리의 절대경로 출력
+
+- `cd` : 작업 디렉토리 이동
+
+- `ls` : 디렉토리에 파일 목록을 보여줌
+
+<br>
+
 ## 파일 내용 보기
+- `cat [fileName]` : 파일 내용 전체를 한 번에 출력
+
+- `[more]`
+  - `|(파이프)`를 같이 사용하여 화면 단위로 출력
+  - ex) `cat [fileName] | more`
+
+- `page [fileName]` : 화면 단위로 출력
+
+- `head-n [fileName]` : 파일 내용의 처음으로부터 n줄 표시
+
+- `tail-n [fileName]` : 파일 내용의 마지막으로부터 n줄 표시
+
+- `tail-f [fileName]` 수정 중인 파일 내용의 마지막을 계속적으로 표시
+
+<br>
+
 ## 파일 다루기
+- 파일 이동
+  - `mv [oldFileName] [newFileName]` : 파일명을 [oldFileName에서] [newFileName으로] 변경
+
+  - `mv [fileName] [dirName]` : 파일을 해당 디렉토리로 이동
+
+  - `mv [oldDirName] [newDirName]` : 디렉토리명을 oldDirName에서 newDirName으로 변경
+
+- 파일 복사
+  - `cp [fileName] {path/} [newFileName]` : 해당 위치로 파일이름을 변경하여 복사
+
+  - `cp [fileName] {path/}` : 해당 위치에 파일명 변경없이 복사
+
+  - `cp [dirName] [newDirName]` : 해당 디렉토리(하위 포함)를 새로운 디렉토리명으로 복사
+
+<br>
+
 ## 명령어 히스토리
+- `r 또는 !` : `!c` 라고 입력하면 최근 사용 명령어 중 c로 시작하는 것을 자동 실행
+
+- `↑ 또는 ↓(방향키 위 아래)` : 사용했던 명령어를 순차적으로 표시
+
+- `history` : 사용했던 모든 명령어 표시
+
+<br>
+
 ## 명령어 히스토리 파일
+- 리눅스에서 사용한 명령어는 해당 사용자의 기본 디렉토리에 저장된다. 파일명은 아래와 같다.
+  - `.bash_history`(리눅스 bash)
+  - `.history`(일반 유닉스)
+
+<br>
+
 ## 디렉토리 관리
+- `mkdir [dirName]` : 디렉토리 생성
+
+- `rmdir [dirName]` : 디렉토리 삭제
+  - 디렉토리 하위에 파일이 존재하면 삭제 불가
+
+<br>
+
 ## 파일의 문자 수 세기
+- `wc [fileName]` : 파일의 `줄 수`, `단어 수`, `글자 수` 출력
+
+<br>
+
 # 파일 필터
 ## 파이프(|)와 grep 명령
 ## 리다이렉션(Redirection))

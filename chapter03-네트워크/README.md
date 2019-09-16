@@ -186,4 +186,4 @@
 - 서버에서는 사용자가 보낸 요청을 받았을 때 그것이 누구의 요청인지 정확하게 알아야 함
 
 ### Session과 Cookie
-- [링크](https://github.com/InSeong-So/My_IT_Note/blob/master/chapter4.5-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC/Spring-MVC.md#%EC%84%B8%EC%85%98session%EA%B3%BC-%EC%BF%A0%ED%82%A4cookie)
+- [링크](https://github.com/InSeong-So/My_IT_Note/blob/master/chapter04.5-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC/Spring-MVC.md#%EC%84%B8%EC%85%98session%EA%B3%BC-%EC%BF%A0%ED%82%A4cookie)

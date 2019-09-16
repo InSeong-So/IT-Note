@@ -35,25 +35,25 @@
 
 ## :memo:**Contents**
 
-### :cat:[개발상식](/chapter1-개발상식)
+### :cat:[개발상식](/chapter01-개발상식)
 
-### :dog:[운영체제](/chapter2-운영체제)
+### :dog:[운영체제](/chapter02-운영체제)
 
-### :mouse:[네트워크](/chapter3-네트워크)
+### :mouse:[네트워크](/chapter03-네트워크)
 
-### :hamster:[언어](/chapter4.0-언어)
+### :hamster:[언어](/chapter04.0-언어)
 
-### :rabbit:[프레임워크](/chapter4.5-프레임워크)
+### :rabbit:[프레임워크](/chapter04.5-프레임워크)
 
-### :wolf:[데이터베이스](/chapter5-데이터베이스)
+### :wolf:[데이터베이스](/chapter05-데이터베이스)
 
-### :frog:[디자인패턴](/chapter6-디자인패턴)
+### :frog:[디자인패턴](/chapter06-디자인패턴)
 
-### :tiger:[자료구조와_알고리즘](/chapter7-자료구조와_알고리즘)
+### :tiger:[자료구조와_알고리즘](/chapter07-자료구조와_알고리즘)
 
-### :penguin:[유닉스와_리눅스](/chapter8-유닉스와_리눅스)
+### :penguin:[유닉스와_리눅스](/chapter08-유닉스와_리눅스)
 
-### :dolphin:[정규표현식](/chapter9-정규표현식)
+### :dolphin:[정규표현식](/chapter09-정규표현식)
 
 ### :bird:[빅데이터분석](/chapter10-빅데이터_분석)
 
