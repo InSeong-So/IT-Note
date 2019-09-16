@@ -274,6 +274,45 @@
 <br>
 
 # 파일 비교 / 정렬 / 탐색
+- 파일 비교
+  - `cmp [fileName1] [fileName2]` : 두 파일을 비교한다.
+    - 같으면 exit code=0 반환
+    - 다르면 exit code=1 반환, 일치하지 않는 첫번째 byte 출력
+
+  - `diff [fileName1] [fileName2]` : 두 파일의 차이를 보여주며 프로그램 소스 등을 비교할 때 사용한다.
+
+- 파일 정렬
+  - `sort [fileName] [opt]` : 파일 내용을 정렬 조건에 따라 정렬
+
+- 파일 탐색
+  - `find [dirName] [opt] [exec]` : 특정 조건에 맞는 파일을 찾아 원하는 동작 실행
+  - 조건문
+    |조건문|설명|
+    |------|----|
+    |-name|파일의 이름 패턴|
+    |-user|파일의 소유 유저명|
+    |-group|파일의 소유 그룹명|
+    |-type|파일의 유형|
+    |-perm|파일의 권한|
+    |-mtime|최근에 수정한 파일|
+    |-atime|최근에 접근한 파일|
+    
+  - 실행문
+    |실행문|설명|
+    |------|----|
+    |-print|파일명 출력|
+    |-ls|ls 수행|
+    |-exec|명령어 수행|
+
+  - 예시
+    - `find . -name '*.c' -print`
+    - `find . -mtime 14 -print`
+    - `find . \(-name '*.c' -o -name '*.txt'\) -print`
+    - `find / | grep abc`
+    - `find / -name abc`
+
+<br>
+
 # 파일 보관 / 압축
 ## 파일 묶어서 보관
 ## 파일 압축 및 풀기
