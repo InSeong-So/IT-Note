@@ -237,34 +237,58 @@
 ### :tiger:[자료구조와_알고리즘](/chapter07-자료구조와_알고리즘)
 #### 자료구조
 - `Big-O 표기법`에 대해 설명해주세요.
+
 - `ArrayList` 와 `LinkedList` 의 차이점을 알려주세요.
+
 - `Stack` 과 `Queue` 의 차이점은 무엇이 있나요?
+
 - `Hash` 에 대해 설명해주세요.
+
 - `HashTable` 의 `이중 해쉬`에 대해 설명해주세요.
+
 - `Tree` 구조는 무엇인가요?
+
 - `Binary Tree` 에서 각 트리 순회법 전위, 중위, 후위 순회에 대해 설명해주세요.
+
 - `Red-Black-Tree 구조`를 알려주세요.
+
 - `B+ Tree 구조`는 뭐에요?
+
 - `Heap 구조`는 무엇인가요?
+
 - `Graph 구조`에 대해 설명해주세요.
+
 - `Binary Search Tree`에서 평균 검색시간 worst time, worst case 를 알려주세요.
+
 - `DFS` 와 `BFS` 의 차이점을 알려주세요.
 
 <br>
 
 #### 알고리즘
 - `Bubble` Sort 를 구현해주세요.
+
 - `Selection` Sort 를 구현해주세요.
+
 - `Insertion` Sort 를 구현해주세요.
+
 - `Quick` Sort 를 구현해주세요.
+
 - `Merge` Sort 를 구현해주세요.
+
 - `Heap` Sort 를 구현해주세요.
+
 - Sorting Algorithm 중 `가장 빠른 알고리즘`은 무엇인가요?
+
 - 평균적인 O(n log n)이지만 최악일때 w(n^2)인 `정렬`은 뭐에요?
+
 - Hash 중 Hash 용량을 판단하는 기준인 Load Factor가 75% 이상일 때 reHash() 과정이 발생하는 것은 무엇인가요?
+
 - `54321의 배열`이 주어졌을 때 어떤 Sorting Algorithm 을 사용할 건가요?
+
 - `랜덤으로 배열된 숫자들`이 있을때 어떤 Sorting Algorithm 을 사용할 건가요?
+
 - `Factorial Algorithm` 을 구현하는 여러 방식과 복잡도, 문제점에 대해 설명해주세요.
+
 - Fibonacci 방식의 `Recursion`, `Dynamic Programming`, `반복` 세 가지 방식에 대한 차이는 무엇인가요?
 
 <br>
