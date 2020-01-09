@@ -1,34 +1,40 @@
 # SIS Developer's Note
 
 ## New Tasks
-- [ ] Deus Ex Machina 확장
+- [ ] Deus Ex Machina 기능 확장 및 UI 개선
 - [ ] NodeJS 공부
 - [ ] ReactJS 공부
 - [ ] Docker 공부
+- [ ] IT Note `Trello` 연동
 
 <hr>
 <br>
 
 ## TODO
 - [ ] `JavaScript 정리`
-- [ ] `Oracle Database 학습`
-- [ ] `알고리즘, 자료구조 연습`
-- [ ] `신기술 트렌드 정보 수집`
-- [ ] `기술면접 정리`
+- [ ] `Oracle Database 정리`
 
 <hr>
 <br>
 
 ## DOING
-- [x] Vanity Fair Spring Boot 변환
+- [x] Vanity Fair 리마스터
+  - `명품 대여 서비스`
   - `인터랙티브 게시판 만들기`
-- [x] `Python 웹 크롤러 만들기`
+- [x] Python 웹 크롤러 만들기
+  - `맛집 조회 서비스`
+- [x] `IT 기술면접 정리(v2)`
+- [ ] `코딩 테스트 대비 알고리즘, 자료구조 숙달`
+- [ ] `신기술 트렌드 정보 수집`
 
 <hr>
 <br>
 
 ## DONE
-
+- [x] SQLD 공부 및 취득
+- [X] 이력서 작성 및 포트폴리오(Web)
+  - [링크](https://inseong-so.github.io/new-resume/)
+- [x] IT 기술면접 정리(v1)
 <!-- - [X] ~~이스트소프트 코딩테스트 (2019. 02. 12)~~
 - [X] ~~카페24 코딩테스트 (2019. 02. 14)~~ -->
 
@@ -36,20 +42,14 @@
 <br>
 
 ## STOP
-- [X] ~~``Java 챕터별 복습``~~
+- [X] ~~Java 챕터별 정리 후 Commit~~
 - [X] ~~블로그 내용, 구조 수정 *(지속)*~~
-- [X] ~~기술면접지 정리(Github-Makdown)~~
-- [X] ~~이력서 작성 및 포트폴리오(Web)~~
 <!-- - [ ] ~~*면접 준비(면접합격 시)*~~ -->
 
 <hr>
 <br>
 
 ## Contents
-
-<hr>
-<br>
-
 ### :cat:[개발상식](/chapter01-개발상식)
 - `RESTful`
 
