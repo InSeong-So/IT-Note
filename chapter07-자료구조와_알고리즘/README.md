@@ -14,33 +14,33 @@
 ### :book:ArrayList와 LinkedList의 차이점
 - ArrayList
 
-|장점|단점|
-|----|----|
-|데이터 참조가 쉬움|배열의 길이가 초기에 결정되면 변경이 불가능|
-|무작위 접근(Random Access) 가능|데이터 삭제 시 데이터의 이동(복사)이 많음|
+    |장점|단점|
+    |----|----|
+    |데이터 참조가 쉬움|배열의 길이가 초기에 결정되면 변경이 불가능|
+    |무작위 접근(Random Access) 가능|데이터 삭제 시 데이터의 이동(복사)이 많음|
 
 <br>
 
 - LinkedList
 
-|장점|단점|
-|----|----|
-|자료의 삽입 및 삭제 용이|포인터(Pointer)로 인해 저장 공간을 낭비|
-|리스트 내에서 자료의 이동이 없음|복잡한 알고리즘|
-|사용 후 기억 장소의 재사용 가능|특정 자료의 탐색 시간이 많이 소요|
-|연속적인 기억 장소의 할당 불필요|-|
+    |장점|단점|
+    |----|----|
+    |자료의 삽입 및 삭제 용이|포인터(Pointer)로 인해 저장 공간을 낭비|
+    |리스트 내에서 자료의 이동이 없음|복잡한 알고리즘|
+    |사용 후 기억 장소의 재사용 가능|특정 자료의 탐색 시간이 많이 소요|
+    |연속적인 기억 장소의 할당 불필요|-|
 
 <br>
 
 - 비교 성능
 
-|항목|ArrayList|LinkedList|
-|----|---------|----------|
-|Indexing|Θ(1)|Θ(n)|
-|Insert/delete at beginning|Θ(n)|Θ(1)|
-|Insert/delete at end|Θ(1)|Θ(n)-last element is unknown / Θ(1)-last element is known|
-|Insert/delete in middle|Θ(n)|search time + Θ(1)|
-|Wasted space (average)|Θ(n)|Θ(n)|
+    |항목|ArrayList|LinkedList|
+    |----|---------|----------|
+    |Indexing|Θ(1)|Θ(n)|
+    |Insert/delete at beginning|Θ(n)|Θ(1)|
+    |Insert/delete at end|Θ(1)|Θ(n)-last element is unknown / Θ(1)-last element is known|
+    |Insert/delete in middle|Θ(n)|search time + Θ(1)|
+    |Wasted space (average)|Θ(n)|Θ(n)|
 
 <hr>
 <br>
