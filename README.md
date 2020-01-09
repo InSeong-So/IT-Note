@@ -1,6 +1,6 @@
 # SIS Developer's Note
 
-## :memo:New Tasks
+## New Tasks
 - [ ] Deus Ex Machina 확장
 - [ ] NodeJS 공부
 - [ ] ReactJS 공부
@@ -9,7 +9,7 @@
 <hr>
 <br>
 
-## :memo:TODO
+## TODO
 - [ ] `JavaScript 정리`
 - [ ] `Oracle Database 학습`
 - [ ] `알고리즘, 자료구조 연습`
@@ -19,7 +19,7 @@
 <hr>
 <br>
 
-## :memo:DOING
+## DOING
 - [x] Vanity Fair Spring Boot 변환
   - `인터랙티브 게시판 만들기`
 - [x] `Python 웹 크롤러 만들기`
@@ -27,7 +27,7 @@
 <hr>
 <br>
 
-## :memo:DONE
+## DONE
 
 <!-- - [X] ~~이스트소프트 코딩테스트 (2019. 02. 12)~~
 - [X] ~~카페24 코딩테스트 (2019. 02. 14)~~ -->
@@ -35,7 +35,7 @@
 <hr>
 <br>
 
-## :memo:SContents 항목으로
+## STOP
 - [X] ~~``Java 챕터별 복습``~~
 - [X] ~~블로그 내용, 구조 수정 *(지속)*~~
 - [X] ~~기술면접지 정리(Github-Makdown)~~
@@ -45,7 +45,7 @@
 <hr>
 <br>
 
-## :memo:Contents
+## Contents
 
 <hr>
 <br>
@@ -65,7 +65,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](##:memo:Contents)</sup>
+<sup>[(Contents 항목으로)](##Contents)</sup>
 
 <hr>
 <br>
@@ -74,7 +74,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](##:memo:Contents)</sup>
+<sup>[(Contents 항목으로)](##Contents)</sup>
 
 <hr>
 <br>
@@ -83,7 +83,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](##:memo:Contents)</sup>
+<sup>[(Contents 항목으로)](##Contents)</sup>
 
 
 <hr>
@@ -93,7 +93,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](##:memo:Contents)</sup>
+<sup>[(Contents 항목으로)](##Contents)</sup>
 
 
 <hr>
@@ -103,7 +103,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](##:memo:Contents)</sup>
+<sup>[(Contents 항목으로)](##Contents)</sup>
 
 
 <hr>
@@ -113,7 +113,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](##:memo:Contents)</sup>
+<sup>[(Contents 항목으로)](##Contents)</sup>
 
 
 <hr>
@@ -123,7 +123,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](##:memo:Contents)</sup>
+<sup>[(Contents 항목으로)](##Contents)</sup>
 
 
 <hr>
@@ -133,7 +133,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](##:memo:Contents)</sup>
+<sup>[(Contents 항목으로)](##Contents)</sup>
 
 
 <hr>
@@ -143,7 +143,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](##:memo:Contents)</sup>
+<sup>[(Contents 항목으로)](##Contents)</sup>
 
 
 <hr>
@@ -153,7 +153,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](##:memo:Contents)</sup>
+<sup>[(Contents 항목으로)](##Contents)</sup>
 
 
 <hr>
@@ -163,7 +163,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](##:memo:Contents)</sup>
+<sup>[(Contents 항목으로)](##Contents)</sup>
 
 
 <hr>
