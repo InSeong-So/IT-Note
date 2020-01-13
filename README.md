@@ -7,6 +7,7 @@
 - [ ] Docker 공부
 - [ ] IT Note `Trello` 연동
 - [ ] 취업정보 추가
+- [ ] 스터디 그룹 추가
 
 <hr>
 <br>
