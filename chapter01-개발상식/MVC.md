@@ -3,10 +3,10 @@
 <!-- TOC -->
 
 - [MVC Pattern](#mvc-pattern)
-  - [MVC 패턴에 대해 설명하시오.](#mvc-%ED%8C%A8%ED%84%B4%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%98%EC%8B%9C%EC%98%A4)
-    - [개념](#%EA%B0%9C%EB%85%90)
-    - [구성원리](#%EA%B5%AC%EC%84%B1%EC%9B%90%EB%A6%AC)
-  - [Model 1과 Model 2의 차이점](#model-1%EA%B3%BC-model-2%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90)
+  - [MVC 패턴에 대해 설명하시오.](#mvc-%ed%8c%a8%ed%84%b4%ec%97%90-%eb%8c%80%ed%95%b4-%ec%84%a4%eb%aa%85%ed%95%98%ec%8b%9c%ec%98%a4)
+    - [개념](#%ea%b0%9c%eb%85%90)
+    - [구성원리](#%ea%b5%ac%ec%84%b1%ec%9b%90%eb%a6%ac)
+  - [Model 1과 Model 2의 차이점](#model-1%ea%b3%bc-model-2%ec%9d%98-%ec%b0%a8%ec%9d%b4%ec%a0%90)
     - [Model1](#model1)
     - [Model2](#model2)
 
@@ -34,7 +34,6 @@
   - 어떤 MVC 구현에서는 통보 대신 뷰나 컨트롤러가 직접 모델의 상태를 읽어 오기도 한다.
 - 뷰는 사용자가 볼 결과물을 생성하기 위해 모델로부터 정보를 얻어 온다.
 
-
 <br>
 
 ## Model 1과 Model 2의 차이점
@@ -53,7 +52,6 @@ JSP 페이지 안에서 모든 정보를 표현(View), 저장(Model), 처리(Con
 >> 단점 : 재사용이 힘들고 가독성이 떨어지며 코드가 복잡해지면 유지보수가 어렵다.
 
 <br>
-
 <hr>
 
 ### Model2

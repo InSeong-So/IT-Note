@@ -1,7 +1,10 @@
-# [디자인 패턴](https://github.com/InSeong-So/Java-DisignPattern)
+# 디자인 패턴
 ## :book:Iterator Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter01/iterator)
+> **순서대로 지정해서 처리하기**
+> - 복수의 요소가 모여 있는 집합에서 요소를 순서대로 지정하여 처리하는 패턴
+> - [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter01/iterator)
 
+<hr>
 <br>
 
 ## :book:Adapter Pattern
