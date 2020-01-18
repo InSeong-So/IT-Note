@@ -53,11 +53,19 @@
 
 ## Contents
 ### :cat:[개발상식](/chapter01-개발상식)
-- `RESTful` 은 뭐죠?
-
 - `OOP` 는 뭐에요?
 
+- OOP 의 `특징`은 뭐에요?
+
+- OOP 의 `5가지 원칙`을 설명해주세요.
+
+- `Library` 와 `Framework` 의 차이점을 알려주세요.
+
+- `Model1` 과 `Model2` 는 무엇이 다른가요?
+
 - `MVC 패턴`은 무엇인가요?
+
+- `RESTful` 은 뭐죠?
 
 - `TDD` 는요?
 
