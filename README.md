@@ -111,7 +111,7 @@
 
 - `Process` 와 `Thread` 의 차이점을 알려주세요.
 
-- `Multi-Thread` 에 대해 알려주세요.
+- `Multi-Process` 와 `Multi-Thread` 에 대해 알려주세요.
 
 - `User Thread` 와 `Kernel Thread` 의 차이점은 무엇인가요?
 
@@ -129,13 +129,11 @@
 
 - `페이지 교체 알고리즘`에 대해 알려주세요.
 
-- `단편화`란 무엇인가요?
+- `Fragmentation` 란 무엇인가요?
 
 - `Paging` 과 `Segmentation` 의 차이점에 대해 알려주세요.
 
 - `CISC`, `RISC` 의 차이점을 알려주세요.
-
-- `Context Switching` 에 대해 설명해주세요.
 
 - `CPU Scheduling` 에 대해 알려주세요.
 
