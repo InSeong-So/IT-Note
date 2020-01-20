@@ -1,5 +1,31 @@
 # SIS Developer's Note
 
+  - [Contents](#contents)
+    - [:cat:개발상식](#cat%ea%b0%9c%eb%b0%9c%ec%83%81%ec%8b%9d)
+
+    - [:dog:운영체제](#dog%ec%9a%b4%ec%98%81%ec%b2%b4%ec%a0%9c)
+
+    - [:mouse:네트워크](#mouse%eb%84%a4%ed%8a%b8%ec%9b%8c%ed%81%ac)
+
+    - [:hamster:언어](#hamster%ec%96%b8%ec%96%b4)
+
+    - [:rabbit:프레임워크](#rabbit%ed%94%84%eb%a0%88%ec%9e%84%ec%9b%8c%ed%81%ac)
+
+    - [:wolf:데이터베이스](#wolf%eb%8d%b0%ec%9d%b4%ed%84%b0%eb%b2%a0%ec%9d%b4%ec%8a%a4)
+
+    - [:frog:디자인패턴](#frog%eb%94%94%ec%9e%90%ec%9d%b8%ed%8c%a8%ed%84%b4)
+
+    - [:tiger:자료구조와_알고리즘](#tiger%ec%9e%90%eb%a3%8c%ea%b5%ac%ec%a1%b0%ec%99%80%ec%95%8c%ea%b3%a0%eb%a6%ac%ec%a6%98)
+
+    - [:penguin:유닉스와_리눅스](#penguin%ec%9c%a0%eb%8b%89%ec%8a%a4%ec%99%80%eb%a6%ac%eb%88%85%ec%8a%a4)
+
+    - [:dolphin:정규표현식](#dolphin%ec%a0%95%ea%b7%9c%ed%91%9c%ed%98%84%ec%8b%9d)
+
+    - [:bird:빅데이터분석](#bird%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0%eb%b6%84%ec%84%9d)
+
+<hr>
+<br>
+
 ## New Tasks
 - [ ] Deus Ex Machina 기능 확장 및 UI 개선
 - [ ] NodeJS 공부
@@ -65,7 +91,7 @@
 
 - `MVC 패턴`은 무엇인가요?
 
-- `RESTful` 은 뭐죠?
+- `RESTful` 은 뭐죠? `REST API` 는요?
 
 - `TDD` 는요?
 
@@ -75,7 +101,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](#contents)</sup>
+<sup>[(Contents 목차로)](#sis-developers-note)</sup>
 
 <hr>
 <br>
@@ -84,6 +110,10 @@
 - `RAM` 과 `ROM` 에 대해 알려주세요.
 
 - `Process` 와 `Thread` 의 차이점을 알려주세요.
+
+- `Multi-Thread` 에 대해 알려주세요.
+
+- `User Thread` 와 `Kernel Thread` 의 차이점은 무엇인가요?
 
 - `Context-Switching` 이 무엇인지 설명해주세요.
 
@@ -99,7 +129,13 @@
 
 - `페이지 교체 알고리즘`에 대해 알려주세요.
 
+- `단편화`란 무엇인가요?
+
+- `Paging` 과 `Segmentation` 의 차이점에 대해 알려주세요.
+
 - `CISC`, `RISC` 의 차이점을 알려주세요.
+
+- `Context Switching` 에 대해 설명해주세요.
 
 - `CPU Scheduling` 에 대해 알려주세요.
 
@@ -111,7 +147,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](#contents)</sup>
+<sup>[(Contents 목차로)](#sis-developers-note)</sup>
 
 <hr>
 <br>
@@ -121,9 +157,15 @@
 
 - `HTTP Method` 의 종류는 뭐가 있나요?
 
+- `GET`, `POST` 방식의 차이점은 무엇인가요?
+
 - `OSI 7 Layer` 가 뭐죠?
 
+- `TCP` 와 `UDP` 의 차이점은 무엇이죠?
+
 - `TCP/IP 4 Layer` 는 뭐죠?
+
+- `TCP-3-hands-shaking` 에 대해 설명해주세요.
 
 - `HTTP` 와 `HTTPS` 의 차이점은요?
 
@@ -143,7 +185,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](#contents)</sup>
+<sup>[(Contents 목차로)](#sis-developers-note)</sup>
 
 <hr>
 <br>
@@ -159,19 +201,21 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](#contents)</sup>
+<sup>[(Contents 목차로)](#sis-developers-note)</sup>
 
 <hr>
 <br>
 
 ### :rabbit:[프레임워크](/chapter04.5-프레임워크)
-- `Spring Framework` 정리
+- Java : `Spring Framework` 와 `Spring-MVC`
 
-- `Spring-MVC` 정리
+- Python : `Django` 와 `Flask`
+
+- JavaScript : `Node.js` 와 `React.js`, 그리고 `Vue.js`
 
 <br>
 
-<sup>[(Contents 항목으로)](#contents)</sup>
+<sup>[(Contents 목차로)](#sis-developers-note)</sup>
 
 <hr>
 <br>
@@ -187,12 +231,14 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](#contents)</sup>
+<sup>[(Contents 목차로)](#sis-developers-note)</sup>
 
 <hr>
 <br>
 
 ### :frog:[디자인패턴](/chapter06-디자인패턴)
+- `Disign Pattern` 은 무엇인가요?
+
 - `Iterator` Pattern
 
 - `Adapter` Pattern
@@ -239,7 +285,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](#contents)</sup>
+<sup>[(Contents 목차로)](#sis-developers-note)</sup>
 
 <hr>
 <br>
@@ -303,7 +349,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](#contents)</sup>
+<sup>[(Contents 목차로)](#sis-developers-note)</sup>
 
 
 <hr>
@@ -380,7 +426,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](#contents)</sup>
+<sup>[(Contents 목차로)](#sis-developers-note)</sup>
 
 <hr>
 <br>
@@ -389,7 +435,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](#contents)</sup>
+<sup>[(Contents 목차로)](#sis-developers-note)</sup>
 
 <hr>
 <br>
@@ -398,7 +444,7 @@
 
 <br>
 
-<sup>[(Contents 항목으로)](#contents)</sup>
+<sup>[(Contents 목차로)](#sis-developers-note)</sup>
 
 
 <hr>
