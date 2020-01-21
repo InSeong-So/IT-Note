@@ -237,49 +237,9 @@
 ### :frog:[디자인패턴](/chapter06-디자인패턴)
 - `Disign Pattern` 은 무엇인가요?
 
-- `Iterator` Pattern
+- `Java` 의 디자인 패턴
 
-- `Adapter` Pattern
-
-- `Template Method` Pattern
-
-- `Factory Method` Pattern
-
-- `Singleton` Pattern
-
-- `Prototype` Pattern
-
-- `Builder` Pattern
-
-- `Abstact Factory` Pattern
-
-- `Bridge` Pattern
-
-- `Strategy` Pattern
-
-- `Composite` Pattern
-
-- `Decorator` Pattern
-
-- `Visitor` Pattern
-
-- `Chain of Responsibility` Pattern
-
-- `Facade` Pattern
-
-- `Mediator` Pattern
-
-- `Observer` Pattern
-
-- `Memento` Pattern
-
-- `State` Pattern
-
-- `Proxy` Pattern
-
-- `Command` Pattern
-
-- `Interpreter` Pattern
+- `JavaScript` 의 디자인 패턴
 
 <br>
 
