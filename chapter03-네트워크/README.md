@@ -142,45 +142,50 @@
 ## `HTTP Method` 의 종류는 뭐가 있나요?
 ### 메소드의 종류
 
-|메소드명|설명|Body 필요여부|
-|--------|----|-------------|
-|`GET`|서버에서 데이터를 가져온다.|
-|`HEAD`|서버에서 데이터의 응답 HEADER 만 가져온다.|
-|`POST`|서버에 데이터의 처리를 요청한다.|
-|`PUT`|요청 바디에 저장될 정보를 전송한다.|
-|`CONNECT`|프록시에서 사용되는 예약 메소드|
-|`TRACE`|보낸 메세지를 다시 돌려받는다.|
-|`OPTIONS`|요청한 URL 에 어떠한 메소드 요청이 가능한지 묻는다.|
-|`DELETE`|URL 의 리소스를 삭제한다.|
+|메소드명|역할|설명|
+|:------:|----|-------------|
+|`GET`|`리소스 취득`|`서버에서 데이터를 가져온다.`|
+|*HEAD*|메세지 헤더 취득|서버에서 데이터의 응답 HEADER 만 가져온다.|
+|`POST`|`엔티티 바디 전송`|`서버에 데이터의 처리를 요청한다.`|
+|*PUT*|리소스 전송|요청 바디에 저장될 정보를 전송한다.|
+|*DELETE*|리소스 삭제|URL 의 리소스를 삭제한다.|
+|*TRACE*|경로 조사|보낸 메세지를 다시 돌려받는다.|
+|*CONNECT*|프록시 터널링 요구|프록시에서 사용되는 예약 메소드로 암호화 된 것을 터널링 시킨다.|
+|*OPTIONS*|서포트 메소드 문의|요청한 URL 에 어떠한 메소드 요청이 가능한지 묻는다.|
 
 <br>
 
 ### `상태 코드` *(Status Code)*
-- 1xx : Informational, 정보교환
+- 1xx : Informational, 조건부 응답
 
 - 2xx : Success, 성공
-  - 200 : OK, 요청이 성공적으로 전송됨
+  - `200` : OK, 요청이 성공적으로 전송됨
 
-- 3xx : Redirection, 방향 지정
+- 3xx : Redirection, 리다이렉션 완료
   - 301 : Moved Permanently, 요청 페이지의 영구적인 위치 변화
 
   - 302 : Found, 요청 페이지이 일시적인 위치 변화
 
-- 4xx : Client Error, 클라이언트 오류
-  - 404 : Not Found, 요청받은 자원을 서버에서 찾을 수 없을때 나타나는 상태 
+- 4xx : Client Error, 요청 오류(클라이언트 오류)
+  - `404` : Not Found, 요청받은 자원을 서버에서 찾을 수 없을때 나타나는 상태 
 
   - 405 : Method Not Allowed, 서버에서 사용자가 요청한 주소의 메소드를 지원하지 않을때 나타남
 
 - 5xx : server Error, 서버 오류
+  - `500` : Internal Server Error, 서버에 오류가 발생하여 요청 수행 불가
+  
+  - 503 : Service Unavailable, 서버의 오버로드 / 다운으로 현재 사용할 수 없으나 대개 일시적인 상태
+  
+  - 504 : Gateway Time-out, 서버가 게이트웨이나 프록시 역할을 하고 있거나 업스트림 서버에서 제때 요청을 받지 못함
 
 <br>
 
 ### 요청 / 응답 메세지
 - 요청 라인 *(Request-Line)*
 ```
-Request-Line
+□ Request-Line
 - HTTP 메서드 / URL, 또는 프로토콜, 포트, 도메인의 절대 경로 / ​​​​HTTP 버전
-Header
+□ Header
 - general-header : Via 와 같은 헤더는 메시지 전체에 적용
 - request-header : 아래 항목을 추가하여 요청 내용을 수정
  : User-Agent, Accept 등과 같은 헤더는 요청의 내용을 좀 더 구체화
@@ -188,70 +193,43 @@ Header
  : 조건에 따른 제약 사항 추가(If-None) 
 - entity-header : Content-Length 와 같은 헤더는 요청 본문에 적용
  : 요청 내에 본문이 없는 경우 entity 헤더는 전송되지 않습니다.
-
-
-[ message-body ]
-
-Request-header: general-header, request-header, entity-header가 존재하며 필요에 따라 사용
+□ Message-body
 ```
 
 - 응답 라인 *(Status-Line)*
 ```
-Status-Line
+□ Status-Line
+- 프로토콜 버전 / 상태코드 / 상태코드 정의
 *(( general-header | response-header | entity-header ))
-
-[ message-body ]
-
-status-line: http 버전, 상태 코드, 상태 메세지
-Request-header: general-header, response-header, entity-header
+□ Message-body
 ```
+
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
 
 ## `GET`, `POST` 방식의 차이점은 무엇인가요?
 
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
+
 ## `HTTP` 와 `HTTPS` 의 차이점은요?
-
-## `OSI 7 Layer` 가 뭐죠?
-
-## `TCP` 와 `UDP` 의 차이점은 무엇이죠?
-
-## `TCP/IP 4 Layer` 는 뭐죠?
-
-## `TCP-3-hands-shaking` 에 대해 설명해주세요.
-
-## `DNS` 의 `Round Robin` 방식을 설명해주세요.
-
-## 서버로 요청하면 일어나는 `일련의 과정`에 대해 설명해주세요.
-
-## `Routing Table` 은 무엇인가요?
-
-## `URL Encode` 는 무엇인가요?
-
-## `UTF-8`을 설명해주세요.
-
-## `URL` 과 `URI` 의 차이점을 모르겠어요.
-
-## `Server 의 인증방식`에 대해 설명해주세요.
-
-
-
-
-## :book:[HTTP Method의 종류에 대해 설명할 수 있다.](HTTP-Method.md)
-
-<br>
-
-## :book:[OSI 7 Layer에 대해 설명할 수 있다.](OSI-7-Layer.md)
-
-<br>
-
-## :book:[TCP/IP 4 Layer에 대해 설명할 수 있다.](TCP/IP-4-Layer.md)
-
-<br>
-
-## :book:HTTP와 HTTPS의 차이점
 - HTTP의 문제점
   - HTTP 는 평문 통신이기 때문에 도청이 가능하다.
   - 통신 상대를 확인하지 않기 때문에 위장이 가능하다.
   - 완전성을 증명할 수 없기 때문에 변조가 가능하다.
+
 - HTTP의 문제점을 보완한 HTTPS
   - HTTP 통신 소켓을 SSL(Secure Socket Layer) / TLS(Transport Layer Security) 프로토콜로 대체했다.
   - HTTP - SSL - TCP와 통신하는 시스템이다.
@@ -261,32 +239,120 @@ Request-header: general-header, response-header, entity-header
 
 <br>
 
-## :book:DNS의 Round Robin 방식에 대해 설명할 수 있다.
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
+
+## `OSI 7 Layer` 가 뭐죠?
+> 7 : Application (응용 계층)
+> - HTTP, SMTP, SNMP, FTP, Telnet, SSH & Scp, NFS, RTSP 
+
+> 6 : Presentation (표현 계층)
+> - JPEG, MPEG, XDR, ASN.1, SMB, AFP 
+
+> 5 : Session (세션 계층)
+> - TLS, SSH, ISO 8327 / CCITT X.225, RPC, NetBIOS, AppleTalk 
+
+> 4 : Transport (전송 계층)
+> - TCP, UDP, RTP, SCTP, SPX, AppleTalk 
+
+> 3 : Network (네트워크 계층)
+> - IP, ICMP, IGMP, X.25, CLNP, ARP, RARP, BGP, OSPF, RIP, IPX, DDP 
+
+> 2 : Data link (데이터 링크 계층)
+> - Ethernet, Token Ring, PPP, HDLC, Frame relay, ISDN, ATM, 무선랜, FDDI 
+
+> 1 : Physical (물리 계층)
+> - 전선, 전파, 광섬유, 동축케이블, 도파관, PSTN, Repeater, DSU, CSU, Modem
+
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
+
+## `TCP` 와 `UDP` 의 차이점은 무엇이죠?
+- TCP는 신뢰성이 있는 연결을 지향하며, UDP는 빠른 전송을 지향한다.
+  - TCP는 Stateful(상태유지)이며 UDP는 Stateless(무상태) 프로토콜이다.
+
+- TCP는 내가 보낸 데이터가 확실히 상대방에게 전달이 되었는지 포커를 맺고, UDP는 일방적으로 전송을 한다.
+
+- UDP의 한 예로 스트리밍 방송이 있는데, 방송을 하다가 중간에 신호가 끊어져도 다음으로 그냥 이어서 방송을 하는 것처럼 UDP는 일방적인 데이터 전송을 하는 반면, TCP는 데이터 하나라도 놓치지 않고 완벽히 보내는 것이 목표이기 때문에 방향성이 완전히 다르다.
+
+- UDP는 알고리즘이 간단한 반면, TCP는 연결부터 끊는 과정까지 상대적으로 복잡하다.
+
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
+
+## `TCP/IP 4 Layer` 는 뭐죠?
+
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
+
+## `TCP-3-hands-shaking` 에 대해 설명해주세요.
+
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
+
+## `DNS` 의 `Round Robin` 방식을 설명해주세요.
 - L4 스위치 같은 로드밸런싱 장비가 부담이 될 때 저렴하고 간단하게 서버 분산을 구현하는 방법이다.
   - 클라이언트 세션을 유지하며 처음 연결한 서버에 지속적으로 연결해주는 기능은 없다.
+
   - 간단한 요청과 결과로만 이루어진 페이지들이라면 사용할 수 있다.
+
 - 서버가 A, B, C 3대가 있으면 첫 요청에 A, 다음엔 B, 다음에 C로 연결하고 이후엔 다시 A-B-C 절차를 반복한다.
 
 <br>
 
-## :book:서버로 요청하면 일어나는 일련의 과정에 대해 설명할 수 있다.
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
+
+## 서버로 요청하면 일어나는 `일련의 과정`에 대해 설명해주세요.
 ```브라우저에 도메인 입력 → DNS서버에 IP주소 요청 → 수신한 IP주소에 해당하는 웹서버 접속```
 
 - 정보 확인
-    > 로컬 PC에서 hosts파일 확인, 입력한 도메인의 매핑 정보 존재 여부 확인
+  > 로컬 PC에서 hosts파일 확인, 입력한 도메인의 매핑 정보 존재 여부 확인
 - 외부와 통신할 준비
-    > DHCP에서 사용자의 IP주소, 가장 가까운 라우터의 IP주소, 가장 가까운 DNS서버의 IP주소를 수신
-    >> ARP 프로토콜을 이용해 IP주소를 기반으로 가장 가까운 라우터의 MAC주소를 확인
+  > DHCP에서 사용자의 IP주소, 가장 가까운 라우터의 IP주소, 가장 가까운 DNS서버의 IP주소를 수신
+  >> ARP 프로토콜을 이용해 IP주소를 기반으로 가장 가까운 라우터의 MAC주소를 확인
 - DNS서버와의 IP주소 송수신
-    > DNS Query를 DNS 서버에 송신한다.
-    >> DNS 서버는 웹 서버의 IP주소를 사용자 PC로 반환한다.
+  > DNS Query를 DNS 서버에 송신한다.
+  >> DNS 서버는 웹 서버의 IP주소를 사용자 PC로 반환한다.
     ```
-     사용자의 PC는 가장 먼저, 지정된 DNS서버(통신사마다 DNS서버 존재)에 DNS Query를 송신한다.
-     
-     예로 http://www.naver.com를 검색하면 지정된 DNS서버는 Root 네임서버에 www.naver.com을 질의하고 Root 네임서버는 .com 네임서버의 ip주소를 알려준다.
-     그 후 .com 네임서버에 www.naver.com을 질의하면 naver.com 네임서버의 IP주소를 받고, 그곳에 질의를 송신하여 www.naver.com의 IP주소를 수신하게 된다.
+      사용자의 PC는 가장 먼저, 지정된 DNS서버(통신사마다 DNS서버 존재)에 DNS Query를 송신한다.
+      
+      예로 http://www.naver.com를 검색하면 지정된 DNS서버는 Root 네임서버에 www.naver.com을 질의하고 Root 네임서버는 .com 네임서버의 ip주소를 알려준다.
+      그 후 .com 네임서버에 www.naver.com을 질의하면 naver.com 네임서버의 IP주소를 받고, 그곳에 질의를 송신하여 www.naver.com의 IP주소를 수신하게 된다.
 
-     과정이 복잡한 이유는 도메인의 계층화 구조에 따라 DNS서버도 계층화되어 있기 때문이다. 도메인의 가장 최상단, 즉 가장 뒷쪽(.com, .kr 등등)을 담당하는 DNS서버는 전세계에 13개 뿐이다.
+      과정이 복잡한 이유는 도메인의 계층화 구조에 따라 DNS서버도 계층화되어 있기 때문이다. 도메인의 가장 최상단, 즉 가장 뒷쪽(.com, .kr 등등)을 담당하는 DNS서버는 전세계에 13개 뿐이다.
     ```
 
 - 웹 서버 접속
@@ -296,7 +362,14 @@ Request-header: general-header, response-header, entity-header
 
 <br>
 
-## :book:Routing Table에 대해 설명할 수 있다.
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
+
+## `Routing Table` 은 무엇인가요?
 - 라우팅(Rounting) : 주소를 이용하여 목적지까지 메시지를 전달하는 방법을 결정하는 경로 선택 과정이다.
     - 이 과정을 능동적으로 수행하는 장치를 라우터(Router)라고 한다.
     - 경로 선택을 위한 데이터베이스(목록)을 라우팅 테이블(Routing Table)이라고 하며 목적지 네트워크 주소, 라우터의 출구 포트 정보, 최적 경로 산출을 위한 metrics 등의 정보를 포함한다.
@@ -304,6 +377,110 @@ Request-header: general-header, response-header, entity-header
         - 라우터가 패킷을 수신하면 패킷의 목적지 IP주소를 검사하고, 라우터의 라우팅 테이블 안에 있는 가장 일치하는 네트워크 주소를 검색한다.
         - 라우팅 테이블은 또한 패킷을 전송하는데 사용되는 인터페이스를 포함한다.
         - 부합하는 네트워크를 찾게 되면 라우터는 밖으로 나가는 인터페이스의 데이터 링크 프레임 안에 IP패킷을 캡슐화하고, 그 다음에 그것의 목적지 쪽으로 패킷을 전송한다.
+
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
+
+## `URL Encode` 는 무엇인가요?
+
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
+
+## `UTF-8`을 설명해주세요.
+- 가장 많이 사용되는 가변 길이 유니코드 인코딩이다.
+- 표현 가능한 길이는 최대 6바이트지만 다른 인코딩과의 호환을 위해 4바이트까지만 사용한다.
+- 아스키 코드의 0~127까지는 UTF-8로 완전히 동일하게 기록된다.
+  - 아스키로 구축된 사이트를 별다른 변환 처리 없이 그대로 쓸 수 있는 엄청난 장점이 있다.
+- UTF-8은 엔디안에 상관없이 똑같이 읽을 수 있으므로 크로스플랫폼 호환성도 뛰어나다.
+  - 엔디안(Endianness) : 메모리와 같은 1차원의 공간에 여러 개의 연속된 대상을 배열하는 방법이다.
+
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
+
+## `URL` 과 `URI` 의 차이점을 모르겠어요.
+- **URI는 식별하고 URL은 식별하고 찾는다.**
+  - 모든 URL과 URN은 URI이지만 모든 URI는 URL이 아니다.
+- 통합 자원 식별자(Uniform Resource Identifier, URI)는 인터넷에 있는 자원을 나타내는 유일한 주소이다.
+  - URL은 해당 리소스를 얻는 데 필요한 특정 정보를 제공한다.
+- URI의 하위개념으로 URL, URN 이 있다.
+  - URL(Uniform Resource Locator) : 파일 식별자, 유일자원지시기
+  - URN(Uniform Resource Name) : 통합 자원 이름
+    - 영속적이며 위치에 독립적인 자원을 위한 지시자로 사용하기 위한 것이다.
+- 문법
+  - URI
+    > scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]
+  - URL
+    > scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]
+  - URN
+    > `<URN>` ::= "urn:" `<NID>` ":" `<NSS>`
+
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
+
+## `Server 의 인증방식`에 대해 설명해주세요.
+### 인증이 필요한 이유
+- Front-end 관점 : 사용자의 로그인, 회원가입과 같이 사용자의 도입 부분을 가리킴
+
+- Server-side 관점 : 모든 API 요청에 대해 사용자를 확인하는 작업
+
+- 서버에서는 사용자가 보낸 요청을 받았을 때 그것이 누구의 요청인지 정확하게 알아야 함
+
+<br>
+
+### 세션(Session)과 쿠키(Cookie)
+
+## Connectionless Protocol
+
+> 웹 서비스는 클라이언트와 서버의 관계를 유지하지 않는 특성을 지닌 HTTP 프로토콜을 기반으로 한다.
+
+    # 서버의 부하가 최소화, 기능 구현 어려움
+    	클라이언트 |요청(Request) : 서버 연결 / 응답(Response) : 서버 연결 종료 | 서버
+    
+    
+    # 서버와 클라이언트의 연결 상태를 유지
+    	클라이언트 | 로그인 요청 / 응답, 상품 주문 요청 / 응답 | 서버
+
+> 이는 서버의 부하를 줄일 수 있는 장점은 있으나 클라이언트의 요청마다 매번 새로운 연결이 생성되어 일반적인 상태 유지 기능의 구현이 어렵다.이러한 Connectionless Protocol의 불편함을 해결하기 위해서 세션과 쿠키를 이용한다.세션과 쿠키는 클라이언트-서버의 연결을 유지해주는 방법이다.
+
+
+|방법|내용| 
+|----|----|
+|Session|서버에서 연결 정보를 관리|
+|Cookie|클라이언트에서 연결 정보를 관리|
+
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
+
 
 <br>
 
@@ -329,43 +506,3 @@ Request-header: general-header, response-header, entity-header
 ### Base64 Encoding이란?
 
 ### MS script Encoding이란?
-
-<br>
-
-## :book:UTF-8에 대해 설명할 수 있다.
-- 가장 많이 사용되는 가변 길이 유니코드 인코딩이다.
-- 표현 가능한 길이는 최대 6바이트지만 다른 인코딩과의 호환을 위해 4바이트까지만 사용한다.
-- 아스키 코드의 0~127까지는 UTF-8로 완전히 동일하게 기록된다.
-  - 아스키로 구축된 사이트를 별다른 변환 처리 없이 그대로 쓸 수 있는 엄청난 장점이 있다.
-- UTF-8은 엔디안에 상관없이 똑같이 읽을 수 있으므로 크로스플랫폼 호환성도 뛰어나다.
-  - 엔디안(Endianness) : 메모리와 같은 1차원의 공간에 여러 개의 연속된 대상을 배열하는 방법이다.
-
-<br>
-
-## :book:URL과 URI의 차이점
-- **URI는 식별하고 URL은 식별하고 찾는다.**
-  - 모든 URL과 URN은 URI이지만 모든 URI는 URL이 아니다.
-- 통합 자원 식별자(Uniform Resource Identifier, URI)는 인터넷에 있는 자원을 나타내는 유일한 주소이다.
-  - URL은 해당 리소스를 얻는 데 필요한 특정 정보를 제공한다.
-- URI의 하위개념으로 URL, URN 이 있다.
-  - URL(Uniform Resource Locator) : 파일 식별자, 유일자원지시기
-  - URN(Uniform Resource Name) : 통합 자원 이름
-    - 영속적이며 위치에 독립적인 자원을 위한 지시자로 사용하기 위한 것이다.
-- 문법
-  - URI
-    > scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]
-  - URL
-    > scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]
-  - URN
-    > `<URN>` ::= "urn:" `<NID>` ":" `<NSS>`
-
-<br>
-
-## :book:Server의 인증방식에 대해 설명할 수 있다.
-### 인증이 필요한 이유
-- Front-end 관점 : 사용자의 로그인, 회원가입과 같이 사용자의 도입 부분을 가리킴
-- Server-side 관점 : 모든 API 요청에 대해 사용자를 확인하는 작업
-- 서버에서는 사용자가 보낸 요청을 받았을 때 그것이 누구의 요청인지 정확하게 알아야 함
-
-### Session과 Cookie
-- [링크](https://github.com/InSeong-So/My_IT_Note/blob/master/chapter04.5-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC/Spring-MVC.md#%EC%84%B8%EC%85%98session%EA%B3%BC-%EC%BF%A0%ED%82%A4cookie)
