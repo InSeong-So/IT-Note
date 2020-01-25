@@ -156,22 +156,22 @@
 <br>
 
 ### `상태 코드` *(Status Code)*
-- 1xx : Informational, 조건부 응답
+- `1xx` *(Informational, 조건부 응답)*
 
-- 2xx : Success, 성공
+- `2xx` *(Success, 성공)*
   - `200` : OK, 요청이 성공적으로 전송됨
 
-- 3xx : Redirection, 리다이렉션 완료
+- `3xx` *(Redirection, 리다이렉션 완료)*
   - 301 : Moved Permanently, 요청 페이지의 영구적인 위치 변화
 
   - 302 : Found, 요청 페이지이 일시적인 위치 변화
 
-- 4xx : Client Error, 요청 오류(클라이언트 오류)
+- `4xx` *(Client Error, 요청 오류(클라이언트 오류))*
   - `404` : Not Found, 요청받은 자원을 서버에서 찾을 수 없을때 나타나는 상태 
 
   - 405 : Method Not Allowed, 서버에서 사용자가 요청한 주소의 메소드를 지원하지 않을때 나타남
 
-- 5xx : server Error, 서버 오류
+- `5xx` *(server Error, 서버 오류)*
   - `500` : Internal Server Error, 서버에 오류가 발생하여 요청 수행 불가
   
   - 503 : Service Unavailable, 서버의 오버로드 / 다운으로 현재 사용할 수 없으나 대개 일시적인 상태
@@ -180,29 +180,73 @@
 
 <br>
 
-### 요청 / 응답 메세지
-- 요청 라인 *(Request-Line)*
-```
-□ Request-Line
-- HTTP 메서드 / URL, 또는 프로토콜, 포트, 도메인의 절대 경로 / ​​​​HTTP 버전
-□ Header
-- general-header : Via 와 같은 헤더는 메시지 전체에 적용
-- request-header : 아래 항목을 추가하여 요청 내용을 수정
- : User-Agent, Accept 등과 같은 헤더는 요청의 내용을 좀 더 구체화
- : 컨텍스를 제공(Referer)
- : 조건에 따른 제약 사항 추가(If-None) 
-- entity-header : Content-Length 와 같은 헤더는 요청 본문에 적용
- : 요청 내에 본문이 없는 경우 entity 헤더는 전송되지 않습니다.
-□ Message-body
-```
+### Request Message *(요청 메세지)*
+- 메세지 구조
+  ```
+  □ Request Line
+    - HTTP 메서드 / URL, 또는 프로토콜, 포트, 도메인의 절대 경로 / ​​​​HTTP 버전
 
-- 응답 라인 *(Status-Line)*
-```
-□ Status-Line
-- 프로토콜 버전 / 상태코드 / 상태코드 정의
-*(( general-header | response-header | entity-header ))
-□ Message-body
-```
+  □ Request Header : Key - Value 형태
+    - Accept : 클라이언트가 받을 수 있는 컨텐츠
+    - Cookie : 쿠키
+    - Content-Type : 메세지 바디 종류
+    - Content-Length : 메세지 바디 길이
+    - If-Modified-Since : 특정 날짜 이후 변경됐을 때
+
+  □ Request Body (Entity Body)
+  ```
+
+- [Content-Type](https://www.w3.org/Protocols/rfc1341/4_Content-Type.html)
+  - `form` *(URL Encoded)*
+    - application/x-www-form-urlencoded *(메세지 바디의 구성은 쿼리 스트링)*
+  
+  - `json`
+    - application/json
+  
+  - `multipart` *(이진파일 전송에 사용되며 하나의 메세지 바디에 파트를 나눠 작성  )*
+    - `multipart/form-data` : boundary=frontier *(boundary, 파트 구분자)*
+
+<br>
+
+### Response Message *(응답 메세지)*
+- 메세지 구조
+  ```
+  □ Response Line (Status Line)
+    - 프로토콜 버전 / 상태코드 / 상태코드 정의
+  
+  □ Response Header
+    - Content-Type : 바디 데이터의 타입
+    - Content-Length : 바디 데이터 크기
+    - Set-Cookie : 쿠키 설정
+    - ETag : 엔티티 태그
+
+  □ Response Body
+    - HTML, JSON, Octet Stream 등
+  ```
+
+- Content-Type
+  - text/plain, text/html
+  
+  - application/xml, application/json
+  
+  - image/png, image/jpg
+  
+  - audio/mp3, video/mp4
+
+<br>
+
+### Header의 구분
+> HTTP 헤더는 클라이언트와 서버가 요청 또는 응답으로 부가적인 정보를 전송할 수 있도록 해준다.
+> - 헤더는 컨텍스트에 따라 그룹핑될 수 있다.
+
+- 구분
+  - `General header`, 요청과 응답 모두에 적용되지만 바디에서 최종적으로 전송되는 데이터와는 관련이 없는 헤더
+  
+  - `Request header`, 페치될 리소스나 클라이언트 자체에 대한 자세한 정보를 포함하는 헤더
+
+  - `Response header`, 위치 또는 서버 자체에 대한 정보(이름, 버전 등)와 같이 응답에 대한 부가적인 정보를 갖는 헤더
+  
+  - `Entity header`, 컨텐츠 길이나 MIME 타입과 같이 엔티티 바디에 대한 자세한 정보를 포함하는 헤더
 
 <br>
 
@@ -225,6 +269,29 @@
 <br>
 
 ## `HTTP` 와 `HTTPS` 의 차이점은요?
+### HTTP의 에 대한 추가 설명
+- 인터넷상에서 데이터를 주고 받기 위한 서버/클라이언트 모델을 따르는 전송 프로토콜
+  - 애플리케이션 레벨의 프로토콜로 TCP/IP위에서 작동
+  
+  - 클라이언트에서 요청(request)를 보내면 서버는 요청을 처리해서 응답(response)
+
+<br>
+
+### 비상태연결 *(Stateless, Connectless)*
+> 서버에 연결하고 요청해서 응답을 받으면 연결을 끊는다.
+> - 장점: 접속유지 최소화, 불특정 다수를 대상으로 하는 서비스에 유리
+> - 단점: 연결을 끊어버리기 때문에, 클라이언트의 이전 상태를 알 수 없음, 따라서 로그인을 해도 정보유지 불가, 이를 해결하기 위해 쿠키 등등을 이용
+
+<br>
+
+### Keep Alive *(HTTP 1.1 부터 지원)*
+> HTTP는 하나의 연결 시 하나의 요청과 응답이 기준이었다.
+> - 만약 페이지에 여러 개의 리소스가 존재하면 해당 수만큼 연결과 리소스 다운, 연결 해제를 반복한다.
+> - 이처럼 TCP 통신 과정에서 비용이 많이 소모되어 등장한 개념으로 지정된 시간 동안 연결이 끊기지 않고 요청과 응답을 계속해서 보낼 수 있다.
+
+<br>
+
+### HTTPS의 개요
 - HTTP의 문제점
   - HTTP 는 평문 통신이기 때문에 도청이 가능하다.
   - 통신 상대를 확인하지 않기 때문에 위장이 가능하다.
@@ -232,8 +299,10 @@
 
 - HTTP의 문제점을 보완한 HTTPS
   - HTTP 통신 소켓을 SSL(Secure Socket Layer) / TLS(Transport Layer Security) 프로토콜로 대체했다.
-  - HTTP - SSL - TCP와 통신하는 시스템이다.
+  
+  - `HTTP - SSL - TCP`와 통신하는 시스템이다.
     - 따라서 암호화와 증명서, 안전성 보호를 이용할 수 있게 되었다.
+  
   - 평문 통신에 비해 암호화 통신은 CPU나 메모리가 많이 필요하여 민감한 정보를 다룰 때에만 사용했다.
     - [HTTP 2.0이 발전되면서 HTTPS가 HTTP보다 빠르다고 한다.](https://tech.ssut.me/https-is-faster-than-http/)
 
@@ -246,27 +315,48 @@
 <hr>
 <br>
 
-## `OSI 7 Layer` 가 뭐죠?
-> 7 : Application (응용 계층)
-> - HTTP, SMTP, SNMP, FTP, Telnet, SSH & Scp, NFS, RTSP 
+## `OSI` 가 뭐죠?
+### OSI 의 개요
+> OSI 모형(Open Systems Interconnection Reference Model)은  국제표준화기구(ISO)에서 개발한 모델이다.
+> -  컴퓨터 네트워크 프로토콜 디자인과 통신을 계층으로 나누어 설명한 것으로 `OSI 7 계층 모형`이라고 한다.
 
-> 6 : Presentation (표현 계층)
-> - JPEG, MPEG, XDR, ASN.1, SMB, AFP 
+<br>
 
-> 5 : Session (세션 계층)
-> - TLS, SSH, ISO 8327 / CCITT X.225, RPC, NetBIOS, AppleTalk 
+### OSI 7 Layer
+- `1 Layer : Physical` *(물리 계층)*
+  > 실제 장치들을 연결하기 위해 필요한 전기적, 물리적 세부 사항들을 정의한다.
+  
+  - 전선, 전파, 광섬유, 동축케이블, 도파관, PSTN, Repeater, DSU, CSU, Modem
 
-> 4 : Transport (전송 계층)
-> - TCP, UDP, RTP, SCTP, SPX, AppleTalk 
+- `2 Layer : Data link` *(데이터 링크 계층)*
+  > 포인트 투 포인트(Point to Point) 간 신뢰성 있는 전송을 보장한다.
+  
+  - Ethernet, Token Ring, PPP, HDLC, Frame relay, ISDN, ATM, 무선랜, FDDI 
 
-> 3 : Network (네트워크 계층)
-> - IP, ICMP, IGMP, X.25, CLNP, ARP, RARP, BGP, OSPF, RIP, IPX, DDP 
+- `3 Layer : Network` *(네트워크 계층)*
+  > 여러 개의 노드를 거칠 때마다 경로를 찾아주는 역할을 한다.
+  
+  - IP, ICMP, IGMP, X.25, CLNP, ARP, RARP, BGP, OSPF, RIP, IPX, DDP 
 
-> 2 : Data link (데이터 링크 계층)
-> - Ethernet, Token Ring, PPP, HDLC, Frame relay, ISDN, ATM, 무선랜, FDDI 
+- `4 Layer : Transport` *(전송 계층)*
+  > 양 끝단(End to end)의 사용자들이 신뢰성있는 데이터를 주고 받을 수 있도록 해 주어
+  
+  - TCP, UDP, RTP, SCTP, SPX, AppleTalk 
 
-> 1 : Physical (물리 계층)
-> - 전선, 전파, 광섬유, 동축케이블, 도파관, PSTN, Repeater, DSU, CSU, Modem
+- `5 Layer : Session` *(세션 계층)*
+  > 양 끝단의 응용 프로세스가 통신을 관리하기 위한 방법을 제공한다.
+  
+  - TLS, SSH, ISO 8327 / CCITT X.225, RPC, NetBIOS, AppleTalk 
+
+- `6 Layer : Presentation` *(표현 계층)*
+  > 코드간의 번역을 담당한다.
+  
+  - JPEG, MPEG, XDR, ASN.1, SMB, AFP 
+
+- `7 Layer : Application` *(응용 계층)*
+  > 응용 프로세스와 직접 관계하여 일반적인 응용 서비스를 수행한다. 
+  
+  - HTTP, SMTP, SNMP, FTP, Telnet, SSH & Scp, NFS, RTSP 
 
 <br>
 
@@ -296,7 +386,43 @@
 <hr>
 <br>
 
-## `TCP/IP 4 Layer` 는 뭐죠?
+## `TCP/IP` 는 뭐죠?
+
+<div align=center>
+
+<img src="osi7layer_tcp-ip4layer.png" alt="osi7layer_tcp-ip4layer" width="500"/>
+
+</div>
+
+<br>
+
+### TCP/IP 의 개요
+> TCP/IP (Transmission Control Protocol / Internet Protocol)
+> - 인터넷 통신의 기반이 되는 프로토콜로 이를 이용해 컴퓨터를 연결하는 체계를 이더넷(Ethernet)이라고 한다.
+
+<br>
+
+### 계층
+- `1 Layer : Network Access` or Network Interface Layer *(네트워크 액세스 계층)*
+  > OSI 7계층의 물리계층과 데이터 링크 계층에 해당하며 물리적인 주소로 MAC을 사용한다.
+
+  - LAN, 패킷망 등
+
+- `2 Layer : Internet Layer` *(인터넷 계층)*
+  > OSI 7계층의 네트워크 계층에 해당하며 통신 노드 간의 IP패킷을 전송하는 기능과 라우팅 기능을 담당한다.
+
+  - IP, ARP, RARP 등
+
+
+- `3 Layer : Transport Layer` *(전송 계층)*
+  > OSI 7계층의 전송 계층에 해당하며 통신 노드 간의 연결을 제어하고, 신뢰성 있는 데이터 전송을 담당한다.
+
+  - TCP, UDP 등
+
+- `4 Layer : Application Layer` *(응용 계층)*
+  > OSI 7계층의 세션 계층, 표현 계층, 응용 계층에 해당하며 TCP/UDP 기반의 응용 프로그램을 구현할 때 사용한다.
+
+  - FTP, HTTP, SSH 등
 
 <br>
 
@@ -307,7 +433,10 @@
 <hr>
 <br>
 
-## `TCP-3-hands-shaking` 에 대해 설명해주세요.
+## `TCP-3-way-hands-shaking` 에 대해 설명해주세요.
+
+
+
 
 <br>
 
@@ -370,13 +499,17 @@
 <br>
 
 ## `Routing Table` 은 무엇인가요?
-- 라우팅(Rounting) : 주소를 이용하여 목적지까지 메시지를 전달하는 방법을 결정하는 경로 선택 과정이다.
-    - 이 과정을 능동적으로 수행하는 장치를 라우터(Router)라고 한다.
-    - 경로 선택을 위한 데이터베이스(목록)을 라우팅 테이블(Routing Table)이라고 하며 목적지 네트워크 주소, 라우터의 출구 포트 정보, 최적 경로 산출을 위한 metrics 등의 정보를 포함한다.
-        - 라우터가 최적의 경로를 찾아 결정할 때 사용한다.
-        - 라우터가 패킷을 수신하면 패킷의 목적지 IP주소를 검사하고, 라우터의 라우팅 테이블 안에 있는 가장 일치하는 네트워크 주소를 검색한다.
-        - 라우팅 테이블은 또한 패킷을 전송하는데 사용되는 인터페이스를 포함한다.
-        - 부합하는 네트워크를 찾게 되면 라우터는 밖으로 나가는 인터페이스의 데이터 링크 프레임 안에 IP패킷을 캡슐화하고, 그 다음에 그것의 목적지 쪽으로 패킷을 전송한다.
+> 주소를 이용하여 목적지까지 메시지를 전달하는 방법을 결정하는 경로 선택 과정이다.
+> - 이 과정을 능동적으로 수행하는 장치를 라우터(Router)라고 한다.
+  
+- 경로 선택을 위한 데이터베이스(목록)을 라우팅 테이블(Routing Table)이라고 하며 목적지 네트워크 주소, 라우터의 출구 포트 정보, 최적 경로 산출을 위한 metrics 등의 정보를 포함한다.
+  - 라우터가 최적의 경로를 찾아 결정할 때 사용한다.
+  
+  - 라우터가 패킷을 수신하면 패킷의 목적지 IP주소를 검사하고, 라우터의 라우팅 테이블 안에 있는 가장 일치하는 네트워크 주소를 검색한다.
+  
+  - 라우팅 테이블은 또한 패킷을 전송하는데 사용되는 인터페이스를 포함한다.
+  
+  - 부합하는 네트워크를 찾게 되면 라우터는 밖으로 나가는 인터페이스의 데이터 링크 프레임 안에 IP패킷을 캡슐화하고, 그 다음에 그것의 목적지 쪽으로 패킷을 전송한다.
 
 <br>
 
@@ -388,6 +521,34 @@
 <br>
 
 ## `URL Encode` 는 무엇인가요?
+> Encoding이란 정보의 형태, 형식을 내용의 변경 없이 변환하는 처리 방식이다.
+> - 암호화로는 사용할 수 없다.
+> - ASCII, URL, Base64, MS Script 등이 있다.
+
+### ASCII Encoding이란?
+- ASCII (American Standard Code for Information Interchange, 미국 정보 교환 표준 부호, 아스키 코드)
+  - 미국 ANSI에서 표준화한 정보교환용 7비트 부호체계이다.
+  - 나머지 1비트는 패리티 비트(Parity bit)로 정보 전달 시 오류 발생여부를 검사하기 위해 사용했다.
+    - 체크에 검출되지 않는 신호 에러도 생길 수 있고 현재는 더 이상 쓰이지 않는다. 
+  - 000(0x00)부터 127(0x7F)까지 총 128개의 부호가 사용된다.
+  - 영문 키보드로 입력할 수 있는 모든 기호들로 할당되어 매우 단순하고 간단하다.
+  - 8비트 문자 인코딩에서는 맨 앞 비트에 0을 붙이고 이어서 7비트가 이어지는 식의 인코딩이 일반적이다.
+
+<br>
+
+### URL Encode란?
+- 주소 지정을 목적으로 웹 브라우저 / 서버가 이해할 수 있는 문자로 특수 문자를 대체한다.
+  - ASCII 코드에서 표현하지 않는 외국어와 특수문자를 표현하기 위해 사용한다.
+  - 코드의 앞에 %문자가 포함되는 형태이다.
+
+<br>
+
+### Base64 Encoding이란?
+
+<br>
+
+### MS script Encoding이란?
+
 
 <br>
 
@@ -399,10 +560,13 @@
 <br>
 
 ## `UTF-8`을 설명해주세요.
-- 가장 많이 사용되는 가변 길이 유니코드 인코딩이다.
+> 가장 많이 사용되는 가변 길이 유니코드 인코딩이다.
+
 - 표현 가능한 길이는 최대 6바이트지만 다른 인코딩과의 호환을 위해 4바이트까지만 사용한다.
+
 - 아스키 코드의 0~127까지는 UTF-8로 완전히 동일하게 기록된다.
   - 아스키로 구축된 사이트를 별다른 변환 처리 없이 그대로 쓸 수 있는 엄청난 장점이 있다.
+
 - UTF-8은 엔디안에 상관없이 똑같이 읽을 수 있으므로 크로스플랫폼 호환성도 뛰어나다.
   - 엔디안(Endianness) : 메모리와 같은 1차원의 공간에 여러 개의 연속된 대상을 배열하는 방법이다.
 
@@ -416,19 +580,24 @@
 <br>
 
 ## `URL` 과 `URI` 의 차이점을 모르겠어요.
-- **URI는 식별하고 URL은 식별하고 찾는다.**
+> `URI는 식별`하고 `URL은 식별하고 찾는`다.
   - 모든 URL과 URN은 URI이지만 모든 URI는 URL이 아니다.
+
 - 통합 자원 식별자(Uniform Resource Identifier, URI)는 인터넷에 있는 자원을 나타내는 유일한 주소이다.
   - URL은 해당 리소스를 얻는 데 필요한 특정 정보를 제공한다.
+
 - URI의 하위개념으로 URL, URN 이 있다.
   - URL(Uniform Resource Locator) : 파일 식별자, 유일자원지시기
   - URN(Uniform Resource Name) : 통합 자원 이름
     - 영속적이며 위치에 독립적인 자원을 위한 지시자로 사용하기 위한 것이다.
+
 - 문법
   - URI
     > scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]
+
   - URL
     > scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]
+
   - URN
     > `<URN>` ::= "urn:" `<NID>` ":" `<NSS>`
 
@@ -443,25 +612,24 @@
 
 ## `Server 의 인증방식`에 대해 설명해주세요.
 ### 인증이 필요한 이유
-- Front-end 관점 : 사용자의 로그인, 회원가입과 같이 사용자의 도입 부분을 가리킴
-
-- Server-side 관점 : 모든 API 요청에 대해 사용자를 확인하는 작업
-
-- 서버에서는 사용자가 보낸 요청을 받았을 때 그것이 누구의 요청인지 정확하게 알아야 함
+> 서버에서는 사용자가 보낸 요청을 받았을 때 그것이 누구의 요청인지 정확하게 알아야 함
+> - `Front-end 관점` : 사용자의 로그인, 회원가입과 같이 사용자의 도입 부분을 가리킴
+> - `Server-side 관점` : 모든 API 요청에 대해 사용자를 확인하는 작업
 
 <br>
 
+### 계정 정보를 Request Header 에 넣는 방식
+
+
 ### 세션(Session)과 쿠키(Cookie)
+> `무연결 프로토콜` *(Connectionless Protocol)*
+> - 웹 서비스는 클라이언트와 서버의 관계를 유지하지 않는 특성을 지닌 HTTP 프로토콜을 기반으로 한다.
+> - 서버의 부하가 최소화되나 기능 구현은 어려움
 
-## Connectionless Protocol
-
-> 웹 서비스는 클라이언트와 서버의 관계를 유지하지 않는 특성을 지닌 HTTP 프로토콜을 기반으로 한다.
-
-    # 서버의 부하가 최소화, 기능 구현 어려움
-    	클라이언트 |요청(Request) : 서버 연결 / 응답(Response) : 서버 연결 종료 | 서버
+- 클라이언트, 요청(Request) : 서버 연결
+- 서버, 응답(Response) : 서버 연결 종료
     
-    
-    # 서버와 클라이언트의 연결 상태를 유지
+ 서버와 클라이언트의 연결 상태를 유지
     	클라이언트 | 로그인 요청 / 응답, 상품 주문 요청 / 응답 | 서버
 
 > 이는 서버의 부하를 줄일 수 있는 장점은 있으나 클라이언트의 요청마다 매번 새로운 연결이 생성되어 일반적인 상태 유지 기능의 구현이 어렵다.이러한 Connectionless Protocol의 불편함을 해결하기 위해서 세션과 쿠키를 이용한다.세션과 쿠키는 클라이언트-서버의 연결을 유지해주는 방법이다.
@@ -480,29 +648,3 @@
 
 <hr>
 <br>
-
-
-<br>
-
-## :book:Encoding에 대해 설명할 수 있다.
-- Encoding이란 정보의 형태, 형식을 내용의 변경 없이 변환하는 처리 방식이다.
-  - 암호화로는 사용할 수 없다.
-  - 종류로는 ASCII, URL, Base64, MS Script가 있다.
-
-### ASCII Encoding이란?
-- ASCII (American Standard Code for Information Interchange, 미국 정보 교환 표준 부호, 아스키 코드)
-  - 미국 ANSI에서 표준화한 정보교환용 7비트 부호체계이다.
-  - 나머지 1비트는 패리티 비트(Parity bit)로 정보 전달 시 오류 발생여부를 검사하기 위해 사용했다.
-    - 체크에 검출되지 않는 신호 에러도 생길 수 있고 현재는 더 이상 쓰이지 않는다. 
-  - 000(0x00)부터 127(0x7F)까지 총 128개의 부호가 사용된다.
-  - 영문 키보드로 입력할 수 있는 모든 기호들로 할당되어 매우 단순하고 간단하다.
-  - 8비트 문자 인코딩에서는 맨 앞 비트에 0을 붙이고 이어서 7비트가 이어지는 식의 인코딩이 일반적이다.
-
-### URL Encode란?
-- 주소 지정을 목적으로 웹 브라우저 / 서버가 이해할 수 있는 문자로 특수 문자를 대체한다.
-  - ASCII 코드에서 표현하지 않는 외국어와 특수문자를 표현하기 위해 사용한다.
-  - 코드의 앞에 %문자가 포함되는 형태이다.
-
-### Base64 Encoding이란?
-
-### MS script Encoding이란?
