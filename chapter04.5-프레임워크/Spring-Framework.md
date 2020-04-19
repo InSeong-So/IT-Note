@@ -4,143 +4,146 @@
 
 - [Java-Spring Framework](#java-spring-framework)
 - [DI(Dependency Injection)](#didependency-injection)
-    - [기존의 객체 개념](#기존의-객체-개념)
-    - [DI(의존성 주입) 개념](#di의존성-주입-개념)
-    - [일체형 : 생성자에서 객체 주입](#일체형--생성자에서-객체-주입)
-    - [분리형 1 : setter를 이용한 객체 주입](#분리형-1--setter를-이용한-객체-주입)
-    - [분리형 2 : 생성자, setter를 이용한 객체 주입](#분리형-2--생성자-setter를-이용한-객체-주입)
-    - [스프링의 의존 객체 주입방법](#스프링의-의존-객체-주입방법)
-    - [생성자를 이용한 의존 객체 주입](#생성자를-이용한-의존-객체-주입)
-    - [setter를 이용한 의존 객체 주입](#setter를-이용한-의존-객체-주입)
-    - [List 타입 의존 객체 주입](#list-타입-의존-객체-주입)
-    - [Map 타입 의존 객체 주입](#map-타입-의존-객체-주입)
-    - [의존 객체 자동 주입](#의존-객체-자동-주입)
+  - [DI의 개요](#di%ec%9d%98-%ea%b0%9c%ec%9a%94)
+  - [스프링의 의존 객체 주입방법](#%ec%8a%a4%ed%94%84%eb%a7%81%ec%9d%98-%ec%9d%98%ec%a1%b4-%ea%b0%9d%ec%b2%b4-%ec%a3%bc%ec%9e%85%eb%b0%a9%eb%b2%95)
+    - [생성자를 이용한 의존 객체 주입](#%ec%83%9d%ec%84%b1%ec%9e%90%eb%a5%bc-%ec%9d%b4%ec%9a%a9%ed%95%9c-%ec%9d%98%ec%a1%b4-%ea%b0%9d%ec%b2%b4-%ec%a3%bc%ec%9e%85)
+    - [setter를 이용한 의존 객체 주입](#setter%eb%a5%bc-%ec%9d%b4%ec%9a%a9%ed%95%9c-%ec%9d%98%ec%a1%b4-%ea%b0%9d%ec%b2%b4-%ec%a3%bc%ec%9e%85)
+    - [List 타입 의존 객체 주입](#list-%ed%83%80%ec%9e%85-%ec%9d%98%ec%a1%b4-%ea%b0%9d%ec%b2%b4-%ec%a3%bc%ec%9e%85)
+    - [Map 타입 의존 객체 주입](#map-%ed%83%80%ec%9e%85-%ec%9d%98%ec%a1%b4-%ea%b0%9d%ec%b2%b4-%ec%a3%bc%ec%9e%85)
+  - [의존 객체 자동 주입](#%ec%9d%98%ec%a1%b4-%ea%b0%9d%ec%b2%b4-%ec%9e%90%eb%8f%99-%ec%a3%bc%ec%9e%85)
     - [@Autowired](#autowired)
     - [@Resources](#resources)
-    - [의존 객체 선택](#의존-객체-선택)
-    - [의존 객체 자동 주입 체크](#의존-객체-자동-주입-체크)
-    - [@Inject](#inject)
-- [생명주기(Life Cycle)](#생명주기life-cycle)
-    - [스프링 컨테이너 생명주기](#스프링-컨테이너-생명주기)
-            - [빈 (Bean) 객체 생명주기](#빈-bean-객체-생명주기)
-    - [init-method, destroy-method 속성](#init-method-destroy-method-속성)
-    - [어노테이션을 이용한 스프링 설정](#어노테이션을-이용한-스프링-설정)
-    - [Java 파일 분리](#java-파일-분리)
-    - [@Import 어노테이션](#import-어노테이션)
-- [웹 프로그래밍 설계 모델](#웹-프로그래밍-설계-모델)
-    - [웹 프로그래밍을 구축하기 위한 설계 모델](#웹-프로그래밍을-구축하기-위한-설계-모델)
-    - [스프링 MVC프레임워크 설계 구조](#스프링-mvc프레임워크-설계-구조)
-    - [DispatcherServlet 설정](#dispatcherservlet-설정)
-    - [Controller 객체 @Controller](#controller-객체-controller)
-    - [Controller 객체 @RequestMapping](#controller-객체-requestmapping)
-    - [Controller 객체 Model 타입의 파라미터](#controller-객체-model-타입의-파라미터)
-    - [View 객체](#view-객체)
-    - [전체적인 웹 프로그래밍 구조](#전체적인-웹-프로그래밍-구조)
+  - [의존 객체 선택](#%ec%9d%98%ec%a1%b4-%ea%b0%9d%ec%b2%b4-%ec%84%a0%ed%83%9d)
+  - [의존 객체 자동 주입 체크](#%ec%9d%98%ec%a1%b4-%ea%b0%9d%ec%b2%b4-%ec%9e%90%eb%8f%99-%ec%a3%bc%ec%9e%85-%ec%b2%b4%ed%81%ac)
+- [생명주기(Life Cycle)](#%ec%83%9d%eb%aa%85%ec%a3%bc%ea%b8%b0life-cycle)
+  - [스프링 컨테이너 생명주기](#%ec%8a%a4%ed%94%84%eb%a7%81-%ec%bb%a8%ed%85%8c%ec%9d%b4%eb%84%88-%ec%83%9d%eb%aa%85%ec%a3%bc%ea%b8%b0)
+  - [init-method, destroy-method 속성](#init-method-destroy-method-%ec%86%8d%ec%84%b1)
+  - [어노테이션을 이용한 스프링 설정](#%ec%96%b4%eb%85%b8%ed%85%8c%ec%9d%b4%ec%85%98%ec%9d%84-%ec%9d%b4%ec%9a%a9%ed%95%9c-%ec%8a%a4%ed%94%84%eb%a7%81-%ec%84%a4%ec%a0%95)
+  - [Java 파일 분리](#java-%ed%8c%8c%ec%9d%bc-%eb%b6%84%eb%a6%ac)
+  - [@Import 어노테이션](#import-%ec%96%b4%eb%85%b8%ed%85%8c%ec%9d%b4%ec%85%98)
+- [웹 프로그래밍 설계 모델](#%ec%9b%b9-%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%98%eb%b0%8d-%ec%84%a4%ea%b3%84-%eb%aa%a8%eb%8d%b8)
+  - [웹 프로그래밍을 구축하기 위한 설계 모델](#%ec%9b%b9-%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%98%eb%b0%8d%ec%9d%84-%ea%b5%ac%ec%b6%95%ed%95%98%ea%b8%b0-%ec%9c%84%ed%95%9c-%ec%84%a4%ea%b3%84-%eb%aa%a8%eb%8d%b8)
+  - [스프링 MVC프레임워크 설계 구조](#%ec%8a%a4%ed%94%84%eb%a7%81-mvc%ed%94%84%eb%a0%88%ec%9e%84%ec%9b%8c%ed%81%ac-%ec%84%a4%ea%b3%84-%ea%b5%ac%ec%a1%b0)
+  - [DispatcherServlet 설정](#dispatcherservlet-%ec%84%a4%ec%a0%95)
+  - [Controller 객체 @Controller](#controller-%ea%b0%9d%ec%b2%b4-controller)
+  - [Controller 객체 @RequestMapping](#controller-%ea%b0%9d%ec%b2%b4-requestmapping)
+  - [Controller 객체 Model 타입의 파라미터](#controller-%ea%b0%9d%ec%b2%b4-model-%ed%83%80%ec%9e%85%ec%9d%98-%ed%8c%8c%eb%9d%bc%eb%af%b8%ed%84%b0)
+  - [View 객체](#view-%ea%b0%9d%ec%b2%b4)
+  - [전체적인 웹 프로그래밍 구조](#%ec%a0%84%ec%b2%b4%ec%a0%81%ec%9d%b8-%ec%9b%b9-%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%98%eb%b0%8d-%ea%b5%ac%ec%a1%b0)
 
 <!-- /TOC -->
 
 # DI(Dependency Injection)
 
----
+## DI의 개요
+> 구성요소간의 의존 관계가 소스코드 내부가 아닌 외부의 설정파일 등을 통해 정의하는 것
 
-## 기존의 객체 개념
+> 과거와 현재의 객체 개념
+  - 배터리 일체형 : 배터리가 떨어지면 장난감을 새로 구입해야 한다.
+    - 문제가 발생했을 때 전체를 교체하므로 유연성이 떨어진다.
+      ```java
+        // 일체형 : 생성자에서 객체 주입
+        public class ElectronicCarToy{
+            private Battery battery;
 
-> 배터리 일체형 : 배터리가 떨어지면 장난감을 새로 구입해야 한다.
-
-> 배터리 분리형 : 배터리가 떨어지면 배터리만 교체하면 된다.
-
-> 객체가 일체형이라면 수정시 문제가 발생했을 때 전체를 교체해야하지만 분리형이라면 필요한 부분만 수정이 가능하므로 재사용성, 이식성, 유연성이 증가된다.
-
----
-
-## DI(의존성 주입) 개념
-
-    구성요소간의 의존 관계가 소스코드 내부가 아닌 외부의 설정파일 등을 통해 정의하는 것이다.
-
-- day1.toy package 참조
-
-> 배터리를 필요로하는 장난감 = 배터리에 의존적 = 배터리를 분리하여 개발 후 의존성 주입
-
-## 일체형 : 생성자에서 객체 주입
-
-    public class ElectronicCarToy{
-        private Battery battery;
-    
-        public ElectronicCarToy(){
-            battery = new NormalBatter();
+            public ElectronicCarToy(){
+                battery = new NormalBatter();
+            }
         }
-    }
+        ```
 
-## 분리형 1 : setter를 이용한 객체 주입
-
-    public class ElectronicRobotToy{
-        private Battery battery;
-    
-        public ElectronicRobotToy(){
-    
+  - 배터리 분리형 : 배터리가 떨어지면 배터리만 교체하면 된다.
+    - 필요한 부분만 수정이 가능하므로 재사용성, 이식성, 유연성이 증가된다.
+        ```java
+        // 분리형 1 : setter를 이용한 객체 주입
+        public class ElectronicRobotToy{
+            private Battery battery;
+        
+            public ElectronicRobotToy(){
+        
+            }
+        
+            public void setBattery(Battery battery){
+                this.battery = battery;
+            }
         }
-    
-        public void setBattery(Battery battery){
-            this.battery = battery;
+
+        // 분리형 2 : 생성자, setter를 이용한 객체 주입
+        public class ElectronicRadioToy{
+            private Battery battery;
+        
+            public ElectronicRadioToy(Battery battery){
+                this.battery = battery;
+            }
+        
+            public void setBattery(Battery battery){
+                this.battery = battery;
+            }
         }
-    }
+        ```
+  - 따라서 가장 유연한 코드는 생성자, setter를 이용해 객체를 분리하는 `분리형 2`이다.
 
-## 분리형 2 : 생성자, setter를 이용한 객체 주입
+> 배터리를 필요로하는 장난감 = 배터리에 의존적이므로, 배터리를 분리하여 개발 후 의존성을 주입한다.
 
-    public class ElectronicRadioToy{
-        private Battery battery;
-    
-        public ElectronicRadioToy(Battery battery){
-            this.battery = battery;
-        }
-    
-        public void setBattery(Battery battery){
-            this.battery = battery;
-        }
-    }
-
-> 따라서 가장 유연한 코드는 생성자, setter를 이용해 객체를 분리하는 "분리형 2"이다.
-
----
+<hr>
+<br>
 
 ## 스프링의 의존 객체 주입방법
-
-## 생성자를 이용한 의존 객체 주입
-
-- applicationContext2 참조
-
+### 생성자를 이용한 의존 객체 주입
+- service 클래스 생성(java)
+    ```java
     public StudentRegisterService(StudentDao studentDao){
         this.studentDao = studentDao;
     }
-                                            ↓
+    ```
+
+- bean 추가(xml)
+    ```xml
     <bean id="studentDao" class="day1.ems.member.dao.StudentDao" ></bean>
     <bean id="registerService" class="day1.ems.member.service.StudentRegisterService">
-        // 생성자 파라미터는 studentDao를 참조하라
+        <!-- // 생성자 파라미터는 studentDao를 참조하라 -->
         <constructor-arg ref="studentDao" ></constructor-arg>
     </bean>
-                                            ↓
+    ```
+
+- 선언 방식
+    ```java
     private StudentDao studentDao;
     private StudentRegisterService registerService = new StudentRegisterService(studentDao);
+    ```
 
-## setter를 이용한 의존 객체 주입
+<br>
 
+### setter를 이용한 의존 객체 주입
+- setter 선언(java)
+    ```java
     public void setJdbcUrl(String jdbcUrl){
         this.jdbcUrl = jdbcUrl;
     }
-                                            ↓
+    ```
+
+- bean 추가(xml)
+    ```xml
     <bean id="dataBaseConnectionInfoDev" class="day1.ems.member.DataBaseConnectionInfo">
-        // set을 없애고 그 뒤에오는 대문자를 소문자로 변경하면 프로퍼티의 이름이 됨
+        <!-- // set을 없애고 그 뒤에오는 대문자를 소문자로 변경하면 프로퍼티의 이름이 됨 -->
         <property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:xe" />
         <property name="userId" value="scott" />
         <property name="userPw" value="tiger" />
     </bean>
+    ```
 
-## List 타입 의존 객체 주입
+<br>
 
+### List 타입 의존 객체 주입
+- setter 선언(java)
+    ```java
     public void setDevelopers(List<String> developers){
         this.developers = developers;
     }
-                                            ↓
+    ```
+
+- property 선언(xml)
+    ```xml
     <property name="developers">
         <list>
             <value>Cheney.</value>
@@ -150,13 +153,20 @@
             <value>Kian.</value>
         </list>
     </property>
+    ```
 
-## Map 타입 의존 객체 주입
+<br>
 
+### Map 타입 의존 객체 주입
+- setter 선언
+    ```java
     public void setAdministrators(Map<String, String> administrators){
         this.administrators = administrators;
     }
-                                            ↓
+    ```
+
+- propery 선언
+    ```xml
     <property name="administrators">
         <map>
             <entry>
@@ -173,18 +183,16 @@
             </entry>
         </map>
     </property>
+    ```
 
----
+<hr>
+<br>
 
 ## 의존 객체 자동 주입
+- 스프링 설정 파일에서 의존 객체를 주입할 때 `<constructor-org>` 또는 `<property>` 태그로 의존 대상 객체를 명시하지 않아도 스프링 컨테이너가 자동으로 필요한 의존 대상 객체를 찾아서 의존 대상 객체가 필요한 객체에 주입해 주는 기능
 
-> 개념
-
-    스프링 설정 파일에서 의존 객체를 주입할 때 <constructor-org> 또는 <property> 태그로 의존 대상 객체를
-     시하지 않아도 스프링 컨테이너가 자동으로 필요한 의존 대상 객체를 찾아서 의존 대상 객체가 필요한 객체에 주입해 주는 기능이다.
-
-> 기존 스프링 컨테이너 설정(의존 객체를 수동으로 주입)
-
+- 기존 스프링 컨테이너 설정 *(의존 객체를 수동으로 주입)*
+    ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <beans xmlns="http://www.springframework.org/schema/beans"
     	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -198,11 +206,12 @@
     		<constructor-arg ref="wordDao" />
     	</bean>
     </beans>
+    ```
 
-> 의존 객체 자동 주입 스프링 컨테이너 설정
-
+- 의존 객체 자동 주입 스프링 컨테이너 설정
+    ```xml
     <?xml version="1.0" encoding="UTF-8"?>
-    <beans xmlns="http://www.springframework.org/schema/beans"<!-- 추가  -->
+    <beans xmlns="http://www.springframework.org/schema/beans <!-- 추가  -->"
     	xmlns:context="http://www.springframework.org/schema/context"
     	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     	xsi:schemaLocation="http://www.springframework.org/schema/beans 
@@ -221,68 +230,78 @@
     	<bean id="registerService" class="day2.com.word.service.WordRegisterServiceUseAutowired" />
     	<bean id="searchService" class="day2.com.word.service.WordSearchServiceUseAutowired" />
     </beans>
+    ```
 
-## @Autowired
+### @Autowired
+- 주입하려고 하는 객체의 타입이 일치하는 객체를 자동으로 주입한다.
+  - 프로퍼티, 생성자, 메소드에 전부 사용할 수 있다.
 
-    주입하려고 하는 객체의 타입이 일치하는 객체를 자동으로 주입한다.
-    프로퍼티, 생성자, 메소드에 전부 사용할 수 있다.
-    스프링 컨테이너에서 @Autowired에 접근하면 어노테이션을 적용한 객체의 데이터 타입을 가진 빈 객체를 찾아 알맞은 데이터를 주입한다.
+- 스프링 컨테이너에서 @Autowired에 접근하면 어노테이션을 적용한 객체의 데이터 타입을 가진 빈 객체를 찾아 알맞은 데이터를 주입한다.
 
-## @Resources
+<br>
 
-    주입하려고 하는 객체의 이름이 일치하는 객체를 자동으로 주입한다.
-    프로퍼티, 메소드에만 사용하고 생성자에는 사용할 수 없다.
-    @Autowired와 거의 동일하나 '일치하는 타입'이 아닌 '일치하는 이름'을 찾는다는 것을 확실히 구분해야한다.
+### @Resources
+- 주입하려고 하는 객체의 이름이 일치하는 객체를 자동으로 주입한다.
+  - 프로퍼티, 메소드에만 사용하고 생성자에는 사용할 수 없다.
 
----
+- @Autowired와 거의 동일하나 일치하는 타입이 아닌 `일치하는 이름`을 찾는다는 것을 확실히 구분해야 한다.
+
+<hr>
+<br>
 
 ## 의존 객체 선택
+> 동일한 타입의 빈 객체가 여러 개 있을 때 @Autowired는 무엇에 의존성을 주입해야하는지 헷갈릴 수 있다.
+> - 동일한 객체가 2개 이상인 경우 스프링 컨테이너는 자동 주입 대상 객체를 판단하지 못하고 Exception을 발생시킨다.
+> - 따라서 개발자가 의존 객체를 선택할 수 있는 방법을 제시할 수 있어야 한다.
 
-> 동일한 타입의 빈 객체가 여러개 있을 때 @Autowired는 어떤걸 주입해야하는지 헷갈릴 수 있다.
+- `@Autowired` : 같은 WordDao 객체지만 @Qualifier(우선통과자)를 사용해 의존 객체 선택
+  - 스프링 설정 파일(xml)
+    ```xml
+    <bean id="wordDao" class="day2.com.word.dao.WordDao" >
+        <qualifier value="usedDao"/>
+    </bean>
+    <bean id="wordDao2" class="day2.com.word.dao.WordDao" />
+    <bean id="wordDao3" class="day2.com.word.dao.WordDao" />
+    ```
 
-- 동일한 객체가 2개 이상인 경우 스프링 컨테이너는 자동 주입 대상 객체를 판단하지 못하고 Exception을 발생시킨다.
+  - 의존성을 주입 받을 파일(java)
+    ```java
+    @Autowired
+    @Qualifier("usedDao")
+    private WordDao wordDao;
+    ```
 
-> 따라서 개발자가 의존 객체를 선택할 수 있는 방법을 제시할 수 있어야 한다.
-
-> @Autowired : 같은 WordDao 객체지만 @Qualifier(우선통과자)를 사용해 의존 객체 선택
-
-    # xml 설정파일
-    	<bean id="wordDao" class="day2.com.word.dao.WordDao" >
-    		<qualifier value="usedDao"/>
-    	</bean>
-    	<bean id="wordDao2" class="day2.com.word.dao.WordDao" />
-    	<bean id="wordDao3" class="day2.com.word.dao.WordDao" />
+- `@Inject`
+  - 스프링 설정 파일(xml)
+    ```xml
+    <bean id="wordDao1" class="day2.com.word.dao.WordDao" />
+    <bean id="wordDao2" class="day2.com.word.dao.WordDao" />
+    <bean id="wordDao3" class="day2.com.word.dao.WordDao" />
+    ```
     
-    # class 파일
-    	@Autowired
-    	@Qualifier("usedDao")
-    	private WordDao wordDao;
+  - 의존성을 주입 받을 파일(java)
+    ```java
+    @Inject
+    @Named(value = "wordDao1")
+    private WordDao wordDao;
+    ```
 
-> @Inject :
-
-    # xml 설정파일
-    	<bean id="wordDao1" class="day2.com.word.dao.WordDao" />
-    	<bean id="wordDao2" class="day2.com.word.dao.WordDao" />
-    	<bean id="wordDao3" class="day2.com.word.dao.WordDao" />
-    
-    # class 파일
-    	@Inject
-    	@Named(value = "wordDao1")
-    	private WordDao wordDao;
+<hr>
+<br>
 
 ## 의존 객체 자동 주입 체크
-
 > 의존 객체가 스프링 컨테이너에서 생성되지 않은 경우, @Autowired 어노테이션을 붙이면 Exception이 발생한다.
+> - 이 때 @Autowired(requier=false)를 '적용하면 의존 객체 자동 주입을 하지 않겠다'는 기능이 적용된다.
+> - 다만 어떤 개발자도 빈 객체를 생성하지 않고 객체 주입을 하지 않으므로 이런 것도 있다는 것만 알아둘 것.
 
-> 이 때 @Autowired(requier=false)를 '적용하면 의존 객체 자동 주입을 하지 않겠다'는 기능이 적용된다.다만 어떤 개발자도 빈 객체를 생성하지 않고 객체 주입을 하지 않으므로 이런 것도 있다는 것만 알아둘 것.
+- ``@Inject`
+  - @Autowired와 거의 비슷하게 @Inject 어노테이션을 이용해 의존 객체를 자동으로 주입할 수 있다.
+    - 차이점이라면 @Autowired는 required 속성으로 의존 대상 객체가 없어도 Exception을 피할 수 있지만,
+  
+  - @Inject의 경우 required 속성을 지원하지 않는 다는 것이다.
 
-## @Inject
-
-    @Autowired와 거의 비슷하게 @Inject 어노테이션을 이용해 의존 객체를 자동으로 주입할 수 있다.
-    차이점이라면 @Autowired는 required 속성으로 의존 대상 객체가 없어도 Exception을 피할 수 있지만,
-    @Inject의 경우 required 속성을 지원하지 않는 다는 것이다.
-
----
+<hr>
+<br>
 
 # 생명주기(Life Cycle)
 
