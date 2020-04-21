@@ -19,8 +19,7 @@
   - [스프링 컨테이너 생명주기](#%ec%8a%a4%ed%94%84%eb%a7%81-%ec%bb%a8%ed%85%8c%ec%9d%b4%eb%84%88-%ec%83%9d%eb%aa%85%ec%a3%bc%ea%b8%b0)
   - [init-method, destroy-method 속성](#init-method-destroy-method-%ec%86%8d%ec%84%b1)
   - [어노테이션을 이용한 스프링 설정](#%ec%96%b4%eb%85%b8%ed%85%8c%ec%9d%b4%ec%85%98%ec%9d%84-%ec%9d%b4%ec%9a%a9%ed%95%9c-%ec%8a%a4%ed%94%84%eb%a7%81-%ec%84%a4%ec%a0%95)
-  - [Java 파일 분리](#java-%ed%8c%8c%ec%9d%bc-%eb%b6%84%eb%a6%ac)
-  - [@Import 어노테이션](#import-%ec%96%b4%eb%85%b8%ed%85%8c%ec%9d%b4%ec%85%98)
+  - [java 파일로 스프링 설정 분리](#java-%ed%8c%8c%ec%9d%bc%eb%a1%9c-%ec%8a%a4%ed%94%84%eb%a7%81-%ec%84%a4%ec%a0%95-%eb%b6%84%eb%a6%ac)
 - [웹 프로그래밍 설계 모델](#%ec%9b%b9-%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%98%eb%b0%8d-%ec%84%a4%ea%b3%84-%eb%aa%a8%eb%8d%b8)
   - [웹 프로그래밍을 구축하기 위한 설계 모델](#%ec%9b%b9-%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%98%eb%b0%8d%ec%9d%84-%ea%b5%ac%ec%b6%95%ed%95%98%ea%b8%b0-%ec%9c%84%ed%95%9c-%ec%84%a4%ea%b3%84-%eb%aa%a8%eb%8d%b8)
   - [스프링 MVC프레임워크 설계 구조](#%ec%8a%a4%ed%94%84%eb%a7%81-mvc%ed%94%84%eb%a0%88%ec%9e%84%ec%9b%8c%ed%81%ac-%ec%84%a4%ea%b3%84-%ea%b5%ac%ec%a1%b0)
@@ -294,78 +293,82 @@
 > - 이 때 @Autowired(requier=false)를 '적용하면 의존 객체 자동 주입을 하지 않겠다'는 기능이 적용된다.
 > - 다만 어떤 개발자도 빈 객체를 생성하지 않고 객체 주입을 하지 않으므로 이런 것도 있다는 것만 알아둘 것.
 
-- ``@Inject`
+- `@Inject`
   - @Autowired와 거의 비슷하게 @Inject 어노테이션을 이용해 의존 객체를 자동으로 주입할 수 있다.
-    - 차이점이라면 @Autowired는 required 속성으로 의존 대상 객체가 없어도 Exception을 피할 수 있지만,
-  
-  - @Inject의 경우 required 속성을 지원하지 않는 다는 것이다.
+
+  - 차이점이라면 @Autowired는 required 속성으로 의존 대상 객체가 없어도 Exception을 피할 수 있지만, @Inject는 required 속성을 지원하지 않는다.
 
 <hr>
 <br>
 
 # 생명주기(Life Cycle)
-
 ## 스프링 컨테이너 생명주기
+> GenericXmlApplicationContext를 이용한 스프링 컨테이너 초기화(생성) getBean()을 이용한 빈(Bean)객체 이용close()를 이용한 스프링 컨테이너 종료
 
-> GenericXmlApplicationContext를 이용한 스프링 컨테이너 초기화(생성)getBean()을 이용한 빈(Bean)객체 이용close()를 이용한 스프링 컨테이너 종료
+- 빈(Bean) 객체의 생명주기는 스프링 컨테이너의 생명주기와 같다.
+  - 스프링 컨테이너 초기화 : 빈(Bean) 객체 생성 및 주입
+    - 빈 객체 생성시점에 호출 : afterPropertiesSet(InitializingBean 인터페이스에서 구현)
+  
+  - 스프링 컨테이너 종료 : 빈(Bean) 객체 소멸
+    - 빈 객체 소멸시점에 호출 : destory(DiposableBean 인터페이스에서 구현)
 
-####빈 (Bean) 객체 생명주기
-
-> 스프링 컨테이너 초기화 : 빈(Bean) 객체 생성 및 주입스프링 컨테이너 종료 : 빈(Bean) 객체 소멸
-
-    빈(Bean) 객체의 생명주기는 스프링 컨테이너의 생명주기와 같다.
-    빈 객체 생성시점에 호출 : afterPropertiesSet(InitializingBean 인터페이스에서 구현)
-    빈 객체 소멸시점에 호출 : destory(DiposableBean 인터페이스에서 구현)
+<hr>
+<br>
 
 ## init-method, destroy-method 속성
+> 빈 객체 선언시 init-method, destory-method 속성을 적용해 생성/소멸 단계 제어
+> - 지정한 이름과 동일한 메소드를 의존객체 주입한 대상 내부에 메소드로 구현
+> - 생성/소멸 시 자동으로 호출
 
-> 빈 객체 선언시 init-method, destory-method 속성을 적용해 생성 / 소멸 단계 제어지정한 이름과 동일한 메소드를 의존객체 주입한 대상 내부에 메소드로 구현생성 / 소멸 시 자동으로 호출
+- 스프링 설정 *(xml, java)*
+    ```xml
+    <bean id="bookRegisterService" class="day3.com.brms.book.service.BookRegisterService" 
+    init-method="initMethod" destroy-method="destroyMethod"/>
+    ```
+    ```java
+    public void initMethod() {
+        System.out.println("BookRegisterService 빈(Bean)객체 생성 단계");
+    }
+    public void destroyMethod() {
+        System.out.println("BookRegisterService 빈(Bean)객체 소멸 단계");
+    }
+    ```
 
-    # xml 설정파일
-    	<bean id="bookRegisterService" class="day3.com.brms.book.service.BookRegisterService" 
-    	init-method="initMethod" destroy-method="destroyMethod"/>
-    	
-    # class 파일
-    	public void initMethod() {
-    		System.out.println("BookRegisterService 빈(Bean)객체 생성 단계");
-    	}
-    	public void destroyMethod() {
-    		System.out.println("BookRegisterService 빈(Bean)객체 소멸 단계");
-    	}
-
----
+<hr>
+<br>
 
 ## 어노테이션을 이용한 스프링 설정
+> 기존에 스프링 설정을 *.xml 파일로 설정했다면 이제 *.java 파일로 설정한다.
+> - 즉, applicationContext.xml을 어노테이션을 활용한 config.java 파일로 대체하는 것.
+> - `@Configuration` 어노테이션으로 설정 파일임을 알리고, `@Bean` 어노테이션으로 빈 객체를 생성한다고 알림
 
-> 기존에 스프링 설정을 *.xml 파일로 설정했다면 이제 *.java 파일로 설정한다.즉, applicationContext.xml 을 어노테이션을 활용한 config.java 파일로 대체한다는 것이다.
+<hr>
+<br>
 
-    @Configuration 어노테이션으로 설정 파일임을 알림
-    	@Bean 어노테이션으로 빈 객체를 생성한다고 알림
+## java 파일로 스프링 설정 분리
+> *.xml 파일을 분리하여 유지하는 것처럼, *.java 파일도 동일하게 분리하여 관리할 수 있다.
+> - 이는 설정 파일의 내부 코드가 길어지면 직관성이 떨어지고 유지보수에 어려움이 생길 수 있기 때문이다.
+> - 마음대로 분리해도 상관 없으나, 분류를 나누어 분리하는 것이 좋다.
 
-## Java 파일 분리
-
-> *.xml 파일을 분리하여 유지하는 것처럼, *.java 파일도 동일하게 분리하여 관리할 수 있다.이유는 설정 파일의 내부 코드가 길어지면 직관성이 떨어지고 유지보수에 어려움이 생길 수 있기 때문이다.
-
-    마음대로 분리해도 상관 없으나, 분류를 나누어 분리하는 것이 좋다.
-
-## @Import 어노테이션
-
-    # 변경 전
-    	AnnotationConfigApplicationContext ctx
-    		= new AnnotationConfigApplicationContext(MemberConfig1.class,
-    					MemberConfig2.class, MemberConfig3.class);
+- `@Import` 어노테이션을 이용한 스프링 설정(java) 파일 읽기
+    ```java
+    // 변경 전
+    AnnotationConfigApplicationContext ctx
+        = new AnnotationConfigApplicationContext(MemberConfig1.class,
+                MemberConfig2.class, MemberConfig3.class);
     					
-    # 변경 후
-    	@Configuration
-    	@Import({ MemberConfig2.class, MemberConfig3.class})
-    	public class MemberConfig1 {
-    		...	...	...
-    	}
+    // 변경 후
+    @Configuration
+    @Import({ MemberConfig2.class, MemberConfig3.class})
+    public class MemberConfig1 {
+        ...	...	...
+    }
+    ```
 
----
+<hr>
+<br>
 
 # 웹 프로그래밍 설계 모델
-
 ## 웹 프로그래밍을 구축하기 위한 설계 모델
 
 > Model1
