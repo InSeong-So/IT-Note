@@ -22,11 +22,13 @@
   - [java 파일로 스프링 설정 분리](#java-%ed%8c%8c%ec%9d%bc%eb%a1%9c-%ec%8a%a4%ed%94%84%eb%a7%81-%ec%84%a4%ec%a0%95-%eb%b6%84%eb%a6%ac)
 - [웹 프로그래밍 설계 모델](#%ec%9b%b9-%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%98%eb%b0%8d-%ec%84%a4%ea%b3%84-%eb%aa%a8%eb%8d%b8)
   - [웹 프로그래밍을 구축하기 위한 설계 모델](#%ec%9b%b9-%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%98%eb%b0%8d%ec%9d%84-%ea%b5%ac%ec%b6%95%ed%95%98%ea%b8%b0-%ec%9c%84%ed%95%9c-%ec%84%a4%ea%b3%84-%eb%aa%a8%eb%8d%b8)
+    - [Model1](#model1)
+    - [Model2 : Model1의 단점을 보완하기 위해 등장](#model2--model1%ec%9d%98-%eb%8b%a8%ec%a0%90%ec%9d%84-%eb%b3%b4%ec%99%84%ed%95%98%ea%b8%b0-%ec%9c%84%ed%95%b4-%eb%93%b1%ec%9e%a5)
   - [스프링 MVC프레임워크 설계 구조](#%ec%8a%a4%ed%94%84%eb%a7%81-mvc%ed%94%84%eb%a0%88%ec%9e%84%ec%9b%8c%ed%81%ac-%ec%84%a4%ea%b3%84-%ea%b5%ac%ec%a1%b0)
   - [DispatcherServlet 설정](#dispatcherservlet-%ec%84%a4%ec%a0%95)
-  - [Controller 객체 @Controller](#controller-%ea%b0%9d%ec%b2%b4-controller)
-  - [Controller 객체 @RequestMapping](#controller-%ea%b0%9d%ec%b2%b4-requestmapping)
-  - [Controller 객체 Model 타입의 파라미터](#controller-%ea%b0%9d%ec%b2%b4-model-%ed%83%80%ec%9e%85%ec%9d%98-%ed%8c%8c%eb%9d%bc%eb%af%b8%ed%84%b0)
+  - [Controller 객체 1 : @Controller](#controller-%ea%b0%9d%ec%b2%b4-1--controller)
+  - [Controller 객체 2 : @RequestMapping](#controller-%ea%b0%9d%ec%b2%b4-2--requestmapping)
+  - [Controller 객체 3 : Model 타입의 파라미터](#controller-%ea%b0%9d%ec%b2%b4-3--model-%ed%83%80%ec%9e%85%ec%9d%98-%ed%8c%8c%eb%9d%bc%eb%af%b8%ed%84%b0)
   - [View 객체](#view-%ea%b0%9d%ec%b2%b4)
   - [전체적인 웹 프로그래밍 구조](#%ec%a0%84%ec%b2%b4%ec%a0%81%ec%9d%b8-%ec%9b%b9-%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%98%eb%b0%8d-%ea%b5%ac%ec%a1%b0)
 
@@ -370,126 +372,179 @@
 
 # 웹 프로그래밍 설계 모델
 ## 웹 프로그래밍을 구축하기 위한 설계 모델
+### Model1
+> `브라우저(클라이언트)` | `WAS(JSP ↔ Service & DAO)` | `데이터베이스`
 
-> Model1
+- 처리과정
+  - 클라이언트가 WAS(이하 서버)로 요청을 하면 내부에서 작업을 하면서 데이버테이스에 접근해 데이터를 가져온다(내부 로직 처리).
+  
+  - 가져온 데이터로를 UI 작업을 통해 클라이언트에게 응답한다(HTML 코드로 반환).
+  
+  - WAS에서 사용자로부터 받은 요청을 받은 기능(Service)과 데이터베이스와 연결짓는 기능(DAO), 요청받은 내용을 응답하는 기능(JSP)
+    - 3가지 기능을 통합하여 하나의 파일로 관리
 
-    브라우저(클라이언트) | WAS(JSP ↔ Service & DAO) | 데이터베이스
-
-- 클라이언트가 WAS(이하 서버)로 요청을 하면 내부에서 작업을 하면서 데이버테이스에 접근해 데이터를 가져온다(내부 로직 처리).
-- 가져온 데이터로를 UI 작업을 통해 클라이언트에게 응답한다(HTML 코드로 반환).
-- WAS에서 사용자로부터 받은 요청을 받은 기능(Service)과 데이터베이스와 연결짓는 기능(DAO), 요청받은 내용을 응답하는 기능(JSP)
-- 즉 3가지 기능을 통합하여 하나의 파일로 관리하는 것이 Model1이다.
-
-    장점 :
-        1. 이런 단순한 흐름으로 개발에 빠르다.
-        2. 초보자도 쉽게 적용할 수 있다.
-        3. 작은 프로젝트에 적합하다.
+- 장점
+  - 단순한 흐름으로 개발에 빠르다.
+  - 초보자도 쉽게 적용할 수 있다.
+  - 작은 프로젝트에 적합하다.
     
-    단점 : 
-        1. 여러가지 언어를 하나의 문서에 작성하다보니 유지보수 차원에서 문제가 많다.
+- 단점 
+  - 여러가지 언어를 하나의 문서에 작성하여 유지보수가 어렵다.
 
-> Model2 : Model1의 단점을 보완하기 위해 등장
+<br>
 
-    브라우저(클라이언트) | WAS(Controller( ↔ View) ↔ Service ↔ DAO) | Model | 데이터베이스
+### Model2 : Model1의 단점을 보완하기 위해 등장
+> `브라우저(클라이언트)` | `WAS(Controller( ↔ View) ↔ Service ↔ DAO)` | `Model` | `데이터베이스`
 
-- 클라이언트가 서버에 요청을 하는 것은 같으나 각각의 기능을 분리시켜 모듈화한 것이다.
-- 철저하게 기능을 Service에, 데이터베이스와 연결하는 것은 DAO, 사용자에게 보여줄 것은 JSP, 이를 통제하는 것이 Controller, 데이터베이스와 관련된 데이터를 Model로 관리한다.
+- 구분
+  - 클라이언트가 서버에 요청을 하는 것은 같으나 각각의 기능을 분리시켜 모듈화
+    - 기능은 `Service`
+    
+    - 데이터베이스와 연결하는 것은 `DAO`
+    
+    - 사용자에게 보여줄 것은 `JSP`
+    
+    - 이들을 통제하는 것이 `Controller`
+    
+    - 데이터베이스와 관련된 데이터는 `Model`
 
-    장점 :
-        기능별 로직이 분리되어 유지보수 및 분업이 용이하다.
-        단위가 큰 프로젝트에 적합하다.
-    단점 :
-        구조 설계 등 개발자가 신경써야 하는 부분이 많아 개발이 느리다.
+- 장점
+  - 기능별 로직이 분리되어 유지보수 및 분업이 용이하다.
+  
+  - 단위가 큰 프로젝트에 적합하다.
 
----
+- 단점
+  - 구조 설계 등 개발자가 신경써야 하는 부분이 많아 개발이 느리다.
+
+<hr>
+<br>
 
 ## 스프링 MVC프레임워크 설계 구조
+```
+브라우저(클라이언트) | DispatcherServlet | HandlerMapping
+                                    | HandlerAdapter ↔ Controller
+                                    | ViewResolver  | View
+```
 
-    브라우저(클라이언트)  | DispatcherServlet | HandlerMapping
-                                            | HandlerAdapter ↔ Controller
-                                            | ViewResolver  | View
+- 구분별 설명
+  - HandleMapping : 많은 컨트롤러 중 가장 알맞은 컨트롤러를 찾는다.
+  
+  - HandlerAdapter : 많은 메소드 중 사용자가 요청한 데이터에 가장 적합한 메소드를 찾고, 요청에 대한 작업 후 Model을 통해 데이터를 운반한다.
+  
+  - ViewResolver : 사용자 요청에 대한 작업이 컨트롤러로부터 모두 종료되고 DispatcherServlet은 ViewResolver에 데이터 정보를 보내면 가장 적합한 JSP 페이지(View 페이지)를 찾는다.
+  
+  - View : 페이지를 통해 사용자 요청에 대해 응답한다.
 
-1. HandleMapping : 많은 컨트롤러 중 가장 알맞은 컨트롤러를 찾는다.
-2. HandlerAdapter : 많은 메소드 중 사용자가 요청한 데이터에 가장 적합한 메소드를 찾고, 요청에 대한 작업 후 Model을 통해 데이터를 운반한다.
-3. ViewResolver : 사용자 요청에 대한 작업이 컨트롤러로부터 모두 종료되고 DispatcherServlet은 ViewResolver에 데이터 정보를 보내면 가장 적합한 JSP 페이지(View 페이지)를 찾는다.
-4. View : 페이지를 통해 사용자 요청에 대해 응답한다.
-
----
+<hr>
+<br>
 
 ## DispatcherServlet 설정
+- WEB-INF 폴더에 web.xml을 만들어 설정할 내용들을 태그로 묶어 기입한다.
+  - 설정이 완료되면 스프링 설정 파일도 같이 만들어진다.
+  
+  - DispatcherServlet을 등록, 초기 파라미터로 스프링 설정 파일(servlet-context.xml)을 설정하면 컨테이너가 생성되고 디스패쳐 서블릿이 설정된다.
+    - 초기화 파라미터에서 지정한 파일(servlet-context.xml)을 이용해서 스프링 컨테이너를 생성
+    
+    - 초기화 파라미터에서 스프링 설정 파일을 지정하지 않은 경우 서블릿 별칭을 이용해 스프링 컨테이너를 생성한다.
 
-- WEB-INF 폴더에 web.xml을 만들고, 과 태그를 이용한다.
-    - 설정이 완료되면 스프링 설정 파일도 같이 만들어진다.
-    - DispatcherServlet을 등록, 초기 파라미터로 스프링 설정 파일(servlet-context.xml)을 설정하면 컨테이너가 생성되고 디스패쳐 서블릿이 설정된다.
-        - 초기화 파라미터에서 지정한 파일(servlet-context.xml)을 이용해서 스프링 컨테이너를 생성
-        - 초기화 파라미터에서 스프링 설정 파일을 지정하지 않은 경우 서블릿 별칭을 이용해 스프링 컨테이너를 생성한다.
+<hr>
+<br>
 
----
+## Controller 객체 1 : @Controller
+> `DispatcherServlet` ↔ `HandlerAdapter` ↔ `Controller`
+> - servlet-context.xml에 선언 후 Controller 객체로 사용할 클래스 정의
 
-## Controller 객체 @Controller
-
-> DispatcherServlet ↔ HandlerAdapter ↔ Controller
-
-- servlet-context.xml에 입력
-- Controller 객체로 사용할 클래스 정의
-
+- @Controller 적용
+    ```java
     @Controller
     public class HomeController{
         ...
     }
+    ```
 
----
+<hr>
+<br>
 
-## Controller 객체 @RequestMapping
+## Controller 객체 2 : @RequestMapping
+> `DispatcherServlet` ↔ `HandlerAdapter` ↔ `Controller`
+> - Controller 클래스 내부의 메소드 중 @RequestMapping 어노테이션을 붙이고 값을 입력한다.
+> - 사용자로부터 오는 요청을 특정 문자로 매칭시켜준다.
 
-> DispatcherServlet ↔ HandlerAdapter ↔ ControllerController 클래스 내부의 메소드 중 @RequestMapping 어노테이션을 붙이고 값을 입력한다.사용자로부터 오는 요청을 특정 문자로 매칭시켜준다.
-
+- @RequestMapping 적용
+    ```java
     @RequestMapping("/success")
     public String success(Model model){
         ...
     }
+    ```
 
----
+<hr>
+<br>
 
-## Controller 객체 Model 타입의 파라미터
+## Controller 객체 3 : Model 타입의 파라미터
+> 개발자는 Model 객체에 데이터를 담아서 DispatcherServlet에 전달할 수 있다.
+> - DispatcherServlet에 전달된 Model 데이터는 View 에서 가공되어 클라이언트에게 응답 처리된다.
 
-> 개발자는 Model 객체에 데이터를 담아서 DispatcherServlet에 전달할 수 있다.DispatcherServlet에 전달된 Model 데이터는 View 에서 가공되어 클라이언트에게 응답 처리된다.
-
+- Model 파라미터 적용
+    ```java
     @RequestMapping("/success")
     public String success(Model model){
         ...
     }
     
     model.setAttribute("model", "model status set!");
+    ```
 
----
+<hr>
+<br>
 
 ## View 객체
+> 뷰를 찾는 역할을 View Resolver에게 위임한다.
+> - 스프링 설정파일에 InternalResourceViewResolver를 찾는다.
+> - HandlerAdapter에서 찾은 메소드의 리턴 값에 따른 파일을 찾아 실제로 사용자에게 응답한다.
 
-> 뷰를 찾는 역할을 뷰 리졸버에게 위임한다.스프링 설정파일에 InternalResourceViewResolver를 찾는다.HandlerAdapter에서 찾은 메소드의 리턴 값에 따른 파일을 찾아 실제로 사용자에게 응답한다.
-
----
+<hr>
+<br>
 
 ## 전체적인 웹 프로그래밍 구조
+- 처리과정
+  - 최초 사용자 요청 : [http://localhost:8080/test/success](http://localhost:8080/test/success)
 
-1. 최초 사용자 요청 : [http://localhost:8080/test/success](http://localhost:8080/test/success)
-2. DispatcherServlet
-3. HandlerMapping
-4. Controller : @Controller 어노테이션이 적용된 클래스 검색
-5. DispatcherServlet
-6. HandlerAdapter : 사용자 요청에 해당하는 메소드 검색
-7. Controller : @RequestMapping("/success") 어노테이션이 적용된 메소드 검색 및 실행
-8. DispatcherServlet
-9. ViewResolver : ViewResolver에 의해 검색된 success.jsp 검색 및 실행
-10. View : 브라우저에 JSP를 이용해 응답
+  - DispatcherServlet
 
-    DispatcherServlet : 등록과 설정만 해주면 되며, 개발자가 참여할 필요가 전혀 없다.
-    HandlerMapping, HandlerAdapter : 개발자가 참여할 필요가 전혀 없으며 컨테이너가 알아서 해준다.
-    Controller : @Controller, @RequestMapping 등 개발자가 처리해야 한다.
-    ViewResolver : 개발자가 참여할 필요가 전혀 없다.
-    View : 개발자가 처리해야 한다.
+  - HandlerMapping
 
-`이런 구조이므로 서버, view 등 개발자가 작업을 분할하여 많이 사용된다.`
+  - Controller : @Controller 어노테이션이 적용된 클래스 검색
+
+  - DispatcherServlet
+
+  - HandlerAdapter : 사용자 요청에 해당하는 메소드 검색
+
+  - Controller : @RequestMapping("/success") 어노테이션이 적용된 메소드 검색 및 실행
+
+  - DispatcherServlet
+
+  - ViewResolver : ViewResolver에 의해 검색된 success.jsp 검색 및 실행
+
+  - View : 브라우저에 JSP를 이용해 응답
+
+- 설명
+  - DispatcherServlet : 등록과 설정만 해주면 되며, 개발자가 참여할 필요가 전혀 없다.
+
+  - HandlerMapping, HandlerAdapter : 개발자가 참여할 필요가 전혀 없으며 컨테이너가 알아서 해준다.
+
+  - Controller : @Controller, @RequestMapping 등 개발자가 처리해야 한다.
+
+  - ViewResolver : 개발자가 참여할 필요가 전혀 없다.
+
+  - View : 개발자가 처리해야 한다.
+
+
+- 결론
+  - `이런 구조이므로 서버, view 등 개발자가 작업을 분할하여 많이 사용된다.`
+
+<hr>
+<br>
 
 - [ ]  Spring Framework에 대해 설명할 수 있다.
 - [ ]  Spring과 Spring-Boot의 차이점
