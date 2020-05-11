@@ -11,6 +11,12 @@
   
   - 많은 수의 RDBMS가 SQL을 표준으로 채택 중
 
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
 <hr>
 <br>
 
@@ -58,6 +64,12 @@
   - 정확한 데이터 구조를 알 수 없으며, 변경 및 확장이 가능한 경우
   - 데이터의 읽기 행위가 대다수이며 변경 행위는 많지 않은 경우(여러 데이터를 변경할 필요가 없는 경우)
   - 데이터베이스를 수평으로 확장(막대한 양의 데이터로 인한)해야 하는 경우
+
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
 <br>
@@ -122,20 +134,84 @@
 
 - 어떠한 테이블 필드들의 부분집합을 포함하는 테이블들을 JOIN 하여 작성하면, 테이블 T는 join dependency를 갖는다.
 
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
 <hr>
 <br>
 
 ## :book:SQL문의 Merge 구문에 대해 알려주세요.
+> Oralce DB, MS-SQL에서 지원되는 여러 DML문을 단일 SQL문으로 사용하는 방법
+
+### 동일한 테이블 구조를 가진 테이블 A에서 B로 데이터를 조작하기
+```sql
+MERGE INTO TMP_TABLE A
+     USING TMP_TABLE B
+        ON (A.TMP_ID = B.TMP_ID AND A.TMP_SUB_ID = B.TMP_SUB_ID)
+      WHEN MATCHED THEN
+          -- 일치 시 : UPDATE, INSERT, DELETE 구문을 사용
+          UPDATE SET A.CREATED_DATE = B.CREATED_DATE
+  WHEN NOT MATCHED THEN
+          -- 불일치 시 : UPDATE, INSERT, DELETE 구문을 사용
+          INSERT (A.COURSE_ID, A.STUDENT_ID, A.CREATED_DATE) 
+          VALUES (B.COURSE_ID, B.STUDENT_ID, B.CREATED_DATE)
+```
+
+<br>
+
+### 파라미터나 변수 등을 통해 직접 테이블 A로 데이터 조작하기
+```sql
+MERGE INTO TMP_TABLE A
+     USING DUAL
+        ON (A.TMP_ID = 'SUPER' AND A.TMP_SUB_ID = 'ADMIN')
+      WHEN MATCHED THEN
+          UPDATE SET A.CREATED_DATE = TO_CHAR(SYSDATE, 'yyyymmdd')
+  WHEN NOT MATCHED THEN
+          INSERT (A.COURSE_ID, A.STUDENT_ID, A.CREATED_DATE) 
+          VALUES ('SUPER', 'ADMIN', TO_CHAR(SYSDATE, 'yyyymmdd'))
+
+```
+
+### 일치/불일치 시 하나만 실행하기
+```sql
+MERGE INTO TMP_TABLE A
+     USING DUAL
+        ON (A.TMP_ID = 'SUPER' AND A.TMP_SUB_ID = 'ADMIN')
+  WHEN NOT MATCHED THEN
+          INSERT (A.COURSE_ID, A.STUDENT_ID, A.CREATED_DATE) 
+          VALUES ('SUPER', 'ADMIN', TO_CHAR(SYSDATE, 'yyyymmdd'))
+```
+
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
 <br>
 
 ## :book:SQL문의 Join 구문에 대해 알려주세요.
 
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
 <hr>
 <br>
 
 ## :book:데이터베이스에서의 Index를 설명해주세요.
+
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
 <br>
