@@ -11,6 +11,12 @@
   
   - 많은 수의 RDBMS가 SQL을 표준으로 채택 중
 
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
 <hr>
 <br>
 
@@ -58,6 +64,12 @@
   - 정확한 데이터 구조를 알 수 없으며, 변경 및 확장이 가능한 경우
   - 데이터의 읽기 행위가 대다수이며 변경 행위는 많지 않은 경우(여러 데이터를 변경할 필요가 없는 경우)
   - 데이터베이스를 수평으로 확장(막대한 양의 데이터로 인한)해야 하는 경우
+
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
 <br>
@@ -122,20 +134,123 @@
 
 - 어떠한 테이블 필드들의 부분집합을 포함하는 테이블들을 JOIN 하여 작성하면, 테이블 T는 join dependency를 갖는다.
 
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
 <hr>
 <br>
 
 ## :book:SQL문의 Merge 구문에 대해 알려주세요.
+> Oralce DB, MS-SQL에서 지원되는 여러 DML문을 단일 SQL문으로 사용하는 방법
+
+### 동일한 테이블 구조를 가진 테이블 A에서 B로 데이터를 조작하기
+```sql
+MERGE INTO TMP_TABLE A
+     USING TMP_TABLE B
+        ON (A.TMP_ID = B.TMP_ID AND A.TMP_SUB_ID = B.TMP_SUB_ID)
+      WHEN MATCHED THEN
+          -- 일치 시 : UPDATE, INSERT, DELETE 구문을 사용
+          UPDATE SET A.CREATED_DATE = B.CREATED_DATE
+  WHEN NOT MATCHED THEN
+          -- 불일치 시 : UPDATE, INSERT, DELETE 구문을 사용
+          INSERT (A.COURSE_ID, A.STUDENT_ID, A.CREATED_DATE) 
+          VALUES (B.COURSE_ID, B.STUDENT_ID, B.CREATED_DATE)
+```
+
+<br>
+
+### 파라미터나 변수 등을 통해 직접 테이블 A로 데이터 조작하기
+```sql
+MERGE INTO TMP_TABLE A
+     USING DUAL
+        ON (A.TMP_ID = 'SUPER' AND A.TMP_SUB_ID = 'ADMIN')
+      WHEN MATCHED THEN
+          UPDATE SET A.CREATED_DATE = TO_CHAR(SYSDATE, 'yyyymmdd')
+  WHEN NOT MATCHED THEN
+          INSERT (A.COURSE_ID, A.STUDENT_ID, A.CREATED_DATE) 
+          VALUES ('SUPER', 'ADMIN', TO_CHAR(SYSDATE, 'yyyymmdd'))
+
+```
+
+### 일치/불일치 시 하나만 실행하기
+```sql
+MERGE INTO TMP_TABLE A
+     USING DUAL
+        ON (A.TMP_ID = 'SUPER' AND A.TMP_SUB_ID = 'ADMIN')
+  WHEN NOT MATCHED THEN
+          INSERT (A.COURSE_ID, A.STUDENT_ID, A.CREATED_DATE) 
+          VALUES ('SUPER', 'ADMIN', TO_CHAR(SYSDATE, 'yyyymmdd'))
+```
+
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
 <br>
 
 ## :book:SQL문의 Join 구문에 대해 알려주세요.
+### 표준 조인 : 일반 집합 연산자
+
+<div align=center>
+
+<img src="SQL_075.jpg" alt="" width="500"/>
+
+</div>
+
+<br>
+
+- `UNION` : 합집합. 공통 교집합의 중복을 없애기 위해 사전 작업으로 정렬 작업 발생
+- `UNION ALL` : 합집합. 공통 교집합을 중복해서 출력하므로 정렬 작업 미발생
+- `INTERSECTION` : 교집합. 두 집합의 공통집합을 추출
+- `DIFFERENCE` : (오라클은 MINUS) 차집합. 첫 번째 집합에서 두 번째 집합과의 공통집합을 제외
+- `PRODUCT` : CROSS(ANIS/ISO 표준) PRODUCT라고 불리는 곱집합. 양쪽 집합의 M*N 건의 데이터 조합이 발생
+
+<br>
+
+### 표준 조인 : 순수 관계 연산자
+
+<div align=center>
+
+<img src="SQL_076.jpg" alt="" width="500"/>
+
+</div>
+
+<br>
+
+- SELECT 연산은 WHERE 절 기능으로 구현되었다.
+- PROJECT 연산은 SELECT 절의 컬럼 선택 기능으로 구현되었다.
+- JOIN 연산은 여러 JOIN 기능으로 가장 다양하게 구현되었다.
+- DIVIDE 연산은 현재 사용되지 않는다.
+- 관계형 데이터베이스의 경우 엔터티 확정 및 정규화 과정, 그리고 M:M (다대다) 관계를 분해하는 절차를 거치게 된다.
+- 정규화는 데이터 정합성과 데이터 저장 공간의 절약을 위해 엔터티를 최대한 분리하는 작업이며 일반적으로 3차 정규형이나 보이스코드 정규화까지 진행한다.
+- 정규화를 거치면 하나의 주제에 관련 있는 엔터티가 여러 개로 나누어지게 된다.
+  - 해당 엔터티들이 주로 테이블이 되는데 흩어진 데이터를 연결해서 원하는 데이터를 가져오는 작업이 JOIN 이다.
+
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
 <br>
 
 ## :book:데이터베이스에서의 Index를 설명해주세요.
+> 인덱스(index)는 SQL 수행 속도를 향상시키기 위해 고안되었으며, 이는 사전의 인덱스와 같다
+> - 사전에서 ‘Name’이라는 단어를 찾을 때 가장 먼저 사전의 목록에서 첫 글자 ‘N’을, 두 번째는 ‘a’를 찾는다.
+> - 만약 인덱스가 없다면 사전 전체를 한 장 한 장 넘기며 찾아야 한다.
+
+<br>
+
+<sup>[(목차로)](#목차)</sup>
+<br>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
 <br>

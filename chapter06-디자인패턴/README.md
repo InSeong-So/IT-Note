@@ -1,118 +1,224 @@
 # 디자인 패턴
 
 ## `Disign Pattern` 은 무엇인가요?
+> `소프트웨어 공학에서 디자인 패턴(Design pattern)은 프로그램 개발 시에 자주 부닥치는 애로 상황에 대한 일반적이고 재사용 가능한 추상화된 해결책`
+
 
 ## `Java` 의 디자인 패턴
-
 ### Iterator Pattern
-> **순서대로 지정해서 처리하기**
-> - 복수의 요소가 모여 있는 집합에서 요소를 순서대로 지정하여 처리하는 패턴
-> - [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter01/iterator)
+> 복수의 요소가 모여 있는 집합에서 요소를 순서대로 지정해서 처리하는 패턴
+> - for(int - 0; i < arr.length; i++){...} 에서 i를 하나씩 증가시키면 현재 주목하고 있는 배열의 요소를 차례대로 처리해 간다.
+> - 여기서 사용되는 변수 i의 기능을 추상화해서 일반화한 것을 Iterator 패턴이라고 한다.
+> - 무엇인가 많이 모여있는 것들을 순서대로 지정하면서 전체를 검색하는 처리를 실행하기 위한 것이다.
+
+- 구성원
+  - Iterator(반복자)의 역할
+    ```
+    요소를 순서대로 검색해가는 인터페이스(API)를 결정한다.
+    다음 요소가 존재하는지를 얻기 위해 hasNex() 메소드를, 다음 요소를 얻기 위해 next() 메소드를 사용한다.
+    ```
+
+  - ConcreteIterator(구체적인 반복자)의 역할
+    ```
+    Iterator가 결정한 인터페이스(API)를 실제로 구현한다.
+    ```
+
+  - Aggregate(집합체)의 역할
+    ```
+    Iterator 역할을 만들어내는 인터페이스(API)를 결정한다.
+    ```
+
+  - ConcreteAggregate(구체적인 집합체)의 역할
+    ```
+    Aggregate 역할이 결정한 인터페이스(API)를 실제로 구현한다.
+    ```
 
 <br>
 
 ### Adapter Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter02/adapter)
+> 서로 다른 인터페이스(API)를 갖는 클래스들을 연결하는 패턴
+
+```
+요소를 순서대로 검색해 가는 인터페이스(API)를 결정한다.
+다음 요소가 존재하는지를 얻기 위해 hasNex() 메소드를, 다음 요소를 얻기 위해 next() 메소드를 사용한다.
+```
+
+- [예제 바로가기-extends](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/adapter/extendsEx/Main.java)
+
+<br>
+
+- [예제 바로가기-instance](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/adapter/instanceEx/Main.java)
 
 <br>
 
 ### Template Method Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter03/templateMethod)
+> 상위 클래스에서 처리의 뼈대를 세우고, 구체적인 처리를 하위 클래스에서 실행하는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/templateMethod/Main.java)
 
 <br>
 
 ### Factory Method Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter04/factoryMethod)
+> 상위 클래스에서 인스턴스 작성법의 뼈대를 세우고 구체적인 작성은 하위 클래스에서 실행하는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/factory/Main.java)
 
 <br>
 
 ### Singleton Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter05/singleton)
+> `인스턴스가 한 개밖에 존재지 않음을 보증`하는 패턴
+> - 싱글톤은 유일한 인스턴스를 얻기 위한 static 메소드를 가지고 있으며, 이 메소드는 언제나 동일한 인스턴스를 반환한다.
+
+- 특징
+  - `클래스의 인스턴스가 오직 하나만 필요`할 경우에 사용한다.
+    - 예 : 시스템 안에서 1개 밖에 존재하지 않는 것을 프로그램으로 표현하고 싶을 경우
+    - 인간이라면 심장, 프로그램이라면 현재의 시스템 설정 등이 있다.
+
+  - 물론, 주의를 기울여 프로그래밍하여 해당 클래스의 생성자가 1회만 실행되도록 작성되면 인스턴스는 1개만 생성된다. 그러나, `프로그래머가 주의를 기울여 1개만 생성되는 것`이 아니라 강제하고 싶은 경우이다.
+    - `지정한 클래스의 인스턴스가 '절대로' 1개밖에 존재하지 않는 것을 '보증'하고 싶을 때`
+    - `인스턴스가 1개밖에 존재하지 않는 것을 프로그램 상에 표현하고 싶을 때`
+
+    - 복수의 인스턴스가 존재하면 인스턴스들이 서로 영향을 미치고, 뜻하지 않은 버그가 발생할 가능성이 있지만, 인스턴스가 1개밖에 없다라는 보증이 있으면 그 전제 조건 아래에서 프로그래밍할 수 있다.
+
+- 클래스 다이어그램
+  ```
+  Singletone(클래스 명)
+  -singleton(객체 선언부)
+  -Singleton(private 생성자)
+  +getInstance(static 메소드)
+  ```
+
+- 관련패턴
+  - Abstract Factory 패턴
+  - Builder 패턴
+  - Facade 패턴
+  - Prototype 패턴
 
 <br>
 
 ### Prototype Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter06/prototype)
+> 모형이 되는 인스턴스를 복사해서 인스턴스를 만드는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/prototype/Main.java)
 
 <br>
 
 ### Builder Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter07/builder)
+> 복잡한 인스턴스를 단계적으로 조립하는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/builder/Main.java)
 
 <br>
 
 ### Abstact Factory Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter08/abstractFactory)
+> 공장과 같이 부품을 조합해서 인스턴스 생성을 실행하는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/abstractFactory/Main.java)
 
 <br>
 
 ### Bridge Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter09/bridge)
+> 2종류의 확장이 혼재하는 프로그램을 기능의 계층과 구현의 계층으로 분리하고, 그 사이를 연결하는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/bridge/Main.java)
 
 <br>
 
 ### Strategy Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter10/strategy)
+> 알고리즘을 전부 교체해서 수정하기 쉽도록 하는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/strategy/Main.java)
 
 <br>
 
 ### Composite Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter11/composite)
+> 그릇과 내용물을 동일시해서 재귀적인 구조를 구축하는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/composite/Main.java)
 
 <br>
 
 ### Decorator Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter12/decorator)
+> 장식과 내용물을 동일시해서 장식을 여러 겹 중복되게 하는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/decorator/Main.java)
 
 <br>
 
 ### Visitor Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter13/visitor)
+> 데이터 구조를 돌아다니면서 동일한 조작을 반복해서 적용하는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/visitor/Main.java)
 
 <br>
 
 ### Chain of Responsibility Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter14/chain_of_responsibility)
+> 복수의 오브젝트(객체)가 연결되어 있는 내부의 어딘가에서 일을 수행하는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/chain_of_responsibility/Main.java)
 
 <br>
 
 ### Facade Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter15/facade)
+> 복잡하게 얽힌 클래스를 개별적으로 제어하는 것이 아니라 창구 역할을 하는 클래스를 하나 배치해서 시스텀 전체의 조작성을 좋게 하는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/facade/Main.java)
 
 <br>
 
 ### Mediator Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter16/mediator)
+> 복수의 클래스가 상호간에 직접 의사 소통을 하는 것이 아니라 중개역을 하는 클래스를 하나 준비하고, 그 클래스하고만 의사 소통을 하게 해서 프로그램을 단순하게 만드는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/mediator/Main.java)
 
 <br>
 
 ### Observer Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter17/observer)
+> 상태가 변화하는 클래스와 그 변화를 통지받는 클래스를 분리해서 생각하는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/observer/Main.java)
 
 <br>
 
 ### Memento Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter18/memento)
+> 현재의 상태를 저장해 두고 필요할 때 복귀시키는 undo 기능을 설정하는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/memento/Main.java)
 
 <br>
 
 ### State Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter19/state)
+> 상태를 클래스로 표현하고 상태에 적합한 switch문의 사용을 줄여주는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/state/Main.java)
+
+<br>
+
+### Flyweight Pattern
+> 복수의 장소에서 동일한 것이 등장할 때 그것들을 공유해서 낭비를 없애는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/flyweight/Main.java)
 
 <br>
 
 ### Proxy Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter21/proxy)
+> 정말로 목적한 것이 필요하게 될 때까지 대리인을 사용해서 처리를 진행시키는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/proxy/Main.java)
 
 <br>
 
 ### Command Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter22/command)
+> 요구나 명렁을 형태로 만들어서 클래스로 표현하는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/command/Main.java)
 
 <br>
 
 ### Interpreter Pattern
-- [예제 코드](https://github.com/InSeong-So/Java-DisignPattern/tree/master/src/main/java/designPattern/chapter23/interpreter)
+> 문법규칙을 클래스로 표현하는 패턴
+
+- [예제 바로가기](https://github.com/InSeong-So/IT-Note/blob/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java/interpreter/Main.java)
 
 <hr>
 <br>
