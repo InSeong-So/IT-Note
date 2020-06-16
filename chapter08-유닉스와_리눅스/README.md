@@ -315,12 +315,130 @@
 
 # 파일 보관 / 압축
 ## 파일 묶어서 보관
+- 파일을 묶을 때
+  - `tar -cvf tarFileName fileList`
+
+    |구분|설명|
+    |----|----|
+    |-c|fileList에 대한 tar 형식의 백업 파일 생성|
+    |-v|진행 상황 출력|
+    |-f|tar 형식의 백업 파일 이름 지정<br>(default : /dev/rmt/0 ... tape drive)|
+
+- 파일을 풀 때
+  - `tar -txru tarFileName fileList`
+
+    |구분|설명|
+    |----|----|
+    |-t|tar 형식의 백업 파일 안에 어떤 것들이 들어 있는지 목차만 표시|
+    |-x|백업 파일로부터 파일을 추출 및 복귀(extract)|
+    |-r|fileList를 기존의 백업 파일 뒤에 무조건 덧붙임(rear)|
+    |-u|기존의 백업 파일에 이미 포함되어 있는 fileList 중 수정된 파일들만 백업 파일의 뒤에 덧붙임<br>디렉토리가 있어도 recursive하게 적용|
+
+- tar 명령은 CD / TAPE 드라이브에 저장 및 복원 시 많이 사용
+  - `tar -cvf tarFile /dev/rmt0`
+  - `tar -xvf /dev/rmt0`
+
+<hr>
+<br>
+
 ## 파일 압축 및 풀기
+- 압축 파일 생성
+  - `compress fileName`
+  - `compress *.txt`
+
+- 압축된 파일을 해제하여 복원 파일 생성
+  - `uncompress fileName.z`
+  - `uncompress *.z`
+
+<hr>
+<br>
+
 ## 파일 묶음과 압축 시행
+- 파일을 묶고 압축하는 유틸리티
+  - `apt-get install ncompress`로 유틸리티 설치 후 사용
+  - gzip : 파일을 압축하여 묶음
+
+    |구분|설명|
+    |----|----|
+    |-d|압축 해제|
+    |-l|현재 압축된 파일의 내용을 표시|
+    |-r|현재 디렉토리부터 하위 디렉토리까지 전부 압축|
+    |-t|압축된 파일의 무결성 검사|
+    |-v|압축 진행 상황 출력|
+    |-9|최대한 압축|
+
+  - gunzip : 압축된 파일을 해제하여 복원함 *(gzip-d와 동일)*
+
+<hr>
+<br>
+
 # 사용자 및 그룹 관리
 ## 사용자, 그룹, 권한 관리
+> 유닉스와 리눅스는 다중 사용자 운영체제로 그룹이라는 개념이 존재
+> - 사용자는 여러 그룹에 포함될 수 있음
+
+- 명령어
+
+  |구분|설명|
+  |----|----|
+  |[id], [groups]|현재의 사용자와 그룹을 알아보는 명령|
+  |[adduser], [addgroup]|사용자 등록, 그룹 등록|
+  |[deluser], [delgroup]|사용자 삭제, 그룹 삭제|
+
+  - 사용자와 그룹은 시스템 내부에서 숫자로 표시
+    - uid : 사용자 표시 숫자
+    - gid : 그룹 표시 숫자
+
+<hr>
+<br>
+
 ## 그룹 관리 명령어
+- 그룹 조회
+  - 자신이 속한 그룹 보기 : `groups`, `id`
+  - 전체 그룹 보기 : `cat /etc/group`
+
+- 그룹 생성
+  - groupName이라는 이름의 그룹을 gid 900으로 생성 : `groupadd -g 900 groupName`
+
+- 그룹 변경
+  - groupName이라는 그룹의 gid를 700번으로 변경 : `groupmod -g 700 groupName`
+  - groupName이라는 그룹의 이름을 newGroupNm으로 변경 : `groupmod -n newGroupNm groupName`
+
+- 그룹 삭제
+  - newGroupNm이라는 그룹을 삭제 : `groupdel newGroupNm`
+
+<hr>
+<br>
+
 ## 패스워드, 그룹 관련 설정 파일
+- `/etc/passwd` 파일
+  - 사용자의 정보(user, password, uid, pid) 기록
+  - 해당 파일의 수정, 삭제 등으로 사용자 관련 설정 변경 가능
+
+- `/etc/group` 파일
+  - 그룹의 정보 기록
+  - 해당 파일의 수정, 삭제 등으로 그룹 관련 설정 변경 가능
+
+- `/etc/shadows` 파일
+  - /etc/passwd 파일과 함께 사용자 패스워드 저장
+  - 패스워드는 암호화 되어 함부로 변경 할 수 없음
+  - 해당 파일에서 패스워드 필드를 고치면 오류가 발생
+
+- passwd 파일의 구성
+  - `username:password:uid:gid:gecos:homedir:shell`
+
+    |구분|설명|
+    |----|----|
+    |username|사용자 이름|
+    |password|사용자 암호|
+    |uid, gid|사용자 아이디, 그룹 아이디|
+    |gecos|General Electric Comprehensive Operation System<br>구 유닉스 서비스와 호환성을 갖추기 위해 만든 필드<br>처음 입력한 사용자 정보가 저장|
+    |homedir|해당 사용자의 기본 디렉토리|
+    |shell|해당 사용자가 사용하는 유닉스 shell의 종류|
+
+<hr>
+<br>
+
 # 권한의 이해 및 표기
 ## 파일이나 디렉토리 소유자
 ## 권한의 이해
