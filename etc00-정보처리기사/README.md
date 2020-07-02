@@ -589,6 +589,52 @@
 ### 라이브러리 B
 > 자주 사용하는 함수나 데이터들을 미리 만들어 모아 놓은 집합체
 
+- 개요
+  - 자주 사용하는 함수들의 반복적인 코드 작성을 피하기 위해 미리 만들어 놓은 것
+  - 필요할 때 언제든 호출하여 사용 가능
+  - 표준 라이브러리
+    - 프로그래밍 언어에 기본적으로 포함되어 있는 라이브러리
+    - 여러 종류의 모듈이나 패키지 형태
+  - 외부 라이브러리
+    - 개발자들이 필요한 기능들을 만들어 인터넷 등에 공유해 놓은 것
+    - 외부 라이브러리를 다운받아 설치한 후 사용
+
+- C언어의 대표적인 표준 라이브러리
+  - 라이브러리를 헤더 파일로 제공하며 `#include <stdio.h>`와 같이 include문으로 선언 후 사용
+
+    |헤더 파일|기능|
+    |---------|----|
+    |stdio.h|데이터의 입출력에 사용되는 기능들을 제공<br>주요 함수 : `printf`, `scanf`, `fprintf`, `fscanf`, `fclose`, `fopen`|
+    |math.h|수학 함수 제공<br>주요 함수 : `sqrt`, `pow`, `abs`|
+    |string.h|문자열 처리 함수 제공<br>주요 함수 : `strlen`, `strcpy`, `strcmp`|
+    |stdlib.h|자료형 변환, 난수 발생, 메모리 할당에 사용되는 기능 제공<br>`atoi`, `atof`, `srand`, `rand`, `malloc`, `free`|
+    |time.h|시간 처리에 사용되는 기능 제공<br>주요 함수 : `time`, `clock`|
+
+- Java의 대표적인 표준 라이브러리
+  - 라이브러리를 패키지에 포함하여 제공하며 `import java.util`과 같이 import문으로 선언 후 사용
+  - 패키지 안에 있는 클래스의 메소드를 사용할 때는 클래스와 메소드를 마침표(.)로 구분하여 사용
+
+    |패키지|기능|
+    |------|----|
+    |java.lang|Java에 기본적으로 필요한 인터페이스, 자료형, 예외 처리 등에 관련된 기능 제공<br>import문 없이도 사용 가능<br>주요 클래스 : String, System, Process, Runtime, Math, Error|
+    |java.util|날짜 처리, 난수 발생, 복잡한 문자열 처리 등에 관련된 기능 제공<br>주요 클래스 : Date, Calender, Random, StringTokenizer|
+    |java.io|파일 입출력과 관련된 기능 및 프로토콜 제공<br>주요 클래스 : InputStream, OutputStream, Reader, Writer|
+    |java.net|네트워크와 관련된 기능 제공<br>Socket, URL, InetAddress|
+    |java.awt|사용자 인터페이스(UI)와 관련된 기능 제공<br>Frame,Panel, Dialog, Button, Checkbox|
+
+- Python의 대표적인 표준 라이브러리
+  - 라이브러리를 패키지로 제공하며 `import random`과 같이 선언 후 마침표(.)로 구분하여 사용
+
+    |클래스|기능|
+    |------|----|
+    |내장 함수|Python의 기본적인 인터페이스로 import문이나 클래스명 없이 사용 가능<br>주요 메소드 : abs(), slice(), pow(), print()|
+    |os|운영체제와 상호 작용하기 위한 기능 제공<br>주요 메소드 : getcwd(), chdir(), system()|
+    |re|고급 문자열 처리를 위한 기능 제공<br>주요 메소드 : findall(), sub()|
+    |math|복잡한 수학 연산을 위한 기능 제공<br>주요 메소드 : cos(), log()|
+    |random|무작위 선택을 위한 기능 제공<br>주요 메소드 : choice(), sample(), random(), randrange()|
+    |statistics|통계값 산출을 위한 기능 제공<br>주요 메소드 : mean(), median(), variance()|
+    |datetime|날짜와 시간 조작을 위한 기능 제공<br>주요 메소드 : today(), date(), strftime()|
+
 <br>
 
 ### 절차적 프로그래밍 언어 C
