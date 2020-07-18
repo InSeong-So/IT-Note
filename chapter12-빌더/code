@@ -1,0 +1,105 @@
+'sha1:edfe20d65e17:d47f296f5ed605567866a57aca62efcf5b5e59f8'
+
+//
+
+[ req ]
+default_bits            = 2048
+default_md              = sha1
+default_keyfile         = lesstif-rootca.key
+distinguished_name      = req_distinguished_name
+extensions             = v3_ca
+req_extensions = v3_ca
+ 
+[ v3_ca ]
+basicConstraints       = critical, CA:TRUE, pathlen:0
+subjectKeyIdentifier   = hash
+##authorityKeyIdentifier = keyid:always, issuer:always
+keyUsage               = keyCertSign, cRLSign
+nsCertType             = sslCA, emailCA, objCA
+[req_distinguished_name ]
+countryName                     = KR
+countryName_default             = KR
+countryName_min                 = 2
+countryName_max                 = 2
+
+# 회사명
+organizationName              = Sis Inc.
+organizationName_default      = Sis Inc.
+ 
+# 부서
+#organizationalUnitName          = DevOps
+#organizationalUnitName_default  = Condor Project
+ 
+# SSL 서비스할 domain
+commonName                      = https://13.125.26.109:8888/
+commonName_default              = https://13.125.26.109:8888/
+commonName_max                  = 64
+
+
+sudo openssl req -new -key /home/ubuntu/ssl/sis-rootca.key -out /home/ubuntu/ssl/sis-rootca.csr -config rootca_openssl.conf
+
+sudo openssl x509 -req \
+-days 3650 \
+-extensions v3_ca \
+-set_serial 1 \
+-in /home/ubuntu/ssl/sis-rootca.csr \
+-signkey /home/ubuntu/ssl/sis-rootca.key \
+-out /home/ubuntu/ssl/sis-rootca.crt \
+-extfile rootca_openssl.conf
+
+openssl x509 -text -in /home/ubuntu/ssl/sis-rootca.crt
+
+
+[ req ]
+default_bits            = 2048
+default_md              = sha1
+default_keyfile         = sis-rootca.key
+distinguished_name      = req_distinguished_name
+extensions             = v3_user
+## 인증서 요청시에도 extension 이 들어가면 authorityKeyIdentifier 를 찾지 못해 에러가 나므로 막아둔다.
+## req_extensions = v3_user
+
+[ v3_user ]
+# Extensions to add to a certificate request
+basicConstraints = CA:FALSE
+authorityKeyIdentifier = keyid,issuer
+subjectKeyIdentifier = hash
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+## SSL 용 확장키 필드
+extendedKeyUsage = serverAuth,clientAuth
+subjectAltName          = @alt_names
+[ alt_names]
+## Subject AltName의 DNSName field에 SSL Host 의 도메인 이름을 적어준다.
+## 멀티 도메인일 경우 *.lesstif.com 처럼 쓸 수 있다.
+DNS.1   = *.13.125.26.109:*
+
+[req_distinguished_name ]
+countryName                     = KR
+countryName_default             = KR
+countryName_min                 = 2
+countryName_max                 = 2
+
+# 회사명
+organizationName              = Sis Inc.
+organizationName_default      = Sis Inc.
+ 
+# 부서
+#organizationalUnitName          = DevOps
+#organizationalUnitName_default  = Condor Project
+ 
+# SSL 서비스할 domain
+commonName                      = https://13.125.26.109:8888/
+commonName_default              = https://13.125.26.109:8888/
+commonName_max                  = 64
+
+
+
+
+openssl req -new -key /home/ubuntu/ssl/sis.com.key -out /home/ubuntu/ssl/sis.com.csr -config host_openssl.conf 
+
+
+
+sudo openssl x509 -req -days 1825 -in /home/ubuntu/ssl/sis.com.csr \
+-CA /home/ubuntu/ssl/sis-rootca.crt -CAcreateserial \
+-CAkey /home/ubuntu/ssl/sis-rootca.key \
+-out /home/ubuntu/ssl/sis.com.crt  -extfile host_openssl.conf
