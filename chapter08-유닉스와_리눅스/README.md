@@ -967,7 +967,111 @@
 
 # 반복문, 조건문
 ## 반복문
+- `for in(조건)/do/.../done`
+  - 조건 내 상황을 하나씩 적용하여 do와 done 사이의 스크립트를 실행
+    ```sh
+    #!/bin/sh
+    for x in 1 2 3 4 5
+    do
+    echo $x
+    done
+    exit 0
+    ```
+    ```sh
+    #!/bin/sh
+    for file in $(ls *.txt)
+    do
+    echo $file
+    done
+    exit 0
+    ```
+
+- `while(조건)/do/.../done`
+  - 조건 내 상황이 만족되면 계속 do와 done 사이의 스크립트를 실행하며, 그 외 조건이 되는 경우 반복구문에서 탈출
+    ```sh
+    #!/bin/sh
+    echo -n "Please input password : "
+    read pawd
+    while [$paswd != "1234"]
+    do
+      echo -n "Please input password : "
+      read pawd
+    done
+    echo "OK"
+    exit 0
+    ```
+
+- `until(조건)/do/.../done`
+  - 조건 내 상황이 만족하지 않으면 계속하여 do와 done 사이의 스크립트를 실행하며 그 외 조건이 만족되는 경우 반복구문에서 탈출
+    ```sh
+    #!/bin/sh
+    pawd="0000"
+    until [$pawd = "1234"]
+    do
+      echo -n "Please input password : "
+      read pawd
+    done
+    echo "OK"
+    exit 0
+    ```
+    ```sh
+    #!/bin/sh
+    loop=10
+    until ["$loop" -eq 0]
+    do
+      echo "loop $loop"
+      loop=$(($loop-1))
+    done
+    exit 0
+    ```
+
+- `break`
+  - do/done의 루프를 종료
+    ```sh
+    #!/bin/sh
+    for var in 1 2 3 4 5 6 7 8 9 10 ; do
+      echo "var $var"
+      if [ $var = "5" ]; then
+        echo "break"
+        break;
+      fi
+    done
+    exit 0
+    ```
+
+<hr>
+<br>
+
 ## 조건문
+> true, false의 조건을 여러 개 나열하여 기능을 작성할 때 사용
+
+- booelan 형태의 AND(&&)와 OR(||)
+  ```sh
+  #!/bin/sh
+  touch file1
+  rm -f file2
+    if [ -f file1 ] && echo "next1" && [ -f file2 ] && echo "next2"
+    # true인 경우 다음 문장 수행
+    then
+      echo "if-true"
+    else
+      echo "if-false"
+    fi
+  exit 0
+  ```
+  ```sh
+  #!/bin/sh
+  touch file1
+    if [ -f file1 ] || echo "next1" ||  [ -f file2 ] || echo "next2"
+    # true인 경우 다음 문장 수행
+    then
+      echo "if-true"
+    else
+      echo "if-false"
+    fi
+  exit0
+  ```
+
 # 함수, 다중 조건문
 ## 함수
 ## 다중 조건문
