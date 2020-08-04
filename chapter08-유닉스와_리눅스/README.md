@@ -1072,14 +1072,104 @@
   exit0
   ```
 
+<hr>
+<br>
+
 # 함수, 다중 조건문
 ## 함수
+> 쉘 프로그램 내에서 실행할 블록을 지정하고 필요하면 호출하여 사용하는 기능
+> - 전역변수 : 쉘 전체 프로그램 영역에서 사용되는 변수
+> - 지역변수 : 함수 내부에서만 사용되는 변수
+
+- 함수 정의(파일 형식)
+  ```sh
+  #!/bin/sh
+  str="Global Variable"
+  foo()
+  {
+    local str="Local variable"
+    echo "call function!"
+    echo $str
+  }
+  echo "start shell-program"
+  echo $str
+  foo
+  echo $str
+  str="Global variable"
+  echo $str
+  foo
+  echo $str
+  exit 0
+  ```
+
+<hr>
+<br>
+
 ## 다중 조건문
+- `case 조건/a)../b)../.../esac`
+  ```sh
+  #!/bin/sh
+  echo "Do you love me?"
+  read ans
+  case "ans in
+    [yY][eE][sS] ) echo Thank you. ;;
+    [nN]*) echo oh, so sad... ;;
+    *) echo really? ;;
+  esac
+  exit 0
+  ```
+  ```sh
+  #!/bin/sh
+  echo "test"
+  read ans
+  case $ans in
+    [1]) echo "case 1"; echo "case 1-2"; echo "case1-3";;
+    [2]) echo "case 2";;
+    *) echo "case 3";;
+  esac
+  exit 0
+  ```
+  - 조건이 A라면 A문장, B라면 B문장 실행
+  - 다중 조건문을 간단하게 표현
+  - 각 조건의 종료는 `;;`로 표현
+
+<hr>
+<br>
+
 # 형식을 주어 출력하기
 ## printf 사용
+- 형식
+  - `%s` : 문자 출력
+  - `%d` : 숫자 출력
+  - `%.5s` : 문자열의 앞 5자리만 출력
+  - `\n` : 줄을 바꾸는 `개행문자`
+
+<hr>
+<br>
+
 # 주기적으로 처리하기
 ## while, sleep 활용
-## 직접 입력
+- `while :, do, done` : do ~ done 블록을 무한 반복
+  - 반복을 중지시키기 위해서는 Ctrl + C 입력
+
+- sleep : 특정한 주기시간을 부여하기 위해 사용
+
+- 사용 방식
+  ```sh
+  #!/bin/sh
+  icnt=0
+  while :
+  do
+    A=`date`
+    echo [ $icnt ] "******" $A
+    icnt=`expr $icnt + 1`
+    sleep 1
+  done
+  ```
+
+<hr>
+<br>
+
 # 시스템 감시
 ## 특정 프로세스 감시
 ## 접속 단말수 세기
