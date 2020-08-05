@@ -1172,11 +1172,118 @@
 
 # 시스템 감시
 ## 특정 프로세스 감시
+> ps와 주기처리를 이용해 특정 프로세스를 감시하기
+
+- 예시
+  ```sh
+  #!/bin/sh
+  while :
+  do
+    ps -ef | grep $1
+    echo "================================="
+    sleep 1
+  done
+  exit 0
+  ```
+
+<hr>
+<br>
+
 ## 접속 단말수 세기
+- 사용자가 단말에 telnet이나 ssh로 접속하는 경우
+  - sshd 또는 bash 프로세스 실행
+  - `ps -ef | grep bash` : bash의 감시방법, sshd보다 더 정확하게 계수 가능
+    - 자신의 명령어도 체크
+    - `wc -l` : 출력된 줄 수 카운트 가능
+
+- 사용자가 웹 서버에 접속하는 경우
+  - httpd 혹은 apache2 실행
+
+- 예시
+  ```sh
+  #!/bin/sh
+  while :
+  do
+    i_bash=`ps -ef | grep bash | wc -l`
+    i_bash=`expr $i_bash - l`
+    i_http=`ps -ef | grep apache2 | wc -l`
+    i_http=`expr $i_http -l`
+    echo =============================================
+    echo ' CONNECTED USERS : ' $i_bash
+    echo ' WEB USERS : ' $i_http
+    echo =============================================
+    sleep 2
+  done
+  exit 0
+  ```
+
+<hr>
+<br>
+
 # 시스템 모니터링
 ## 크기가 일정 수치 이상인 파일 찾기
+- `cut` 명령어를 이용해 출력 줄에서 필요한 부분만 자르는 방법
+  ```sh
+  #! /bin/sh
+  
+  ## cut을 이용하여 ls -l /etc/*.conf 출력 및 자르기
+  ## 파일 크기 저장
+  ls_list=`ls -l /etc/*.conf | cut -c25-29`
+  ## 파일 이름 저장
+  file_list=`ls -l /etc/*.conf | cut -c43-`
+  cnt=0
+  for ls_one in $ls_list ;do
+    if [ $ls_one -gt 100 ] ; then
+      echo -n "OK :"
+      fcnt=0
+      for filename in $file_list ; do
+        if [ $cnt -eq $fcnt ]; then
+          printf "file [%s] size[%d]￦n" $filename $ls_one
+        fi
+        fcnt=$(($fcnt+1))
+      done
+    fi
+    cnt=$(($cnt+1))
+  done
+  ```
+
+- `awk` 명령어를 이용한 방법
+  - 추출 필드를 지정하고 형식을 주어서 출력할 수 있는 awk 명령어를 사용하면 해당 내용이 간단
+
+- 명령어 : `ls -l /etc/*.conf | awk '{ print "size : " $5 " , name : " $9}'`
+  - `ls –l /etc/*.conf` : 결과를 awk명령으로 다시 처리
+  - `awk '{ print "size : " $5 " , name : " $9}'` : 형식을 지정하여 출력
+    - `$5` : `ls –l /etc/*.conf`의 출력 결과를 띄어쓰기(space)를 기준으로 5번째 항목 출력
+    - `$9` : `ls –l /etc/*.conf`의 출력 결과를 띄어쓰기(space)를 기준으로 9번째 항목 출력
+  - 쉘 파일 작성
+    ```sh
+    #! /bin/sh
+    ls -l /etc/*.conf | awk '{ print "size : " $5 " , name : " $9}' | awk '$3 >= 100 '
+    ```
+
+<hr>
+<br>
+
 # 시스템 백업 응용
 ## 파일명을 찾아 날짜 형식의 디렉토리로 백업하기
+- `date`를 이용하여 날짜를 디렉토리 명으로 디렉토리 생성
+  ```sh
+  #! /bin/sh
+  d_date=`date +%y%m%d`
+  mkdir /home/$d_date
+  mkdir /home/$d_date/etc
+  for file in $(ls /etc/*.conf)
+  do
+    dest=`echo /home/$d_date$file`
+    echo $file "===>" $dest
+    cp $file $dest
+  done
+  exit 0
+  ```
+
+<hr>
+<br>
+
 # 네트워크 이론
 ## TCP/IP 기초
 ## IP 주소 체계
