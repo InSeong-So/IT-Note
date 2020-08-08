@@ -1434,7 +1434,65 @@
 
 # 시스템 부팅
 ## 시스템 부팅의 전 과정
+- 요약
+  - 준비
+    - 바이오스 부팅
+    - MBR
+    - LILO(GRUB)
+    - kernel
+  - 초기화
+    - 드라이버 설정
+    - root file system mount
+  - 데몬준비
+    - init, inittab 실행
+    - /etc/rc, rc0-rc9 실행
+  - 로그인
+    - getty
+    - login
+  - 개인유저
+    - shell 동작
+    - 프롬프트 출력
+
+- 전체
+  - 컴퓨터가 켜지면, POST 과정에 의해 시스템이 초기화(Bios booting)
+  - Boot record나 하드인 경우 MBR(Master boot record)를 읽어 들임(Unix-BOS)
+  - LILO(Linux Loader) (GRUB, GRand Unified Boot loader)가 실행
+    - 만일, 디폴트인 리눅스가 로딩되기 전에 Ctrl, Shift, Alt 중 하나를 누르고 있으면,  LILO는 부팅할 운영체제를 물어봄(리눅스가 여러 개 설치되어 있거나, 서로 다른 LILO가 설치되어 있는 경우)
+  - Kernel이 메모리로 로딩되며, 만일 커널이 압축되었다면 압축을 해제
+    - vmlinux 커널은 2.6.4 이런 식으로 세자리 숫자 버전, 전 리눅스 공동
+  - 커널은 하드디스크, 플로피, 네트워크 어댑터, CD롬 등을 검사하며, 디바이스 드라이버를 설정 : /dev/
+  - root 파일 시스템을 마운트시킴
+    - root 파일 시스템은 'dev'나 LILO에 의해 설정되어 있으며, 파일 시스템의 형태는 자동적으로 검출
+  - 커널은 /etc/init을 백그라운드로 실행
+    - 'init', 'inittab' 파일의 내용에 따라 실행 (유닉스)
+  - init는 /etc/rc를 실행
+    - 'rc'는 /etc/rc.local이나 /etc/rc.[0-9]등을 실행
+  - ‘init’ 프로그램은 가상 콘솔을 위해 getty를 실행 (telnet, sshd)
+  - 로그인( ID와 패스워드를 입력)
+  - shell이 작동하고 bash shell이면 .bashrc를 , tcsh shell이면 .profile을 불러들임
+  - 프롬프트 출력
+
+<hr>
+<br>
+
 ## run level
+> rc, inittab 등에서 프로세스가 실행하는 레벨을 지정
+
+- 지정된 숫자는 runlevel로 init runlevel 명령 시 실행
+
+  |run level|내용|
+  |---------|----|
+  |0|halt, 시스템 종료 레벨
+  |1|single user mode, 네트워크를 지원하지 않는 단일사용자 레벨|
+  |2|multi-user without NFS, 3번과 같지만 네트워킹을 지원하지 않음|
+  |3|full multi-user mode, 일반적인 부팅레벨(full network)|
+  |4|unused, 사용자 정의 레벨|
+  |5|X11, X윈도우로 시작을 의미하는 레벨(xdm이 사용됨)<br> - X로 바로 부팅|
+  |6|reboot, 재부팅을 의미하는 레벨||
+
+<hr>
+<br>
+
 # 시동, 초기화, 셧다운
 ## shutdown
 ## at 데몬
