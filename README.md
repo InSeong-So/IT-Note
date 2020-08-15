@@ -27,7 +27,6 @@
 <br>
 
 ## New Tasks
-- [ ] Deus Ex Machina 기능 확장 및 UI 개선
 - [ ] NodeJS 공부
 - [ ] ReactJS 공부
 - [ ] Docker 공부
@@ -46,26 +45,14 @@
 <br>
 
 ## DOING
-- [x] Vanity Fair 리마스터
-  - `명품 대여 서비스`
-  - `인터랙티브 게시판 만들기`
-- [x] Python 웹 크롤러 만들기
-  - `맛집 조회 서비스`
-- [x] `IT 기술면접 정리(v2)`
-- [x] `코딩 테스트 대비 알고리즘, 자료구조 숙달`
-- [x] `신기술 트렌드 정보 수집`
 - [x] Todo App 구현
 
 <hr>
 <br>
 
 ## DONE
-- [x] SQLD 공부 및 취득
 - [X] 이력서 작성 및 포트폴리오(Web)
   - [링크](https://inseong-so.github.io/new-resume/)
-- [x] IT 기술면접 정리(v1)
-<!-- - [X] ~~이스트소프트 코딩테스트 (2019. 02. 12)~~
-- [X] ~~카페24 코딩테스트 (2019. 02. 14)~~ -->
 
 ## ref
 ### 리눅스마스터 시험일정
