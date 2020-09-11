@@ -23,6 +23,12 @@
 
     - [:bird:빅데이터분석](#bird%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0%eb%b6%84%ec%84%9d)
 
+    - [:bird:방법론](#bird%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0%eb%b6%84%ec%84%9d)
+
+    - [:bird:빌더](#bird%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0%eb%b6%84%ec%84%9d)
+
+    - [:bird:디자인](#bird%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0%eb%b6%84%ec%84%9d)
+
 <hr>
 <br>
 
