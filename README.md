@@ -36,7 +36,6 @@
 - [ ] NodeJS 공부
 - [ ] ReactJS 공부
 - [ ] Docker 공부
-- [ ] IT Note `Trello` 연동
 
 <hr>
 <br>
@@ -44,6 +43,9 @@
 ## TODO
 - [ ] `JavaScript 정리`
 - [ ] `Oracle Database 정리`
+- [ ] Vue.js 정리
+- [ ] Toy Project 구상
+- [ ] 알고리즘 공부
 
 <hr>
 <br>
