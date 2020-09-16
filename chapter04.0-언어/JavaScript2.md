@@ -256,3 +256,136 @@ console.log(foo[0], bar[0]);  // 9, 9
       // ...stuff...
     }
     ```
+
+# Properties
+- 속성에 액세스하려면 `도트(.)`를 사용할 것
+  ```js
+  var luke = {
+    jedi: true,
+    age: 28
+  };
+
+  // bad
+  var isJedi = luke['jedi'];
+
+  // good
+  var isJedi = luke.jedi;
+  ```
+
+- 변수를 사용하여 속성에 접근하려면 `대괄호([])`를 사용할 것
+  ```js
+  var luke = {
+    jedi: true,
+    age: 28
+  };
+
+  function getProp(prop) {
+    return luke[prop];
+  }
+
+  var isJedi = getProp('jedi');
+  ```
+
+# Variables
+- 변수를 선언 할 때는 항상 `var`를 사용할 것.
+  - 그렇지 않으면 전역 변수로 선언됨
+  - 전역 네임 스페이스를 오염시키지 않도록 Captain Planet도 경고함
+    ```js
+    // bad
+    superPower = new SuperPower();
+
+    // good
+    var superPower = new SuperPower();
+    ```
+
+- 여러 변수를 선언하려면 하나의 var를 사용하여 변수마다 줄바꿈하여 선언할 것
+  ```js
+  // bad
+  var items = getItems();
+  var goSportsTeam = true;
+  var dragonball = 'z';
+
+  // good
+  var items = getItems(),
+      goSportsTeam = true,
+      dragonball = 'z';
+  ```
+
+- 정의되지 않은 변수를 마지막으로 선언할 것
+  - 나중에 이미 할당된 변수 중 하나를 지정해야하는 경우에 유용
+    ```js
+    // bad
+    var i, len, dragonball,
+        items = getItems(),
+        goSportsTeam = true;
+
+    // bad
+    var i, items = getItems(),
+        dragonball,
+        goSportsTeam = true,
+        len;
+
+    // good
+    var items = getItems(),
+        goSportsTeam = true,
+        dragonball,
+        length,
+        i;
+    ```
+
+- 변수의 할당은 스코프의 시작 부분에서 하며 이것은 변수 선언과 Hoisting 관련 문제를 해결함
+  ```js
+  // bad
+  function() {
+    test();
+    console.log('doing stuff..');
+
+    //..other stuff..
+
+    var name = getName();
+
+    if (name === 'test') {
+      return false;
+    }
+
+    return name;
+  }
+
+  // good
+  function() {
+    var name = getName();
+
+    test();
+    console.log('doing stuff..');
+
+    //..other stuff..
+
+    if (name === 'test') {
+      return false;
+    }
+
+    return name;
+  }
+
+  // bad
+  function() {
+    var name = getName();
+
+    if (!arguments.length) {
+      return false;
+    }
+
+    return true;
+  }
+
+  // good
+  function() {
+    if (!arguments.length) {
+      return false;
+    }
+
+    var name = getName();
+
+    return true;
+  }
+  ```
