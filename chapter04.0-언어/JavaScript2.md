@@ -389,3 +389,80 @@ console.log(foo[0], bar[0]);  // 9, 9
     return true;
   }
   ```
+
+# Hoisting
+- 해당 스코프의 시작 부분에 Hoist된 변수선언은 할당되지 않음
+  ```js
+  // (notDefined가 전역 변수에 존재하지 않는다고 가정했을 경우)
+  // 이것은 동작하지 않습니다.
+  function example() {
+    console.log(notDefined); // => throws a ReferenceError
+  }
+
+  // 그 변수를 참조하는 코드 후에 그 변수를 선언 한 경우
+  // 변수가 Hoist된 상태에서 작동합니다.
+  // Note : `true`라는 값 자체는 Hoist되지 않습니다.
+  function example() {
+    console.log(declaredButNotAssigned); // => undefined
+    var declaredButNotAssigned = true;
+  }
+
+  // 인터 프린터는 변수 선언을 스코프의 시작 부분에 Hoist합니다.
+  // 위의 예는 다음과 같이 다시 작성할 수 있습니다.
+  function example() {
+    var declaredButNotAssigned;
+    console.log(declaredButNotAssigned); // => undefined
+    declaredButNotAssigned = true;
+  }
+  ```
+
+- 익명 함수의 경우 함수가 할당되기 전에 변수가 Hoist될 수 있음
+  ```js
+  function example() {
+    console.log(anonymous); // => undefined
+
+    anonymous(); // => TypeError anonymous is not a function
+
+    var anonymous = function() {
+      console.log('anonymous function expression');
+    };
+  }
+  ```
+
+- 명명 된 함수의 경우도 마찬가지로 변수가 Hoist될 수 있으나 함수 이름과 함수 본체는 Hoist되지 않음
+  ```js
+  function example() {
+    console.log(named); // => undefined
+
+    named(); // => TypeError named is not a function
+
+    superPower(); // => ReferenceError superPower is not defined
+
+    var named = function superPower() {
+      console.log('Flying');
+    };
+  }
+
+  // 함수이름과 변수이름이 같은 경우에도 같은 일이 일어납니다.
+  function example() {
+    console.log(named); // => undefined
+
+    named(); // => TypeError named is not a function
+
+    var named = function named() {
+      console.log('named');
+    }
+  }
+  ```
+
+- 함수 선언은 함수이름과 함수본문이 Hoist 됨
+  ```js
+  function example() {
+    superPower(); // => Flying
+
+    function superPower() {
+      console.log('Flying');
+    }
+  }
+  ```
+
