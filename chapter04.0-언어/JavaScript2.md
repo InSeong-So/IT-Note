@@ -466,3 +466,153 @@ console.log(foo[0], bar[0]);  // 9, 9
   }
   ```
 
+# Conditional Expressions & Equality(조건식과 등가식)
+- == 나 != 보다는 === 와 !== 를 사용할 것
+- 조건식은 ToBoolean 메소드에 의해 아래와 같이 엄밀하게 비교
+  - Objects 는 true 로 평가
+  - undefined 는 false 로 평가
+  - null 는 false 로 평가
+  - Booleans 는 boolean 형의 값으로 평가
+  - Numbers 는 true 로 평가되나 +0, -0, or NaN 의 경우는 false
+  - Strings 는 true 로 평가되나 빈문자 '' 의 경우는 false
+    ```js
+    if ([0]) {
+      // true
+      // Array는 Object 이므로 true 로 평가됩니다.
+    }
+    ```
+
+- 짧은 형식을 사용할 것
+  ```js
+  // bad
+  if (name !== '') {
+    // ...stuff...
+  }
+
+  // good
+  if (name) {
+    // ...stuff...
+  }
+
+  // bad
+  if (collection.length > 0) {
+    // ...stuff...
+  }
+
+  // good
+  if (collection.length) {
+    // ...stuff...
+  }
+  ```
+
+# Blocks
+- 복수행 블록은 `중괄호({})`를 사용할 것
+  ```js
+  // bad
+  if (test)
+    return false;
+
+  // good
+  if (test) return false;
+
+  // good
+  if (test) {
+    return false;
+  }
+
+  // bad
+  function() { return false; }Comments 
+
+  // good
+  function() {
+    return false;
+  }
+  ```
+
+# Comments
+- 복수행의 코멘트는 `/** ... */` 를 사용할 것
+  - 그 안에는 설명과 모든 매개 변수와 반환 값에 대한 형식과 값을 설명
+    ```js
+    // bad
+    // make() returns a new element
+    // based on the passed in tag name
+    //
+    // @param <String> tag
+    // @return <Element> element
+    function make(tag) {
+
+      // ...stuff...
+
+      return element;
+    }
+
+    // good
+    /**
+    * make() returns a new element
+    * based on the passed in tag name
+    *
+    * @param <String> tag
+    * @return <Element> element
+    */
+    function make(tag) {
+
+      // ...stuff...
+
+      return element;
+    }
+    ```
+
+- 한 줄 주석에는 `// ...`를 사용할 것
+  - 코멘트를 추가하고 싶은 코드의 상단에 작성하고, 주석 앞에 빈 줄을 넣을 것
+    ```js
+    // bad
+    var active = true;  // is current tab
+
+    // good
+    // is current tab
+    var active = true;
+
+    // bad
+    function getType() {
+      console.log('fetching type...');
+      // set the default type to 'no type'
+      var type = this._type || 'no type';
+
+      return type;
+    }
+
+    // good
+    function getType() {
+      console.log('fetching type...');
+
+      // set the default type to 'no type'
+      var type = this._type || 'no type';
+
+      return type;
+    }
+    ```
+
+- 문제를 지적하고 재고를 촉구하거나 문제에 대한 해결책을 제시하는 등 의견의 앞에 FIXME 나 TODO를 붙일 것
+  - 다른 개발자의 빠른 이해를 도우며 이러한 어떤 액션을 동반한다는 의미에서 일반 코멘트와는 다름
+  - 액션은 `FIXME - 해결책이 필요` 또는 `TODO - 구현`이 필요
+
+- 문제에 대한 코멘트로 `// FIXME :`를 사용할 것
+  ```js
+  function Calculator() {
+
+    // FIXME: 전역 변수를 사용해서는 안됩니다.
+    total = 0;
+
+    return this;
+  }
+  ```
+
+- 문제 해결책에 대한 코멘트로 `// TODO :`를 사용할 것
+  ```js
+  function Calculator() {
+
+    // TODO: total은 옵션 매개 변수로 설정되어야 함.
+    this.total = 0;
+    return this;
+  }
+  ```
