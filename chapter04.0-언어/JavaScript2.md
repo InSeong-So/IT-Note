@@ -616,3 +616,169 @@ console.log(foo[0], bar[0]);  // 9, 9
     return this;
   }
   ```
+
+# Whitespace
+- 탭에는 공백 2개를 설정할 것
+  ```
+  // bad
+  function() {
+  ∙∙∙∙var name;
+  }
+
+  // bad
+  function() {
+  ∙var name;
+  }
+
+  // good
+  function() {
+  ∙∙var name;
+  }
+  ```
+
+- 중괄호({})의 앞에 공백을 하나 넣을 것
+  ```js
+  // bad
+  function test(){
+    console.log('test');
+  }
+
+  // good
+  function test() {
+    console.log('test');
+  }
+
+  // bad
+  dog.set('attr',{
+    age: '1 year',
+    breed: 'Bernese Mountain Dog'
+  });
+
+  // good
+  dog.set('attr', {
+    age: '1 year',
+    breed: 'Bernese Mountain Dog'
+  });
+  ```
+
+- 파일의 마지막에는 빈 줄을 하나 넣어주십시오.
+  ```js
+  // bad
+  (function(global) {
+    // ...stuff...
+  })(this);
+  ```
+  ```js
+  // good
+  (function(global) {
+    // ...stuff...
+  })(this);
+
+  ```
+
+- 메소드 체인이 길어지는 경우 적절히 들여쓰기(indentation)를 할 것
+  ```js
+  // bad
+  $('#items').find('.selected').highlight().end().find('.open').updateCount();
+
+  // good
+  $('#items')
+    .find('.selected')
+      .highlight()
+      .end()
+    .find('.open')
+      .updateCount();
+
+  // bad
+  var leds = stage.selectAll('.led').data(data).enter().append('svg:svg').class('led', true)
+      .attr('width',  (radius + margin) * 2).append('svg:g')
+      .attr('transform', 'translate(' + (radius + margin) + ',' + (radius + margin) + ')')
+      .call(tron.led);
+
+  // good
+  var leds = stage.selectAll('.led')
+      .data(data)
+    .enter().append('svg:svg')
+      .class('led', true)
+      .attr('width',  (radius + margin) * 2)
+    .append('svg:g')
+      .attr('transform', 'translate(' + (radius + margin) + ',' + (radius + margin) + ')')
+      .call(tron.led);
+  ```
+
+# Commas
+- 선두의 comma는 하지 말 것
+  ```js
+  // bad
+  var once
+    , upon
+    , aTime;
+
+  // good
+  var once,
+      upon,
+      aTime;
+
+  // bad
+  var hero = {
+      firstName: 'Bob'
+    , lastName: 'Parr'
+    , heroName: 'Mr. Incredible'
+    , superPower: 'strength'
+  };
+
+  // good
+  var hero = {
+    firstName: 'Bob',
+    lastName: 'Parr',
+    heroName: 'Mr. Incredible',
+    superPower: 'strength'
+  };
+  ```
+
+- 말미의 불필요한 쉼표도 하지 말 것. 이것은 IE6/7과 quirksmode의 IE9에서 문제를 일으킬 수 있으며 ES3의 일부 구현에서 불필요한 쉼표가 있는 경우, 배열 길이를 추가함
+  ```js
+  // bad
+  var hero = {
+    firstName: 'Kevin',
+    lastName: 'Flynn',
+  };
+
+  var heroes = [
+    'Batman',
+    'Superman',
+  ];
+
+  // good
+  var hero = {
+    firstName: 'Kevin',
+    lastName: 'Flynn'
+  };
+
+  var heroes = [
+    'Batman',
+    'Superman'
+  ];
+  ```
+
+# Semicolons
+- 아래와 같이 사용할 것
+  ```js
+  // bad
+  (function() {
+    var name = 'Skywalker'
+    return name
+  })()
+
+  // good
+  (function() {
+    var name = 'Skywalker';
+    return name;
+  })();
+
+  // good
+  ;(function() {
+    var name = 'Skywalker';
+    return name;
+  })();
+  ```
