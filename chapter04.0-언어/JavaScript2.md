@@ -782,3 +782,174 @@ console.log(foo[0], bar[0]);  // 9, 9
     return name;
   })();
   ```
+
+# Type Casting & Coercion(강제) 원문
+- 문의 시작 부분에서 형을 강제할 것
+- Strings:
+  ```js
+  //  => this.reviewScore = 9;
+
+  // bad
+  var totalScore = this.reviewScore + '';
+
+  // good
+  var totalScore = '' + this.reviewScore;
+
+  // bad
+  var totalScore = '' + this.reviewScore + ' total score';
+
+  // good
+  var totalScore = this.reviewScore + ' total score';
+  ```
+
+- 숫자는 parseInt를 사용할 것. 항상 형변환을 위한 `기수(radix)`를 인수로 전달할 것
+  ```js
+  var inputValue = '4';
+
+  // bad
+  var val = new Number(inputValue);
+
+  // bad
+  var val = +inputValue;
+
+  // bad
+  var val = inputValue >> 0;
+
+  // bad
+  var val = parseInt(inputValue);
+
+  // good
+  var val = Number(inputValue);
+
+  // good
+  var val = parseInt(inputValue, 10);
+  ```
+
+- 어떤 이유에 의해 parseInt가 병목이 되고, 성능적인 이유로 Bitshift를 사용할 필요가 있을 경우, 하려고 하는것에 대해 why(왜)와 what(무엇)의 설명을 코멘트로 남길 것
+  ```js
+  // good
+  /**
+   * parseInt가 병목을 일으키므로
+   * Bitshift로 문자열을 수치로 강제적으로 변환하는 방법으로
+   * 성능을 개선시킵니다.
+   */
+  var val = inputValue >> 0;
+  ```
+
+- Booleans:
+  ```js
+  var age = 0;
+
+  // bad
+  var hasAge = new Boolean(age);
+
+  // good
+  var hasAge = Boolean(age);
+
+  // good
+  var hasAge = !!age;
+  ```
+
+# Naming Conventions
+- 한문자 이름은 피하고 이름에서 의도를 읽을 수 있도록 할 것
+  ```js
+  // bad
+  function q() {
+    // ...stuff...
+  }
+
+  // good
+  function query() {
+    // ..stuff..
+  }
+  ```
+
+- Object, 함수, 그리고 인스턴스로는 camelCase를 사용할 것
+  ```js
+  // bad
+  var OBJEcttsssss = {};
+  var this_is_my_object = {};
+  var this-is-my-object = {};
+  function c() {};
+  var u = new user({
+    name: 'Bob Parr'
+  });
+
+  // good
+  var thisIsMyObject = {};
+  function thisIsMyFunction() {};
+  var user = new User({
+    name: 'Bob Parr'
+  });
+  ```
+
+- Class와 생성자에는 PascalCase를 사용할 것
+  ```js
+  // bad
+  function user(options) {
+    this.name = options.name;
+  }
+
+  var bad = new user({
+    name: 'nope'
+  });
+
+  // good
+  function User(options) {
+    this.name = options.name;
+  }
+
+  var good = new User({
+    name: 'yup'
+  });
+  ```
+
+- private 속성 이름은 밑줄 _ 을 사용할 것
+  ```js
+  // bad
+  this.__firstName__ = 'Panda';
+  this.firstName_ = 'Panda';
+
+  // good
+  this._firstName = 'Panda';
+  ```
+
+- this의 참조를 저장할 때 _this 를 사용할 것
+  ```js
+  // bad
+  function() {
+    var self = this;
+    return function() {
+      console.log(self);
+    };
+  }
+
+  // bad
+  function() {
+    var that = this;
+    return function() {
+      console.log(that);
+    };
+  }
+
+  // good
+  function() {
+    var _this = this;
+    return function() {
+      console.log(_this);
+    };
+  }
+  ```
+
+- 함수에 이름을 붙여 stack traces를 추적하기 쉽게할 것
+  ```js
+  // bad
+  var log = function(msg) {
+    console.log(msg);
+  };
+
+  // good
+  var log = function log(msg) {
+    console.log(msg);
+  };
+  ```
