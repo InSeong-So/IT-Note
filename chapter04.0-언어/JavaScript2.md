@@ -953,3 +953,110 @@ console.log(foo[0], bar[0]);  // 9, 9
     console.log(msg);
   };
   ```
+
+# Constructors 원문
+- 새 Object에서 프로토타입을 재정의하는 것이 아니라 프로토타입 객체에 메서드를 추가할 것
+  - 프로토타입을 재정의하면 상속이 불가능함
+  - 프로토타입을 리셋하는것으로 베이스 클래스를 재정의 할 수 있음
+    ```js
+    function Jedi() {
+      console.log('new jedi');
+    }
+
+    // bad
+    Jedi.prototype = {
+      fight: function fight() {
+        console.log('fighting');
+      },
+
+      block: function block() {
+        console.log('blocking');
+      }
+    };
+
+    // good
+    Jedi.prototype.fight = function fight() {
+      console.log('fighting');
+    };
+
+    Jedi.prototype.block = function block() {
+      console.log('blocking');
+    };
+    ```
+
+- 메소드의 반환 값으로 this를 반환함으로써 메소드 체인을 할 수 있습니다.
+  ```js
+  // bad
+  Jedi.prototype.jump = function() {
+    this.jumping = true;
+    return true;
+  };
+
+  Jedi.prototype.setHeight = function(height) {
+    this.height = height;
+  };
+
+  var luke = new Jedi();
+  luke.jump(); // => true
+  luke.setHeight(20) // => undefined
+
+  // good
+  Jedi.prototype.jump = function() {
+    this.jumping = true;
+    return this;
+  };
+
+  Jedi.prototype.setHeight = function(height) {
+    this.height = height;
+    return this;
+  };
+
+  var luke = new Jedi();
+
+  luke.jump()
+    .setHeight(20);
+  ```
+
+- 독자적인 toString()을 만들 수도 있지만 올바르게 작동하는지, 부작용이 없는 것만은 확인해 주십시오.
+  ```js
+  function Jedi(options) {
+    options || (options = {});
+    this.name = options.name || 'no name';
+  }
+
+  Jedi.prototype.getName = function getName() {
+    return this.name;
+  };
+
+  Jedi.prototype.toString = function toString() {
+    return 'Jedi - ' + this.getName();
+  };
+  ```
+
+# Events
+- DOM 이벤트나 Backbone events와 같은 고유의 이벤트 탑재체(payloads)의 값을 전달하는 경우 원시 값(raw value) 대신 해시 인수(hash)를 전달
+  - 이렇게하는 것으로 나중에 개발자가 이벤트와 관련된 모든 핸들러를 찾아 업데이트 하지 않고 이벤트 탑재체(payloads)에 값을 추가 할 수 있음
+
+- 이것보단
+  ```js
+  // bad
+  $(this).trigger('listingUpdated', listing.id);
+
+  ...
+
+  $(this).on('listingUpdated', function(e, listingId) {
+    // do something with listingId
+  });
+  ```
+
+- 이게 좋음
+  ```js
+  // good
+  $(this).trigger('listingUpdated', { listingId : listing.id });
+
+  ...
+
+  $(this).on('listingUpdated', function(e, data) {
+    // do something with data.listingId
+  });
+  ```
