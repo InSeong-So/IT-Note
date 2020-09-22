@@ -1060,3 +1060,86 @@ console.log(foo[0], bar[0]);  // 9, 9
     // do something with data.listingId
   });
   ```
+
+# Modules
+- 모듈의 시작은 ! 로 시작할 것
+  - 이 행위는 문말에 세미콜론을 넣는 것을 잊은 모듈을 연결할때 런타임 오류가 발생하는 것을 방지함
+  - 파일 이름은 camelCase를 사용하여 같은 이름의 폴더에 저장하고, 단독으로 공개할 경우 이름을 일치시킬 것
+  - noConflict() 라는 명칭으로 (이름이 겹쳐 덮어 써지기 전의) 모듈을 반환하는 메서드를 추가할 것
+  - 항상 모듈의 시작 부분에서 `'use strict';` 를 선언할 것
+    ```js
+    // fancyInput/fancyInput.js
+
+    !function(global) {
+      'use strict';
+
+      var previousFancyInput = global.FancyInput;
+
+      function FancyInput(options) {
+        this.options = options || {};
+      }
+
+      FancyInput.noConflict = function noConflict() {
+        global.FancyInput = previousFancyInput;
+        return FancyInput;
+      };
+
+      global.FancyInput = FancyInput;
+    }(this);
+    ```
+
+# jQuery
+- jQuery Object의 변수 앞에는 $을 부여할 것
+  ```js
+  // bad
+  var sidebar = $('.sidebar');
+
+  // good
+  var $sidebar = $('.sidebar');
+  ```
+
+- jQuery 쿼리결과를 캐시할 것
+  ```js
+  // bad
+  function setSidebar() {
+    $('.sidebar').hide();
+
+    // ...stuff...
+
+    $('.sidebar').css({
+      'background-color': 'pink'
+    });
+  }
+
+  // good
+  function setSidebar() {
+    var $sidebar = $('.sidebar');
+    $sidebar.hide();
+
+    // ...stuff...
+
+    $sidebar.css({
+      'background-color': 'pink'
+    });
+  }
+  ```
+
+- DOM 검색은 Cascading $('.sidebar ul') 이나 parent > child $('.sidebar > ul') 를 사용할 것
+
+- jQuery Object 검색은 스코프가 붙은 find를 사용할 것
+  ```js
+  // bad
+  $('ul', '.sidebar').hide();
+
+  // bad
+  $('.sidebar').find('ul').hide();
+
+  // good
+  $('.sidebar ul').hide();
+
+  // good
+  $('.sidebar > ul').hide();
+
+  // good
+  $sidebar.find('ul');
+  ```
