@@ -44,7 +44,6 @@
 - [ ] `JavaScript 정리`
 - [ ] `Oracle Database 정리`
 - [ ] Vue.js 정리
-- [ ] Toy Project 구상
 - [ ] 알고리즘 공부
 
 <hr>
@@ -52,6 +51,7 @@
 
 ## DOING
 - [x] Todo App 구현
+- [ ] 알고리즘 공부 커리큘럼 작성
 
 <hr>
 <br>
