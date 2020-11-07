@@ -23,69 +23,23 @@
 
     - [:bird:빅데이터분석](#bird%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0%eb%b6%84%ec%84%9d)
 
-    - [:bird:방법론](#bird%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0%eb%b6%84%ec%84%9d)
+    - [:dog2:방법론](#bird%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0%eb%b6%84%ec%84%9d)
 
-    - [:bird:빌더](#bird%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0%eb%b6%84%ec%84%9d)
+    - [:maple_leaf:빌더](#bird%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0%eb%b6%84%ec%84%9d)
 
-    - [:bird:디자인](#bird%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0%eb%b6%84%ec%84%9d)
-
-<hr>
-<br>
-
-## New Tasks
-- [ ] NodeJS 공부
-- [ ] ReactJS 공부
-- [ ] Docker 공부
+    - [:cherry_blossom:디자인](#bird%eb%b9%85%eb%8d%b0%ec%9d%b4%ed%84%b0%eb%b6%84%ec%84%9d)
 
 <hr>
 <br>
 
-## TODO
-- [ ] `JavaScript 정리`
-- [ ] `Oracle Database 정리`
-- [ ] Vue.js 정리
-- [ ] 알고리즘 공부
+## MyProjects
+- [BOBSIM](https://github.com/InSeong-So/bobsim.git)
 
 <hr>
 <br>
 
-## DOING
-- [x] Todo App 구현
-- [ ] 알고리즘 공부 커리큘럼 작성
-
-<hr>
-<br>
-
-## DONE
-- [X] 이력서 작성 및 포트폴리오(Web)
-  - [링크](https://inseong-so.github.io/new-resume/)
-
-## ref
-### 인터넷정보관리사
-  - 지방 프로젝트로 인한 2021년 연기
-
-<br>
-
-### 웹디자인 기능사
-  - 지방 프로젝트로 인한 2021년 연기
-
-<br>
-
-### 리눅스마스터
-  - 지방 프로젝트로 인한 2021년 연기
-
-<br>
-
-### ADSP 데이터 준분석가
-  - 지방 프로젝트로 인한 2021년 연기
-
-<hr>
-<br>
-
-## STOP
-- [X] ~~Java 챕터별 정리 후 Commit~~
-- [X] ~~블로그 내용, 구조 수정 *(지속)*~~
-<!-- - [ ] ~~*면접 준비(면접합격 시)*~~ -->
+## RESUME
+- [Shortcuts](https://inseong-so.github.io/new-resume/)
 
 <hr>
 <br>
@@ -417,32 +371,36 @@
 
 <sup>[(Contents 목차로)](#sis-developers-note)</sup>
 
+
 <hr>
 <br>
 
-### [방법론](/chapter11-방법론)
+### :dog2:[방법론](/chapter11-방법론)
 
 <br>
 
 <sup>[(Contents 목차로)](#sis-developers-note)</sup>
 
+
 <hr>
 <br>
 
-### [빌더](/chapter10-빌더)
+### :maple_leaf:[빌더](/chapter12-빌더)
 
 <br>
 
 <sup>[(Contents 목차로)](#sis-developers-note)</sup>
 
+
 <hr>
 <br>
 
-### [디자인](/chapter13-디자인)
+### :cherry_blossom:[디자인](/chapter13-디자인)
 
 <br>
 
 <sup>[(Contents 목차로)](#sis-developers-note)</sup>
+
 
 <hr>
 <br>
