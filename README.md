@@ -33,13 +33,13 @@
 <br>
 
 ## MyProjects
-- [BOBSIM](https://github.com/InSeong-So/bobsim.git)
+- [BOBSIM 프로젝트](https://github.com/InSeong-So/bobsim.git)
 
 <hr>
 <br>
 
 ## RESUME
-- [Shortcuts](https://inseong-so.github.io/new-resume/)
+- [이력서보기](https://inseong-so.github.io/new-resume/)
 
 <hr>
 <br>
@@ -281,73 +281,6 @@
 <br>
 
 ### :penguin:[유닉스와_리눅스](/chapter08-유닉스와_리눅스)
-- 유닉스 리눅스 시스템
-
-- 가상터미널
-
-- 사용자 등록, 패스워드 설정
-
-- 권한 획득, 명령어 메뉴얼
-
-- 리눅스 파일 기본사항
-
-- 파일과 디렉토리
-
-- 파일 필터
-
-- 파일 비교 / 정렬 / 탐색
-
-- 파일 보관 / 압축
-
-- 사용자 및 그룹 관리
-
-- 권한의 이해 및 표기
-
-- 권한 설정
-
-- 링크파일
-
-- vi 편집기 명령어
-
-- vi 편집기 활용
-
-- PC에서 편집기 프로그램 활용
-
-- 프로세스, 데몬
-
-- foreground, background
-
-- 프로세스 스케쥴러
-
-- 쉘 명령어
-
-- 변수 조건문
-
-- 반복문, 조건문
-
-- 함수, 다중 조건문
-
-- 형식을 주어 출력하기
-
-- 주기적으로 처리하기
-
-- 시스템 감시
-
-- 시스템 모니터링
-
-- 시스템 백업 응용
-
-- 네트워크 이론
-
-- 네트워크 환경 설정
-
-- 네트워크 관리
-
-- 시스템 부팅
-
-- 시동, 초기화, 셧다운
-
-- 시스템 측정 명령
 
 <br>
 
