@@ -33,7 +33,13 @@
 <br>
 
 ## MyProjects
+<details><summary>자세히보기</summary>
+<p>
+
 - [BOBSIM 프로젝트](https://github.com/InSeong-So/bobsim.git)
+
+</p>
+</details>
 
 <hr>
 <br>
@@ -46,6 +52,9 @@
 
 ## Contents
 ### :cat:[개발상식](/chapter01-개발상식)
+<details><summary>자세히보기</summary>
+<p>
+
 - `OOP` 는 뭐에요?
 
 - OOP 의 `특징`은 뭐에요?
@@ -66,6 +75,9 @@
 
 - `Git` 과 `Github` 은 어떻게 달라요?
 
+</p>
+</details>
+
 <br>
 
 <sup>[(Contents 목차로)](#sis-developers-note)</sup>
@@ -74,6 +86,9 @@
 <br>
 
 ### :dog:[운영체제](/chapter02-운영체제)
+<details><summary>자세히보기</summary>
+<p>
+
 - `RAM` 과 `ROM` 에 대해 알려주세요.
 
 - `Process` 와 `Thread` 의 차이점을 알려주세요.
@@ -110,6 +125,9 @@
 
 - `Cache Memory` 에 대해 알려주세요.
 
+</p>
+</details>
+
 <br>
 
 <sup>[(Contents 목차로)](#sis-developers-note)</sup>
@@ -118,6 +136,9 @@
 <br>
 
 ### :mouse:[네트워크](/chapter03-네트워크)
+<details><summary>자세히보기</summary>
+<p>
+
 - `HTTP 1.0`과 `HTTP 2.0`의 차이점은 뭐에요?
 
 - `HTTP Method` 의 종류는 뭐가 있나요?
@@ -148,6 +169,9 @@
 
 - `Server 의 인증방식`에 대해 설명해주세요.
 
+</p>
+</details>
+
 <br>
 
 <sup>[(Contents 목차로)](#sis-developers-note)</sup>
@@ -156,6 +180,13 @@
 <br>
 
 ### :hamster:[언어](/chapter04.0-언어)
+<details><summary>자세히보기</summary>
+<p>
+
+```sh
+기초만 다룹니다!
+```
+
 - `Java` 기초
 
 - `Python` 기초
@@ -163,6 +194,9 @@
 - `JavaScript` 기초
 
 - `SQL` 기초
+
+</p>
+</details>
 
 <br>
 
@@ -172,11 +206,21 @@
 <br>
 
 ### :rabbit:[프레임워크](/chapter04.5-프레임워크)
+<details><summary>자세히보기</summary>
+<p>
+
+```sh
+기초만 다룹니다!
+```
+
 - Java : `Spring Framework` 와 `Spring-MVC`
 
 - Python : `Django` 와 `Flask`
 
 - JavaScript : `Node.js` 와 `React.js`, 그리고 `Vue.js`
+
+</p>
+</details>
 
 <br>
 
@@ -186,6 +230,9 @@
 <br>
 
 ### :wolf:[데이터베이스](/chapter05-데이터베이스)
+<details><summary>자세히보기</summary>
+<p>
+
 - `DB Normalization` 란 무엇인가요?
 
 - `Merge` 에 대해 알려주세요.
@@ -193,6 +240,9 @@
 - `Join` 은 무엇이고 어떻게 사용하나요?
 
 - `Index` 는 무엇인가요?
+
+</p>
+</details>
 
 <br>
 
@@ -202,11 +252,18 @@
 <br>
 
 ### :frog:[디자인패턴](/chapter06-디자인패턴)
+<details><summary>자세히보기</summary>
+<p>
+
 - `Disign Pattern` 은 무엇인가요?
 
 - `Java` 의 디자인 패턴
 
 - `JavaScript` 의 디자인 패턴
+
+
+</p>
+</details>
 
 <br>
 
@@ -217,6 +274,9 @@
 
 ### :tiger:[자료구조와_알고리즘](/chapter07-자료구조와_알고리즘)
 #### 자료구조
+<details><summary>자세히보기</summary>
+<p>
+
 - `Big-O 표기법`에 대해 설명해주세요.
 
 - `ArrayList` 와 `LinkedList` 의 차이점을 알려주세요.
@@ -243,9 +303,19 @@
 
 - `DFS` 와 `BFS` 의 차이점을 알려주세요.
 
+</p>
+</details>
+
+<br>
+
+<sup>[(Contents 목차로)](#sis-developers-note)</sup>
+
 <br>
 
 #### 알고리즘
+<details><summary>자세히보기</summary>
+<p>
+
 - `Bubble` Sort 를 구현해주세요.
 
 - `Selection` Sort 를 구현해주세요.
@@ -271,6 +341,9 @@
 - `Factorial Algorithm` 을 구현하는 여러 방식과 복잡도, 문제점에 대해 설명해주세요.
 
 - Fibonacci 방식의 `Recursion`, `Dynamic Programming`, `반복` 세 가지 방식에 대한 차이는 무엇인가요?
+
+</p>
+</details>
 
 <br>
 
