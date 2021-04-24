@@ -32,24 +32,6 @@
 <hr>
 <br>
 
-## MyProjects
-<details><summary>자세히보기</summary>
-<p>
-
-- [BOBSIM 프로젝트](https://github.com/InSeong-So/bobsim.git)
-
-</p>
-</details>
-
-<hr>
-<br>
-
-## RESUME
-- [이력서보기](https://inseong-so.github.io/new-resume/)
-
-<hr>
-<br>
-
 ## Contents
 ### :cat:[개발상식](/chapter01-개발상식)
 <details><summary>자세히보기</summary>
