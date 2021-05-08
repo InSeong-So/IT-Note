@@ -55,3 +55,81 @@
 - Gulp
 ### 모듈 번들러
 ### Linters / Formatters
+- Prettier
+- ESLint
+## 프레임워크
+### ReactJS
+- Redux
+- Mobx
+### VueJs
+- VueX
+## 최신 CSS
+### Styled Components
+### CSS Modules
+### Styled JSX
+### Emotio
+## 웹 컴포넌트
+### HTML 템플릿
+### 커스텀 엘리먼트
+### 섀도 DOM
+## CSS 프레임워크
+### Reactstrap
+- JS 기반으로 프레임워크 기반의 JavaScript 애플리케이션과 함께 사용하면 좋음
+### Material UI
+- JS 기반으로 프레임워크 기반의 JavaScript 애플리케이션과 함께 사용하면 좋음
+### Taliwind CSS
+- JS 기반으로 프레임워크 기반의 JavaScript 애플리케이션과 함께 사용하면 좋음
+### Chakra UI
+- JS 기반으로 프레임워크 기반의 JavaScript 애플리케이션과 함께 사용하면 좋음
+### Bootstrap
+- 기본적으로 JavaScript 구성 요소가 없어도 작동하는 CSS 우선 프레임워크
+## 앱 테스트
+- 단위(Unit 테스트), 통합(Intergration) 테스트, 기능(function) 테스트의 차이를 익히기
+### Jest
+### react-testing-library
+### Cypress
+### Enzyme
+## 타입 체커
+### TypeScript
+## 프로그레시브 웹(PWA)
+### PWA 웹 API
+- 스토리지
+- 웹소캣
+- 서비스 워커
+- 사용자 위치
+- 푸시 알림
+- 기기 방향 감지하기
+- 결제
+- 자격 증명
+### 성능 계산, 측정 및 개선
+- PRPL 패턴
+- RAIL 모델
+- 성능 메트릭
+- Lighthouse 사용하기
+- DevTools 사용하기
+## 서버 사이드 렌더링(SSR)
+### ReactJS
+- NextJS
+- AfterJS
+### VueJS
+- NuxtJS
+## GraphQL
+### Apollo
+### Relay Modern
+## 정적 사이트 생성기
+### NextJS
+### GatsbyJS
+### NuxtJS
+### Vuepress
+### Jekyll
+### Hugo
+### Gridsome
+## 모바일 애플리케이션
+### React Native
+### Native Script
+### Flutter
+### Ionic
+## 데스크톱 애플리케이션
+### Electron
+## 웹 어셈블리
+- 자바스크립트보다 빠르며 주요 브라우저들은 이미 Wasm 1.0을 지원함
