@@ -475,14 +475,11 @@
 - DNS서버와의 IP주소 송수신
   > DNS Query를 DNS 서버에 송신한다.
   >> DNS 서버는 웹 서버의 IP주소를 사용자 PC로 반환한다.
-    ```
-      사용자의 PC는 가장 먼저, 지정된 DNS서버(통신사마다 DNS서버 존재)에 DNS Query를 송신한다.
-      
-      예로 http://www.naver.com를 검색하면 지정된 DNS서버는 Root 네임서버에 www.naver.com을 질의하고 Root 네임서버는 .com 네임서버의 ip주소를 알려준다.
-      그 후 .com 네임서버에 www.naver.com을 질의하면 naver.com 네임서버의 IP주소를 받고, 그곳에 질의를 송신하여 www.naver.com의 IP주소를 수신하게 된다.
+  - 사용자의 PC는 가장 먼저, 지정된 DNS서버(통신사마다 DNS서버 존재)에 DNS Query를 송신한다.
+  - 예로 [www.naver.com](https://www.naver.com/)를 검색하면 지정된 DNS서버는 Root 네임서버에 `www.naver.com`을 질의하고, Root 네임서버는 `.com` 네임서버의 ip주소를 알려준다.
+  - 그 후 `.com` 네임서버에 www.naver.com을 질의하면 naver.com 네임서버의 IP주소를 받고, 그곳에 질의를 송신하여 www.naver.com의 IP주소를 수신하게 된다.
 
-      과정이 복잡한 이유는 도메인의 계층화 구조에 따라 DNS서버도 계층화되어 있기 때문이다. 도메인의 가장 최상단, 즉 가장 뒷쪽(.com, .kr 등등)을 담당하는 DNS서버는 전세계에 13개 뿐이다.
-    ```
+  > 과정이 복잡한 이유는 도메인의 계층화 구조에 따라 DNS서버도 계층화되어 있기 때문이다. 도메인의 가장 최상단, 즉 가장 뒷쪽(.com, .kr 등등)을 담당하는 DNS서버는 전세계에 13개 뿐이다.
 
 - 웹 서버 접속
     > HTTP Request를 위해 TCP Socket을 개방하고 연결한다. 이 과정에서 3-Hand-Shaking이 일어난다.

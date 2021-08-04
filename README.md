@@ -10,8 +10,10 @@
 
 알고리즘 공부에 매진 중인 관계로 다소 업데이트가 늦어지나, 미비된 정보와 누락된 내용도 수정하고 있습니다.
 
-## 목차
-<details><summary>열기</summary>
+<br>
+
+## 챕터 바로가기
+<details><summary>너무 길어요:sob: 자세히보기!</summary>
 <table align="center">
   <thead>
     <th>구분</th> 

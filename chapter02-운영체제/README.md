@@ -437,9 +437,14 @@
 
 <div align=center>
 
-<img src="Memory_Hierarchy.jpg" alt="Memory_Hierarchy" width="500"/>
+<img src="Memory_Hierarchy.jpg" alt="Memory_Hierarchy" width="400"/>
 
-**CPU가 메모리에 더 빨리 접근하기 위해 필요에 따라 나눈 메모리 계층 구조(Memory hierarchy)**
+<br>
+<br>
+
+<p><strong>CPU가 메모리에 더 빨리 접근하기 위해 필요에 따라 나눈 메모리 계층 구조(Memory hierarchy)</strong></p>
+
+<br>
 
 </div>
 
