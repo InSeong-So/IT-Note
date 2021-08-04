@@ -1,5 +1,5 @@
 # Developer's Note
-## 개요
+### 개요
 :star2:리뉴얼중입니다!:star2:
 
 해당 저장소는 누가 보아도 쉽게 이해할 수 있는 IT 기술의 기록을 지향합니다.
@@ -12,17 +12,15 @@
 
 <br>
 
-## 챕터 바로가기
-<details><summary>너무 길어요:sob: 자세히보기!</summary>
+### 챕터 바로가기
+<details><summary>:persevere:너무 길어요:sob: 자세히보기!</summary>
 <table align="center">
   <thead>
-    <th>구분</th> 
-    <th>항목</th>
-    <th>Latest</th>  
+    <th>구분</th>
+    <th>항목</th>  
   </thead>
   <tbody>
     <tr>
-      <td rowspan="13">이론 정리</td>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D">:cat:개발상식</a></td>
       <td>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#oop-%EB%8A%94-%EB%AD%90%EC%97%90%EC%9A%94">OOP는 뭐에요?</a></p>
@@ -119,12 +117,12 @@
         <p>Hash 에 대해 설명해주세요.</p>
         <p>HashTable 의 이중 해쉬에 대해 설명해주세요.</p>
         <p>Tree 구조는 무엇인가요?</p>
-        <p>Binary Tree 에서 각 트리 순회법 전위, 중위, 후위 순회에 대해 설명해주세요.</p>
+        <p>Binary Tree 에서 각 트리 순회법에 대해 설명해주세요.</p>
         <p>Red-Black-Tree 구조를 알려주세요.</p>
         <p>B+ Tree 구조는 뭐에요?</p>
         <p>Heap 구조는 무엇인가요?</p>
         <p>Graph 구조에 대해 설명해주세요.</p>
-        <p>Binary Search Tree 의 worst time, worst case 를 알려주세요.</p>
+        <p>Binary Search Tree 의 최악을 말하자면 어떤가요?</p>
         <p>DFS 와 BFS 는 뭔가요?</p>
         <p>Bubble Sort 를 구현해주세요.</p>
         <p>Selection Sort 를 구현해주세요.</p>
@@ -133,8 +131,8 @@
         <p>Merge Sort 를 구현해주세요.</p>
         <p>Heap Sort 를 구현해주세요.</p>
         <p>Sorting Algorithm 중 가장 빠른 알고리즘은 무엇인가요?</p>
-        <p>랜덤으로 배열된 숫자들이 있을때 어떤 Sorting Algorithm 을 사용할 건가요?</p>
-        <p>Factorial Algorithm 을 구현하는 여러 방식과 복잡도, 문제점에 대해 설명해주세요.</p>
+        <p>숫자형 배열이 주어지면 어떤 Sorting Algorithm 을 사용할 건가요?</p>
+        <p>Factorial 를 구현하는 여러 방식에 대해 설명해주세요.</p>
       </td>
     </tr>
     <tr>
