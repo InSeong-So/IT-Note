@@ -967,7 +967,6 @@ console.log(1 === '1'); // false
     console.dir(add);
     ```
 
-    ![예제](/02/4-12.jpg)
     - ECMA5 스크립트 명세서에는 모든 함수가 length와 prototype 프로퍼티를 가져야한다고 기술한다.
     - `name 프로퍼티`는 함수의 이름을 나타낸다.
       - 익명 함수라면 name 프로퍼티는 빈 문자열이 된다.

@@ -14,6 +14,9 @@
 
 ### 챕터 바로가기
 <details><summary>:persevere:너무 길어요:sob: 자세히보기!</summary>
+
+<br>
+
 <table align="center">
   <thead>
     <th>구분</th>
