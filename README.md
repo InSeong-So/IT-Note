@@ -14,7 +14,7 @@
 <br>
 
 ### :point_down:챕터 바로가기:point_down:
-<details><summary>:persevere:너무 길어요:sob: 자세히보기!</summary>
+<details><summary>:persevere:너무 길어요:sob: <strong>자세히보기!</strong></summary>
 
 <br>
 
