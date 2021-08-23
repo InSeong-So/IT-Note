@@ -83,7 +83,7 @@
 
 <div align=center>
 
-<img src="data-model-normalization.jpg" alt="MVC Pattern" width="500"/>
+<src="img/ src="data-model-normalization.jpg" alt="MVC Pattern" width="500"/>
 
 </div>
 
@@ -199,7 +199,7 @@ MERGE INTO TMP_TABLE A
 
 <div align=center>
 
-<img src="SQL_075.jpg" alt="" width="500"/>
+<src="img/ src="SQL_075.jpg" alt="" width="500"/>
 
 </div>
 
@@ -217,7 +217,7 @@ MERGE INTO TMP_TABLE A
 
 <div align=center>
 
-<img src="SQL_076.jpg" alt="" width="500"/>
+<src="img/ src="SQL_076.jpg" alt="" width="500"/>
 
 </div>
 

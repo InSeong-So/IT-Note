@@ -151,7 +151,7 @@
 
 <div align=center>
 
-<img src="process.jpg" alt="Process" width="500"/>
+<img src="img/process.jpg" alt="Process" width="500"/>
 
 **컴퓨터에서 연속적으로 실행되고 있는 컴퓨터 프로그램**
 
@@ -179,7 +179,7 @@
 
 <div align=center>
 
-<img src="thread.jpg" alt="Thread" width="500"/>
+<img src="img/thread.jpg" alt="Thread" width="500"/>
 
 **프로세스 내에서 실행되는 여러 흐름의 단위**
 
@@ -437,7 +437,7 @@
 
 <div align=center>
 
-<img src="Memory_Hierarchy.jpg" alt="Memory_Hierarchy" width="400"/>
+<img src="img/Memory_Hierarchy.jpg" alt="Memory_Hierarchy" width="400"/>
 
 <br>
 <br>

@@ -101,10 +101,12 @@
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter05-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4">:wolf:데이터베이스</a></td>
       <td>
-        <p>DB Normalization 란 무엇인가요?</p>
-        <p>Merge 에 대해 알려주세요.</p>
-        <p>Join 은 무엇이고 어떻게 사용하나요?</p>
-        <p>Index 는 무엇인가요?</p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter05-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4#booksql%EC%9D%80-%EB%AD%90%EC%A3%A0">SQL은 뭐죠?</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter05-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4#bookrdb-vs-nosql">RDB vs NoSQL</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter05-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4#bookrdb-vs-nosql">DB Normalization이 무엇인가요?</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter05-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4#bookrdb-vs-nosql">SQL문의 Merge 구문에 대해 알려주세요.</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter05-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4#bookrdb-vs-nosql">SQL문의 Join 구문에 대해 알려주세요.</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter05-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4#bookrdb-vs-nosql">데이터베이스에서의 Index를 설명해주세요.</a></p>
       </td>
     </tr>
     <tr>
@@ -176,6 +178,19 @@
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8">:cherry_blossom:디자인</a></td>
       <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8">:mortar_board:시험 정리</a></td>
+      <td>
+        <p>정보처리기사</p>
+        <p>SQLD</p>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8">:watch:프론트엔드</a></td>
+      <td>
+        <p>프론트엔드 로드맵 정리</p>
+      </td>
     </tr>
   </tbody>
 </table>

@@ -390,7 +390,7 @@
 
 <div align=center>
 
-<img src="osi7layer_tcp-ip4layer.png" alt="osi7layer_tcp-ip4layer" width="500"/>
+<img src="img/osi7layer_tcp-ip4layer.png" alt="osi7layer_tcp-ip4layer" width="500"/>
 
 </div>
 
