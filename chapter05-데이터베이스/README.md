@@ -13,8 +13,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -67,8 +65,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -136,8 +132,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -187,8 +181,6 @@ MERGE INTO TMP_TABLE A
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -234,8 +226,6 @@ MERGE INTO TMP_TABLE A
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -248,8 +238,6 @@ MERGE INTO TMP_TABLE A
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>

@@ -1,95 +1,5 @@
 # 운영체제
 
-## 목차
-  - [`RAM` 과 `ROM` 에 대해 알려주세요.](#ram-과-rom-에-대해-알려주세요)
-    - [RAM *(Random Access Memory)* 의 개요](#ram-random-access-memory-의-개요)
-
-    - [ROM *(Read Only Memory)* 의 개요](#rom-read-only-memory-의-개요)
-
-  - [`Process` 와 `Thread` 의 차이점을 알려주세요.](#process-와-thread-의-차이점을-알려주세요)
-    - [Process 의 개요](#process-의-개요)
-
-    - [Thread 의 개요](#thread-의-개요)
-
-  - [`Multi-Process` 와 `Multi-Thread` 에 대해 알려주세요.](#multi-process-와-multi-thread-에-대해-알려주세요)
-    - [Multi-Process 의 개요](#multi-process-의-개요)
-
-    - [Multi-Thread 의 개요](#multi-thread-의-개요)
-
-  - [`User Thread` 와 `Kernel Thread` 의 차이점은 무엇인가요?](#user-thread-와-kernel-thread-의-차이점은-무엇인가요)
-    - [Thread-Package Architectures 의 종류](#thread-package-architectures-의-종류)
-
-    - [`User-level Thread` 의 개요](#user-level-thread-의-개요)
-
-    - [`Kernel-level Thread` 의 개요](#kernel-level-thread-의-개요)
-
-    - [Multiplexed Thread 의 개요](#multiplexed-thread-의-개요)
-
-    - [Scheduler Activation(kernel-supported user-level Thread) 의 개요](#scheduler-activationkernel-supported-user-level-thread-의-개요)
-  - [`Context-Switching` 이 무엇인지 설명해주세요.](#context-switching-이-무엇인지-설명해주세요)
-
-  - [`DeadLock` 에 대해 알려주세요.](#deadlock-에-대해-알려주세요)
-
-  - [`Mutex` 와 `Semaphore`, `Monitor` 의 차이점을 알려주세요.](#mutex-와-semaphore-monitor-의-차이점을-알려주세요)
-    - [Mutex](#mutex)
-
-    - [Semaphore](#semaphore)
-
-    - [Monitor](#monitor)
-  - [`Memory Hierarchy` 에 대해 알려주세요.](#memory-hierarchy-에-대해-알려주세요)
-
-  - [`메모리 관리 전략`에 대해 알려주세요.](#메모리-관리-전략에-대해-알려주세요)
-
-  - [`메모리 할당 알고리즘`에 대해 알려주세요.](#메모리-할당-알고리즘에-대해-알려주세요)
-
-  - [`페이지 교체 알고리즘`에 대해 알려주세요.](#페이지-교체-알고리즘에-대해-알려주세요)
-
-  - [`Fragmentation` 란 무엇인가요?](#fragmentation-란-무엇인가요)
-    - [Fragmentation (메모리 단편화)의 개요](#fragmentation-메모리-단편화의-개요)
-
-    - [`내부 단편화` *(Internal Fragmentation)*](#내부-단편화-internal-fragmentation)
-
-    - [`외부 단편화` *(External Fragmentation)*](#외부-단편화-external-fragmentation)
-  - [`Paging` 과 `Segmentation` 의 차이점에 대해 알려주세요.](#paging-과-segmentation-의-차이점에-대해-알려주세요)
-    - [`Paging` 의 개요](#paging-의-개요)
-
-    - [`Segmentation` 의 개요](#segmentation-의-개요)
-
-  - [`CISC`, `RISC` 의 차이점을 알려주세요.](#cisc-risc-의-차이점을-알려주세요)
-    - [들어가기 전에, Instruction Set 란?](#들어가기-전에-instruction-set-란)
-
-    - [`CISC` *(Complex Instruction Set Computer)*](#cisc-complex-instruction-set-computer)
-
-    - [`RISC` *(Reduced Instruction Set Computer)*](#risc-reduced-instruction-set-computer)
-
-  - [`CPU Scheduling` 에 대해 알려주세요.](#cpu-scheduling-에-대해-알려주세요)
-    - [CPU 스케줄링의 개요](#cpu-스케줄링의-개요)
-
-    - [스케줄링 단계](#스케줄링-단계)
-
-    - [결정 시점](#결정-시점)
-
-    - [`비선점형(Non-preemptive Scheduling)` 프로세스 알고리즘](#비선점형non-preemptive-scheduling-프로세스-알고리즘)
-
-    - [`선점형(Preemptive Scheduling)` 프로세스 알고리즘](#선점형preemptive-scheduling-프로세스-알고리즘)
-
-    - [평가 기준](#평가-기준)
-
-  - [`Sync` 와 `Async` 의 차이점을 알려주세요.](#sync-와-async-의-차이점을-알려주세요)
-    - [Sync *(Synchronous, 동기식 전송)* 의 개요](#sync-synchronous-동기식-전송-의-개요)
-
-    - [Async *(Asynchronous, 비동기식 전송)* 의 개요](#async-asynchronous-비동기식-전송-의-개요)
-
-  - [`Virtual Memory` 에 대해 알려주세요.](#virtual-memory-에-대해-알려주세요)
-
-  - [`Cache Memory` 에 대해 알려주세요.](#cache-memory-에-대해-알려주세요)
-    - [캐쉬 메모리의 개요](#캐쉬-메모리의-개요)
-
-    - [캐쉬 메모리의 사상 방식](#캐쉬-메모리의-사상-방식)
-
-<hr>
-<br>
-
 ## `RAM` 과 `ROM` 에 대해 알려주세요.
 ### RAM *(Random Access Memory)* 의 개요
 - 임의 액세스 방식이며 반도체 집적회로 기억장치(Semiconductor IC Memory)이다.
@@ -139,8 +49,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -203,8 +111,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -230,7 +136,7 @@
   - `프로세스 사이의 어렵고 복잡한 통신 기법(IPC)`
     - 프로세스는 각각의 독립된 메모리 영역을 할당받았기 때문에 하나의 프로그램에 속하는 프로세스들 사이의 변수를 공유할 수 없다.
 
-<brr>
+<br>
 
 ### Multi-Thread 의 개요
 <div align=center>
@@ -264,8 +170,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -359,8 +263,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -372,8 +274,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -397,8 +297,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -426,8 +324,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -459,8 +355,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -486,8 +380,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -515,8 +407,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -550,8 +440,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -575,8 +463,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -597,8 +483,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -645,11 +529,8 @@
 
   - 명령길이가 고정되어 있기 때문에 코드 효율이 낮다.
 
-
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -734,8 +615,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -772,8 +651,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -787,8 +664,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -814,8 +689,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>

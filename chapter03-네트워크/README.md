@@ -1,7 +1,4 @@
 # 네트워크
-
-<br>
-
 ## `HTTP` 란 무엇인가요?
 > HyperText Transfer Protocol 의 약자로 WWW(Worl-Wide-Web, 월드 와이드 웹)에 내재된 프로토콜
 > - WWW 에서 하이퍼텍스트(hypertext) 문서를 교환하기 위하여 사용되는 통신규약
@@ -22,8 +19,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -132,8 +127,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -250,8 +243,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -261,8 +252,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -308,8 +297,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -360,8 +347,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -379,8 +364,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -426,8 +409,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -435,13 +416,8 @@
 
 ## `TCP-3-way-hands-shaking` 에 대해 설명해주세요.
 
-
-
-
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -457,8 +433,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -488,8 +462,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -510,8 +482,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -546,11 +516,8 @@
 
 ### MS script Encoding이란?
 
-
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -569,8 +536,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -600,8 +565,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
@@ -639,8 +602,6 @@
 
 <br>
 
-<sup>[(목차로)](#목차)</sup>
-<br>
 <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>

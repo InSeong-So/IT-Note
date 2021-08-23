@@ -15,6 +15,10 @@
 ### 공간 복잡도(Space Complexity)
 > Big-O 표기법의 메모리 사용 개념으로, 알고리즘의 메모리 효율을 나타냅니다.
 
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
 <hr>
 <br>
 
@@ -45,6 +49,10 @@
     |Insert/delete in middle|Θ(n)|search time + Θ(1)|
     |Wasted space (average)|Θ(n)|Θ(n)|
 
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
 <hr>
 <br>
 
@@ -57,6 +65,10 @@
   - 가장 먼저 들어온 데이터가 가장 먼저 나간다.
   - 프로세스 처리, CPU관리에서 많이 사용된다.
 
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
 <hr>
 <br>
 
@@ -64,10 +76,18 @@
 - 임의의 크기를 가진 데이터를 고정된 데이터의 크기로 변환시키는 것
   - Hash 를 사용하면 즉시 저장하거나 찾고자 하는 위치를 참조하므로 향상된 속도로 처리가 가능
 
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
 <hr>
 <br>
 
 ## :book:HashTable 의 이중 해쉬에 대해 설명해주세요.
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
 <br>
@@ -82,6 +102,10 @@
 
 - 계층적인 데이터 형태들은 트리에 저장하면 자연스럽게 표현되며 더욱 효율적임
 
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
 <hr>
 <br>
 
@@ -94,6 +118,10 @@
   - 전위 순회(pre-order traversal): 현재 노드 -> 왼쪽 가지 -> 오른쪽 가지
   - 중위 순회(in-order traversal): 왼쪽 가지 -> 현재 노드 -> 오른쪽 가지
   - 후위 순회(post-order traversal): 왼쪽 가지 -> 오른쪽 가지 -> 현재 노드
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
 <br>
@@ -113,6 +141,10 @@
     - 레드-블랙 트리의 특성을 만족하게 만들기 위해서는 O(log n) 또는 amortized O(1)번의 색 변환과(실제로는 매우 빨리 이루어진다) 최대 3회의 트리 회전(tree rotation)이 필요하다(삽입의 경우 2회).
     - 삽입과 삭제는 복잡한 동작이지만, 그 복잡도는 여전히 O(log n)이다.
 
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
 <hr>
 <br>
 
@@ -124,6 +156,10 @@
   - 모든 레코드들이 트리의 가장 하위 레벨에 정렬되어 있으며 오직 키만 내부 블록에 저장
   - 블록-지향적인 Storage Context(예: filesystem)에서 검색을 효율적으로 할 수 있음
   - 바이너리 서치 트리에 비해 B+ 트리 노드의 fanout(한 노드의 자식 노드의 수)이 훨씬 높아 검색에 필요한 I/O 동작 횟수 감소 가능
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
 <br>
@@ -138,6 +174,10 @@
   - 각 노드의 자식 노드의 최대 개수는 힙의 종류에 따라 다르나 대부분의 경우는 자식 노드의 개수가 최대 2개인 이진 힙(binary heap)을 사용
   - 힙에서는 가장 높은(혹은 가장 낮은) 우선순위를 가지는 노드가 항상 뿌리 노드에 오게 되는 특징이 있음
     - 이를 응용하여 우선순위 큐와 같은 추상적 자료형을 구현
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
 <br>
@@ -160,11 +200,18 @@
       - 무방향 그래프(Undirected Graph)에서 (a, b) 간선은 두 번 저장
       - 한 번은 a 정점에 인접한 간선을 저장하고 다른 한 번은 b에 인접한 간선을 저장
 
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
 <br>
 
 ## :book:Binary Search Tree 의 최악을 말하자면 어떤가요?
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
 <br>
@@ -215,6 +262,10 @@
     }
     ```
 
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
 <hr>
 <br>
 
@@ -224,6 +275,10 @@
 
 - 특징
   - 인접한 2개의 레코드를 비교하여 크기가 순서대로 되어 있지 않으면 서로 교환
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
 <br>
@@ -239,6 +294,10 @@
   2. 그 값을 맨 앞에 위치한 값과 교체한다(패스(pass)).
   3. 맨 처음 위치를 뺀 나머지 리스트를 같은 방법으로 교체한다.
 
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
 <hr>
 <br>
 
@@ -251,6 +310,10 @@
 
 - 동작
   - 각 반복에서 정렬되지 않은 나머지 부분 중 첫 번째 항목은 제거되어 정확한 위치에 삽입한다.
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
 <br>
@@ -273,6 +336,10 @@
   - 분할된 두 개의 작은 리스트에 대해 재귀(Recursion)적으로 이 과정을 반복
     - 재귀는 리스트의 크기가 0이나 1이 될 때까지 반복됨
 
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
 <hr>
 <br>
 
@@ -290,6 +357,10 @@
     - 결합(combine) : 두 부분 리스트를 다시 하나의 정렬된 리스트로 합병하고, 이때 정렬 결과가 임시배열에 저장
     - 복사(copy) : 임시 배열에 저장된 결과를 원래 배열에 복사
 
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
 <hr>
 <br>
 
@@ -302,20 +373,36 @@
   - 가장 큰 수(루트에 위치)를 가장 작은 수와 교환
   - 2와 3을 반복
 
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
 <hr>
 <br>
 
 ## :book:Sorting Algorithm 중 가장 빠른 알고리즘은 무엇인가요?
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
 <br>
 
 ## :book:숫자형 배열이 주어지면 어떤 Sorting Algorithm 을 사용할 건가요?
 
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
 <hr>
 <br>
 
 ## :book:Factorial 를 구현하는 여러 방식에 대해 설명해주세요.
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <hr>
 <br>

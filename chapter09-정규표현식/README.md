@@ -1,6 +1,8 @@
 # 정규표현식
 > 정규표현식이란 String의 검색, 치환, 추출을 위한 패턴입니다. **소프트웨어** 별로 방식, 지원 범위가 다를 수 있음을 주의하세요.
 
+<br>
+
 ## 정규표현식 테스트 사이트
 regular expressions 101 [Link](https://regex101.com/)<br>
 RegExr [Link](https://regexr.com/)<br>
@@ -71,8 +73,13 @@ REGEXPER [Link](https://regexper.com/)<br>
 
 <br>
 
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
+
 ## 정규표현식 바이블
-### :mag_right:프로토콜, 호스트명, 포트 번호 및 경로(URL)를 검증하기
+### :mag_right:프로토콜, 호스트명, 포트 번호 및 경로를 검증하기
 ```sql
 -- 첫번째
 https?://(\w*:\w*@)?[-\w.]+(:\d+)?(/([\w/_.]*(\?\S+)?)?)?
@@ -95,6 +102,10 @@ https?://(\w*:\w*@)?[-\w.]+(:\d+)?(/([\w/_.]*(\?\S+)?)?)?
 
 <br>
 
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<br>
+
 ### :mag_right:이메일 주소 검증하기
 ```sql
 -- 첫번째
@@ -109,17 +120,29 @@ https?://(\w*:\w*@)?[-\w.]+(:\d+)?(/([\w/_.]*(\?\S+)?)?)?
 
 <br>
 
-### :mag_right:HTML 페이지에서 주석 `<!-- -->` 찾기
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<br>
+
+### :mag_right:HTML 태그 찾기
+```sql
+/\<(/?[^\>]+)\>/
+```
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<br>
+
+### :mag_right:HTML의 주석 `<!-- -->` 찾기
 ```sql
 <!-{2,}.*?-{2,}>
 ```
 
 <br>
 
-### :mag_right:HTML 태그를 찾기
-```sql
-/\<(/?[^\>]+)\>/
-```
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <br>
 
@@ -130,7 +153,11 @@ https?://(\w*:\w*@)?[-\w.]+(:\d+)?(/([\w/_.]*(\?\S+)?)?)?
 
 <br>
 
-### :mag_right:신용카드 번호를 검증하기
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<br>
+
+### :mag_right:신용카드 번호 검증하기
 ```sql
 -- 마스터카드
 5[1-5]\d{14}
@@ -150,6 +177,10 @@ https?://(\w*:\w*@)?[-\w.]+(:\d+)?(/([\w/_.]*(\?\S+)?)?)?
 
 <br>
 
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<br>
+
 ### :mag_right:전화번호 검증하기
 ```sql
 -- 첫번째
@@ -164,11 +195,19 @@ https?://(\w*:\w*@)?[-\w.]+(:\d+)?(/([\w/_.]*(\?\S+)?)?)?
 
 <br>
 
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<br>
+
 ### :mag_right:날짜 검증하기
 ```sql
 -- 3/28/2007 혹은 3/28/07
 /^\d{1,2}\/\d{1,2}\/\d{2,4}$/
 ```
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <br>
 
@@ -179,10 +218,18 @@ https?://(\w*:\w*@)?[-\w.]+(:\d+)?(/([\w/_.]*(\?\S+)?)?)?
 
 <br>
 
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<br>
+
 ### :mag_right:1부터 50 사이의 번호 찾기
 ```
 /^[1-9]{1}$|^[1-4]{1}[0-9]{1}$|^50$/
 ```
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <br>
 
@@ -193,18 +240,34 @@ https?://(\w*:\w*@)?[-\w.]+(:\d+)?(/([\w/_.]*(\?\S+)?)?)?
 
 <br>
 
-### :mag_right:적어도 소문자 하나, 대문자 하나, 숫자 하나가 포함되어 있는 8글자 이상 15글자 이하 문자열 검증하기
-```
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<br>
+
+### :mag_right:비밀번호 검증하기
+```sql
+-- 적어도 소문자 하나, 대문자 하나, 숫자 하나가 포함되어 있는 8글자 이상 15글자 이하 문자열 검증하기
 /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15}/
 ```
 
 <br>
 
-### :mag_right:숫자 검증하기
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<br>
+
+### :mag_right:영문 검증하기
 ```sql
--- 0 ~ 9 형식이며 띄어쓰기 불가능
-/^[0-9]+$/
+-- 영문만 가능하며 띄어쓰기 불가능
+/^[a-zA-Z]+$/ 
+
+-- 영문과 띄어쓰기 가능
+/^[a-zA-Z\s]+$/
 ```
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <br>
 
@@ -222,14 +285,19 @@ https?://(\w*:\w*@)?[-\w.]+(:\d+)?(/([\w/_.]*(\?\S+)?)?)?
 
 <br>
 
-### :mag_right:영문 검증하기
-```sql
--- 영문만 가능하며 띄어쓰기 불가능
-/^[a-zA-Z]+$/ 
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
--- 영문과 띄어쓰기 가능
-/^[a-zA-Z\s]+$/
+<br>
+
+### :mag_right:숫자 검증하기
+```sql
+-- 0 ~ 9 형식이며 띄어쓰기 불가능
+/^[0-9]+$/
 ```
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <br>
 
@@ -240,10 +308,18 @@ https?://(\w*:\w*@)?[-\w.]+(:\d+)?(/([\w/_.]*(\?\S+)?)?)?
 
 <br>
 
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<br>
+
 ### :mag_right:숫자, 영문 검증하기
 ```
 /^[a-zA-Z0-9]+$/;
 ```
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <br>
 
@@ -255,5 +331,9 @@ https?://(\w*:\w*@)?[-\w.]+(:\d+)?(/([\w/_.]*(\?\S+)?)?)?
 -- 두번째
 /\d{6} \- [1-4]\d{6}/
 ```
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
 <br>
