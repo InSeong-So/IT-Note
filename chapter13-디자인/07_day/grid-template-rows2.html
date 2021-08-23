@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: grid;
+      border: 4px solid lightgray;
+      grid-template-rows: repeat(2, 100px);
+      grid-template-columns: 1fr [center-start] 1fr [center-end] 1fr;
+      grid-auto-flow: dense;
+    }
+    .item {
+      border: 10px solid red;
+    }
+    .item:nth-child(1) {
+      grid-column: center-start / center-end;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      width: 400px;
+      border: 10px solid lightgray;
+      display: grid;
+      /* 컨테이너 바깥으로 넘침 480px > 400px*/
+      /* grid-template-columns: repeat(4, minmax(120px, 1fr)); */
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      grid-auto-rows: 100px;
+    }
+    .item {
+      border: 10px solid red;
+      font-size: 20px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>

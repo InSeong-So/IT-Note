@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: grid;
+      border: 4px solid lightgray;
+      /*grid-template-rows: 100px 100px;*/
+      grid-template-rows: repeat(2, 100px);
+      /*grid-template-columns: 200px 200px;*/
+      /*grid-template-columns: 1fr 1fr 1fr;*/
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item {
+      border: 2px dashed red;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+  </body>
+</html>

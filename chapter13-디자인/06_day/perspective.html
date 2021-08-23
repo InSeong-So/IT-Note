@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .perspective {
+        margin: 50px;
+        float: left;
+      }
+      .watch {
+        width: 200px;
+        height: 200px;
+        background: tomato;
+        perspective: 400px;
+        position: relative;
+      }
+      .origin1 .watch {
+        persepective-origin: 50% 50%;
+      }
+      .origin2 .watch {
+        perspective-origin: 0 50%;
+      }
+      .origin3 .watch {
+        perspective-origin: 0 120%;
+      }
+      .watch .box {
+        width: 150px;
+        height: 150px;
+        background: royalblue;
+        transform: rotateY(45deg);
+      }
+      .pointer {
+        width: 30px;
+        height: 30px;
+        background: url("https://github.com/ParkYoungWoong/setPresentation/blob/master/presentations/level2/css3/img/eye.png?raw=true");
+        background-size: cover;
+        border-radius: 50%;
+        position: absolute;
+      }
+      .origin1 .pointer {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      .origin2 .pointer {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+      }
+      .origin3 .pointer {
+        top: 120%;
+        left: 0;
+      }
+      h1 {
+        color: tomato;
+        font-size: 24px;
+        text-align: center;
+      }
+</style>
+<body>
+    <div class="perspective origin1">
+        <div class="watch">
+          <div class="box"></div>
+          <div class="pointer"></div>
+        </div>
+        <h1>perspective-origin<br>50% 50%<br>(default value)</h1>
+      </div>
+      
+      <div class="perspective origin2">
+        <div class="watch">
+          <div class="box"></div>
+          <div class="pointer"></div>
+        </div>
+        <h1>perspective-origin<br>0 50%</h1>
+      </div>
+      
+      <div class="perspective origin3">
+        <div class="watch">
+          <div class="box"></div>
+          <div class="pointer"></div>
+        </div>
+        <h1>perspective-origin<br>0 120%</h1>
+      </div>
+</body>
+</html>

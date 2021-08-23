@@ -1,0 +1,48 @@
+body {
+  /*default: 8px*/
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  /*default font-size 16px*/
+  /*default width 100%*/
+  /*default height auto*/
+  background: white;
+  border-bottom: 1px solid lightgray;
+}
+
+.container {
+  width: 980px;
+  margin: auto; /*600px만큼 가로 너비를 가졌으니 바깥 여백을 자동으로 계산하여 좌, 우를 나눠 가짐*/
+}
+
+.container-left {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo {
+  float: left;
+  margin-right: 5px;
+}
+
+.logo img {
+  display: block;
+}
+
+.menu {
+  float: left;
+}
+
+.menu-item {
+  float: left;
+  /* margin-right:10px; */
+  padding: 8px 10px; /*margin-top/bottom 8px, margin-right/left 10px*/
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}

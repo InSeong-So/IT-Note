@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .perspective {
+        width: 200px;
+        height: 200px;
+        margin: 50px;
+        perspective: 600px;
+        float: left;
+      }
+      .perspective h1 {
+        color: tomato;
+        font-size: 24px;
+        text-align: center;
+        transform: rotateY(20deg);
+      }
+      .grand {
+        width: 200px;
+        height: 200px;
+        background: tomato;
+        transform: rotateY(30deg);
+      }
+      .parent {
+        width: 140px;
+        height: 140px;
+        background: royalblue;
+        transform: rotateX(-45deg);
+      }
+      .child {
+        width: 70px;
+        height: 70px;
+        background: yellowgreen;
+        transform: rotateY(90deg);  
+      }
+      .preserve-3d .grand,
+      .preserve-3d .parent {
+       transform-style: preserve-3d; 
+      }
+      .flat .child {
+        transform: rotateY(0);
+      }
+</style>
+<body>
+    <div class="perspective preserve-3d">
+        <div class="grand">
+          <div class="parent">
+            <div class="child"></div>
+          </div>
+        </div>
+        <h1>preserve-3d</h1>
+      </div>
+      
+      <div class="perspective flat">
+        <div class="grand">
+          <div class="parent">
+            <div class="child"></div>
+          </div>
+        </div>
+        <h1>flat<br>(not preserve-3d)</h1>
+      </div>
+</body>
+</html>

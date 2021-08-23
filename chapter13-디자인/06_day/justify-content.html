@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        border: 4px solid;
+        display: flex;
+        /* 콘텐츠 정렬 */
+        /* justify-content: flex-start; */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        justify-content: space-around;
+    }
+    .container .item{
+        width: 100px;
+        height: 100px;
+        background:tomato;
+        border: 4px dashed red;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+</body>
+</html>

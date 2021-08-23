@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .example {
+        float: left;
+        margin: 50px;
+      }
+      .example-back {
+        border: 1px dashed tomato;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background: tomato;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        transform: rotateY(180deg);
+      }
+      .back {
+        backface-visibility: hidden;
+      }
+      h1 {
+        color: tomato;
+        font-size: 24px;
+        text-align: center;
+      }
+      .opacity {
+        opacity: .6;
+      }
+</style>
+<body>
+    <div class="example">
+        <div class="box front">ABC</div>
+        <h1 class="opacity">transform:<br>rotateY(180deg);</h1>
+        <h1>backface-visibility:<br>visible;</h1>
+      </div>
+      
+      <div class="example">
+        <div class="example-back">
+          <div class="box back">ABC</div>
+        </div>
+        <h1 class="opacity">transform:<br>rotateY(180deg);</h1>
+        <h1>backface-visibility:<br>hidden;</h1>
+      </div>
+</body>
+</html>

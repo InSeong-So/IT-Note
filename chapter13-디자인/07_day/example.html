@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      width: 800px;
+      display: grid;
+      grid-template-rows: 100px 300px 100px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .container .item {
+      color: white;
+      background-color: blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .holy,
+    .footer {
+      grid-column: 1/-1;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item holy">Holy Grail Layout</div>
+      <div class="item nav">Nav</div>
+      <div class="item main">Main Content</div>
+      <div class="item sidebar">Sidebar</div>
+      <div class="item footer">Footer</div>
+    </div>
+  </body>
+</html>
