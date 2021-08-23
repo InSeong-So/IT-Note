@@ -150,8 +150,8 @@
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D%EC%9D%98-%ED%8C%A8%ED%84%B4">정규표현식의 패턴</a></p>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%ED%98%B8%EC%8A%A4%ED%8A%B8%EB%AA%85-%ED%8F%AC%ED%8A%B8-%EB%B2%88%ED%98%B8-%EB%B0%8F-%EA%B2%BD%EB%A1%9Curl%EB%A5%BC-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0">프로토콜, 호스트명, 포트 번호 및 경로를 검증하기</a></p>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%EC%9D%B4%EB%A9%94%EC%9D%BC-%EC%A3%BC%EC%86%8C-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0">이메일 주소 검증하기</a></p>
-        <p><a href="">HTML 태그 찾기</a></p>
-        <p><a href="">HTML의 주석 찾기</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_righthtml-%ED%83%9C%EA%B7%B8-%EC%B0%BE%EA%B8%B0">HTML 태그 찾기</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_righthtml%EC%9D%98-%EC%A3%BC%EC%84%9D-------%EC%B0%BE%EA%B8%B0">HTML의 주석 찾기</a></p>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%EC%9D%BC%EB%B0%98%EC%A0%81%EC%9D%B8-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4%EC%9D%98-%EC%A3%BC%EC%84%9D---%EC%B0%BE%EA%B8%B0">일반적인 프로그래밍 언어의 주석 찾기</a></p>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%EC%8B%A0%EC%9A%A9%EC%B9%B4%EB%93%9C-%EB%B2%88%ED%98%B8-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0">신용카드 번호 검증하기</a></p>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0">전화번호 검증하기</a></p>
@@ -159,7 +159,7 @@
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%EB%82%A0%EC%A7%9C-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0">jpg, gif 또는 png 확장자를 가진 그림 파일명 찾기</a></p>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right1%EB%B6%80%ED%84%B0-50-%EC%82%AC%EC%9D%B4%EC%9D%98-%EB%B2%88%ED%98%B8-%EC%B0%BE%EA%B8%B0">1부터 50 사이의 번호 찾기</a></p>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right16%EC%A7%84%EC%88%98%EB%A1%9C-%EC%9D%B4%EB%A3%A8%EC%96%B4%EC%A7%84-%EC%83%89%EA%B9%94-%EB%B2%88%ED%98%B8-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0">16진수로 이루어진 색깔 번호 검증하기</a></p>
-        <p><a href="">비밀번호 검증하기</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0">비밀번호 검증하기</a></p>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%EC%98%81%EB%AC%B8-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0">영문 검증하기</a></p>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%ED%95%9C%EA%B8%80-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0">한글 검증하기</a></p>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%EC%88%AB%EC%9E%90-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0">숫자 검증하기</a></p>
@@ -174,9 +174,9 @@
     </tr>
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter12-%EB%B9%8C%EB%8D%94">:maple_leaf:빌더</a></td>
-      <td><a href=""></a>Ant</td>
-      <td><a href=""></a>Maven</td>
-      <td><a href=""></a>Gradle</td>
+      <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0"></a>Ant</td>
+      <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0"></a>Maven</td>
+      <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0"></a>Gradle</td>
     </tr>
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8">:cherry_blossom:디자인</a></td>
@@ -198,3 +198,30 @@
   </tbody>
 </table>
 </details>
+
+<br>
+
+### 마크다운 작성 규칙
+1. `*.md` 파일의 첫 헤드라인은 `#`을 사용합니다.
+2. 항목별 정리 시 `##`를 사용하고, 소항목은 `###`입니다.
+  - `##` 항목의 끝에 상위 문서로 갈 수 있는 링크를 붙입니다.
+    ```
+    ## 예시
+    - 내용
+
+    <br>
+
+    <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+    <hr>
+    <br>
+
+    ## 예시
+    - 계속...
+    ```
+3. TOC는 생성하지 않습니다.
+4. 문서 내의 한 항목에서 설명하는 내용이 100줄을 넘어가면 분리합니다.
+5. 바로가기 링크는 `Link`로 표현합니다.
+
+<hr>
+<br>
