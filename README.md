@@ -8,7 +8,7 @@
 
 코드를 기록하더라도 주석과 개념 정리를 하게끔 노력합니다.
 
-알고리즘 공부에 매진 중인 관계로 다소 업데이트가 늦어지나, 미비된 정보와 누락된 내용도 수정하고 있습니다.
+알고리즘과 프론트엔드 공부에 매진 중인 관계로 다소 업데이트가 늦어지나, 미비된 정보와 누락된 내용도 수정하고 있습니다.
 
 <hr>
 <br>
@@ -175,9 +175,11 @@
     </tr>
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter12-%EB%B9%8C%EB%8D%94">:maple_leaf:빌더</a></td>
-      <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0"></a>Ant</td>
-      <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0"></a>Maven</td>
-      <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0"></a>Gradle</td>
+      <td>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0">Ant</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0">Maven</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter09-%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D#mag_right%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0">Gradle</a></p>
+      </td>
     </tr>
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8">:cherry_blossom:디자인</a></td>
