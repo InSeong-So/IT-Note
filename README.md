@@ -226,3 +226,220 @@
 3. TOC는 생성하지 않습니다.
 4. 문서 내의 한 항목에서 설명하는 내용이 100줄을 넘어가면 분리합니다.
 5. 바로가기 링크는 `Link`로 표현합니다.
+
+<br>
+<hr>
+
+### 참조할 만한 사이트
+> :blush:열심히 정리 중입니다!:blush:
+
+<br>
+
+#### :sunglasses: 취업 사이트
+[잡코리아](https://www.jobkorea.co.kr/)
+- 개발자는 사이트의 공고보다는 합격자소서 확인해요.
+
+[잡플래닛](https://www.jobplanet.co.kr/welcome/index)
+- 대중적인 기업 평점 확인하기 좋습니다.
+
+[오픈샐러리](https://www.opensalary.com/)
+- 입/퇴사자, 연봉 추이를 확인할 수 있습니다.
+
+[로켓펀치](https://www.rocketpunch.com/)
+- IT 채용관입니다.
+
+[원티드](https://www.wanted.co.kr/)
+- 채용보상금이 있습니다. IT 채용관입니다.
+
+[슈퍼루키](https://www.superookie.com/jobs)
+- IT 채용관입니다.
+
+[링크드인](https://www.linkedin.com/feed/)
+- 글로벌한 IT 채용관입니다.
+
+<br>
+
+#### :sunglasses: 취업 준비에 대한 조언
+[청천향로(이동욱)님의 junior-recruit-scheduler](https://github.com/jojoldu/junior-recruit-scheduler/blob/master/README.md)
+
+[JBee(한재엽)님의 Interview_Question_for_Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
+
+[개발자의 포트폴리오](https://gmlwjd9405.github.io/2018/05/04/how-to-write-a-resume-for-a-developer.html)
+
+[캡틴판교(장기효)님의 프론트엔드 개발 면접](https://joshua1988.github.io/web-development/interview/frontend-questions/)
+
+[프론트엔드 면접 문제 은행](https://h5bp.org/Front-end-Developer-Interview-Questions/translations/korean/#JS-%EA%B4%80%EB%A0%A8-%EC%A7%88%EB%AC%B8)
+
+[프론트엔드 면접 질문](https://devowen.com/283?category=778540)
+
+<br>
+
+#### :sunglasses: 알고리즘
+[프로그래머스](https://programmers.co.kr/)
+- 코딩테스트, 과제전형을 폭 넓게 다루며 최근에는 채용관의 역할도 하고 있습니다.
+- 
+[백준 온라인 저지](https://www.acmicpc.net/)
+- 국내 최다 문제가 수록된 알고리즘 사이트입니다.
+- 
+[코딜리티](https://www.codility.com/)
+
+[해커랭크](https://www.hackerrank.com/)
+
+[부경대학교-권오흠님 강의](http://www.kocw.net/home/search/kemView.do?kemId=1148815)
+
+[리브레위키-컴퓨터공학](https://librewiki.net/wiki/%EC%8B%9C%EB%A6%AC%EC%A6%88:%EC%88%98%ED%95%99%EC%9D%B8%EB%93%AF_%EA%B3%BC%ED%95%99%EC%95%84%EB%8B%8C_%EA%B3%B5%ED%95%99%EA%B0%99%EC%9D%80_%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B3%BC%ED%95%99/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EA%B8%B0%EC%B4%88)
+
+[나무위키-알고리즘](https://namu.wiki/w/%EB%B6%84%EB%A5%98:%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+
+[알고리즘 공부 시작 방법 및 순서](https://blog.yena.io/studynote/2018/11/14/Algorithm-Basic.html)
+
+[수열의 적용 이론을 검색하는 사이트](https://oeis.org/)
+
+[그래프 구조를 시각화해주는 사이트](https://csacademy.com/app/graph_editor/)
+
+[코드포스-자료구조란?](http://codeforces.com/blog/entry/15729)
+
+<br>
+
+#### :sunglasses: CS 1, 네트워크
+
+<br>
+
+#### :sunglasses: CS 2, 데이터베이스
+
+<br>
+
+#### :sunglasses: CS 3, 운영체제
+[이화여자대학교-반효경님 강의](http://www.kocw.net/home/cview.do?mty=p&kemId=1226304)
+
+<br>
+
+#### :sunglasses: FE 1, HTML/CSS
+
+<br>
+
+#### :sunglasses: FE 2, JavaScript
+
+<br>
+
+#### :sunglasses: FE 3, Vue.js
+[뷰 시작하기](https://kr.vuejs.org/v2/guide/installation.html)
+- 뷰 공식 사이트로, 한글화가 되어 풍부한 기술 문서를 확인할 수 있습니다.
+
+[뷰 라이프사이클 이해하기](https://beomy.tistory.com/47)
+- 조금 더 상세히 라이프사이클을 알 수 있습니다.
+
+[뷰에 TDD 적용하기](https://lmiller1990.github.io/vue-testing-handbook/ko/#%EC%9D%B4-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94)
+
+[Vue.js로 간단한 가계부 구현하기](https://rinae.dev/posts/hanami-vuejs-moneybook-frontend-2)
+
+[고양이도 할 수 있는 Vue.js](https://rintiantta.github.io/jpub-vue/guide/chapter4.html#%EC%9B%8C%EC%B2%98-%EC%82%AC%EC%9A%A9-%EB%B0%A9%EB%B2%95)
+- 뷰를 이해하고 응용해봅시다.
+
+[Vutify](https://v15.vuetifyjs.com/en/getting-started/quick-start)
+- 뷰 컴포넌트 오픈소스 라이브러리입니다.
+
+[Vuex, Vue-Router, Axios로 SPA 구현하기](https://jeonghwan-kim.github.io/2018/03/26/vue-authentication.html)
+
+<br>
+
+#### :sunglasses: FE 4, React.js
+[리액트 시작하기](https://ko.reactjs.org/tutorial/tutorial.html)
+- 리액트 공식 사이트로, 한글화가 되어 풍부한 기술 문서를 확인할 수 있습니다.
+
+[김민준님의 모던 리액트](https://react.vlpt.us/)
+- 리액트를 다루는 기술의 저자가 운영하는 사이트입니다.
+
+<br>
+
+#### :sunglasses: BE 1, Java
+[이펙티브 자바 3판 한글화](https://github.com/WegraLee/effective-java-3e-source-code)
+
+<br>
+
+#### :sunglasses: BE 2, Python
+
+<br>
+
+#### :sunglasses: BE 3, Node.js
+
+<br>
+
+
+#### :sunglasses: Dev 1, Apache
+
+<br>
+
+#### :sunglasses: Dev 2, Docker
+
+<br>
+
+#### :sunglasses: Dev 3, Rasberry Pi
+[라즈베리파이3 B+ 설치 가이드](https://geeksvoyage.com/raspberry%20pi/install-pi-wo-monitor/)
+
+[라즈베리파이 SVN 설치 방법](https://guzene.tistory.com/233)
+
+[vsftpd 설정하기](https://kkamagistory.tistory.com/97)
+
+<br>
+
+#### :sunglasses: 기술 블로그
+[우아한 형제들 기술 블로그](https://techblog.woowahan.com/)
+
+<br>
+
+#### :sunglasses: Gihub
+[카카오 깃허브](https://github.com/kakao)
+
+[네이버 깃허브](http://woowabros.github.io/)
+
+[커밋 스타일 가이드](https://udacity.github.io/git-styleguide/)
+
+[깃허브로 취업하기](http://sujinlee.me/professional-github/)
+
+[깃허브 독스-테이블 만드는 방법](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables)
+
+[깃허브에서 사용할 Emoji 모음](https://www.webfx.com/tools/emoji-cheat-sheet/)
+
+[.gitignore 생성 사이트](https://www.gitignore.io/)
+
+[깃허브 마크다운 badge 생성 사이트](https://shields.io/category/license)
+
+<br>
+
+#### :sunglasses: IDE
+[Intellij 단축키](http://redutan.github.io/2016/03/23/intellij-favorite-keymap-osx)
+
+<br>
+
+#### :sunglasses: IT 커뮤니티
+[okky](https://okky.kr/)
+
+[생활코딩](https://opentutorials.org/)
+
+[뎁스노트](https://devsnote.com/)
+
+[가리사니](https://gs.saro.me/dev)
+
+[DBA 커뮤니티 구루비](http://gurubee.net/roadmap/oracle)
+
+[개발자 QA 커뮤니티](https://hashcode.co.kr/)
+
+[커리어리](https://careerly.co.kr/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjI3MjQ3MywiaWF0IjoxNjIyNTQ2ODc0fQ.y67eO_W_gKyUb54M32ACoiMqXQ5QhGZ1Nj2ENFLszVs)
+
+<br>
+
+#### :sunglasses: 온라인 강의
+[인프런](https://www.inflearn.com/?gclid=CjwKCAiAlb_fBRBHEiwAzMeEdkY6B2RaHXi3oXSkFtStO642L4MZ3542qb1zkogTv_jWR-LQhBAVjBoCL60QAvD_BwE)
+- 유/무료 온라인 강의 플랫폼입니다. 강의의 품질이 높아요.
+
+[tutorialspoint](https://www.tutorialspoint.com/tutorialslibrary.htm)
+- 외국 사이트로 모든 IT 기술에 대한 튜토리얼을 진행할 수 있습니다.
+
+[이웅모님의 웹 프로그래밍 튜토리얼](https://poiemaweb.com/)
+- 모던 자바스크립트 Deep Dive의 저자가 운영하는 사이트입니다.
+
+[파이썬을 이용한 데이터 사이언스 스쿨](https://datascienceschool.net/)
+- 무료입니다. 데이터 분석을 시작하려면 해당 사이트에서 도움을 받을 수 있습니다.
+
+<br>
