@@ -277,10 +277,10 @@
 #### :sunglasses: 알고리즘
 [프로그래머스](https://programmers.co.kr/)
 - 코딩테스트, 과제전형을 폭 넓게 다루며 최근에는 채용관의 역할도 하고 있습니다.
-- 
+
 [백준 온라인 저지](https://www.acmicpc.net/)
 - 국내 최다 문제가 수록된 알고리즘 사이트입니다.
-- 
+
 [코딜리티](https://www.codility.com/)
 
 [해커랭크](https://www.hackerrank.com/)
