@@ -292,10 +292,19 @@
 <br>
 
 #### :sunglasses: FE 1, HTML/CSS
+[프론트엔드 개발자라면 반드시 알아야 할 32가지 UI 요소](https://velog.io/@oneook/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%9D%BC%EB%A9%B4-%EB%B0%98%EB%93%9C%EC%8B%9C-%EC%95%8C%EC%95%84%EB%91%90%EC%96%B4%EC%95%BC-%ED%95%A0-32%EA%B0%80%EC%A7%80%EC%9D%98-UI-%EC%9A%94%EC%86%8C-%EB%B2%88%EC%97%AD)
 
 <br>
 
 #### :sunglasses: FE 2, JavaScript
+[일반적인 비동기 프로그래밍 개념](https://developer.mozilla.org/ko/docs/Learn/JavaScript/Asynchronous/Concepts)
+- MDN의 아주 잘 정리된 비동기적 프로그래밍과 관련된 몇개의 개념에 대한 글입니다.
+
+[왜 비동기적 프로그래밍을 해야 하는가?](https://velog.io/@hjkdw95/%EC%99%9C-%EB%B9%84%EB%8F%99%EA%B8%B0%EC%A0%81-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%84-%ED%95%B4%EC%95%BC%ED%95%98%EB%8A%94%EA%B0%80)
+- hjkdw95님의 블로그 글입니다.
+
+[이벤트 버블링, 이벤트 캡처, 그리고 위임](https://joshua1988.github.io/web-development/javascript/event-propagation-delegation/#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%B2%84%EB%B8%94%EB%A7%81---event-bubbling)
+- 캡틴판교(장기효)님의 글입니다. 이벤트에 대한 내요이 잘 정리되어 있습니다.
 
 <br>
 
@@ -382,10 +391,16 @@
 
 [깃허브 마크다운 badge 생성 사이트](https://shields.io/category/license)
 
+[좋은 git commit 메시지를 위한 영어 사전](https://blog.ull.im/engineering/2019/03/10/logs-on-git.html)
+
 <br>
 
 #### :sunglasses: IDE
+[VSCode 단축키](https://www.youtube.com/watch?v=EVxCdenPbFs)
+- 유튜브 영상입니다. 차후 다른 글로 대체할 예정이에요.
+
 [Intellij 단축키](http://redutan.github.io/2016/03/23/intellij-favorite-keymap-osx)
+- 인텔리제이의 단축키를 정리한 글입니다. mac-os 기준으로 작성되었습니다.
 
 <br>
 
