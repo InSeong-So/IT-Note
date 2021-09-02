@@ -113,7 +113,9 @@
     </tr>
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4">:frog:디자인패턴</a></td>
-      <td></td>
+      <td>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java#java%EC%9D%98-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4">Java의 디자인 패턴</a></p>
+      </td>
     </tr>
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter07-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98">:tiger:자료구조와 알고리즘</a></td>
