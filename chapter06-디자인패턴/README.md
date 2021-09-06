@@ -6,7 +6,13 @@
 ## Design Patteren for Java
 > 손을 놓은지 오래 된 언어라 업데이트가 되지 않습니다. 각 패턴의 간단한 소개, 예제 코드를 옮겨 놨습니다.
 
+링크 [Link](https://github.com/InSeong-So/IT-Note/tree/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java#java%EC%9D%98-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4)
+
+<br>
+
 ## Design Pattern for JavaScript
 > 간략하게 정리하기 위해서는 깊게 공부해야하므로, 아직 접하기 어려울 수 있습니다.
 
 자바스크립트의 디자인패턴 항목은 차후 요약 및 쉬운 이해를 위해 재정리할 예정입니다.
+
+링크 [Link](https://github.com/InSeong-So/IT-Note/tree/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/javascript#javascript%EC%9D%98-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4)

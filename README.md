@@ -112,9 +112,9 @@
       </td>
     </tr>
     <tr>
-      <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4">:frog:디자인패턴</a></td>
+      <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4">:frog:디자인 패턴</a></td>
       <td>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/java#java%EC%9D%98-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4">Java의 디자인 패턴</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4#%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4">디자인 패턴에 대해 알려주세요.</a></p>
       </td>
     </tr>
     <tr>
