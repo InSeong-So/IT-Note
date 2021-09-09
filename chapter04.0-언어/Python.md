@@ -1,8 +1,4 @@
-# Python-Basic
-```python
-국비지원교육 구디아카데미에서 교육 받은 것을 정리한 내용임.
-```
-
+# Python
 ## 변수 (Varable)
 ```python
 프로그래밍에서 변수는 값을 저장하는 장소
