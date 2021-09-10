@@ -232,7 +232,10 @@
     </tr>
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter11-%EB%B0%A9%EB%B2%95%EB%A1%A0">:bird:방법론</a></td>
-      <td></td>
+      <td>
+        <p><a href="">폭포수</a></p>
+        <p><a href="">애자일</a></p>
+      </td>
     </tr>
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter12-%EB%B9%8C%EB%8D%94">:maple_leaf:빌더</a></td>
