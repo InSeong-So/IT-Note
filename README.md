@@ -231,9 +231,29 @@
       </td>
     </tr>
     <tr>
-      <td><a href="">:watch:프론트엔드</a></td>
+      <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C">:watch:프론트엔드</a></td>
       <td>
-        <p><a href="">프론트엔드 로드맵을 파헤쳐보자!</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#%EC%9D%B8%ED%84%B0%EB%84%B7">인터넷</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#html">HTML</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#css">CSS</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#javascript">JavaScript</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#%EB%B2%84%EC%A0%84%EA%B4%80%EB%A6%ACversion-control-systems">JavaScript</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#%EC%9B%B9-%EB%B3%B4%EC%95%88-%EC%A7%80%EC%8B%9D">HTTPS</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#%ED%8C%A8%ED%82%A4%EC%A7%80-%EB%A7%A4%EB%8B%88%EC%A0%80">패키지 매니저</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#%EB%B9%8C%EB%93%9C-%EB%8F%84%EA%B5%AC">빌드 도구</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC">프레임워크</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#%EC%B5%9C%EC%8B%A0-css">최신 CSS</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#%EC%9B%B9-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8">웹 컴포넌트</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#css-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC">CSS 프레임워크</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#%EC%95%B1-%ED%85%8C%EC%8A%A4%ED%8A%B8">앱 테스트</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#%ED%83%80%EC%9E%85-%EC%B2%B4%EC%BB%A4">타입 체커</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%A0%88%EC%8B%9C%EB%B8%8C-%EC%9B%B9pwa">PWA</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#%EC%84%9C%EB%B2%84-%EC%82%AC%EC%9D%B4%EB%93%9C-%EB%A0%8C%EB%8D%94%EB%A7%81ssr">SSR</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#graphql">GraphQL</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%83%9D%EC%84%B1%EA%B8%B0">정적 사이트 생성기</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98">모바일 애플리케이션</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%86%B1-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98">데스크톱 애플리케이션</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#%EC%9B%B9-%EC%96%B4%EC%85%88%EB%B8%94%EB%A6%AC">웹 어셈블리</a></p>
       </td>
     </tr>
     <tr>
