@@ -231,6 +231,12 @@
       </td>
     </tr>
     <tr>
+      <td><a href="">:watch:프론트엔드</a></td>
+      <td>
+        <p><a href="">프론트엔드 로드맵을 파헤쳐보자!</a></p>
+      </td>
+    </tr>
+    <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter11-%EB%B0%A9%EB%B2%95%EB%A1%A0">:bird:방법론</a></td>
       <td>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter11-%EB%B0%A9%EB%B2%95%EB%A1%A0#bar_chart-waterfall">폭포수(Waterfall)</a></p>
@@ -254,12 +260,6 @@
       <td>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/etc01-%EC%8B%9C%ED%97%98_%EC%A0%95%EB%A6%AC/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC">정보처리기사</a></p>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/etc01-%EC%8B%9C%ED%97%98_%EC%A0%95%EB%A6%AC/SQLD">SQLD</a></p>
-      </td>
-    </tr>
-    <tr>
-      <td>:watch:프론트엔드</td>
-      <td>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/etc02-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C">프론트엔드 로드맵 정리</a></p>
       </td>
     </tr>
   </tbody>
