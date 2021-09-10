@@ -233,8 +233,8 @@
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter11-%EB%B0%A9%EB%B2%95%EB%A1%A0">:bird:방법론</a></td>
       <td>
-        <p><a href="">폭포수</a></p>
-        <p><a href="">애자일</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter11-%EB%B0%A9%EB%B2%95%EB%A1%A0#bar_chart-waterfall">폭포수(Waterfall)</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter11-%EB%B0%A9%EB%B2%95%EB%A1%A0#wrench-agile">애자일(Agile)</a></p>
       </td>
     </tr>
     <tr>
