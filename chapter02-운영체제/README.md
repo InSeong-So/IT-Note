@@ -138,6 +138,8 @@ OS에서 context는 CPU가 해당 프로세스를 실행하기 위한 해당 프
 <hr>
 <br>
 
+## 프로세스 동기화
+
 ## `Multi-Process` 와 `Multi-Thread` 에 대해 알려주세요.
 ### Multi-Process 의 개요
 <div align=center>
@@ -196,6 +198,8 @@ OS에서 context는 CPU가 해당 프로세스를 실행하기 위한 해당 프
 
 <hr>
 <br>
+
+## 스케줄러에 대해 알려주세요.
 
 ## `User Thread` 와 `Kernel Thread` 의 차이점은 무엇인가요?
 ### Thread-Package Architectures 의 종류
@@ -600,6 +604,12 @@ OS에서 context는 CPU가 해당 프로세스를 실행하기 위한 해당 프
   
   - [HRRN 스케줄링(Highest Response Ratio Next Scheduling)](https://ko.wikipedia.org/wiki/HRRN_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81)
 
+  - SRTF
+
+  - Priority Scheduling
+
+  - Round Robin
+
 <br>
 
 ### `선점형(Preemptive Scheduling)` 프로세스 알고리즘
@@ -715,6 +725,8 @@ OS에서 context는 CPU가 해당 프로세스를 실행하기 위한 해당 프
 
 <hr>
 <br>
+
+## 캐시의 지역성
 
 ## 컴파일러와 인터프리터의 차이는 뭘까요?
 컴파일러와 인터프리터 모두 고레벨 언어를 기계어로 변환하는 역할을 수행하지만 차이점은 컴파일러의 경우 전체 코드를 보고 명령어를 수집하고 재구성하는 반면, 인터프리터는 소스코드의 각 행을 연속적으로 분석하며 실행한다. 인터프리터는 고레벨 언어를 중간 레벨 언어로 한 번 변환하고 이를 각 행마다 실행하기 때문에 일반적으로 컴파일러가 인터프리터보다 실행 시간이 빠른 경우가 많다. java의 경우 .java 파일을 .class 파일로 자바 컴파일러가 컴파일을 하고, .class 파일을 기계어로 인터프리터가 변환하는 것이다.
