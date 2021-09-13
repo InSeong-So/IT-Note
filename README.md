@@ -273,7 +273,15 @@
     </tr>
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8">:cherry_blossom:디자인</a></td>
-      <td></td>
+      <td>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8/01_day#%EA%B0%9C%EC%9A%94">HTML/CSS의 기본 개념</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8/02_day#css-%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EB%B2%95">CSS의 기본 문법 1</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8/03_day#%EB%A9%80%ED%8B%B0%EB%AF%B8%EB%94%94%EC%96%B4%EC%99%80-%EB%82%B4%EC%9E%A5-%EC%BD%98%ED%85%90%EC%B8%A0-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8">CSS의 기본 문법 2</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8/04_day#css">CSS 제어</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8/05_day#css-%EC%86%8D%EC%84%B1---%EB%9D%84%EC%9B%80%EC%A0%95%EB%A0%AC-%EC%9C%84%EC%B9%98">CSS 속성 1</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8/06_day#css-%EC%86%8D%EC%84%B1---%EC%A0%84%ED%99%98--%EB%B3%80%ED%99%98">CSS 속성 2</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8/07_day#css-%EC%86%8D%EC%84%B1---grid">CSS3 속성</a></p>
+      </td>
     </tr>
     <tr>
       <td>:mortar_board:시험 정리</td>
