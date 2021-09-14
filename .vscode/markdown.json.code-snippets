@@ -1,0 +1,15 @@
+{
+	"imgaes": {
+		"prefix": "img",
+		"body": [
+			"\r<br>\r\r",
+			"<div align='center'>",
+			"\r",
+			"<img src='./img/1.jpg' width='600'/>",
+			"\r",
+			"</div>",
+			"\r<br>\r",
+		],
+		"description": "이미지 파일 정리용"
+	}
+}
