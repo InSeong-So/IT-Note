@@ -41,32 +41,130 @@
 <hr>
 <br>
 
-## :book:ArrayList 와 LinkedList 의 차이점을 알려주세요.
-- ArrayList
+## :book: 배열 리스트(Array List)와 연결 리스트(Linked List)의 차이점을 알려주세요.
+### 들어가기 앞서
+자료구조에서 데이터를 구조화 시키는 방식으로는 `순차 자료구조` 와 `연결 자료구조` 두가지 방식이 있습니다.
 
-    |장점|단점|
-    |----|----|
-    |데이터 참조가 쉬움|배열의 길이가 초기에 결정되면 변경이 불가능|
-    |무작위 접근(Random Access) 가능|데이터 삭제 시 데이터의 이동(복사)이 많음|
+리스트에 나열한 데이터들이 **일정한 순서**를 가지고 있으면 `선형 리스트(Linear List)` 또는 `순차 리스트(Ordered List)` 라 부르며, 선형 리스트를 표현하는 방법은 `<인덱스, 데이터>` 로 구성된 `배열(Array)` 를 사용합니다.
 
-- LinkedList
+선형 리스트 메모리 상에 저장 될 때도 데이터가 나열 된 순서대로 정해집니다. 아래와 같이 말이죠.
 
-    |장점|단점|
-    |----|----|
-    |자료의 삽입 및 삭제 용이|포인터(Pointer)로 인해 저장 공간을 낭비|
-    |리스트 내에서 자료의 이동이 없음|복잡한 알고리즘|
-    |사용 후 기억 장소의 재사용 가능|특정 자료의 탐색 시간이 많이 소요|
-    |연속적인 기억 장소의 할당 불필요|-|
+1. 선언
+    ```
+    선형 리스트 이름 = ["홍길동", "김삿갓", "설까치"]
+    ```
 
-- 비교 성능
+2. 저장된 메모리 형태
 
-    |항목|ArrayList|LinkedList|
-    |----|---------|----------|
-    |Indexing|Θ(1)|Θ(n)|
-    |Insert/delete at beginning|Θ(n)|Θ(1)|
-    |Insert/delete at end|Θ(1)|Θ(n)-last element is unknown / Θ(1)-last element is known|
-    |Insert/delete in middle|Θ(n)|search time + Θ(1)|
-    |Wasted space (average)|Θ(n)|Θ(n)|
+  <br>
+
+  <div align='center'>
+
+  <img src='./img/linearlist.png' width='500'/>
+
+  </div>
+
+<br>
+
+### Array List
+> 원소(Element)들이 메모리 상에 연속되어 있어 데이터의 추가, 삭제를 위해 더블링(Doubling of Array)으로 임시 배열을 생성하고 데이터를 복사합니다.
+
+자바(Java) 기준으로 설명하자면, `List Interface`를 상속받은 배열 리스트(Array List)는 가변적으로 변하는 `선형 리스트`입니다. 일반적인 배열과 같으며 인덱스로 내부의 객체를 관리하죠.
+
+그러나 한 번 생성되면 크기가 변하지 않는 배열과는 달리, 객체들이 추가되어 저장 용량(Capacity)을 초과한다면 자동으로 부족한 크기만큼 저장 용량이 늘어납니다.
+
+관련 내용을 더 알아보고 싶다면, [더블링](https://github.com/InSeong-So/IT-Note/blob/master/chapter07-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DoublingofArray.md#%EB%8D%94%EB%B8%94%EB%A7%81doubling-of-array) 페이지를 참조하세요!
+
+<br>
+
+<div align='center'>
+
+<img src='./img/arraylist.png' width='600'/>
+
+<p>Array List의 시각화</p>
+
+</div>
+
+<br>
+
+그럼 특징을 알아볼까요?
+1. 데이터의 수에 따라 더블링을 통해 크기를 조절하므로 가변적입니다.
+2. **무작위 접근(Random Access)** 으로 `O(1)`에 해당하는 시간 복잡도에 데이터 탐색이 가능합니다.
+3. 중간 데이터의 삭제, 추가 또는 지정된 길이를 초과하는 데이터의 추가가 있을 경우 앞, 뒤 데이터의 이동이 많아지게 됩니다.
+
+<br>
+
+### Linked List
+> 원소들이 메모리에 흩어져 있으나 노드(Node, 또는 Vertex)로 연결되어 있어 데이터의 추가, 삭제 시 데이터의 복사가 없어 성능상 유리한 반면 데이터의 탐색 시 처음부터 노드를 순회해야 합니다.
+
+연결 리스트(LinkedList)는 각 노드가 데이터와 포인터(Pointer)를 가지고 한 줄로 연결되어 있는 방식의 자료구조입니다.
+
+데이터를 담고 있는 노드들이 연결되어 있고, 노드의 포인터가 이전 노드와 다음 노드와의 연결을 담당하므로 중간에 데이터의 추가, 삭제 시 객체의 앞 뒤 링크만 변경합니다.
+
+이처럼 전체의 인덱스(Index)가 한 칸씩 뒤로 밀리거나 당겨지는 일이 없기에 `배열 리스트`에 비해서 데이터의 추가, 삭제가 용이하나 인덱스가 없으므로 특정 요소에 접근하기 위해서는 `순차 탐색이 필요`합니다.
+
+<br>
+
+<div align='center'>
+
+<img src='./img/linkedlist.png' width='600'/>
+
+<p>Linked List의 시각화</p>
+
+</div>
+
+<br>
+
+이미 특징을 이해한 것 같은데... 조금 더 알아볼까요?
+1. 포인터로 노드와 노드를 연결하여 관리하므로 데이터의 추가, 삭제 시 데이터의 이동이 없습니다.
+2. 그러나 포인터로 인해 메모리를 더 소비합니다.                                  |
+
+<br>
+
+### Array List vs Linked List
+> 결론! 탐색 또는 **정렬을 자주 하는 경우엔 배열 리스트**를 사용하고 **데이터의 추가/삭제가 많은 경우 연결 리스트**를 사용하는 것이 좋습니다.
+
+<br>
+
+<table align="center">
+
+  <tr align="center">
+    <td>항목</td>
+    <td>Array List</td>
+    <td>Linked List</td>
+  </tr>
+  <tr>
+    <td>인덱스(index)로 원소 참조</td>
+    <td align="center"><em>O(1)</em></td>
+    <td align="center"><em>O(n)</em></td>
+  </tr>
+  <tr>
+    <td>처음 위치에 원소 삽입/삭제</td>
+    <td align="center"><em>O(n)</em></td>
+    <td align="center"><em>O(1)</em></td>
+  </tr>
+  <tr>
+    <td>마지막 위치에 원소 삽입/삭제</td>
+    <td align="center"><em>O(1)</em></td>
+    <td align="center"><em>마지막 원소를 모를 때 O(n)</em><br><em>마지막 원소를 알 때 O(1)</em></td>
+  </tr>
+  <tr>
+    <td>중간 위치에 원소 삽입/삭제</td>
+    <td align="center"><em>O(n)</em></td>
+    <td align="center"><em>search time + O(1)</em></td>
+  </tr>
+
+</table>
+
+<br>
+
+<div align='center'>
+
+<img src='./img/arraylistvslinkedlist.png' width='600'/>
+
+<p>치타와 달팽이</p>
+
+</div>
 
 <br>
 
@@ -75,14 +173,46 @@
 <hr>
 <br>
 
-## :book:Stack 과 Queue 의 차이점은 무엇이 있나요?
-- 스택(Stack)은 LIFO(Last-In, First-Out)으로 후입선출 구조라고 한다.
-  - 가장 마지막에 들어온 데이터가 가장 먼저 나간다.
-  - 재귀 알고리즘, 실행 취소, 후위 표기법 계산 등에 쓰인다.
+## :book: 스택(Stack)과 큐(Queue)는 무엇인가요?
+### 스택(Stack)
+> LIFO(Last-In, First-Out)으로 후입선출 구조라고 합니다.
+> - [Javascript로 Stack 구현하기](https://github.com/InSeong-So/IT-Note)
 
-- 큐(Queue)는 FIFO(First-In, First-Out)으로 선입선출 구조라고 한다.
-  - 가장 먼저 들어온 데이터가 가장 먼저 나간다.
-  - 프로세스 처리, CPU관리에서 많이 사용된다.
+<br>
+
+<div align='center'>
+
+<img src='./img/stack.jpg' width='500'/>
+
+</div>
+
+<br>
+
+아래와 같은 특징이 있습니다.
+
+1. 가장 마지막에 들어온 데이터가 가장 먼저 나갑니다.
+2. 재귀 알고리즘, 실행 취소, 후위 표기법 계산 등에 쓰입니다.
+
+<br>
+
+### 큐(Queue)
+> FIFO(First-In, First-Out)으로 선입선출 구조라고 합니다.
+> - [Javascript로 Queue 구현하기](https://github.com/InSeong-So/IT-Note)
+
+<br>
+
+<div align='center'>
+
+<img src='./img/queue.jpg' width='500'/>
+
+</div>
+
+<br>
+
+아래와 같은 특징이 있습니다.
+
+1. 가장 먼저 들어온 데이터가 가장 먼저 나갑니다.
+2. 프로세스 처리, CPU 관리에서 많이 사용됩니다.
 
 <br>
 
@@ -91,7 +221,14 @@
 <hr>
 <br>
 
-## :book:PriorityQueue는 무엇이고, 어떻게 동작하나요?
+## :book: 우선순위 큐(Priority Queue)는 무엇이고, 어떻게 동작하나요?
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
 
 ## :book:Hash 에 대해 설명해주세요.
 - 임의의 크기를 가진 데이터를 고정된 데이터의 크기로 변환시키는 것
@@ -443,3 +580,8 @@
 
 <hr>
 <br>
+
+
+
+## TODO : 알고리즘 종류별로 정리할것
+- 누적 합(Prefix Sum)
