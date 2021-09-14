@@ -4,9 +4,13 @@
 <br>
 
 <div align="center">
+<details align="left"><summary>:persevere:너무 길어요:sob: <strong>자세히보기!</strong></summary>
+
+  <br>
 
   <img src="./img/frontend-roadmap.png"/>
 
+</detail>
 </div>
 
 <hr>
@@ -28,7 +32,7 @@
 
 <div align="center">
 
-<img src="./img/internet-schema-2.png" width="500"/>
+<img src="./img/internet-schema-2.png" width="400"/>
 
 </div>
 
@@ -40,7 +44,7 @@
 
 <div align="center">
 
-<img src="./img/internet-schema-3.png" width="500"/>
+<img src="./img/internet-schema-3.png" width="400"/>
 
 </div>
 
@@ -52,7 +56,7 @@
 
 <div align="center">
 
-<img src="./img/internet-schema-5.png" width="500"/>
+<img src="./img/internet-schema-5.png" width="400"/>
 
 </div>
 
@@ -66,7 +70,7 @@
 
 <div align="center">
 
-<img src="./img/internet-schema-6.png" width="500"/>
+<img src="./img/internet-schema-6.png" width="400"/>
 
 </div>
 
@@ -84,7 +88,7 @@
 
 <div align="center">
 
-<img src="./img/internet-schema-7.png" height="700"/>
+<img src="./img/internet-schema-7.png" height="600"/>
 
 </div>
 
