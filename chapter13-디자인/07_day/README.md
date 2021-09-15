@@ -311,7 +311,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./04.JPG" width=800 />
+  <img src="./04.jpg" width=800 />
 
   </div>
 
@@ -345,7 +345,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./06.JPG" width=800 />
+  <img src="./06.jpg" width=800 />
 
   </div>
 
@@ -371,7 +371,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./07.JPG" width=800 />
+  <img src="./07.jpg" width=800 />
 
   </div>
 
@@ -379,7 +379,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./08.JPG" width=800 />
+  <img src="./08.jpg" width=800 />
 
   </div>
 
@@ -409,7 +409,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./09.JPG" width=800 />
+  <img src="./09.jpg" width=800 />
 
   </div>
 
@@ -431,7 +431,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./10.JPG" width=800 />
+  <img src="./10.jpg" width=800 />
 
   </div>
 
@@ -541,7 +541,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./11.JPG" width=800 />
+  <img src="./11.jpg" width=800 />
 
   </div>
 
@@ -563,7 +563,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./12.JPG" width=800 />
+  <img src="./12.jpg" width=800 />
 
   </div>
 
@@ -593,7 +593,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./13.JPG" width=800 />
+  <img src="./13.jpg" width=800 />
 
   </div>
 
@@ -614,7 +614,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./14.JPG" width=800 />
+  <img src="./14.jpg" width=800 />
 
   </div>
 
@@ -743,7 +743,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./15.JPG" width=800 />
+  <img src="./15.jpg" width=800 />
 
   </div>
 
@@ -774,7 +774,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./16.JPG" width=800 />
+  <img src="./16.jpg" width=800 />
 
   </div>
 
@@ -799,7 +799,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./17.JPG" width=800 />
+  <img src="./17.jpg" width=800 />
 
   </div>
 
@@ -820,7 +820,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./18.JPG" width=800 />
+  <img src="./18.jpg" width=800 />
 
   </div>
 
@@ -875,7 +875,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./19.JPG" width=800 />
+  <img src="./19.jpg" width=800 />
 
   </div>
 
@@ -900,7 +900,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./20.JPG" width=800 />
+  <img src="./20.jpg" width=800 />
 
   </div>
 
@@ -919,7 +919,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./21.JPG" width=800 />
+  <img src="./21.jpg" width=800 />
 
   </div>
 
@@ -940,7 +940,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./22.JPG" width=800 />
+  <img src="./22.jpg" width=800 />
 
   </div>
 
@@ -954,7 +954,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./23.JPG" width=800 />
+  <img src="./23.jpg" width=800 />
 
   </div>
 
@@ -975,7 +975,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./24.JPG" width=800 />
+  <img src="./24.jpg" width=800 />
 
   </div>
 
@@ -1002,7 +1002,7 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./25.JPG" width=800 />
+  <img src="./25.jpg" width=800 />
 
   </div>
 
@@ -1018,7 +1018,7 @@ repeat() 함수를 사용할 수 있다.
 
       <div align=center>
 
-      <img src="./26.JPG" width=800 />
+      <img src="./26.jpg" width=800 />
 
       </div>
 
@@ -1038,6 +1038,6 @@ repeat() 함수를 사용할 수 있다.
 
   <div align=center>
 
-  <img src="./27.JPG" width=800 />
+  <img src="./27.jpg" width=800 />
 
   </div>

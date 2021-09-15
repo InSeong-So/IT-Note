@@ -82,18 +82,18 @@
 
   - `transform`의 3D 변환 함수
 
-    | 값(변환함수)                              | 의미                            | 단위       |
-    | ----------------------------------------- | ------------------------------- | ---------- |
-    | translate3d(x, y, z)                      | 이동(X축, Y축, Z축)             | 단위       |
-    | translateZ(z)                             | 이동(Z축)                       | 단위       |
-    | scale3d(x, y, z)                          | 크기(X축, Y축, Z축)             | 없음(배수) |
-    | scaleZ(z)                                 | 크기(Z축)                       | 없음(배수) |
+    | 값(변환함수)                              | 의미                               | 단위       |
+    | ----------------------------------------- | ---------------------------------- | ---------- |
+    | translate3d(x, y, z)                      | 이동(X축, Y축, Z축)                | 단위       |
+    | translateZ(z)                             | 이동(Z축)                          | 단위       |
+    | scale3d(x, y, z)                          | 크기(X축, Y축, Z축)                | 없음(배수) |
+    | scaleZ(z)                                 | 크기(Z축)                          | 없음(배수) |
     | rotate3d(x, y, z, a)                      | 회전(X벡터, Y벡터, Z벡터, 각도) | 없음, deg  |
-    | rotateX(x)                                | 회전(X축)                       | deg        |
-    | rotateY(y)                                | 회전(Y축)                       | deg        |
-    | rotateZ(z)                                | 회전(Z축)                       | deg        |
-    | perspective(n)                            | 원근법(거리)                    | 단위       |
-    | matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n) | 3차원 변환 효과                 | 없음       |
+    | rotateX(x)                                | 회전(X축)                          | deg        |
+    | rotateY(y)                                | 회전(Y축)                          | deg        |
+    | rotateZ(z)                                | 회전(Z축)                          | deg        |
+    | perspective(n)                            | 원근법(거리)                       | 단위       |
+    | matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n) | 3차원 변환 효과                    | 없음       |
 
 ### transform 변환 속성
 
