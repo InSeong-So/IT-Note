@@ -152,9 +152,8 @@
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter04.5-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC">:rabbit:프레임워크와 라이브러리</a></td>
       <td>
-        <p>Java : Spring Framework</p>
-        <p>Python : Django, Flask</p>
-        <p>JavaScript : React.js, Vue.js, Node.js</p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter04.5-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC#java">Java</a></p>
+        <p>Javascript</p>
       </td>
     </tr>
     <tr>
