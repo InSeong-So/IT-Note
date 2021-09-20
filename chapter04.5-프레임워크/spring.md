@@ -244,7 +244,7 @@
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.5-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC#java)</sup>
 
 <hr>
 <br>
@@ -314,7 +314,7 @@
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.5-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC#java)</sup>
 
 <hr>
 <br>
@@ -471,7 +471,7 @@ model.setAttribute("model", "model status set!");
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.5-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC#java)</sup>
 
 <hr>
 <br>
@@ -542,7 +542,7 @@ model.setAttribute("model", "model status set!");
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.5-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC#java)</sup>
 
 <hr>
 <br>
@@ -784,7 +784,7 @@ public String memJoin(Model model, @RequestParam("memId") String memId,
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.5-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC#java)</sup>
 
 <hr>
 <br>
