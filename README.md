@@ -145,7 +145,7 @@
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4">:hamster:언어</a></td>
       <td>
-        <p>Java</p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava">Java</a></p>
         <p>Python</p>
         <p>JavaScript</p>
       </td>
