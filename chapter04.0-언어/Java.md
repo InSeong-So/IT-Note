@@ -11,7 +11,7 @@
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -25,7 +25,7 @@
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -54,7 +54,7 @@
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -70,7 +70,7 @@ GC가 수행되는 절차는 아래와 같습니다.
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -104,7 +104,7 @@ GC가 수행되는 절차는 아래와 같습니다.
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -117,7 +117,7 @@ GC가 수행되는 절차는 아래와 같습니다.
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -131,7 +131,7 @@ GC가 수행되는 절차는 아래와 같습니다.
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -147,7 +147,7 @@ GC가 수행되는 절차는 아래와 같습니다.
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -160,7 +160,7 @@ GC가 수행되는 절차는 아래와 같습니다.
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -177,7 +177,7 @@ GC가 수행되는 절차는 아래와 같습니다.
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -197,7 +197,7 @@ Static은 차후 등장하는 `디자인 패턴의 Singleton`과 관련이 깊�
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -221,7 +221,7 @@ Static은 차후 등장하는 `디자인 패턴의 Singleton`과 관련이 깊�
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -245,7 +245,7 @@ Static은 차후 등장하는 `디자인 패턴의 Singleton`과 관련이 깊�
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -322,7 +322,7 @@ public @interface AnnotationName {
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -332,7 +332,7 @@ public @interface AnnotationName {
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -344,7 +344,7 @@ public @interface AnnotationName {
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -354,7 +354,7 @@ public @interface AnnotationName {
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -369,7 +369,7 @@ class 객체는 `getDeclaredConstructors()`, `getDeclaredFields()`, `getDeclared
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -394,7 +394,7 @@ class 객체는 `getDeclaredConstructors()`, `getDeclaredFields()`, `getDeclared
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -415,7 +415,7 @@ class 객체는 `getDeclaredConstructors()`, `getDeclaredFields()`, `getDeclared
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -429,7 +429,7 @@ class 객체는 `getDeclaredConstructors()`, `getDeclaredFields()`, `getDeclared
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -443,7 +443,7 @@ class 객체는 `getDeclaredConstructors()`, `getDeclaredFields()`, `getDeclared
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -457,7 +457,7 @@ class 객체는 `getDeclaredConstructors()`, `getDeclaredFields()`, `getDeclared
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -472,7 +472,7 @@ class 객체는 `getDeclaredConstructors()`, `getDeclaredFields()`, `getDeclared
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -486,7 +486,7 @@ class 객체는 `getDeclaredConstructors()`, `getDeclaredFields()`, `getDeclared
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -502,7 +502,7 @@ class 객체는 `getDeclaredConstructors()`, `getDeclaredFields()`, `getDeclared
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -516,7 +516,7 @@ class 객체는 `getDeclaredConstructors()`, `getDeclaredFields()`, `getDeclared
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
@@ -528,7 +528,7 @@ class 객체는 `getDeclaredConstructors()`, `getDeclaredFields()`, `getDeclared
 
 <br>
 
-<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note/tree/master/chapter04.0-%EC%96%B8%EC%96%B4#bookjava)</sup>
 
 <hr>
 <br>
