@@ -1,6 +1,6 @@
 # 스프링 프레임워크
 
-## DI(Dependency Injection)
+## :book: DI(Dependency Injection)
 > 구성요소간의 의존 관계가 소스코드 내부가 아닌 외부의 설정파일 등을 통해 정의하는 것입니다.
 
 ### 과거와 현재의 객체 개념
@@ -249,7 +249,7 @@
 <hr>
 <br>
 
-## 생명주기(Life Cycle)
+## :book: 생명주기(Life Cycle)
 ### 스프링 컨테이너의 생명주기
 > `GenericXmlApplicationContext`를 이용한 스프링 컨테이너 초기화(생성), `getBean()`을 이용한 빈(Bean) 객체 이용, `close()`를 이용한 스프링 컨테이너 종료가 있습니다.
 
@@ -319,7 +319,7 @@
 <hr>
 <br>
 
-## 웹 프로그래밍 설계 모델
+## :book: 웹 프로그래밍 설계 모델
 ### 웹 프로그래밍을 구축하기 위한 설계 모델
 -  Model1 : `브라우저(클라이언트)` | `WAS(JSP ↔ Service & DAO)` | `데이터베이스`
    - 처리과정
@@ -476,7 +476,7 @@ model.setAttribute("model", "model status set!");
 <hr>
 <br>
 
-## 웹 어플리케이션 구조
+## :book: 웹 어플리케이션 구조
 > 사용자 요청(브라우저) → 프론트 컨트롤러(DispatcherServlet) → 뷰(jsp 파일 등) → 컨트롤러 → 서비스 → DAO(Data Access Object) → Database
 
 ### 서비스 객체 구현
@@ -547,7 +547,7 @@ model.setAttribute("model", "model status set!");
 <hr>
 <br>
 
-## 컨트롤러의 기능
+## :book: 컨트롤러의 기능
 ### @RequestMapping을 이용한 URL 매핑
 > 메소드에 @RquestMapping 적용
 
@@ -603,7 +603,7 @@ model.setAttribute("model", "model status set!");
     String memid = request.getParamter("memId");
     }
 
-## @RequestParam 어노테이션을 이용한 HTTP 전송 정보 얻기
+## :book: @RequestParam 어노테이션을 이용한 HTTP 전송 정보 얻기
 > @RequestParam의 속성
 
 ```java
