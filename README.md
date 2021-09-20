@@ -309,6 +309,10 @@
 
 <br>
 
+<details><summary>:persevere:너무 길어요:sob: <strong>자세히보기!</strong></summary>
+
+<br>
+
 #### :sunglasses: 취업 사이트
 [잡코리아](https://www.jobkorea.co.kr/)
 - 개발자는 사이트의 공고보다는 합격자소서 확인해요.
@@ -682,13 +686,21 @@
 [파이썬을 이용한 데이터 사이언스 스쿨](https://datascienceschool.net/)
 - 무료입니다. 데이터 분석을 시작하려면 해당 사이트에서 도움을 받을 수 있습니다.
 
+</details>
+
 <br>
+
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
 <hr>
 <br>
 
 ### :speech_balloon: 커밋 메세지 작성법 :speech_balloon:
 
 <br>
+
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
 <hr>
 <br>
 
