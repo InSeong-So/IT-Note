@@ -71,7 +71,6 @@
 <br>
 
 ### :point_down: 챕터 바로가기 :point_down:
-<details><summary>:persevere:너무 길어요:sob: <strong>자세히보기!</strong></summary>
 
 <br>
 
@@ -293,9 +292,11 @@
     </tr>
   </tbody>
 </table>
-</details>
 
 <br>
+
+[👋 상단으로 돌아가기 👋](https://github.com/InSeong-So/IT-Note#point_down-%EC%B1%95%ED%84%B0-%EB%B0%94%EB%A1%9C%EA%B0%80%EA%B8%B0-point_down)
+
 <hr>
 <br>
 
@@ -333,6 +334,11 @@
 
 <br>
 
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
+<br>
+
 #### :sunglasses: 취업 준비에 대한 조언
 [청천향로(이동욱)님의 junior-recruit-scheduler](https://github.com/jojoldu/junior-recruit-scheduler/blob/master/README.md)
 
@@ -346,6 +352,11 @@
 
 [프론트엔드 면접 질문](https://devowen.com/283?category=778540)
 
+<br>
+
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
 <br>
 
 #### :sunglasses: 알고리즘
@@ -375,12 +386,27 @@
 
 <br>
 
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
+<br>
+
 #### :sunglasses: CS 1, 네트워크
 
 <br>
 
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
+<br>
+
 #### :sunglasses: CS 2, 데이터베이스
 
+<br>
+
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
 <br>
 
 #### :sunglasses: CS 3, 운영체제
@@ -388,9 +414,19 @@
 
 <br>
 
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
+<br>
+
 #### :sunglasses: FE 1, HTML/CSS
 [프론트엔드 개발자라면 반드시 알아야 할 32가지 UI 요소](https://velog.io/@oneook/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%9D%BC%EB%A9%B4-%EB%B0%98%EB%93%9C%EC%8B%9C-%EC%95%8C%EC%95%84%EB%91%90%EC%96%B4%EC%95%BC-%ED%95%A0-32%EA%B0%80%EC%A7%80%EC%9D%98-UI-%EC%9A%94%EC%86%8C-%EB%B2%88%EC%97%AD)
 
+<br>
+
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
 <br>
 
 #### :sunglasses: FE 2, JavaScript
@@ -403,6 +439,11 @@
 [이벤트 버블링, 이벤트 캡처, 그리고 위임](https://joshua1988.github.io/web-development/javascript/event-propagation-delegation/#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%B2%84%EB%B8%94%EB%A7%81---event-bubbling)
 - 캡틴판교(장기효)님의 글입니다. 이벤트에 대한 내요이 잘 정리되어 있습니다.
 
+<br>
+
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
 <br>
 
 #### :sunglasses: FE 3, Vue.js
@@ -426,6 +467,11 @@
 
 <br>
 
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
+<br>
+
 #### :sunglasses: FE 4, React.js
 [리액트 시작하기](https://ko.reactjs.org/tutorial/tutorial.html)
 - 리액트 공식 사이트로, 한글화가 되어 풍부한 기술 문서를 확인할 수 있습니다.
@@ -435,15 +481,30 @@
 
 <br>
 
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
+<br>
+
 #### :sunglasses: BE 1, Java
 [이펙티브 자바 3판 한글화](https://github.com/WegraLee/effective-java-3e-source-code)
 
+<br>
+
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
 <br>
 
 #### :sunglasses: BE 2, Python
 [파이썬을 파이썬답게](https://programmers.co.kr/learn/courses/4008)
 - 프로그래머스 무료 강의입니다. 동영상도 제공되지만 텍스트가 더 많아요.
 
+<br>
+
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
 <br>
 
 #### :sunglasses: BE 3, Node.js
@@ -455,6 +516,11 @@
 
 <br>
 
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
+<br>
+
 #### :sunglasses: Dev 1, Apache
 [톰캣 메모리 설정](https://aljjabaegi.tistory.com/218)
 - 알짜배기 프로그래머님의 웹 개발 블로그 글입니다.
@@ -462,6 +528,11 @@
 [톰캣 server.xml 설정](https://pshcode.tistory.com/109)
 - 박성훈님의 웹 개발 블로그 글입니다.
 
+<br>
+
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
 <br>
 
 #### :sunglasses: Dev 2, Docker
@@ -476,6 +547,11 @@
 
 <br>
 
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
+<br>
+
 #### :sunglasses: Dev 3, Rasberry Pi
 [라즈베리파이3 B+ 설치 가이드](https://geeksvoyage.com/raspberry%20pi/install-pi-wo-monitor/)
 
@@ -483,6 +559,11 @@
 
 [vsftpd 설정하기](https://kkamagistory.tistory.com/97)
 
+<br>
+
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
 <br>
 
 #### :sunglasses: 기술 블로그
@@ -522,6 +603,11 @@
 
 <br>
 
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
+<br>
+
 #### :sunglasses: Gihub
 [카카오 깃허브](https://github.com/kakao)
 
@@ -543,6 +629,11 @@
 
 <br>
 
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
+<br>
+
 #### :sunglasses: IDE
 [VSCode 단축키](https://www.youtube.com/watch?v=EVxCdenPbFs)
 - 유튜브 영상입니다. 차후 다른 글로 대체할 예정이에요.
@@ -550,6 +641,11 @@
 [Intellij 단축키](http://redutan.github.io/2016/03/23/intellij-favorite-keymap-osx)
 - 인텔리제이의 단축키를 정리한 글입니다. mac-os 기준으로 작성되었습니다.
 
+<br>
+
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
 <br>
 
 #### :sunglasses: IT 커뮤니티
@@ -567,6 +663,11 @@
 
 [커리어리](https://careerly.co.kr/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjI3MjQ3MywiaWF0IjoxNjIyNTQ2ODc0fQ.y67eO_W_gKyUb54M32ACoiMqXQ5QhGZ1Nj2ENFLszVs)
 
+<br>
+
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
+<hr>
 <br>
 
 #### :sunglasses: 온라인 강의
@@ -615,4 +716,8 @@
 5. 바로가기 링크는 `Link`로 표현합니다.
 
 <br>
+
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
 <hr>
+<br>
