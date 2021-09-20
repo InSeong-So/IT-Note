@@ -323,6 +323,9 @@ REST는 **자원**(Resource : URI), **행위**(Verb : HTTP Method), **표현**(R
 <hr>
 <br>
 
+## :book: 정적/동적 타이핑에 대해 설명해주세요.
+> 정적 타이핑(Static typing), 동적 타이핑(dynamic typing)
+
 ## :book: `TDD` 는요?
 > `Test-driven Development`, *테스트 주도 개발*
 
@@ -371,7 +374,23 @@ Git은 버전 관리 시스템 중 하나로 Git Repository 불리는 데이터 
 <br>
 
 ## :book: `PWA`란 무엇인가요?
-> PWA는 'Progressive Web Apps'의 줄인 말로, 모바일 사이트에서 네이티브 앱과 같은 사용자 경험을 제공하는 기술입니다. 웹과 앱 모두의 장점을 결합한 제품입니다.
+> PWA(Progressive Web Apps)
+
+모바일 사이트에서 네이티브 앱과 같은 사용자 경험을 제공하는 기술로서 웹과 앱 모두의 장점이 결합된 제품(App)입니다.
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
+
+## :book: `AOT`와 `JIT`에 대해 설명해주세요.
+> JIT(Just In Time Compile), AOT(Ahead Of Time Compile)
+
+JIT는 JIT 컴파일러를 포함하며 브라우저에서 템프릿 컴파일을 진행하므로 매우 느리고 용량도 거대한 반면, AOT는 빌드 시 템플릿을 먼저 컴파일합니다. 따라서 빌드는 시간이 더 소요되나 브라우저에서는 컴파일이 실행되지 않기 때문에 훨씬 빠르죠.
+
+따라서 개발 서버는 JIT 방식으로 빠르게 빌드하여 변경사항을 확인하고, 운영 서버에는 AOT 방식으로 전체 용량 감소 및 컴파일 시간을 최소화 하는 편입니다.
 
 <br>
 
