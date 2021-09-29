@@ -242,3 +242,12 @@ MERGE INTO TMP_TABLE A
 
 <hr>
 <br>
+
+## :book: B-tree에 대해 설명해주세요.
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
