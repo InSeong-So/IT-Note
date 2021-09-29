@@ -110,7 +110,7 @@ ReactDOMServer.renderToString(<App />)
 ## :book: React v16에서 사용되지 않는 라이프사이클 메서드는 무엇입니까?
 ## :book: DreasiveStateFromProps() 라이프사이클 메서드의 목적은 무엇입니까?
 ## :book: getSnapshotBeforeUpdate() 라이프사이클 메서드의 목적은 무엇입니까?
-## :book: Hooks가 렌더링 props 및 고차 컴포넌트을 대체할 수 있나요?
+## :book: Hooks가 render props 및 고차 컴포넌트을 대체할 수 있나요?
 ## :book: 컴포넌트의 이름을 지정하는 권장 방법은 무엇입니까?
 ## :book: 컴포넌트 클래스에서 권장되는 메소드 순서는 무엇입니까?
 ## :book: 스위칭 컴포넌트란 무엇입니까?
@@ -316,7 +316,7 @@ Flow는 JavaScript에서 유형 오류를 찾기 위해 설계된 정적 유형 
 ## :book: Flow와 PropType의 차이점은 무엇입니까?
 Flow는 언어의 상위 집합을 사용하는 정적 분석 도구(정적 검사기)로, 컴파일 시 모든 코드에 유형 주석을 추가하고 전체 클래스 버그를 잡을 수 있습니다.
 
-PropTypes는 React에 패치된 기본 형식 검사기(런타임 검사기)입니다. 지정된 구성 요소에 전달되는 소품 유형 외에는 확인할 수 없습니다. 전체 프로젝트에 대해 보다 유연한 타이페싱을 원할 경우 Flow/TypeScript를 선택하는 것이 좋습니다.
+PropTypes는 React에 패치된 기본 형식 검사기(런타임 검사기)입니다. 지정된 구성 요소에 전달되는 props 유형 외에는 확인할 수 없습니다. 전체 프로젝트에 대해 보다 유연한 타이페싱을 원할 경우 Flow/TypeScript를 선택하는 것이 좋습니다.
 
 ## :book: 리액트에서 Font Awesome icons을 사용하는 방법?
 1. Install font-awesome
@@ -335,7 +335,7 @@ PropTypes는 React에 패치된 기본 형식 검사기(런타임 검사기)입�
   ```
 
 ## :book: React Dev Tools란?
-React Developer Tools를 사용하여 구성 요소 프로포트와 상태를 포함한 구성 요소 계층을 검사할 수 있습니다. 브라우저 확장(Chrome 및 Firefox용)과 독립 실행형 앱(Safari, IE 및 React Native를 포함한 다른 환경에서 작동)으로 모두 존재합니다.
+React Developer Tools를 사용하여 구성 요소 props와 상태를 포함한 구성 요소 계층을 검사할 수 있습니다. 브라우저 확장(Chrome 및 Firefox용)과 독립 실행형 앱(Safari, IE 및 React Native를 포함한 다른 환경에서 작동)으로 모두 존재합니다.
 
 다른 브라우저 또는 환경에서 사용할 수 있는 공식 확장입니다.
 
@@ -636,13 +636,13 @@ class UserForm extends Component {
 ```
 
 ## :book: React에서 render 하이재킹이란 무엇인가?
-렌더 하이재킹의 개념은 구성요소가 다른 구성요소에서 출력할 내용을 제어하는 기능입니다. 실제로 구성 요소를 고차 구성 요소로 포장하여 장식합니다. 줄바꿈을 통해 추가 프로포트를 주입하거나 다른 변경을 수행할 수 있으며, 이로 인해 렌더링 논리가 변경될 수 있습니다. 실제로 하이재킹이 가능하지는 않지만 HOC를 사용하면 구성 요소가 다른 방식으로 작동하도록 할 수 있습니다.
+렌더 하이재킹의 개념은 구성요소가 다른 구성요소에서 출력할 내용을 제어하는 기능입니다. 실제로 구성 요소를 고차 구성 요소로 포장하여 장식합니다. 줄바꿈을 통해 추가 props를 주입하거나 다른 변경을 수행할 수 있으며, 이로 인해 렌더링 논리가 변경될 수 있습니다. 실제로 하이재킹이 가능하지는 않지만 HOC를 사용하면 구성 요소가 다른 방식으로 작동하도록 할 수 있습니다.
 
 ## :book: HOC 팩토리 구현이란 무엇입니까?
 React에서 HOC를 구현하는 두 가지 주요 방법이 있습니다.
 
 - 프록시 프롭스(Props Proxy, PP)
-  - 이 접근 방식에서 HOC의 렌더링 메서드는 RapedComponent 유형의 리액트 요소를 반환합니다. 우리는 또한 HOC가 수신하는 소품을 통과하므로 Props Proxy라는 이름이 붙는다.
+  - 이 접근 방식에서 HOC의 렌더링 메서드는 RapedComponent 유형의 리액트 요소를 반환합니다. 우리는 또한 HOC가 수신하는 props을 통과하므로 Props Proxy라는 이름이 붙는다.
   ```js
   function ppHOC(WrappedComponent) {
   return class PP extends React.Component {
@@ -701,7 +701,7 @@ registerServiceWorker();
 ```
 
 ## :book: React의 memo 함수란?
-PureComponent 또는 shouldComponentUpdate를 사용하여 입력 프로포트가 동일한 경우 클래스 구성 요소의 렌더링을 제한할 수 있습니다. 이제 React.memo로 기능 구성요소를 포장하여 동일한 작업을 수행할 수 있습니다.
+PureComponent 또는 shouldComponentUpdate를 사용하여 입력 props가 동일한 경우 클래스 구성 요소의 렌더링을 제한할 수 있습니다. 이제 React.memo로 기능 구성요소를 포장하여 동일한 작업을 수행할 수 있습니다.
 
 ```js
 const MyComponent = React.memo(function MyComponent(props) {
@@ -886,106 +886,419 @@ componentDidCatch 라이프사이클 메서드는 하위 구성 요소에 의해
   componentDidCatch(error, info)
   ```
 
-## :book: 어떤 시나리오에서 오류 경계가 오류를 포착하지 않는가?
+## :book: 어떤 시나리오에서 ErrorBoundary가 오류를 포착하지 않는가?
 1. 내부 이벤트 핸들러
 2. setTimeout 또는 requestAnimationFrame 콜백을 사용하는 비동기 코드
 3. 서버 측 렌더링 중
-4. 오류 경계 코드 자체에 오류가 발생한 경우
+4. ErrorBoundary 코드 자체에 오류가 발생한 경우
 
-## :book: 이벤트 핸들러에 오류 경계가 필요하지 않은 이유는 무엇입니까?
-## :book: 시도 잡기 블록과 오류 경계 사이의 차이점은 무엇입니까?
+## :book: 이벤트 핸들러에 ErrorBoundary가 필요하지 않은 이유는 무엇입니까?
+## :book: try catch block과 ErrorBoundary 사이의 차이점은 무엇입니까?
 ## :book: 리액트 16에서 발견되지 않은 오류가 발생하면 어떻게 됩니까?
-## :book: 오류 경계의 적절한 위치는?
-## :book: 오류경계로부터의 컴포넌트 스택 추적의 이점은 무엇인가?
+## :book: ErrorBoundary의 적절한 위치는?
+## :book: ErrorBoundary로부터의 컴포넌트 스택 추적의 이점은 무엇인가?
 ## :book: 클래스 컴포넌트에 대해 정의되는 필수 방법은 무엇입니까?
-## :book: 가능한 렌더링 방법의 반환 유형은 무엇입니까?
-## :book: 시공자의 주된 목적은 무엇입니까?
-## :book: React 컴포넌트에 대한 생성자의 정의는 필수인가?
-## :book: 기본 props이란 무엇입니까?
+## :book: render method가 반환할 수 있는 유형은 무엇입니까?
+
+1. React elements: DOM 노드를 렌더링하도록 React를 지시하는 요소입니다. 여기에는 <div/>와 같은 html 요소와 사용자 정의 요소가 포함됩니다.
+2. Arrays and fragments: 여러 요소를 래핑하기 위해 Array와 Fragment로 렌더링할 여러 요소 반환
+3. Portals: 자식을 다른 DOM 하위 트리로 렌더링합니다.
+4. String and numbers: DOM에서 문자열과 숫자 모두 텍스트 노드로 렌더링
+5. Booleans or null: D어떤 것도 렌더링하지 않지만 이러한 유형은 내용을 조건부로 렌더링하는 데 사용됩니다.
+
+## :book: 생성자의 주된 목적은 무엇입니까?
+## :book: React 컴포넌트에 대한 생성자 정의는 필수인가?
+## :book: default props이란 무엇입니까?
 ## :book: 컴포넌트에서 setState를 호출하지 않는 이유는 무엇입니까?
-## :book: DreasiveStateFromError를 얻는 목적은 무엇입니까?
-## :book: 컴포넌트을 다시 렌더링할 때 주문하는 방법은 무엇입니까?
+## :book: getDerivedStateFromError 메서드의 목적은 무엇입니까?
+## :book: 컴포넌트를 다시 렌더링할 때 사용하는 메서드는 무엇입니까?
+특성 또는 상태가 변경되어 업데이트가 발생할 수 있습니다. 다음 메서드는 컴포넌트를 다시 렌더링할 때 다음 순서로 호출됩니다.
+
+1. static getDerivedStateFromProps()
+2. shouldComponentUpdate()
+3. render()
+4. getSnapshotBeforeUpdate()
+5. componentDidUpdate()
+
 ## :book: 오류 처리 중에 호출되는 방법은 무엇입니까?
-## :book: 이름 클래스 속성을 표시하는 목적은 무엇입니까?
-## :book: 리액션 애플리케이션의 브라우저 지원은 무엇입니까?
-## :book: UnmountComponentAtNode 방법의 목적은 무엇입니까?
-## :book: 코드 분할이란?
-## :book: 엄격한 모드의 이점은 무엇입니까?
-## :book: 키 조각이란 무엇인가?
-## :book: React는 모든 HTML 속성을 지원합니까?
-## :book: HOC의 제한은 무엇입니까?
+아래 메소드는 렌더링 중, 라이프사이클 메서드 또는 자식 컴포넌트의 생성자에 오류가 있을 때 호출됩니다.
+
+- static getDerivedStateFromError()
+- componentDidCatch()
+
+## :book: displayName class property를 표시하는 목적은 무엇입니까?
+## :book: 리액트 애플리케이션의 브라우저 지원은 무엇입니까?
+## :book: unmountComponentAtNode 메서드의 목적은 무엇입니까?
+## :book: 코드 분할(code-splitting)이란?
+## :book: 엄격한 모드(strict mode)의 이점은 무엇입니까?
+## :book: 키 조각( Keyed Fragments)이란 무엇인가?
+## :book: React는 모든 HTML 속성(attributes)을 지원합니까?
+## :book: HOC의 한계 무엇입니까?
 ## :book: DevTools에서 ForwardRefs를 디버깅하는 방법
-## :book: 컴포넌트 프로포트가 true로 기본 설정될 때?
+## :book: 컴포넌트 props가 true로 기본 설정될 때?
 ## :book: NextJS 및 주요 기능은 무엇입니까?
+Next.js는 React로 구축된 정적 및 서버 렌더링 응용 프로그램을 위해 많이 사용되는 경량 프레임워크입니다. 또한 스타일링 및 라우팅 솔루션도 제공합니다. NextJS에서 제공하는 주요 기능은 다음과 같습니다.
+
+1. 기본적으로 서버에서 렌더링됩니다.
+2. 더 빠른 페이지 로드를 위한 자동 코드 분할(Automatic code splitting)
+3. 간단한 클라이언트 사이드 라우팅(client-side routing)(페이지 기반)
+4. 웹 팩 기반 개발 환경을 지원((HMR))
+5. Express 또는 다른 Node.js와 함께 HTTP 서버로 구현 가능
+6. Babel 및 웹 팩 설정을 커스터마이징할 수 있음
+
 ## :book: 이벤트 핸들러를 컴포넌트에 어떻게 전달합니까?
-## :book: 렌더링방식에 화살표 함수를 사용하는 것이 좋은가?
-## :book: 어떤 기능이 여러 번 호출되는 것을 방지하는 방법은?
-## :book: JSX가 주입 공격을 방지하는 방법
-## :book: 렌더링된 요소를 어떻게 업데이트합니까?
-## :book: props은 어떻게 읽기 전용이라고 합니까?
+## :book: render 메서드에 화살표 함수를 사용하는 것이 좋은가?
+## :book: 어떤 함수가 여러 번 호출되는 것을 방지하는 방법은?
+onClick 또는 onScroll과 같은 이벤트 핸들러를 사용하는 경우 콜백이 너무 빨리 실행되지 않도록 하려면 콜백 실행 속도를 제한할 수 있습니다. 이것은 아래의 가능한 방법으로 달성될 수 있다.
+
+1. Throttling: 시간 기반 빈도에 따라 변경됩니다. 예를 들어 _.throttle lodash 함수를 사용하여 사용할 수 있습니다.
+2. Debouncing: 일정 기간 동안 사용하지 않은 후 변경 사항을 게시합니다. 예를 들어 _.debounce lodash 함수를 사용하여 사용할 수 있습니다.
+3. RequestAnimationFrame throttling: 요청애니메이션 프레임에 따라 변경됩니다. 예를 들어, Raf-schd lodash 기능을 사용하여 사용할 수 있습니다.
+
+## :book: JSX가 주입(Injection) 공격을 방지하는 방법
+## :book: 렌더링된 엘리먼트를 어떻게 업데이트합니까?
+## :book: props은 어떻게 read only라고 합니까?
 ## :book: state 업데이트를 병합하는 방법은 무엇입니까?
 ## :book: 이벤트 핸들러에게 인수를 전달하려면 어떻게 해야 합니까?
 ## :book: 컴포넌트의 렌더링을 방지하는 방법
-## :book: 지수를 안전하게 열쇠로 사용하기 위한 조건은 무엇인가?
+## :book: index를 안전하게 key로 사용하기 위한 조건은 무엇인가?
 ## :book: 키가 전체적으로 고유해야 합니까?
 ## :book: 폼 핸들링으로 인기 있는 것은 무엇입니까?
-## :book: 폼 라이브러리보다 폼익의 장점은 무엇입니까?
+## :book: redux form 라이브러리보다 formik의 장점은 무엇입니까?
 ## :book: 상속을 사용할 필요가 없는 이유는 무엇입니까?
-## :book: 리액션 응용 프로그램에서 웹 컴포넌트를 사용할 수 있습니까?
-## :book: 동적 가져오기란?
-## :book: 적재 가능한 컴포넌트란?
-## :book: 서스펜스란 무엇인가?
-## :book: 경로 기반 코드 분할이란?
-## :book: 맥락을 사용하는 방법에 대한 예를 들어보자.
-## :book: 문맥상 채무불이행의 목적은 무엇인가?
+React에서는 상속 대신 컴포지션(composition)을 사용하여 컴포넌트 간에 코드를 재사용하는 것이 좋습니다. props 및 컴포지션 모두 컴포넌트의 모양과 동작을 명확하고 안전하게 사용자 지정하는 데 필요한 모든 유연성을 제공합니다. 반면, 컴포넌트 간에 UI가 아닌 기능을 재사용하려면 별도의 자바스크립트 모듈로 추출하는 것이 좋습니다. 이후 컴포넌트는 확장하지 않고 해당 함수, 개체 또는 클래스를 가져와 사용합니다.
+
+## :book: 리액트 응용 프로그램에서 웹 컴포넌트를 사용할 수 있습니까?
+## :book: 동적 가져오기란(dynamic import)?
+## :book: 적재 가능한 컴포넌트(loadable components)란?
+## :book: 서스펜스 컴포넌트(suspense component)란 무엇인가?
+## :book: 경로 기반 코드 분할(code splitting)이란?
+## :book: 컨텍스트 사용하는 방법에 대한 예를 들어보자.
+## :book: 컨텍스트의 default value의 목적은 무엇인가?
 ## :book: contextType은 어떻게 사용합니까?
-## :book: 소비자란 무엇인가?
-## :book: 컨텍스트를 사용하는 동안 성능 코너 사례를 어떻게 해결합니까?
-## :book: HOC에서 전향적 참조의 목적은 무엇입니까?
-## :book: 모든 기능 또는 클래스 컴포넌트에 대해 참조할 수 있습니까?
-## :book: 참고 자료를 사용하는 동안 컴포넌트 라이브러리에 대한 추가 관리가 필요한 이유는 무엇입니까?
-## :book: ES6 없이 리액션 클래스 컴포넌트를 생성하는 방법은?
-## :book: JSX 없이 리액션 사용이 가능한가요?
-## :book: 디핑 알고리즘이란 무엇인가?
-## :book: 디핑 알고리즘으로 적용되는 규칙은 무엇입니까?
-## :book: 레퍼런스 이용은 언제 필요하세요?
-## :book: 렌더링 props에는 반드시 렌더링 props 이름을 붙여야 합니까?
-## :book: 순수한 컴포넌트로 렌더링 props을 사용하는 것의 문제는 무엇입니까?
-## :book: 렌더링 프로포트를 사용하여 HOC를 만드는 방법은 무엇입니까?
-## :book: 윈도우 기술이란 무엇인가?
-## :book: JSX에서 허위값은 어떻게 출력합니까?
+## :book: consumer란 무엇인가?
+Consumer는 컨텍스트 변경 사항을 구독하는 React 컴포넌트입니다. 현재 컨텍스트 값을 인수로 수신하고 반응 노드를 반환하는 하위 함수가 필요합니다. 함수에 전달된 값 인수는 트리에서 위의 이 컨텍스트에 대해 가장 가까운 Provider의 값 props와 같습니다.
+
+## :book: 컨텍스트를 사용해 성능 문제를 해결한 사례가 있나요?
+## :book: HOC에서 forward ref의 목적은 무엇입니까?
+## :book: 모든 함수 또는 클래스 컴포넌트에 대해 refs argument가 가능합니까?
+## :book: refs를 사용하는 동안 컴포넌트 라이브러리에 대한 추가 관리가 필요한 이유는 무엇입니까?
+## :book: ES6 없이 리액트 클래스 컴포넌트를 생성하는 방법은?
+ES6을 사용하지 않는 경우, 대신 create-react-class 모듈을 사용해야 할 수도 있습니다. 기본 props의 경우 getDefaultProps()를 전달된 객체에 대한 함수로 정의해야 합니다. 반면 초기 상태의 경우 초기 상태를 반환하는 별도의 getInitialState 메서드를 제공해야 합니다.
+
+```js
+var Greeting = createReactClass({
+  getDefaultProps: function() {
+      return {
+        name: 'Jhohn'
+      };
+    },
+  getInitialState: function() {
+      return {message: this.props.message};
+    },
+  handleClick: function() {
+     console.log(this.state.message);
+  },
+  render: function() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+});
+```
+
+## :book: JSX 없이 리액트를 사용할 수 있나요?
+예, React를 사용할 때 JSX는 필수 항목이 아닙니다. 실제로 빌드 환경에서 컴파일을 설정하지 않으려는 경우 편리합니다. 각 JSX 요소는 React.createElement(component, props, ...children)를 호출하기 위한 문법적 설탕일 뿐입니다.
+
+- JSX 사용 시
+  ```js
+  class Greeting extends React.Component {
+    render() {
+      return <div>Hello {this.props.message}</div>;
+    }
+  }
+
+  ReactDOM.render(
+    <Greeting message="World" />,
+    document.getElementById('root')
+  );
+  ```
+
+- 사용하지 않을 때
+  ```js
+  class Greeting extends React.Component {
+    render() {
+      return React.createElement('div', null, `Hello ${this.props.message}`);
+    }
+  }
+
+  ReactDOM.render(
+    React.createElement(Greeting, {message: 'World'}, null),
+    document.getElementById('root')
+  );
+  ```
+
+## :book: 디핑 알고리즘(diffing algorithm)이란 무엇인가?
+React는 알고리즘을 사용하여 최신 트리와 일치하도록 UI를 효율적으로 업데이트하는 방법을 알아내었습니다. 분산 알고리즘은 한 트리를 다른 트리로 변환하기 위한 최소 연산 수를 생성하는 것입니다. 그러나 이 알고리즘은 O(n3)의 순서로 느리고 복잡하다. 여기서 n은 트리의 요소 수이다.
+
+이 경우 1000개의 원소를 표시하려면 10억 개의 비교가 필요합니다. 이건 너무 비싸요. 대신 React는 다음 두 가지를 가정하여 휴리스틱 O(n) 알고리즘을 구현합니다.
+
+1. 다른 유형의 두 elements는 다른 tree를 생성할 것이다.
+2. 개발자는 key prop을 사용하여 여러 렌더링에서 어떤 자식 요소가 안정적일 수 있는지 암시할 수 있습니다.
+
+## :book: 디핑 알고리즘(diffing algorithm)으로 적용되는 규칙은 무엇입니까?
+두 트리를 분산시킬 때 React는 먼저 두 루트 요소를 비교합니다. 동작은 루트 요소의 유형에 따라 다릅니다. 알고리즘을 조정(reconciliation algorithm)하는 동안 아래 규칙을 다룹니다.
+1. 다른 유형의 요소: 루트 요소가 다른 유형을 가질 때마다 React는 이전 트리를 해체하고 새 트리를 처음부터 만듭니다. 예를 들어, 다른 유형의 , 또는 ~의 요소는 전체 재구성을 유도합니다.
+2. 동일한 유형의 DOM 요소: 동일한 유형의 두 React DOM 요소를 비교할 때 React는 두 가지 특성을 모두 살펴보고 동일한 기본 DOM 노드를 유지하며 변경된 특성만 업데이트합니다. className 속성을 제외한 동일한 DOM 요소의 예를 들어 보겠습니다.
+  ```js
+  <div className="show" title="ReactJS" />
+
+  <div className="hide" title="ReactJS" />
+  ```
+
+3. 동일한 유형의 컴포넌트 엘리먼트: 컴포넌트가 업데이트되면 인스턴스는 동일하게 유지되므로 렌더링 시에도 상태가 유지됩니다. React는 기본 컴포넌트 인스턴스의 props를 새 요소와 일치하도록 업데이트하고 componentWillReceiveProps() 및 componentWillUpdate()를 기본 인스턴스에서 호출합니다. 그런 다음 render() 메서드가 호출되고 diff 알고리즘이 이전 결과와 새 결과를 비교하며 반복됩니다.
+4. 하위 항목 재귀: DOM 노드의 하위 항목에서 반복할 때 리액트는 두 하위 항목 목록을 동시에 반복하고 차이가 있을 때마다 변형시킵니다. 예를 들어 하위 트리 끝에 요소를 추가할 때 두 트리를 변환하는 것이 좋습니다.
+  ```js
+  <ul>
+    <li>first</li>
+    <li>second</li>
+  </ul>
+
+  <ul>
+    <li>first</li>
+    <li>second</li>
+    <li>third</li>
+  </ul>
+  ```
+
+5. Keys 핸들링: React는 Key attribute을 지원합니다. 하위 키가 있는 경우 React는 키를 사용하여 원래 트리의 하위 트리와 후속 트리의 하위 트리의 하위 키를 일치시킵니다. 예를 들어 키를 추가하면 트리 변환이 효율적으로 수행될 수 있습니다.
+  ```js
+  <ul>
+    <li key="2015">Duke</li>
+    <li key="2016">Villanova</li>
+  </ul>
+
+  <ul>
+    <li key="2014">Connecticut</li>
+    <li key="2015">Duke</li>
+    <li key="2016">Villanova</li>
+  </ul>
+  ```
+
+## :book: refs는 언제 필요한가요?
+refs를 받을 수 있는 몇 가지 사용 사례가 있습니다.
+
+1. focus, text selection 또는 미디어 재생 관리 시
+2. 명령형 애니메이션을 트리거할 때
+3. 서드 파티 DOM 라이브러리와 통합할 때
+## :book: render props에는 반드시 render props 이름을 붙여야 합니까?
+render props라는 패턴이 있더라도 이 패턴을 사용하기 위해 render props를 사용할 필요는 없습니다. 즉, 컴포넌트가 렌더링할 대상을 알기 위해 사용하는 함수인 prop은 기술적으로 "render prop"입니다. render props에 대한 하위 프로포트의 예를 들어 보겠습니다.
+
+```js
+<Mouse children={mouse => (
+  <p>The mouse position is {mouse.x}, {mouse.y}</p>
+)}/>
+```
+
+실제로 자식 prop은 JSX 요소의 "attributes" 목록에 이름을 추가할 필요가 없습니다. 대신, 여러분은 그것을 element 안에 직접 둘 수 있습니다.
+
+```js
+<Mouse>
+  {mouse => (
+    <p>The mouse position is {mouse.x}, {mouse.y}</p>
+  )}
+</Mouse>
+```
+
+위의 매개 변수를 사용하는 동안(이름 없이) propType에서 하위 항목이 함수여야 한다고 명시합니다.
+
+```js
+Mouse.propTypes = {
+  children: PropTypes.func.isRequired
+};
+```
+
+## :book: 순수한 컴포넌트로 render props을 사용하는 것의 문제는 무엇입니까?
+렌더 메서드 내에 함수를 만들면 순수 함수의 목적에 어긋납니다. 얕은 prop 비교는 항상 새 prop에 대해 false를 반환하므로 이 경우 각 렌더는 렌더링 prop에 대해 새 값을 생성합니다. 이 문제는 렌더링 함수를 인스턴스 메서드로 정의하여 해결할 수 있습니다.
+
+## :book: render props를 사용하여 HOC를 만드는 방법은 무엇입니까?
+render props이 있는 일반 컴포넌트를 사용하여 대부분의 고차 컴포넌트(HOC)를 구현할 수 있습니다. 예를 들어 컴포넌트 대신 마우스 HOC를 사용하는 것이 더 좋다면 render props가 있는 일반 프로그램을 사용하여 쉽게 만들 수 있습니다.
+
+## :book: windowing 테크닉이란 무엇인가?
+windowing 설정은 지정된 시간에 행의 작은 부분 집합만 렌더링하는 기술로 컴포넌트를 다시 렌더링하는 데 걸리는 시간과 생성된 DOM 노드 수를 크게 줄일 수 있습니다. 프로그램에서 긴 데이터 목록을 렌더링하는 경우 이 매개 변수를 사용하는 것이 좋습니다. react-window과 react-virtualized는 모두 목록, 그리드 및 표 형식 데이터를 표시하기 위한 몇 가지 재사용 가능한 구성 요소를 제공하는 널리 사용되는 windowing 라이브러리입니다.
+
+## :book: JSX에서 falsy값은 어떻게 출력합니까?
+거짓, null, 정의되지 않은 및 true와 같은 거짓 값은 유효한 자식 값이지만 아무 것도 렌더링하지 않습니다. 그래도 표시하려면 문자열로 변환해야 합니다. 문자열로 변환하는 방법에 대한 예를 들어 보겠습니다.
+
+```js
+<div>
+  My JavaScript variable is {String(myVariable)}.
+</div>
+```
+
 ## :book: 포털의 대표적인 활용 사례는 무엇인가?
+리액트 포털은 상위 컴포넌트에 오버플로가 있을 때 매우 유용하며, 숨겨지거나 스택 컨텍스트(z 인덱스, 위치, 불투명도 등 스타일)에 영향을 미치는 속성이 있다면 컨테이너를 시각적으로 "분리"해야 합니다.
+
+예를 들어 dialogs, global message notifications, hovercards 및 tooltips 등이 있습니다.
+
 ## :book: 제어되지 않는 컴포넌트의 기본값을 설정하는 방법은 무엇입니까?
+리액트에서 폼 요소의 값 속성은 DOM의 값을 재정의합니다. 제어되지 않는 구성 요소의 경우 React에서 초기 값을 지정하도록 할 수 있지만 후속 업데이트는 제어되지 않은 상태로 둘 수 있습니다. 이 경우를 처리하기 위해 value 대신 defaultValue 특성을 지정할 수 있습니다.
+```js
+render() {
+  return (
+    <form onSubmit={this.handleSubmit}>
+      <label>
+        User Name:
+        <input
+          defaultValue="John"
+          type="text"
+          ref={this.input} />
+      </label>
+      <input type="submit" value="Submit" />
+    </form>
+  );
+}
+```
+
+select 및 textArea 입력도 마찬가지입니다. 그러나 체크박스와 라디오 입력에 대해서는 defaultChecked를 사용해야 합니다.
+
 ## :book: 가장 좋아하는 리액트 스택은 무엇입니까?
+기술 스택은 개발자마다 다르지만, 가장 인기 있는 스택은 react boilerplate project code에 사용됩니다. 주로 상태 관리와 비동기의 부가 효과들에 리덕스와 리덕스 사가, 라우팅 목적의 리액트 라우터, 리액트 컴포넌트의 스타일링에 스타일드 컴포넌트, REST api를 호출하기 위한 axios, 다른 스택을 지원하기 위한 웹팩, reselct, ESnext, 바벨 등을 사용합니다.
 ## :book: Real DOM과 Virtual DOM의 차이점은 무엇입니까?
-## :book: 대응 애플리케이션에 부트스트랩을 추가하는 방법
-## :book: react를 프런트 엔드 프레임워크로 사용하여 상위 웹 사이트나 응용 프로그램을 나열할 수 있습니까?
+- Real DOM
+  1. 업데이트가 느립니다.
+  2. DOM 조작에 자원이 많이 소비됩니다.
+  3. HTML을 직접 업데이트할 수 있습니다.
+  4. 너무 메모리 낭비를 야기한다.
+  5. 요소가 업데이트될 경우 새 DOM 만들기
+
+- Virtual DOM
+  1. 업데이트가 빠릅니다.
+  2. DOM 조작이 효율적이고 쉽습니다.
+  3. HTML을 직접 업데이트할 수 없음
+  4. 메모리의 낭비가 없다.
+  5. 요소가 업데이트되는 경우 JSX를 업데이트합니다.
+## :book: 리액트 애플리케이션에 Bootstrap을 추가하는 방법
+Bootstrap은 세 가지 가능한 방법으로 React 앱에 추가할 수 있습니다.
+
+- Bootstrap CDN 사용: Bootstrap을 추가하는 가장 쉬운 방법입니다. 헤드 태그에 Bootstrap CSS 및 JS 리소스를 모두 추가합니다.
+- Dependency에 Bootstrap 추가: 빌드 도구나 웹 팩과 같은 모듈 번들러를 사용하는 경우, 이 옵션을 사용하면 리액트 응용 프로그램에 Bootstrap을 추가할 때 선호되는 옵션입니다.
+  - npm install bootstrap
+- Bootstrap 패키지 대응: 이 경우 Bootstrap 구성 요소를 재구성한 패키지를 사용하여 React 앱에 Bootstrap을 추가할 수 있습니다. 아래 패키지는 이 범주에서 인기가 있습니다.
+    - react-bootstrap
+    - reactstrap
+
+## :book: react를 프런트 엔드 프레임워크로 사용한 인기 웹 사이트나 응용 프로그램은 뭐가 있나요?
+- Facebook
+- Uber
+- Instagram
+- WhatsApp
+- Khan Academy
+- Airbnb
+- Dropbox
+- Flipboard
+- Netflix
+- PayPal
+
 ## :book: React에서 CSS In JS 기법을 사용하는 것이 권장되는가?
-## :book: 모든 수업 컴포넌트를 Hooks로 다시 작성해야 하나요?
-## :book: React Hook으로 데이터를 가져오는 방법?
-## :book: Hooks는 수업의 모든 사용 사례에 적용되는가?
-## :book: Hooks 서포트의 안정적인 릴리스는 무엇입니까?
-## :book: useState에서 배열 파괴(대괄호 표기)를 사용하는 이유는 무엇입니까?
-## :book: Hooks를 도입하기 위해 사용되는 출처는 무엇인가?
+아니요. 그러나 기존 코드를 다시 작성하지 않고도 몇 가지 구성 요소(또는 새 구성 요소)에서 Hooks를 시도할 수 있습니다. 리액트에서 클래스를 제거할 계획이 없기 때문입니다.
+
+## :book: 모든 클래스 컴포넌트를 Hooks로 다시 작성해야 하나요?
+Respect는 스타일이 정의되는 방식에 대해 어떤 의견도 가지고 있지 않지만, 초보자인 경우 평소처럼 별도의 *.css 파일에서 스타일을 정의하고 className을 사용하여 스타일을 참조하는 것이 좋습니다. 이 기능은 React의 일부가 아니라 타사 라이브러리에서 제공됩니다. 그러나 다른 접근 방식(CSS-In-JS)을 시도하려면 스타일 구성 요소 라이브러리를 선택하는 것이 좋습니다.
+
+## :book: React Hooks로 데이터를 가져오는 방법?
+useEffect라는 Effect Hooks는 axios API로 데이터를 가져오고 state Hooks의 업데이트 함수로 컴포넌트의 지역 상태 데이터를 변경하는 데 사용됩니다.
+
+API에서 반응 문서 목록을 가져오는 예를 들어 보겠습니다.
+
+## :book: Hooks는 클래스를 사용한 모든 케이스에 적용되는가?
+Hooks가 모든 클래스 사용 사례를 포함하지는 않지만 곧 추가할 계획이 있습니다. 현재 자주 사용되지 않는 `getSnapshotBeforeUpdate` 및 `componentDidCatch` 라이프사이클에 해당하는 Hooks는 아직 없습니다.
+## :book: Hooks 지원으로 안정화된 릴리스는 무엇입니까?
+React는 아래 패키지에 대한 16.8 릴리스의 React Hook의 안정적인 구현을 포함한다.
+
+1. React DOM
+2. React DOM Server
+3. React Test Renderer
+4. React Shallow Renderer
+
+## :book: useState에서 구조 분해 할당을(destructuring)을 사용하는 이유는 무엇입니까?
+useState를 사용하여 상태 변수를 선언하면 두 항목이 있는 배열인 쌍을 반환합니다. 첫 번째 항목은 현재 값이고 두 번째 항목은 값을 업데이트하는 함수입니다. [0]과 [1]을 사용하여 액세스하면 특정 의미가 있기 때문에 다소 혼란스럽습니다. 이것이 우리가 대신 구조 분해 할당을 사용하는 이유입니다.
+
+- 아래의 코드를
+  ```js
+  const userStateVariable = useState('userProfile'); // Returns an array pair
+  let user = userStateVariable[0]; // Access first item
+  const setUser = userStateVariable[1]; // Access second item
+  ```
+
+- 이렇게 변경합니다.
+  ```js
+  const [user, setUser] = useState('userProfile');
+  ```
+
+## :book: Hooks를 도입하기 위해 사용된 코드들은 무엇인가?
+훅스는 여러 다른 출처에서 아이디어를 얻었습니다. 다음은 그 중 일부입니다.
+
+리액트-미래 저장소에서 함수형 API를 사용한 이전 실험
+리액션 컴포넌트와 같은 렌더링 prop API를 이용한 커뮤니티 실험
+DisplayScript의 상태 변수 및 상태 셀.
+Rx의 Subscriptions입니다.
+ReasonReact의 Reducer 컴포넌트입니다.
 ## :book: 웹 컴포넌트의 필수 API에 어떻게 액세스합니까?
-## :book: 포믹이란 무엇인가?
+웹 컴포넌트는 종종 그 기능을 구현하기 위해 필수적인 API를 노출합니다. 웹 구성요소의 필수 API에 액세스하려면 DOM 노드와 직접 상호 작용해야 합니다. 그러나 다른 웹 컴포넌트를 사용하는 경우 가장 좋은 솔루션은 웹 컴포넌트의 래퍼 역할을 하는 React 컴포넌트를 작성하는 것입니다.
+
+## :book: formik이란 무엇인가?
+Formik은 세 가지 주요 문제를 해결하는 데 도움을 주는 리액트의 소규모 라이브러리이다.
+
+1. 폼 상태에서 값 가져오기 및 내보내기
+2. 유효성 검사 및 오류 메시지
+3. 폼 전송에 대한 핸들링
+
 ## :book: Redux에서 비동기식 호출을 처리하기 위해 선택하는 일반적인 미들웨어는 무엇입니까?
+가장 많이 사용되는 미들웨어로는 비동기식 호출이 가능한는 Redux의 생태계인 Redux Thunk, Redux Promise, Redux Saga가 있습니다.
+
 ## :book: 브라우저가 JSX 코드를 이해합니까?
+브라우저는 JSX코드를 이해할 수 없습니다. 트랜스파일러를 거쳐 JSX를 일반적인 자바스크립트 문법으로 변환해야 브라우저가 이해할 수 있습니다. 현재 바벨이 트랜스파일러 중 가장 많이 사용됩니다.
 ## :book: 리액트하는 데이터 흐름에 대해 설명하십시오.
-## :book: 리액션 스크립트란?
-## :book: 리액트 생성 앱의 기능은 무엇입니까?
-## :book: renderToNodeStream 방법의 목적은 무엇입니까?
+React는 기존의 양방향 데이터 바인딩보다 이해하기 쉬운 props를 사용하여 표준 코드량을 줄이고 단방향 반응 데이터 흐름을 구현합니다.
+
+## :book: 리액트 스크립트란?
+리액트 스크립트 패키지는 구성 없이 프로젝트를 시작할 수 있도록 도와주는 create-react-app 스타터 팩의 스크립트 세트입니다. react-scripts start 명령은 개발 환경을 설정하고 서버를 시작하고 핫 모듈을 다시 로드합니다.
+## :book: create-react-app의 기능은 무엇입니까?
+1. 리액트, JSX, ES6, Typescript 및 Flow 구문 지원.
+2. CSS 자동변환
+3. CSS 재설정/정규화
+4. 실시간 개발 서버
+5. coverage reporting과 대화형 유닛 테스트 러너가 빌트인으로 제공됩니다.
+6. 프로덕션용 JS, CSS 및 이미지를 해시 및 소스 맵으로 번들하는 빌드 스크립트
+7. 모든 Progressive Web App 기준을 충족하는 오프라인 서비스 워커와 및 웹 기술 모음집입니다.
+
+## :book: renderToNodeStream 메서드의 목적은 무엇입니까?
+ReactDOMServer.renderToNodeStream 메서드는 서버에서 HTML을 생성하고 페이지 로딩 속도를 높이기 위한 초기 요청 시 마크업을 다운하는 데 사용됩니다. 또한 검색 엔진이 SEO 목적을 위해 페이지를 쉽게 탐색할 수 있도록 도와줍니다.
 ## :book: MobX란 무엇인가?
+MobX는 간단하고 확장 가능하며 함수형 프로그래밍을 위한 상태 관리 솔루션입니다. 
+
 ## :book: Redux와 MobX의 차이점은 무엇입니까?
-## :book: ReactJS를 배우기 전에 ES6를 배워야 합니까?
+
+|주제|Redux|Mobx|
+|----|-----|----|
+|정의|애플리케이션 상태를 관리하기 위한 javascript 라이브러리입니다.|애플리케이션의 상태를 대응적으로 관리하기 위한 라이브러리입니다.|
+|프로그래밍|그것은 주로 ES6로 쓰여져 있다.|자바스크립트(ES5)로 작성되어 있다.|
+|데이터 저장소|데이터 스토리지를 위한 대형 스토어가 하나만 존재합니다.|저장소에 대한 스토어가 두 개 이상 있습니다.|
+|사용법|주로 크고 복잡한 애플리케이션에 사용됨|단순 응용 프로그램에 사용|
+|성능|개선 필요|더 나은 성능 제공|
+|저장방법|JS 개체를 사용하여 저장|관측 가능 데이터를 저장하는 데 사용|
+
+
+## :book: 리액트를 배우기 전에 ES6를 배워야 합니까?
 ## :book: 동시 렌더링이란?
-## :book: 비동기 모드와 동시 모드의 차이점은 무엇입니까?
-## :book: react16.9에서 javascript url을 사용할 수 있습니까?
+## :book: 비동기 모드(async mode)와 동시 모드(concurrent mode)의 차이점은 무엇입니까?
+둘 다 같은 의미이다. 이전에는 React 팀이 "Async Mode"라고 불렀습니다. 다른 우선 순위 수준에서 작업을 수행할 수 있는 React의 기능을 강조하기 위해 이름이 변경되었습니다. 따라서 비동기 렌더링에 대한 다른 접근 방식의 혼동을 피할 수 있습니다.
+
+## :book: react16.9에서 javascript urls을 사용할 수 있습니까?
 ## :book: Hooks를 위한 eslint 플러그인의 목적은 무엇입니까?
-## :book: 임페러티브와 선언적 리액트의 차이점은 무엇인가?
-## :book: 리액션과 함께 활자본을 사용하면 어떤 이점이 있습니까?
-## :book: Context API State Management를 사용하는 동안 페이지 새로 고침 시 사용자가 인증 state를 유지하도록 하려면 어떻게 해야 합니까?
-## :book: 새로운 JSX 혁신의 이점은 무엇입니까?
-## :book: 새로운 JSX는 이전 변환과 어떻게 다릅니까?
+## :book: 명령형(Imperative)과 선언형(Declarative) 리액트의 차이점은 무엇인가?
+## :book: 리액션과 함께 타입스크립트를 사용하면 어떤 이점이 있습니까?
+## :book: Context API 상태 관리를 사용할 때 페이지 새로 고침 시 사용자 인증 상태를 유지하려면 어떻게 해야 합니까?
+## :book: 새로운 JSX transform의 이점은 무엇입니까?
+## :book: 새로운 JSX transform은 이전 transform과 어떻게 다릅니까?
 ## :book: 어떻게 창조-리액트-앱을 사용하여 리덕스 발판을 만들 수 있을까요?
 ## :book: React Server 컴포넌트란?
