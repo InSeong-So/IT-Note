@@ -1,0 +1,32 @@
+{
+  "name": "itnote",
+  "version": "1.0.0",
+  "description": "Developer's Note. 개발자가 알아야 할 지식을 정리한 저장소📖",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InSeong-So/IT-Note.git"
+  },
+  "author": "InSeong-So",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/InSeong-So/IT-Note/issues"
+  },
+  "homepage": "https://github.com/InSeong-So/IT-Note#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@types/jest": "^27.0.1",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.1.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.1.1",
+    "jest-plugin-context": "^2.9.0",
+    "prettier": "^2.4.0"
+  }
+}
