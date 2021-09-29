@@ -1,6 +1,6 @@
 # 언어(프로그래밍)
 
-## :book:[Java](Java.md)
+## :book: [Java](Java.md)
 1. [`자바의 특징`에 대해 설명해주세요.](https://github.com/InSeong-So/IT-Note/blob/master/chapter04.0-%EC%96%B8%EC%96%B4/Java.md#book-%EC%9E%90%EB%B0%94%EC%9D%98-%ED%8A%B9%EC%A7%95%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94)
 2. [자바의 `컴파일 과정`에 대해 설명해주세요.](https://github.com/InSeong-So/IT-Note/blob/master/chapter04.0-%EC%96%B8%EC%96%B4/Java.md#book-%EC%9E%90%EB%B0%94%EC%9D%98-%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EA%B3%BC%EC%A0%95%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94)
 3. [`JVM의 구조`에 대해 설명해주세요.](https://github.com/InSeong-So/IT-Note/blob/master/chapter04.0-%EC%96%B8%EC%96%B4/Java.md#book-jvm%EC%9D%98-%EA%B5%AC%EC%A1%B0%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94)
@@ -37,7 +37,7 @@
 <hr>
 <br>
 
-## :book:[Python](Python.md)
+## :book: [Python](Python.md)
 
 <br>
 
@@ -46,7 +46,7 @@
 <hr>
 <br>
 
-## :book:[JavaScript](JavaScript.md)
+## :book: [JavaScript](JavaScript.md)
 
 <br>
 
