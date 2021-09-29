@@ -230,6 +230,33 @@ Presenter는 View로부터 입력을 Model에 요청하고, Model의 응답으�
 <hr>
 <br>
 
+## :book: `Flux` 패턴은 무엇인가요?
+> MVC 패턴은 양방향 데이터 흐름을 만들어 예측하기 어려운 버그를 발생시킵니다.
+
+<div align=center>
+
+<img src="img/flux.png" alt="MVC Pattern" width="500"/>
+
+</div>
+
+<br>
+
+> Flux의 가장 큰 특징은, 바로 **단방향 데이터 흐름**입니다.
+
+1. 이벤트(action)가 발생하면 Dipatcher로 전달됩니다.
+2. Dispatcher는 등록된 Callback 함수를 실행하고, Store에 데이터를 전달합니다.
+3. Store는 변경된 데이터를 View에 알립니다.
+4. View는 변경된 데이터로 화면을 변경하거나 출력합니다.
+
+디자인 패턴인 `Observer 패턴`을 활용하여 작성할 수 있습니다.
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
+
 ## :book: `REST`, `RESTful` 은 뭐죠? `RESTful API` 는요?
 > REST(Representational State Transfer)는 웹의 장점을 최대한 활용할 수 있는 아키텍처입니다.
 
