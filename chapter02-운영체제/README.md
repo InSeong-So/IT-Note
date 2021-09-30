@@ -170,6 +170,26 @@
 <hr>
 <br>
 
+## :book: 스레드 세이프한 프로그래밍 방법엔 무엇이 있나요?
+> 어떤 함수, 변수, 객체가 여러 스레드로부터 동시 다발적인 접근이 일어나도 프로그램 실행에 문제가 없어야 합니다.
+
+1. Re-entrancy(재 진입성)
+   - 어떤 함수가 한 스레드에 의해 호출되어 실행 중일 때, 다른 스레드가 그 함수를 호출하더라도 그 결과가 각각에게 올바로 반환되어야 합니다.
+2. Thread-local storage(스레드 지역 변수)
+   - 공유 자원의 사용을 최대한 줄이고 각각의 스레드에서만 접근 가능하게 설정하여 스레드가 공유 자원에 동시 접근하는 것을 방지합니다.
+   - 동기화 방법(Synchronization)과 관련이 있습니다.
+3. Mutual exclusion(상호 배제)
+   - 공유 자원을 반드시 사용해야 할 경우 해당 자원의 접근을 세마포어(Semaphore) 등의 락으로 통제합니다.
+4. Atomic operations(중단되지 않는 연산)
+   - 공유 자원 접근 시 이 연산을 이용하거나 `원자적(Atomic)`으로 정의된 접근 방법을 사용함으로써 상호 배제를 구현할 수 있습니다.
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
+
 ## :book: `문맥 교환`(Context Switching)이 무엇인가요?
 멀티 프로세스 환경에서 CPU가 어떤 하나의 프로세스를 실행하고 있는 상태에서, 인터럽트 요청에 의해 다음 우선 순위의 프로세스가 실행되어야 할 때 기존의 프로세스의 상태 또는 레지스터 값(context)을 저장하고 CPU가 다음 프로세스를 수행하도록 새로운 프로세스의 상태 또는 레지스터 값(context)을 교체하는 작업을 context switching이라고 한다.
 
@@ -379,24 +399,30 @@ OS에서 context는 CPU가 해당 프로세스를 실행하기 위한 해당 프
 <br>
 
 ## :book: `Mutex` 와 `Semaphore`, `Monitor` 의 차이점을 알려주세요.
-> 교착 상태를 해결하기 위한 방법
+> 동기화 프리미티브라고도 하며, 커널 자원의 동기화 서비스입니다.
+
+교착 상태를 해결하기 위한 방법들입니다.
+
 
 ### Mutex
 > 일종의 Locking 매커니즘으로 Lock 을 가지고 있을 경우에만 공유 데이터에 접근이 가능하다.
-> - Lock에 대한 소유권이 있어 Lock 을 획득한 사람만 반납할 수 있다.
+
+- Lock에 대한 소유권이 있어 Lock 을 획득한 사람만 반납할 수 있다.
 
 <br>
 
 ### Semaphore
 > 동시에 리소스에 접근할 수 있는 '허용 가능한 Counter의 갯수'를 가지고 있는 Counter
-> - Counter가 1개의 경우 Binary, 2개 이상의 경우 Counting Semaphore라고 부른다.
-> - Binary Semaphore의 경우 개념적으로 Mutex 와 같다
+
+- Counter가 1개의 경우 Binary, 2개 이상의 경우 Counting Semaphore라고 부른다.
+- Binary Semaphore의 경우 개념적으로 Mutex 와 같다.
 
 <br>
 
 ### Monitor
 > Mutex(Lock)와 Condition Variables(Queue라고도 함)을 가지고 있는 Synchronization 메카니즘
-> - 공유자원에 안전하게 접근하기 위해 Mutual Exclusion가 랩핑된 Thread-Safe한 클래스, 객체, 모듈들을 의미하기도 함
+
+- 공유자원에 안전하게 접근하기 위해 Mutual Exclusion가 랩핑된 Thread-Safe한 클래스, 객체, 모듈들을 의미하기도 함
 
 <br>
 
@@ -798,7 +824,7 @@ OS에서 context는 CPU가 해당 프로세스를 실행하기 위한 해당 프
 - 컴파일
   - C/C++, Java(`.java` 파일을 `.class`로 변환)
 - 인터프리트
-  - Javascript, Python
+  - JavaScript, Python
 
 <br>
 
