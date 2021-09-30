@@ -2,13 +2,12 @@
 ### :blue_heart: 개요 :blue_heart:
 :star2:리뉴얼중입니다!:star2:
 
-해당 저장소는 누가 보아도 쉽게 이해할 수 있는 IT 기술의 기록을 지향합니다.
-
-산재 되어 있는 조각 데이터를 수집하고, 흩어진 저장소를 통합하고 있습니다.
-
-코드를 기록하더라도 주석과 개념 정리를 하게끔 노력합니다.
-
-알고리즘과 프론트엔드 공부에 매진 중인 관계로 다소 업데이트가 늦어지나, 미비된 정보와 누락된 내용도 수정하고 있습니다.
+> 해당 저장소는 아래와 같은 목적으로 작성하고 있습니다.
+1. 누가 보아도 쉽게 이해할 수 있는 IT 기술의 기록을 지향합니다.
+2. 산재 되어 있는 조각 데이터를 수집하고, 흩어진 저장소를 통합하고 있습니다.
+3. 코드를 기록하더라도 주석과 개념 정리를 하게끔 노력합니다.
+4. 알고리즘과 프론트엔드 공부에 매진 중인 관계로 다소 업데이트가 늦어지나, 미비된 정보와 누락된 내용도 수정하고 있습니다.
+5. 면접 질문으로, 답변으로, 자신이 알고 있는 IT 기술에 대한 검증으로 쓰일 수 있습니다.
 
 <br>
 
@@ -94,7 +93,9 @@
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%9D%80-%EB%AD%90%EC%97%90%EC%9A%94">함수형 프로그래밍 은 뭐에요?</a></p>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-git-%EA%B3%BC-github-%EC%9D%80-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%8B%AC%EB%9D%BC%EC%9A%94">Git 과 Github 은 어떻게 달라요?</a></p>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-spa-%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94">SPA 는 무엇인가요?</a></p>
-        <p><a href="">PWA 는 무엇인가요?</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-pwa%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94">PWA 는 무엇인가요?</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-aot%EC%99%80-jit%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94">AOI와 JIT에 대해 설명해주세요.</a></p>
+        <p><a href="">반응형(reactivity) 시스템이란 무엇인가요?</a></p>
       </td>
     </tr>
     <tr>
@@ -152,8 +153,9 @@
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter04.5-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC">:rabbit:프레임워크와 라이브러리</a></td>
       <td>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter04.5-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC#java">Java</a></p>
-        <p>Javascript</p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter04.5-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC#java">Spring | Java</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter04.5-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC#react">React | JavaScript</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter04.5-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC#vue">Vue | JavaScript</a></p>
       </td>
     </tr>
     <tr>
@@ -439,7 +441,7 @@
 [왜 비동기적 프로그래밍을 해야 하는가?](https://velog.io/@hjkdw95/%EC%99%9C-%EB%B9%84%EB%8F%99%EA%B8%B0%EC%A0%81-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%84-%ED%95%B4%EC%95%BC%ED%95%98%EB%8A%94%EA%B0%80)
 - hjkdw95님의 블로그 글입니다.
 
-[이벤트 버블링, 이벤트 캡처, 그리고 위임](https://joshua1988.github.io/web-development/javascript/event-propagation-delegation/#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%B2%84%EB%B8%94%EB%A7%81---event-bubbling)
+[이벤트 버블링, 이벤트 캡처, 그리고 위임](https://joshua1988.github.io/web-development/JavaScript/event-propagation-delegation/#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%B2%84%EB%B8%94%EB%A7%81---event-bubbling)
 - 캡틴판교(장기효)님의 글입니다. 이벤트에 대한 내요이 잘 정리되어 있습니다.
 
 <br>
