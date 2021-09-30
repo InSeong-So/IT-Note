@@ -18,7 +18,7 @@
 <hr>
 <br>
 
-## Javascript
+## JavaScript
 ### React
 
 <details><summary>:persevere:너무 길어요:sob: <strong>자세히보기!</strong></summary>

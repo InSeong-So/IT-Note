@@ -15,4 +15,4 @@
 
 자바스크립트의 디자인패턴 항목은 차후 요약 및 쉬운 이해를 위해 재정리할 예정입니다.
 
-링크 [Link](https://github.com/InSeong-So/IT-Note/tree/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/javascript#javascript%EC%9D%98-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4)
+링크 [Link](https://github.com/InSeong-So/IT-Note/tree/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/JavaScript#JavaScript%EC%9D%98-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4)

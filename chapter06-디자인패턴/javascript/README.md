@@ -1,5 +1,5 @@
-# `Javascript`의 디자인 패턴
-> 참조 [Link](https://www.telerik.com/blogs/design-patterns-in-javascript)
+# `JavaScript`의 디자인 패턴
+> 참조 [Link](https://www.telerik.com/blogs/design-patterns-in-JavaScript)
 
 <br>
 

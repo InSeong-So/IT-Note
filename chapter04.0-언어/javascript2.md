@@ -123,7 +123,7 @@
 ## :book: 위치 객체의 다양한 URL 속성은 무엇입니까?
 ## :book: javascript에서 쿼리 문자열 값을 가져오는 방법
 ## :book: 개체에 키가 있는지 확인하는 방법
-## :book: javascript 개체를 루프스루하거나 열거하는 방법
+## :book: JavaScript 개체를 루프스루하거나 열거하는 방법
 ## :book: 빈 개체를 테스트하는 방법
 ## :book: 인수 개체란?
 ## :book: 문자열의 첫 글자를 대문자로 만드는 방법
@@ -213,7 +213,7 @@
 ## :book: 불안과 평가의 차이점은 무엇인가?
 ## :book: 익명의 함수란?
 ## :book: 지역 변수와 전역 변수 사이의 우선 순서는 무엇입니까?
-## :book: javascript 접근기란?
+## :book: JavaScript 접근기란?
 ## :book: 개체 생성자의 속성을 어떻게 정의합니까?
 ## :book: get과 defineProperty의 차이점은 무엇입니까?
 ## :book: Getters와 Setters의 장점은 무엇인가?
@@ -270,7 +270,7 @@
 ## :book: 난독화와 암호화의 차이점은 무엇인가?
 ## :book: 최소화에 사용되는 일반적인 도구는 무엇입니까?
 ## :book: javascript를 사용하여 양식 유효성 검사를 수행하는 방법
-## :book: javascript 없이 양식 유효성 검사를 수행하는 방법
+## :book: JavaScript 없이 양식 유효성 검사를 수행하는 방법
 ## :book: 제약 조건 검증에 사용할 수 있는 DOM 방법은 무엇입니까?
 ## :book: 사용 가능한 제약 조건 유효성 검사 DOM 속성은 무엇입니까?
 ## :book: 유효성 속성 목록은 무엇입니까?
@@ -289,7 +289,7 @@
 ## :book: 자바스크립트와 자바스크립트의 차이점은 무엇인가?
 ## :book: javascript가 네임스페이스를 지원합니까?
 ## :book: 네임스페이스를 선언하는 방법
-## :book: 상위 페이지에서 iframe에서 javascript 코드를 호출하는 방법
+## :book: 상위 페이지에서 iframe에서 JavaScript 코드를 호출하는 방법
 ## :book: 날짜로부터 시간대 오프셋을 얻는 방법
 ## :book: CSS 및 JS 파일을 동적으로 로드하는 방법
 ## :book: DOM에서 HTML 요소를 찾는 다른 방법은 무엇입니까?
@@ -388,7 +388,7 @@
 ## :book: 마이크로 태스크란?
 ## :book: 다른 이벤트 루프란?
 ## :book: 큐마이크로태스크의 목적은 무엇인가?
-## :book: javascript 라이브러리를 typescript 파일에서 어떻게 사용합니까?
+## :book: JavaScript 라이브러리를 typescript 파일에서 어떻게 사용합니까?
 ## :book: 약속과 지켜질 수 있는 것의 차이점은 무엇인가?
 ## :book: 힙이란 무엇인가
 ## :book: 이벤트 테이블이란?
