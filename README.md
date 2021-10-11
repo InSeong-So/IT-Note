@@ -126,10 +126,10 @@
       <td>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#cache-memory-%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94">HTTP란 무엇인가요?</a></p>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#http-11%EA%B3%BC-http-20%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80-%EB%AD%90%EC%97%90%EC%9A%94">HTTP 1.0과 HTTP 2.0의 차이점은 뭐에요?</a></p>
-        <p><a href="">SPDY 프로토콜에 대해 설명해주세요.</a></p>
-        <p><a href="">HTTP 메세지란 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#http-method-%EC%9D%98-%EC%A2%85%EB%A5%98%EB%8A%94-%EB%AD%90%EA%B0%80-%EC%9E%88%EB%82%98%EC%9A%94">HTTP 메서드의 종류는 뭐가 있나요?</a></p>
-        <p><a href="">HTTP 상태 코드란 무엇인가요?</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#book-spdy-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94">SPDY 프로토콜에 대해 설명해주세요.</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#book-http-%EB%A9%94%EC%84%B8%EC%A7%80%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94">HTTP 메세지란 무엇인가요?</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#book-http-%EB%A9%94%EC%84%9C%EB%93%9C-%EC%9D%98-%EC%A2%85%EB%A5%98%EB%8A%94-%EB%AD%90%EA%B0%80-%EC%9E%88%EB%82%98%EC%9A%94">HTTP 메서드의 종류는 뭐가 있나요?</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#book-http-%EC%83%81%ED%83%9C-%EC%BD%94%EB%93%9C-%EC%9D%98-%EC%A2%85%EB%A5%98%EB%8A%94-%EB%AD%90%EA%B0%80-%EC%9E%88%EB%82%98%EC%9A%94">HTTP 상태 코드란 무엇인가요?</a></p>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#%EC%84%9C%EB%B2%84%EB%A1%9C-%EC%9A%94%EC%B2%AD%ED%95%98%EB%A9%B4-%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94-%EC%9D%BC%EB%A0%A8%EC%9D%98-%EA%B3%BC%EC%A0%95%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94">서버로 요청하면 일어나는 일련의 과정에 대해 설명해주세요.</a></p>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#http-method-%EC%9D%98-%EC%A2%85%EB%A5%98%EB%8A%94-%EB%AD%90%EA%B0%80-%EC%9E%88%EB%82%98%EC%9A%94">GET, POST 방식의 차이점은 무엇인가요?</a></p>
         <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#http-%EC%99%80-https-%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80%EC%9A%94">HTTP 와 HTTPS 의 차이점은요?</a></p>
