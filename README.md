@@ -63,13 +63,17 @@
 |`PaaS(Platform as a Service)`|서비스를 개발 할 수 있는 안정적인 환경(Platform)과 그 환경을 이용하는 응용 프로그램을 개발 할 수 있는 API 까지 제공하는 형태|
 |`SaaS(Software as a Service)`|Cloud 환경에서 동작하는 응용프로그램을 서비스 형태로 제공|
 
+<br>
+
+<sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
+
 </details>
 
-<br>
 <hr>
 <br>
 
 ### :point_down: 챕터 바로가기 :point_down:
+<details><summary>:persevere:너무 길어요:sob: <strong>자세히보기!</strong></summary>
 
 <br>
 
@@ -297,9 +301,14 @@
   </tbody>
 </table>
 
+
 <br>
 
 [👋 상단으로 돌아가기 👋](https://github.com/InSeong-So/IT-Note#point_down-%EC%B1%95%ED%84%B0-%EB%B0%94%EB%A1%9C%EA%B0%80%EA%B8%B0-point_down)
+
+<br>
+
+</details>
 
 <hr>
 <br>
@@ -712,21 +721,21 @@
 ### :eyes: 중요하지 않은 저장소 마크다운 작성 규칙 :eyes:
 1. `*.md` 파일의 첫 헤드라인은 `#`을 사용합니다.
 2. 항목별 정리 시 `##`를 사용하고, 소항목은 `###`입니다.
-  - `##` 항목의 끝에 상위 문서로 갈 수 있는 링크를 붙입니다.
-    ```
-    ## 예시
-    - 내용
+     - `##` 항목의 끝에 상위 문서로 갈 수 있는 링크를 붙입니다.
+       ```
+       ## 예시
+       - 내용
 
-    <br>
+       <br>
 
-    <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+       <sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
 
-    <hr>
-    <br>
+       <hr>
+       <br>
 
-    ## 예시
-    - 계속...
-    ```
+       ## 예시
+       - 계속...
+       ```
 3. TOC는 생성하지 않습니다.
 4. 문서 내의 한 항목에서 설명하는 내용이 100줄을 넘어가면 분리합니다.
 5. 바로가기 링크는 `Link`로 표현합니다.
