@@ -1,7 +1,7 @@
 # 개발상식
 
 ## :book: `API`와 `SDK`를 설명해주세요.
-> Application Programming Interface(응용 프로그램 인터페이스)와 System Developer's Kit(시스템 개발자용 키트)의 약어입니다.
+>응용 프로그램 인터페이스( Application Programming Interface)와 시스템 개발자용 키트(System Developer's Kit)의 약어입니다.
 
 API는 응용 프로그램이 `자신과 연관된 프로그램을 만들 수 있도록 제공하는 인터페이스`입니다. 예로 포토샵이 있죠. 포토샵은 매우 유용한 프로그램이지만 얼굴 보정 필터를 탑재하고 있진 않아요. 그래서 포토샵은 이 필터를 개발하려는 사람들을 위해 다양한 인터페이스를 제공하며, 이 인터페이스가 바로 API입니다. 즉, API는 시스템 호출보다 광범위하며 운영체제의 API를 시스템 호출이라고 말할 수 있어요.
 
