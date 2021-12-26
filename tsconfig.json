@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "strictPropertyInitialization": false,
+    // tsc
+    "target": "esnext",
+    "module": "esnext",
+    // strict와 관련된 모든 속성이 true로 변경됨
+    "strict": true,
+    // @ts-check와 같은 효과를 내는 옵션은 checkJs
+    "allowJs": true,
+    // 컴파일된 파일 출력 경로
+    "outDir": "dist",
+    "importHelpers": true,
+    // 프로미스 베이스
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    // 타입이 정해져있지 않은 코드를 any라도 지정해야한다고 제한
+    "noImplicitAny": true,
+    "baseUrl": ".",
+    "types": ["node"],
+    "paths": {
+      "~/*": [
+        "*"
+      ],
+      "@/*": [
+        "src/packages/*"
+      ],
+    },
+    "typeRoots": [
+      "src/types"
+    ]
+  },
+  "include": [
+    "chapter06-디자인패턴/**/*.ts",
+    "chapter06-디자인패턴/**/types"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ] // 기본값
+}
