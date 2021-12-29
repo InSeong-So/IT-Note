@@ -1,4 +1,4 @@
-# 디자인패턴
+# 디자인 패턴
 > 소프트웨어 공학에서 `디자인 패턴(Design pattern)`은 프로그램 개발 시에 자주 부닥치는 애로 상황에 대한 일반적이고 재사용 가능한 추상화된 해결책을 일컫는 말입니다.
 
 이번 장에서는 각 언어별 디자인 패턴을 알아봅니다. 깊진 않고 간략하게.
@@ -15,4 +15,4 @@
 
 자바스크립트의 디자인패턴 항목은 차후 요약 및 쉬운 이해를 위해 재정리할 예정입니다.
 
-링크 [Link](https://github.com/InSeong-So/IT-Note/tree/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/JavaScript#JavaScript%EC%9D%98-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4)
+- ES6 디자인 패턴 정리 링크 [Link](https://github.com/InSeong-So/IT-Note/tree/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/javascript/ES6)
