@@ -86,79 +86,79 @@
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D">:cat:개발상식</a></td>
       <td>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-api%EC%99%80-sdk%EB%A5%BC-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94">API와 SDK를 설명해주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EA%B3%BC-5%EA%B0%80%EC%A7%80-%EC%9B%90%EC%B9%99%EC%9D%84-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94">객체 지향형 프로그래밍과 5가지 원칙을 설명해주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%9D%80-%EB%AD%90%EC%97%90%EC%9A%94">함수형 프로그래밍은 뭐에요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-%EC%88%9C%EC%88%98-%ED%95%A8%EC%88%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94">순수 함수란 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EA%B3%BC-%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%98-%EA%B0%80%EC%9E%A5-%ED%81%B0-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94">객체 지향 프로그래밍과 함수형 프로그래밍의 가장 큰 차이점은 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%EC%99%80-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%84-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94">라이브러리와 프레임워크의 차이점을 알려주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-model1%EA%B3%BC-model2%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B4-%EB%8B%A4%EB%A5%B8%EA%B0%80%EC%9A%94  ">Model1과 Model2는 무엇이 다른가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-mvc-%ED%8C%A8%ED%84%B4%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94">MVC 패턴은 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-mvp-%ED%8C%A8%ED%84%B4%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94">MVP 패턴은 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-mvvm-%ED%8C%A8%ED%84%B4%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94">MVVM 패턴은 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-flux-%ED%8C%A8%ED%84%B4%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94">Flux 패턴은 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-rest-restful%EC%9D%80-%EB%AD%90%EC%A3%A0-restful-api%EB%8A%94%EC%9A%94">REST, RESTful은 뭐죠? RESTful API는요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-%EC%A0%95%EC%A0%81%EB%8F%99%EC%A0%81-%ED%83%80%EC%9D%B4%ED%95%91%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94">정적/동적 타이핑에 대해 설명해주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-tdd%EB%8A%94%EC%9A%94">TDD는요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-git%EA%B3%BC-github%EC%9D%80-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%8B%AC%EB%9D%BC%EC%9A%94">Git과 Github 은 어떻게 달라요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-spa%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94">SPA는 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-pwa%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94">PWA란 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-csr%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B4%EA%B3%A0-ssr%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B4%EC%A3%A0">CSR은 무엇이고, SSR은 무엇이죠?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-aot%EC%99%80-jit%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94">AOT와 JIT에 대해 설명해주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-%EB%B0%98%EC%9D%91%ED%98%95reactivity-%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94">반응형(reactivity) 시스템이란 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-%EC%9B%B9-%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A5%BC-%EB%A7%8C%EB%93%A4-%EB%95%8C-%EA%B3%A0%EB%A0%A4%ED%95%B4%EC%95%BC-%ED%95%A0-%EC%82%AC%ED%95%AD%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B4-%EC%9E%88%EC%9D%84%EA%B9%8C%EC%9A%94">웹 사이트를 만들 때 고려해야 할 사항은 무엇이 있을까요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-%EC%9B%B9-%ED%8E%98%EC%9D%B4%EC%A7%80%EB%A5%BC-%EB%A7%8C%EB%93%A4-%EB%95%8C%EC%9D%98-%EA%B3%BC%EC%A0%95%EC%9D%84-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%8B%A4-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C%EC%9A%94">웹 페이지를 만들 때의 과정을 설명해주실 수 있을까요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-%EC%A0%90%EC%A7%84%EC%A0%81-%ED%96%A5%EC%83%81%EB%B2%95%EA%B3%BC-%EC%9A%B0%EC%95%84%ED%95%9C-%EC%84%B1%EB%8A%A5%EC%A0%80%ED%95%98%EB%B2%95%EC%9D%98-%EC%B0%A8%EC%9D%B4%EB%A5%BC-%EC%84%A4%EB%AA%85%ED%95%98%EC%8B%A4-%EC%88%98-%EC%9E%88%EC%8A%B5%EB%8B%88%EA%B9%8C">점진적 향상법과 우아한 성능저하법의 차이를 설명하실 수 있습니까?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-%ED%91%9C%EC%A4%80%EC%9D%98-%EC%A4%91%EC%9A%94%EC%84%B1%EC%97%90-%EA%B4%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94">표준의 중요성에 관해 설명해주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-%EB%AA%A8%EB%85%B8%EB%A0%88%ED%8F%AC%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B8%EC%A7%80-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94">모노레포는 무엇인지 설명해주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter01-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D#book-fouc%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94-%EB%98%90-fouc%EB%A5%BC-%ED%94%BC%ED%95%98%EA%B8%B0-%EC%9C%84%ED%95%B4%EC%84%A0-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%95%B4%EC%95%BC-%ED%95%98%EB%82%98%EC%9A%94">FOUC에 대해 설명해주세요. 또 FOUC를 피하기 위해선 어떻게 해야 하나요?</a></p>
+        <p>API와 SDK를 설명해주세요.</p>
+        <p>객체 지향형 프로그래밍과 5가지 원칙을 설명해주세요.</p>
+        <p>함수형 프로그래밍은 뭐에요?</p>
+        <p>순수 함수란 무엇인가요?</p>
+        <p>객체 지향 프로그래밍과 함수형 프로그래밍의 가장 큰 차이점은 무엇인가요?</p>
+        <p>라이브러리와 프레임워크의 차이점을 알려주세요.</p>
+        <p>Model1과 Model2는 무엇이 다른가요?</p>
+        <p>MVC 패턴은 무엇인가요?</p>
+        <p>MVP 패턴은 무엇인가요?</p>
+        <p>MVVM 패턴은 무엇인가요?</p>
+        <p>Flux 패턴은 무엇인가요?</p>
+        <p>REST, RESTful은 뭐죠? RESTful API는요?</p>
+        <p>정적/동적 타이핑에 대해 설명해주세요.</p>
+        <p>TDD는요?</p>
+        <p>Git과 Github 은 어떻게 달라요?</p>
+        <p>SPA는 무엇인가요?</p>
+        <p>PWA란 무엇인가요?</p>
+        <p>CSR은 무엇이고, SSR은 무엇이죠?</p>
+        <p>AOT와 JIT에 대해 설명해주세요.</p>
+        <p>반응형(reactivity) 시스템이란 무엇인가요?</p>
+        <p>웹 사이트를 만들 때 고려해야 할 사항은 무엇이 있을까요?</p>
+        <p>웹 페이지를 만들 때의 과정을 설명해주실 수 있을까요?</p>
+        <p>점진적 향상법과 우아한 성능저하법의 차이를 설명하실 수 있습니까?</p>
+        <p>표준의 중요성에 관해 설명해주세요.</p>
+        <p>모노레포는 무엇인지 설명해주세요.</p>
+        <p>FOUC에 대해 설명해주세요. 또 FOUC를 피하기 위해선 어떻게 해야 하나요?</p>
       </td>
     </tr>
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C">:dog:운영체제</a></td>
       <td>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#ram-%EA%B3%BC-rom-%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94">RAM 과 ROM 에 대해 알려주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#process-%EC%99%80-thread-%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%84-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94">Process 와 Thread 의 차이점을 알려주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#multi-process-%EC%99%80-multi-thread-%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94">Multi-Process 와 Multi-Thread 에 대해 알려주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#user-thread-%EC%99%80-kernel-thread-%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94">User Thread 와 Kernel Thread 의 차이점은 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#context-switching-%EC%9D%B4-%EB%AC%B4%EC%97%87%EC%9D%B8%EC%A7%80-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94">Context-Switching 이 무엇인지 설명해주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#deadlock-%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94">Deadlock 에 대해 알려주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#mutex-%EC%99%80-semaphore-monitor-%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%84-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94">Mutex 와 Semaphore, Monitor 의 차이점을 알려주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#memory-hierarchy-%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94">Memory Hierarchy 에 대해 알려주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EC%A0%84%EB%9E%B5%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94">메모리 관리 전략에 대해 알려주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#%EB%A9%94%EB%AA%A8%EB%A6%AC-%ED%95%A0%EB%8B%B9-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94">메모리 할당 알고리즘에 대해 알려주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B5%90%EC%B2%B4-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94">페이지 교체 알고리즘에 대해 알려주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#fragmentation-%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94">Fragmentation 란 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#paging-%EA%B3%BC-segmentation-%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94">Paging 과 Segmentation 의 차이점에 대해 알려주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#cisc-risc-%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%84-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94">CISC, RISC 의 차이점을 알려주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#cpu-scheduling-%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94">CPU Scheduling 에 대해 알려주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#sync-%EC%99%80-async-%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%84-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94">Sync 와 Async 의 차이점을 알려주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#virtual-memory-%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94">Virtual Memory 에 대해 알려주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#cache-memory-%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94">Cache Memory 에 대해 알려주세요.</a></p>
+        <p>RAM 과 ROM 에 대해 알려주세요.</p>
+        <p>Process 와 Thread 의 차이점을 알려주세요.</p>
+        <p>Multi-Process 와 Multi-Thread 에 대해 알려주세요.</p>
+        <p>User Thread 와 Kernel Thread 의 차이점은 무엇인가요?</p>
+        <p>Context-Switching 이 무엇인지 설명해주세요.</p>
+        <p>Deadlock 에 대해 알려주세요.</p>
+        <p>Mutex 와 Semaphore, Monitor 의 차이점을 알려주세요.</p>
+        <p>Memory Hierarchy 에 대해 알려주세요.</p>
+        <p>메모리 관리 전략에 대해 알려주세요.</p>
+        <p>메모리 할당 알고리즘에 대해 알려주세요.</p>
+        <p>페이지 교체 알고리즘에 대해 알려주세요.</p>
+        <p>Fragmentation 란 무엇인가요?</p>
+        <p>Paging 과 Segmentation 의 차이점에 대해 알려주세요.</p>
+        <p>CISC, RISC 의 차이점을 알려주세요.</p>
+        <p>CPU Scheduling 에 대해 알려주세요.</p>
+        <p>Sync 와 Async 의 차이점을 알려주세요.</p>
+        <p>Virtual Memory 에 대해 알려주세요.</p>
+        <p>Cache Memory 에 대해 알려주세요.</p>
       </td>
     </tr>
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC">:mouse:네트워크</a></td>
       <td>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C#cache-memory-%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94">HTTP란 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#http-11%EA%B3%BC-http-20%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80-%EB%AD%90%EC%97%90%EC%9A%94">HTTP 1.0과 HTTP 2.0의 차이점은 뭐에요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#book-spdy-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94">SPDY 프로토콜에 대해 설명해주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#book-http-%EB%A9%94%EC%84%B8%EC%A7%80%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94">HTTP 메세지란 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#book-http-%EB%A9%94%EC%84%9C%EB%93%9C-%EC%9D%98-%EC%A2%85%EB%A5%98%EB%8A%94-%EB%AD%90%EA%B0%80-%EC%9E%88%EB%82%98%EC%9A%94">HTTP 메서드의 종류는 뭐가 있나요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#book-http-%EC%83%81%ED%83%9C-%EC%BD%94%EB%93%9C-%EC%9D%98-%EC%A2%85%EB%A5%98%EB%8A%94-%EB%AD%90%EA%B0%80-%EC%9E%88%EB%82%98%EC%9A%94">HTTP 상태 코드란 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#%EC%84%9C%EB%B2%84%EB%A1%9C-%EC%9A%94%EC%B2%AD%ED%95%98%EB%A9%B4-%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94-%EC%9D%BC%EB%A0%A8%EC%9D%98-%EA%B3%BC%EC%A0%95%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94">서버로 요청하면 일어나는 일련의 과정에 대해 설명해주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#http-method-%EC%9D%98-%EC%A2%85%EB%A5%98%EB%8A%94-%EB%AD%90%EA%B0%80-%EC%9E%88%EB%82%98%EC%9A%94">GET, POST 방식의 차이점은 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#http-%EC%99%80-https-%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80%EC%9A%94">HTTP 와 HTTPS 의 차이점은요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#osi-%EA%B0%80-%EB%AD%90%EC%A3%A0">OSI 가 뭐죠?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#tcp-%EC%99%80-udp-%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B4%EC%A3%A0">TCP 와 UDP 의 차이점은 무엇이죠?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#tcpip-%EB%8A%94-%EB%AD%90%EC%A3%A0">TCP/IP 는 뭐죠?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#tcp-3-way-hands-shaking-%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94">TCP-3-hands-shaking 에 대해 설명해주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#dns-%EC%9D%98-round-robin-%EB%B0%A9%EC%8B%9D%EC%9D%84-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94">DNS 의 Round Robin 방식을 설명해주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#routing-table-%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94">Routing Table 은 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#url-encode-%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94">URL Encode 는 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#utf-8%EC%9D%84-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94">UTF-8을 설명해주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#url-%EA%B3%BC-uri-%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%84-%EB%AA%A8%EB%A5%B4%EA%B2%A0%EC%96%B4%EC%9A%94">URL 과 URI 의 차이점을 모르겠어요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#server-%EC%9D%98-%EC%9D%B8%EC%A6%9D%EB%B0%A9%EC%8B%9D%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94">Server 의 인증방식에 대해 설명해주세요.</a></p>
+        <p>HTTP란 무엇인가요?</p>
+        <p>HTTP 1.0과 HTTP 2.0의 차이점은 뭐에요?</p>
+        <p>SPDY 프로토콜에 대해 설명해주세요.</p>
+        <p>HTTP 메세지란 무엇인가요?</p>
+        <p>HTTP 메서드의 종류는 뭐가 있나요?</p>
+        <p>HTTP 상태 코드란 무엇인가요?</p>
+        <p>서버로 요청하면 일어나는 일련의 과정에 대해 설명해주세요.</p>
+        <p>GET, POST 방식의 차이점은 무엇인가요?</p>
+        <p>HTTP 와 HTTPS 의 차이점은요?</p>
+        <p>OSI 가 뭐죠?</p>
+        <p>TCP 와 UDP 의 차이점은 무엇이죠?</p>
+        <p>TCP/IP 는 뭐죠?</p>
+        <p>TCP-3-hands-shaking 에 대해 설명해주세요.</p>
+        <p>DNS 의 Round Robin 방식을 설명해주세요.</p>
+        <p>Routing Table 은 무엇인가요?</p>
+        <p>URL Encode 는 무엇인가요?</p>
+        <p>UTF-8을 설명해주세요.</p>
+        <p>URL 과 URI 의 차이점을 모르겠어요.</p>
+        <p>Server 의 인증방식에 대해 설명해주세요.</p>
       </td>
     </tr>
     <tr>
@@ -180,18 +180,36 @@
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter05-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4">:wolf:데이터베이스</a></td>
       <td>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter05-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4#booksql%EC%9D%80-%EB%AD%90%EC%A3%A0">SQL은 뭐죠?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter05-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4#bookrdb-vs-nosql">RDB vs NoSQL</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter05-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4#bookrdb-vs-nosql">DB Normalization이 무엇인가요?</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter05-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4#bookrdb-vs-nosql">SQL문의 Merge 구문에 대해 알려주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter05-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4#bookrdb-vs-nosql">SQL문의 Join 구문에 대해 알려주세요.</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter05-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4#bookrdb-vs-nosql">데이터베이스에서의 Index를 설명해주세요.</a></p>
+        <p>SQL은 뭐죠?</p>
+        <p>RDB vs NoSQL</p>
+        <p>DB Normalization이 무엇인가요?</p>
+        <p>SQL문의 Merge 구문에 대해 알려주세요.</p>
+        <p>SQL문의 Join 구문에 대해 알려주세요.</p>
+        <p>데이터베이스에서의 Index를 설명해주세요.</p>
       </td>
     </tr>
     <tr>
-      <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4">:frog:디자인 패턴</a></td>
+      <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4#%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4">:frog:디자인 패턴</a></td>
       <td>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter06-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4#%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4">디자인 패턴에 대해 알려주세요.</a></p>
+        <p>추상화 팩토리 패턴</p>
+        <p>어댑터 패턴</p>
+        <p>브릿지 패턴</p>
+        <p>빌더 패턴</p>
+        <p>커맨드 패턴</p>
+        <p>컴포지트 패턴</p>
+        <p>데코레이터 패턴</p>
+        <p>파사드 패턴</p>
+        <p>팩토리 메서드 패턴</p>
+        <p>메멘토 패턴</p>
+        <p>MVC 패턴</p>
+        <p>관측자 패턴</p>
+        <p>프로토타입 패턴</p>
+        <p>프록시 패턴</p>
+        <p>구독/발행 패턴</p>
+        <p>전략 패턴</p>
+        <p>템플릿 패턴</p>
+        <p>방문자 패턴</p>
+        <p>반복자 패턴</p>
       </td>
     </tr>
     <tr>
