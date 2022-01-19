@@ -101,7 +101,7 @@ class Greeting extends React.Component {
 ## :book: Pure Component란?
 `React.PureComponent`는 React.Component와 동일하며 `shouldComponentUpdate()` 메서드로 예외를 핸들링할 수 있습니다.
 
-Props 또는 State가 변경되면 `PureComponent`는 Props와 State 모두에서 얕은 비교를 수행하는 반면 컴포넌트는 현재 Props와 State를 다음 컴 소품과 비교하지 않습니다. 따라서 컴포넌트는 `shouldComponentUpdate()`가 호출될 때마다 다시 렌더링됩니다.
+Props 또는 State가 변경되면 `PureComponent`는 Props와 State 모두에서 얕은 비교를 수행하는 반면 컴포넌트는 현재 Props와 State를 다음 컴 Props과 비교하지 않습니다. 따라서 컴포넌트는 `shouldComponentUpdate()`가 호출될 때마다 다시 렌더링됩니다.
 
 ## :book: 리액트의 State는 무엇일까요?
 컴포넌트의 State는 컴포넌트의 라이프타임 동안 변경될 수 있는 정보를 포함한 객체입니다. 개발자는 항상 컴포넌트의 State를 최대한 단순하게, State의 수를 최소화하도록 노력해야 합니다.
@@ -137,41 +137,459 @@ props.reactProp // '1'
 ```
 
 ## :book: State와 Props의 차이점은요?
-## :book: 왜 우리가 DOM을 직접 업데이트하지 말아야 하는가?
-## :book: setState()의 인수로서 콜백 함수의 목적은 무엇인가?
-## :book: HTML과 React 이벤트 처리의 차이점은 무엇입니까?
-## :book: JSX 콜백에서 메서드 또는 이벤트 핸들러를 바인딩하는 방법은?
-## :book: 이벤트 핸들러 또는 콜백에 매개 변수를 전달하는 방법은 무엇입니까?
-## :book: 리액트에서 합성 이벤트는 무엇입니까?
-SyntheticEvent는 브라우저의 기본 이벤트 주위에 있는 크로스 브라우저 래퍼입니다. API는 이벤트가 모든 브라우저에서 동일하게 작동한다는 점을 제외하고 StopPropagation() 및 preventionDefault()를 포함하여 브라우저의 기본 이벤트와 동일합니다.
+Props와 State는 순수한 자바스크립트 객체입니다. 둘 다 render의 출력에 영향을 주지만 컴포넌트에 대한 기능이 다릅니다. Props는 매개변수로 컴포넌트에 전달되는 반면 State는 함수 내에서 선언된 변수와 유사하게 컴포넌트 내부에서 관리됩니다.
 
-## :book: 인라인 조건부 표현이란 무엇인가?
-JS에서 사용할 수 있는 문 또는 삼항식 중 하나를 사용하여 조건부로 식을 렌더링할 수 있습니다. 이러한 접근 방식 외에도 중괄호로 묶은 다음 JS 논리 연산자를 사용하여 JSX에 식을 포함시킬 수도 있습니다.
+## :book: 왜 DOM을 직접 업데이트하면 안될까요?
+State를 직접 업데이트하면 컴포넌트가 다시 렌더링되지 않습니다.
+```js
+// Wrong
+this.state.message = 'Hello world'
+```
+
+그러나  `setState()` 메서드를 사용하면 컴포넌트의 State 객체에 대한 업데이트가 예약됩니다. 따라서 State가 변경되면 컴포넌트는 다시 렌더링하여 응답합니다.
+```js
+// Correct
+this.setState({ message: 'Hello World' })
+```
+
+## :book: `setState()`의 인수에 콜백 함수를 넣는 목적은 무엇인가요?
+`setState()`는 비동기적이므로 콜백 함수는 모든 작업 이후에 사용됩니다. 즉, callback 함수는 setState가 완료되고 컴포넌트가 다시 렌더링될 때 호출되는 형태입니다. 물론 콜백 함수보다는 라이프사이클을 이용하는 것이 좋습니다.
+
+```js
+setState({ name: 'John' }, () => console.log('The name has updated and component re-rendered'))
+```
+
+## :book: HTML과 React 이벤트 핸들링의 차이점은 무엇인가요?
+1. HTML에서 이벤트명은 기본적으로 소문자의 형태를 취하는 반면, 리액트에서는 카멜 케이스(Calmel Case)를 따릅니다.
+  ```html
+  <!-- html -->
+  <button onclick='activateLasers()'>
+
+  <!-- react -->
+  <button onClick={activateLasers}>
+  ```
+
+2. HTML에서 false를 반환하여 기본 동작을 방지할 수 있는 반면, 리액트에서는 명시적으로 `preventDefault()`를 호출해야 합니다.
+  ```html
+  <!-- html -->
+  <a href='#' onclick='console.log("The link was clicked."); return false;' />
+  ```
+  ```js
+  // react
+  function handleClick(event) {
+    event.preventDefault()
+    console.log('The link was clicked.')
+  }
+  ```
+
+3. HTML에서는 `()`를 추가하여 함수를 호출해야 하는 반면, 리액트에서는 함수에 `()`을 추가하면 안 됩니다.
+
+## :book: JSX 콜백에서 메서드 또는 이벤트 핸들러를 바인딩하는 방법은 무엇인가요?
+### 생성자에서 바인딩하기
+JavaScript 클래스에서 메서드는 기본적으로 바인딩되지 않습니다. 클래스 메서드로 정의된 React 이벤트 핸들러도 마찬가지입니다. 보통은 생성자에 묶습니다.
+
+```jsx
+class Foo extends Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick() {
+    console.log('Click happened');
+  }
+  render() {
+    return <button onClick={this.handleClick}>Click Me</button>;
+  }
+}
+```
+
+<br>
+
+### Public 클래스 필드 구문
+바인딩 접근 방식을 사용하지 않으려면 Public 클래스 필드 구문을 사용하여 콜백을 올바르게 바인딩할 수 있습니다.
+
+```js
+handleClick = () => {
+  console.log('this is:', this)
+}
+```
+```html
+<button onClick={this.handleClick}>
+  {'Click me'}
+</button>
+```
+
+<br>
+
+### 콜백의 화살표 함수
+콜백에서 바로 화살표 함수를 사용할 수 있습니다.
+
+```js
+handleClick() {
+    console.log('Click happened');
+}
+render() {
+    return <button onClick={() => this.handleClick()}>Click Me</button>;
+}
+```
+
+참고: 콜백을 하위 컴포넌트에 대한 Props로 전달하면 해당 컴포넌트가 추가로 리렌더링을 수행할 수 있습니다. 이러한 경우 성능을 고려하여 `.bind()` 또는 Public 클래스 필드 구문 방식을 사용하는 것이 좋습니다.
+
+## :book: 이벤트 핸들러 또는 콜백에 매개 변수를 전달하는 방법은 무엇입니까?
+- 화살표 함수를 사용하여 이벤트 핸들러를 감싸고 다음 매개변수를 전달할 수 있습니다.
+  ```html
+  <button onClick={() => this.handleClick(id)} />
+  ```
+
+- `.bind()`를 호출하는 것과 동일한 효과를 가집니다.
+  ```html
+  <button onClick={this.handleClick.bind(this, id)} />
+  ```
+
+- 화살표 함수로 정의된 함수에 인수를 전달할 수도 있습니다.
+  ```js
+  handleClick = (id) => () => {
+      console.log("Hello, your ticket number is", id)
+  };
+  ```
+  ```html
+  <button onClick={this.handleClick(id)} />
+  ```
+
+## :book: 리액트에서 합성 이벤트는 무엇입니까?
+`SyntheticEvent`는 브라우저 네이티브 이벤트 주변의 크로스 브라우저 Wrapper입니다. 이벤트가 모든 브라우저에서 동일하게 작동한다는 점을 제외하고는 `stopPropagation()` 및 `preventDefault()`를 포함한 브라우저의 기본 이벤트와 동일합니다.
+
+## :book: 인라인 조건부 표현식이란 무엇인가요?
+JavaScript에서 사용할 수 있는 `문(Statement)` 또는 `삼항 연산자(Ternary operator)` 중 하나를 사용하여 조건부로 식을 렌더링할 수 있습니다. 이러한 접근 방식 외에도 중괄호로 묶은 다음 JavaScript 논리 연산자를 사용하여 JSX에 `표현식(Expression)`을 포함시킬 수도 있습니다.
+
+```js
+<h1>Hello!</h1>
+{
+    messages.length > 0 && !isLogin?
+      <h2>
+          You have {messages.length} unread messages.
+      </h2>
+      :
+      <h2>
+          You don't have unread messages.
+      </h2>
+}
+```
 
 ## :book: "key" props이란 무엇이며 요소 배열에서 props을 사용하면 어떤 이점이 있습니까?
-## :book: refs는 무슨 용도인가요?
-## :book: refs를 만드는 방법은?
-## :book: forward refs란 무엇인가?
-## :book: 콜백 레퍼런스 및 findDOMNet()에서 선호하는 옵션은 무엇입니까?
-## :book: String Refs가 왜 레거시일까요?
-## :book: 가상 DOM이란?
-## :book: 가상 DOM 작동 방식
-## :book: Shadow DOM과 Virtual DOM의 차이점은 무엇입니까?
-## :book: React Fiber란 무엇인가?
-## :book: React Fiber의 주요 목적은 무엇인가?
-## :book: 제어된(컨트롤드) 컴포넌트란 무엇입니까?
-## :book: 제어되지 않은(언컨트롤드) 컴포넌트란?
-## :book: createElement와 cloneElement의 차이점은 무엇입니까?
-## :book: 상태 끌어올리기(Lifting State Up)란?
-https://berkbach.com/react-docs-%EB%B2%88%EC%97%AD-lifting-state-up-e7c8d980c2b3
+Key는 엘리먼트 배열을 작성할 때 반드시 포함해야 하는 특별한 문자열 Attribute입니다. Key 프로퍼티는 리액트가 변경, 추가 또는 제거된 항목을 식별하도록 돕습니다.
 
-## :book: 컴포넌트 라이프사이클의 다른 단계는 무엇입니까?
+- 대부분의 경우 데이터의 ID를 키로 사용합니다.
+  ```js
+  const todoItems = todos.map((todo) =>
+    <li key={todo.id}>
+      {todo.text}
+    </li>
+  )
+  ```
+
+- 렌더링된 항목에 대한 안정적인 ID가 없는 경우 index를 마지막 수단으로 사용할 수 있습니다.
+  ```js
+  const todoItems = todos.map((todo, index) =>
+    <li key={index}>
+      {todo.text}
+    </li>
+  )
+  ```
+
+- 구성된 배열(또는 목록)의 순서가 변경될 수 있는 경우 Key에 index를 사용하지 않는 것이 좋습니다. 이로 인해 성능에 부정적인 영향을 미칠 수 있으며 컴포넌트의 State에 문제가 발생할 수 있습니다.
+- 배열을 별도의 컴포넌트로 추출하는 경우 li 태그 대신 해당 컴포넌트에 Key를 적용합니다.
+- 배열에 Key Attribute가 없으면 콘솔에 경고 메시지가 표시됩니다.
+
+## :book: refs는 무슨 용도인가요?
+refs는 엘리먼트에 대한 참조 객체를 반환하는 데 사용됩니다. 가급적 지양해야 하지만 DOM 엘리먼트 또는 컴포넌트의 인스턴스에 직접 접근해야 하는 경우 유용할 수 있습니다.
+
+<br>
+
+## :book: refs를 만드는 방법은?
+1. 최근에 추가된 접근법입니다. refs는 `React.createRef()` 메서드를 사용하여 생성하고 React 엘리먼트의 `ref` Attribute에 정의합니다. 컴포넌트 전체에서 ref를 사용하려면 ref를 생성자 내의 인스턴스(instance) 속성에 할당하면 됩니다.
+   ```js
+   class MyComponent extends React.Component {
+     constructor(props) {
+       super(props)
+       this.myRef = React.createRef()
+     }
+     render() {
+       return <div ref={this.myRef} />
+     }
+   }
+   ```
+
+2. Ref 콜백 접근 방식은 리액트 버전에 관계없이 사용할 수 있습니다.
+   ```js
+   class SearchBar extends Component {
+     constructor(props) {
+         super(props);
+         this.txtSearch = null;
+         this.state = { term: '' };
+         this.setInputSearchRef = e => {
+           this.txtSearch = e;
+         }
+     }
+     onInputChange(event) {
+         this.setState({ term: this.txtSearch.value });
+     }
+     render() {
+         return (
+           <input
+               value={this.state.term}
+               onChange={this.onInputChange.bind(this)}
+               ref={this.setInputSearchRef} />
+         );
+     }
+   }
+   ```
+
+3. 리액트 16.8 이후의 버전에서, Hooks을 사용하여 ref 객체를 생성하고 필요한 요소에 바인딩할 수 있습니다.
+   ```js
+   const refContainer = useRef(initialValue);
+   ```
+
+그 외에도, 클로저(Closure)를 사용하여 함수형 컴포넌트에 ref를 사용할 수도 있으며, 권장하진 않지만 `인라인 ref 콜백`을 사용할 수도 있습니다.
+
+<br>
+
+## :book: forward refs란 무엇인가요?
+forward refs는 일부 컴포넌트가 수신한 ref를 가져와서 하위 컴포넌트로 전달하는 기능입니다.
+
+```js
+const ButtonElement = React.forwardRef((props, ref) => (
+  <button ref={ref} className="CustomButton">
+    {props.children}
+  </button>
+));
+
+// Create ref to the DOM button:
+const ref = React.createRef();
+<ButtonElement ref={ref}>{'Forward Ref'}</ButtonElement>
+```
+<!-- 
+## :book: 콜백 refs 및 findDOMNode()에서 선호하는 옵션은 무엇인가요?
+## :book: String Refs가 왜 레거시(Legacy)가 되었을까요? -->
+
+<br>
+
+## :book: 가상 DOM이란?
+VirtualDOM(VDOM)은 RealDOM의 내부 메모리 표현으로, 수정된 UI는 메모리에 보관되었다가 실제(Real) DOM과 동기화됩니다. 이런 동기화 단계는 render 함수를 호출하는 것과 화면에 엘리먼트를 표시하는 것 사이에 발생하며. 이 모든 과정을 조정 또는 조화(reconciliation)라고 부릅니다.
+
+<br>
+
+## :book: 가상 DOM 작동 방식
+1. 기본 데이터가 변경될 때마다 전체 UI가 VirtualDOM으로 다시 렌더링됩니다.
+2. Diff Algorithms에 의해 이전 DOM과 새로운 DOM 간의 차이가 계산됩니다.
+3. 계산이 완료되면 실제로 변경된 부분만 RealDOM에 반영됩니다.
+
+<br>
+
+## :book: Shadow DOM과 Virtual DOM의 차이점은 무엇입니까?
+Shadow DOM은 웹 컴포넌트의 CSS와 변수의 범위를 지정하기 위해 설계된 브라우저 API이지만, VirtualDOM은 브라우저 API 위에 자바스크립트의 라이브러리에 의해 구현된 개념입니다.
+
+<br>
+
+## :book: React Fiber란 무엇인가?
+Fiber는 리액트 v16에서 `새로운 조정 엔진(reconciliation engine)` 또는 코어 알고리즘의 재구현체입니다.
+
+리액트 컴포넌트가 화면에 렌더링 되는 과정은 다음과 같습니다.
+1. 리액트의 JSX가 `React.createElement`로 바벨에 의해 트랜스파일됩니다.
+2. `React.createElement` 호출에 의해 리액트 엘리먼트 트리가 반환됩니다.
+3. React의 조정 알고리즘에 의해 리액트 엘리먼트 트리를 재귀적으로 순회하면서 이전 트리와 현재 트리의 변경사항을 비교한다음 변경된 부분만 실제 DOM에 반영합니다(VirtualDOM).
+
+기존 조정 알고리즘은 애니메이션에 약해 재귀적으로 조정이 일어나 리액트 엘리먼트를 전부 순회할 때까지 자바스크립트 콜 스택을 차지했습니다.
+
+그 대안으로 등장한 React Fiber는 `자체 가상 스택을 사용하는 작업 단위`로서 기존 엔진에서의 재귀를 연결 리스트로 작성하여 해결하는데, 작업이 종료되면 연결된 다음 작업을 실행합니다.
+
+결국 React의 엘리먼트와 React Fiber Node는 1:1로 대응되며, 이는 하나의 엘리먼트를 렌더링 하는 행위를 작은 단위인 하나의 Fiber로 맵핑한 것입니다.
+
+<br>
+
+## :book: React Fiber의 주요 목적은 무엇인가요?
+React Fiber의 목적은 애니메이션, 레이아웃 및 제스처와 같은 영역에 대한 적합성을 높이는 것입니다. 주요 기능은 증분 렌더링으로, 렌더링 작업을 청크로 분할하여 여러 프레임에 분산할 수 있습니다.
+
+리액트 공식 문서는 이렇게 설명합니다.
+1. 중단 가능한 작업을 청크로 분할할 수 있습니다.
+2. 진행 중인 작업의 우선 순위를 지정하고 재배치 및 재사용이 가능합니다.
+3. `render()`에서 여러 요소를 반환할 수 있습니다.
+4. 오류 경계에 대한 지원이 개선되었습니다.
+
+## :book: Controlled Component란 무엇인가요?
+입력 엘리먼트들을 제어하는 컴포넌트입니다. form에서 사용자 입력 이후 컨트롤드 컴포넌트가 호출됩니다.
+
+즉, State를 변경시키는 mutation은 관련된 핸들러 함수를 가집니다. 예를 들어, 모든 이름을 대문자로 쓰려면 아래와 같이 handleChange를 사용합니다.
+
+```js
+handleChange(event) {
+  this.setState({value: event.target.value.toUpperCase()})
+}
+```
+
+<br>
+
+## :book: Uncontrolled Component란?
+제어되지 않은 컴포넌트는 자체 State를 내부에 저장하여 필요할 때 ref를 사용해 DOM을 조회(Query)하여 현재 값을 가져옵니다. 전통적인 HTML에 조금 더 가깝습니다.
+
+아래의 UserProfile 컴포넌트에서는 ref를 사용하여 이름을 입력하는 input DOM에 접근합니다.
+```js
+class UserProfile extends React.Component {
+  constructor(props) {
+    super(props)
+    this.handleSubmit = this.handleSubmit.bind(this)
+    this.input = React.createRef()
+  }
+
+  handleSubmit(event) {
+    alert('A name was submitted: ' + this.input.current.value)
+    event.preventDefault()
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          {'Name:'}
+          <input type="text" ref={this.input} />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
+    );
+  }
+}
+```
+
+보통 Form을 구현하려면 컨트롤드 컴포넌트를 사용하는 것이 좋습니다. 컨트롤드 컴포넌트에서 Form 데이터는 React 컴포넌트에 의해 처리됩니다.
+
+Form 데이터를 DOM 자체에서 처리하려면 언컨트롤드 컴포넌트가 좋습니다.
+
+<br>
+
+## :book: createElement와 cloneElement의 차이점은 무엇입니까?
+JSX 엘리먼트는 UI의 객체 표현에 사용될 리액트 앨리먼트를 생성하기 위해 `React.createElement()` 함수로 트랜스파일됩니다. `cloneElement`는 요소를 복제하고 새로운 Props를 전달하는 데 사용됩니다.
+
+<br>
+
+## :book: 상태 끌어올리기(Lifting State Up)란?
+여러 컴포넌트가 변경 가능한 동일 데이터를 공유해야 할 경우 State를 가장 가까운 공통 부모 컴포넌트로 끌어올리는 것이 좋습니다. 즉, 두 개의 하위 컴포넌트가 상위 컴포넌트에서 동일한 데이터를 공유하는 경우 두 하위 컴포넌트 모두에서 지역적인 State를 유지하는 대신 State를 상위 항목으로 이동합니다.
+
+- [참조](https://berkbach.com/react-docs-%EB%B2%88%EC%97%AD-lifting-state-up-e7c8d980c2b3)
+
+<br>
+
+## :book: 컴포넌트의 라이프사이클을 설명해주세요.
+### 라이프사이클
+컴포넌트 라이프사이클에는 세 가지 라이프사이클 단계가 있습니다.
+
+1. `Mounting`: 컴포넌트를 브라우저 DOM에 마운트할 준비가 되었으며, 라이프사이클의 초기화 단계입니다. 이 단계에서는 `constructor()`, `getDerivedStateFromProps()`, `render()` 및 `componentDidMount()` 메서드가 있습니다.
+
+2. `Updating`: 이 단계에서 컴포넌트는 `setState()` 또는 `forceUpdate()`에서 새 Props를 전달하고 State를 반영하는 두 가지 방법으로 갱신됩니다. `getDerivatedStateFromProps()`, `shouldComponentUpdate()`, `render()`, `getSnapshotBeforeUpdate()` 및 `componentDidUpdate()` 메서드가 있습니다.
+
+3. `Unmounting`: 마지막 단계에서는 컴포넌트가 필요하지 않으므로 브라우저 DOM에서 해제되며, `componentWillUnmount()` 메서드가 있습니다.
+
+### 변경 사항을 적용하기
+React는 DOM에 변경 사항을 적용할 때 내부적으로 진행되는 단계가 있습니다..
+
+1. `Render`: 컴포넌트가 어떤 부수 효과(Side Effect)없이 렌더링됩니다. 순수 컴포넌트에 적용되며, 이 단계에서는 React는 render를 일시 중지, 중단 또는 재시작할 수 있습니다.
+
+2. `Pre-commit`: 컴포넌트가 실제로 변경사항을 DOM에 적용하기 전에 `getSnapshotBeforeUpdate()`를 통해 React가 DOM을 읽을 수 있는 단계입니다.
+
+3. `Commit`: React는 DOM과 함께 동작하데, 최종 라이프사이클의 마운팅을 위한 `componentDidMount()`와 업데이트를 위한 `componentDidUpdate()` 및 해제를 위한 `componentWillUnmount()`를 실행합니다.
+
+<br>
+
+<div align='center'>
+
+<img src='./img/react/16.3v+.jpg' width='600'/>
+<p>v16.3+ 이후의 라이프사이클 단계</p>
+
+</div>
+
+<br>
+
 ## :book: React의 라이프사이클 메서드는 무엇입니까?
-## :book: 고차 컴포넌트란?
-## :book: HOC 컴포넌트에 대한 props 프록시를 만드는 방법
-## :book: 문맥(context)이란 무엇인가?
-## :book: children props이란 무엇인가?
-## :book: 리액트에서 주석을 쓰는 방법은?
+> v16.3+ 이후입니다.
+
+- `getDerivedStateFromProps`: render()를 호출하기 직전에 호출되며 모든 render에서 호출됩니다. Derived State가 필요할 때 드물게 사용합니다.
+
+- `componentDidMount`: 첫 번째 렌더링 후 동작하며 모든 ajax 요청, DOM 또는 State 업데이트, 이벤트 리스너 설정 등의 작업이 수행되는 곳입니다.
+
+- `shouldComponentUpdate`: 컴포넌트의 업데이트 여부를 결정합니다. 기본적으로 true를 반환하는데, State 또는 Props가 변경된 후 컴포넌트를 렌더링할 필요가 없는 경우 false를 반환하면 됩니다. 컴포넌트에서 새로운 Props이 들어오면 리렌더링을 방지할 수 있어 성능을 향상시킬 수 있습니다.
+
+- `getSnapshotBeforeUpdate`: 렌더링된 결과가 DOM에 커밋되기 직전에 실행됩니다. 반환되는 모든 값은 `componentDidUpdate()`로 전달됩니다. 이 기능은 DOM 스크롤 위치에서 정보를 캡처하는 데 유용합니다.
+
+- `componentDidUpdate`: 대부분 Props 또는 State의 수정에 대응하여 DOM을 업데이트하는 데 사용됩니다. `shouldComponentUpdate()`가 false를 반환하면 이 작업이 실행되지 않습니다.
+
+- `componentWillUnmount`: 네트워크 요청을 취소하거나 컴포넌트와 관련된 모든 이벤트 리스너를 제거하는 데 사용됩니다.
+
+## :book: 고차 컴포넌트란 무엇인가요?
+고차 컴포넌트(HOC)는 컴포넌트를 가져다가 새 컴포넌트를 반환하는 함수로서 리액트의 구성에서 파생된 패턴입니다.
+
+```js
+const EnhancedComponent = higherOrderComponent(WrappedComponent)
+```
+
+HOC는 다음과 같은 다양한 부분에 사용할 수 있습니다.
+- 코드 재사용, 로직과 bootstrap을 추상화하는 경우
+- Render 하이재킹(hijacking)의 경우
+- State를 추상화하고 조작하는 경우
+- Props를 조작하는 경우
+
+## :book: HOC 컴포넌트에 대한 Props 프록시를 만드는 방법은 무엇인가요?
+다음과 같이 Props 프록시 패턴을 사용하여 컴포넌트에 전달된 Props을 추가/수정할 수 있습니다.
+
+```js
+function HOC(WrappedComponent) {
+  return class Test extends Component {
+    render() {
+      const newProps = {
+        title: 'New Header',
+        footer: false,
+        showFeatureX: false,
+        showFeatureY: true
+      }
+
+      return <WrappedComponent {...this.props} {...newProps} />
+    }
+  }
+}
+```
+
+<br>
+
+## :book: 컨텍스트(context)이란 무엇인가요?
+컨텍스트를 사용하면 모든 레벨에서 수동으로 Props를 전달할 필요 없이 컴포넌트 트리를 통해 데이터를 전달할 수 있습니다.
+
+예를 들어 사용자 인증, 환경 설정, UI 테마는 응용 프로그램에서 많은 컴포넌트가 접근해야 합니다.
+
+```js
+// 클래스형 컴포넌트
+const {Provider, Consumer} = React.createContext(defaultValue)
+
+// 함수형 컴포넌트
+const value = useContext(MyContext);
+```
+
+## :book: Children Props이란 무엇인가요?
+Children Props는 사용하는 데이터를 다른 컴포넌트에 전달할 수 있는 `컴포넌트(this.props.children)`입니다. 컴포넌트의 열기 태그와 닫기 태그 사이에 있는 컴포넌트 트리는 하위 Props로 해당 컴포넌트에 전달됩니다.
+
+```js
+const MyDiv = React.createClass({
+  render: function() {
+    return <div>{this.props.children}</div>
+  }
+})
+
+ReactDOM.render(
+  <MyDiv>
+    <span>{'Hello'}</span>
+    <span>{'World'}</span>
+  </MyDiv>,
+  node
+)
+```
+
 ## :book: props 인수에 super() constructor를 사용하는 목적은 무엇입니까?
 ## :book: 재조정(reconciliation) 무엇인가?
 ## :book: dynamic key name으로 state를 설정하는 방법은?
@@ -194,7 +612,6 @@ ReactDOM.createPortal(child, container);
 ## :book: 리액트의 장점은 무엇인가?
 ## :book: React의 한계는 무엇입니까?
 ## :book: React v16의 오류 경계(error boundaries)란?
-## :book: React v15에서 오류 경계가 어떻게 처리됩니까?
 ## :book: 정적 타입 검사를 위해 권장되는 방법은 무엇인가?
 ## :book: 리액트-돔 패키지의 용도는 무엇입니까?
 ## :book: 리액트-돔의 렌더링 방법의 목적은 무엇인가?
