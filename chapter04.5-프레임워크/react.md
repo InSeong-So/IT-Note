@@ -1,4 +1,5 @@
 > 원본 글은 [여기](https://github.com/sudheerj/reactjs-interview-questions)입니다.
+> - 의역이 포함되고, 필요 없는 내용은 삭제하였으므로 원본 글을 확인하고 싶다면 상단의 링크를 클릭해주세요.
 
 ## :book: 리액트란 무엇인가요?
 리액트(React)는 오픈 소스 프론트엔드 자바스크립트 라이브러리로, 웹 및 모바일 앱의 뷰 레이어를 처리하고 특히 단일 페이지 응용 프로그램을 위한 사용자 인터페이스를 구축하는 데 사용됩니다. 리액트는 페이스북에서 일하는 소프트웨어 엔지니어인 조던 월크에 의해 만들어졌으며 리액트는 2011년 페이스북의 뉴스 피드와 2012년 인스타그램에 처음 배포되었습니다.
@@ -777,20 +778,6 @@ class MyComponent extends React.Component {
 ## :book: default 페이지 또는 NotFound 페이지를 구현하는 방법
 ## :book: React Router v4의 히스토리를 가져오는 방법은?
 ## :book: 로그인 후 자동으로  리디렉션을 수행하는 방법은 무엇입니까?
-<!-- 리액트 국제화
-140 React-Intl이란 무엇인가?
-141 React Intl의 주요 기능은 무엇입니까?
-142 React Intl에서 포맷하는 두 가지 방법은 무엇입니까?
-143 Respect Intl을 사용하여 FormatedMessage를 자리 표시자로 사용하는 방법?
-144 React Intl을 사용하여 현재 로케일에 액세스하는 방법
-145 React Intl을 사용하여 날짜를 포맷하는 방법
-리액트 테스트
-146 리액트 테스트에서 얕은 렌더러는 무엇입니까?
-147 React의 TestRenderer 패키지는 무엇입니까?
-148 ReactTestUtils 패키지의 목적은 무엇입니까?
-149 제스트란 무엇인가?
-재스민에 비해 제스트의 장점은 무엇인가?
-151 Jest 테스트 사례의 간단한 예를 제시하라. -->
 # 리액트 리덕스
 ## :book: 플럭스(flux)란 무엇인가?
 ## :book: 리덕스란 무엇인가?
@@ -926,8 +913,6 @@ React Developer Tools를 사용하여 구성 요소 props와 상태를 포함한
 
 
 ## :book: React가 Vue.js보다 좋은 점은 무엇인가?
-> React는 Vue.js에 비해 다음과 같은 이점이 있습니다.
-
 1. 대형 애플리케이션 개발에 더 많은 유연성을 제공합니다.
 2. 테스트하기 쉽습니다.
 3. 모바일 앱을 만드는 데 적합합니다.
@@ -950,10 +935,9 @@ React Developer Tools를 사용하여 구성 요소 props와 상태를 포함한
   - Angular에서 데이터 흐름은 양쪽 모두, 즉 자식과 부모 사이에 양방향 데이터 바인딩이 있으므로 디버깅이 종종 어렵습니다.
 
 ## :book: DevTools에 React 탭이 표시되지 않는 이유는 무엇입니까?
-페이지가 로드되면 React DevTools는 __REACT_DEVTOOLS_GLOBAL_HOOK__이라는 전역 이름을 설정합니다.그런 다음 React는 초기화 중에 해당 후크와 통신합니다. 웹 사이트가 React를 사용하지 않거나 React가 DevTools와 통신하지 못하면 탭이 표시되지 않습니다.
-
-## :book: Styled Components은 무엇입니까?
-Styled Components는 스타일링 리액트 응용 프로그램을 위한 자바스크립트 라이브러리입니다. 스타일과 컴포넌트 간의 매핑을 제거하고, 자바스크립트로 증강된 실제 CSS를 작성할 수 있습니다.
+페이지가 로드되면 React DevTools는 __REACT_DEVTOOLS_GLOBAL_HOOK__이라는 전역 이름을 설정합니다. 그 다음 React는 초기화 중에 해당 Hooks와 통신합니다. 웹 사이트가 React를 사용하지 않거나 React가 DevTools와 통신하지 못하면 탭이 표시되지 않습니다.
+## :book: styled-components은 무엇입니까?
+styled-components는 리액트 응용 프로그램의 스타일링을 위한 자바스크립트 라이브러리입니다. 스타일과 컴포넌트 간의 매핑을 제거하고, 자바스크립트로 증강된 실제 CSS를 작성할 수 있습니다.
 
 ## :book: Styled Components의 예를 들면?
 - 특정 스타일로 <Title> 및 <Wrapper> 컴포넌트를 생성해 보겠습니다.
@@ -961,14 +945,11 @@ Styled Components는 스타일링 리액트 응용 프로그램을 위한 자바
   import React from 'react'
   import styled from 'styled-components'
 
-  // Create a <Title> component that renders an <h1> which is centered, red and sized at 1.5em
   const Title = styled.h1`
     font-size: 1.5em;
     text-align: center;
     color: palevioletred;
   `
-
-  // Create a <Wrapper> component that renders a <section> with some padding and a papayawhip background
   const Wrapper = styled.section`
     padding: 4em;
     background: papayawhip;
@@ -977,8 +958,8 @@ Styled Components는 스타일링 리액트 응용 프로그램을 위한 자바
 
 - <Title> 및 <Wrapper> 두 변수는 이제 다른 리액트 컴포넌트와 마찬가지로 렌더링할 수 있는 컴포넌트가 되었습니다.
 
-## :book: 릴레이란?
-릴레이는 리액트 뷰 계층을 사용하여 웹 애플리케이션에 데이터 계층과 클라이언트-서버 통신을 제공하기 위한 자바스크립트 프레임워크이다.
+## :book: relay란?
+relay는 리액트의 View 계층을 사용하여 웹 애플리케이션에 데이터 계층과 클라이언트-서버 통신을 제공하기 위한 자바스크립트 프레임워크입니다.
 
 ## :book: CRA에서 TypeScript를 사용하는 방법
 react-scripts@2.1.0 이상부터는 typescript를 기본 지원합니다. 즉, create-react-app는 typescript를 기본적으로 지원합니다. 아래와 같이 --typescript 옵션을 전달할 수 있습니다.
@@ -1350,15 +1331,13 @@ class Counter extends Component {
 ```
 
 ## :book: Hooks란 무엇인가?
-후크는 클래스를 작성하지 않고 상태 및 기타 반응 기능을 사용할 수 있는 새로운 기능(React 16.8)입니다.
+Hooks는 클래스를 작성하지 않고 State 및 부가 기능을 사용할 수 있는 새로운 기능(React v16.8+)입니다.
 
-useState hook 예제를 봅시다.
-
+useState hook 예제입니다.
 ```js
 import { useState } from 'react';
 
 function Example() {
-  // Declare a new state variable, which we'll call "count"
   const [count, setCount] = useState(0);
 
   return (
@@ -1375,31 +1354,8 @@ function Example() {
 ## :book: Hooks에 대한 규칙은 무엇입니까?
 Hooks를 사용하기 위해서는 두 가지 규칙을 따라야 합니다.
 
-1. 리액트 함수의 최상위 레벨에서만 Hooks를 호출합니다. 즉, 루프, 조건 또는 중첩 함수 내에서 Hooks를 호출하면 안 됩니다. 이렇게 하면 컴포넌트가 렌더링될 때마다 동일한 순서로 후크가 호출되고 여러 useState와 useEffect 호출 사이의 Hooks 상태가 유지됩니다.
-2. React Functions에서만 Hooks를 호출합니다. 즉, 일반 자바스크립트 함수에서 Hooks을 호출해서는 안 됩니다.
-
-## :book: Hooks가 프로젝트의 규칙을 준수하는지 확인하는 방법은 무엇입니까?
-React 팀은 이 두 가지 규칙을 적용하는 eslint-plugin-react-hooks라는 ESLint 플러그인을 릴리스했습니다. 아래 명령을 사용하여 이 플러그인을 프로젝트에 추가할 수 있습니다.
-
-```sh
-npm install eslint-plugin-react-hooks@next
-```
-
-그리고 ESLint config 파일에 아래 config를 적용하세요.
-
-```json
-// Your ESLint configuration
-{
-  "plugins": [
-    // ...
-    "react-hooks"
-  ],
-  "rules": {
-    // ...
-    "react-hooks/rules-of-hooks": "error"
-  }
-}
-```
+1. 리액트 함수의 최상위 레벨에서만 Hooks를 호출하는데, 컴포넌트가 렌더링될 때마다 동일한 순서로 Hooks가 호출되고 여러 useState와 useEffect 호출 사이의 Hooks 상태가 유지됩니다. 따라서 반복문, 조건문 또는 중첩 함수 내에서 Hooks를 호출하면 안 됩니다. 
+2. React의 함수형 컴포넌트에서만 Hooks를 호출해야 합니다. 즉, 일반 자바스크립트 함수나 클래스형 컴포넌트에서 Hooks을 호출해서는 안 됩니다.
 
 ## :book: Flux와 Redux의 차이점은 무엇입니까?
 다음은 플럭스와 리덕스의 주요 차이점입니다.
@@ -1412,15 +1368,6 @@ npm install eslint-plugin-react-hooks@next
 |모든 Store는 연결이 끊어지고 수평적입니다.|단일 Store는 여러 reducer로 계층 구조를 가집니다.|
 |Singletone Dispatcher입니다.|정해진 컨셉이 없는 Dispatcher입니다.|
 |리액트 컴포넌트들은 Store를 통해 subscribe합니다.|컨테이너 컴포넌트를 사용해 function과 연결합니다.|
-
-
-## :book: React Router V4의 이점은 무엇입니까?
-다음은 React Router V4 모듈의 주요 이점입니다.
-
-1. React Router v4(버전 4)에서 API는 완전히 컴포넌트에 관한 것입니다. 라우터는 특정 하위 라우터 컴포넌트(`<Route/>`)를 래핑하는 단일 컴포넌트(`<BrowserRouter/>`)로 시각화될 수 있습니다.
-2. 기록을 수동으로 설정할 필요가 없습니다. 라우터 모듈은 `<BrowserRouter/>` 구성 요소로 경로를 포장하여 관리 기록을 확인합니다.
-3. 특정 라우터 모듈(웹, 코어 또는 네이티브)만 추가하면 응용 프로그램 크기가 줄어듭니다.
-
 
 ## :book: componentDidCatch LifeCycle 메서드에 대해 설명해주실 수 있습니까?
 componentDidCatch 라이프사이클 메서드는 하위 구성 요소에 의해 오류가 발생한 후 호출됩니다. 메소드는 두 개의 매개 변수를 수신합니다.
@@ -1507,10 +1454,14 @@ onClick 또는 onScroll과 같은 이벤트 핸들러를 사용하는 경우 콜
 ## :book: state 업데이트를 병합하는 방법은 무엇입니까?
 ## :book: 이벤트 핸들러에게 인수를 전달하려면 어떻게 해야 합니까?
 ## :book: 컴포넌트의 렌더링을 방지하는 방법
-## :book: index를 안전하게 key로 사용하기 위한 조건은 무엇인가?
-## :book: 키가 전체적으로 고유해야 합니까?
-## :book: 폼 핸들링으로 인기 있는 것은 무엇입니까?
-## :book: redux form 라이브러리보다 formik의 장점은 무엇입니까?
+## :book: index를 안전하게 key로 사용하기 위한 조건은 무엇인가요?
+- list와 items는 계산되지도 않고 변경되지도 않는 정적(static)이어야만 합니다.
+- list와 items의 프로퍼티 중에 ID(유니크한 식별자)가 없어야 합니다.
+- list와 items는 순서가 바뀌거나 필터링되지 않아야 합니다.
+
+## :book: 키가 전체적으로 유니크해야 하나요?
+배열 내에서 사용되는 Key는 고유성은 형제 간에만 국한합니다. 즉, 전체적으로는 유니크할 필요는 없습니다.
+
 ## :book: 상속을 사용할 필요가 없는 이유는 무엇입니까?
 React에서는 상속 대신 컴포지션(composition)을 사용하여 컴포넌트 간에 코드를 재사용하는 것이 좋습니다. props 및 컴포지션 모두 컴포넌트의 모양과 동작을 명확하고 안전하게 사용자 지정하는 데 필요한 모든 유연성을 제공합니다. 반면, 컴포넌트 간에 UI가 아닌 기능을 재사용하려면 별도의 자바스크립트 모듈로 추출하는 것이 좋습니다. 이후 컴포넌트는 확장하지 않고 해당 함수, 개체 또는 클래스를 가져와 사용합니다.
 
