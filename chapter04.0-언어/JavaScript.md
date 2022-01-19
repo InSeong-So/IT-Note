@@ -396,3 +396,12 @@ UI 표현이 메모리에 유지되고 실제 DOM에 동기화되므로, 실제 
 
 <hr>
 <br>
+
+## :book: 커링 패턴과 그 사용처를 설명해주세요.
+
+<br>
+
+<sup>[(상위 문서로)](https://github.com/InSeong-So/IT-Note)</sup>
+
+<hr>
+<br>
