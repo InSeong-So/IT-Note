@@ -1,13 +1,142 @@
-## :book: 리액트란 무엇인가?
-## :book: React의 주요 특징은 무엇입니까?
-## :book: JSX란 무엇인가?
-## :book: 엘리먼트와 컴포넌트의 차이점은 무엇입니까?
+> 원본 글은 [여기](https://github.com/sudheerj/reactjs-interview-questions)입니다.
+
+## :book: 리액트란 무엇인가요?
+리액트(React)는 오픈 소스 프론트엔드 자바스크립트 라이브러리로, 웹 및 모바일 앱의 뷰 레이어를 처리하고 특히 단일 페이지 응용 프로그램을 위한 사용자 인터페이스를 구축하는 데 사용됩니다. 리액트는 페이스북에서 일하는 소프트웨어 엔지니어인 조던 월크에 의해 만들어졌으며 리액트는 2011년 페이스북의 뉴스 피드와 2012년 인스타그램에 처음 배포되었습니다.
+
+## :book: React의 주요 특징은 무엇인가요?
+- RealDOM 조작 비용이 많이 든다는 점을 고려하여 RealDOM 대신 VirtualDOM을 사용합니다.
+- 서버 측 렌더링(Server-side-rendering)을 지원합니다.
+- 단방향 데이터 흐름 또는 데이터 바인딩을 따릅니다.
+- 재사용 가능/구성 가능한 UI 구성 요소를 사용하여 View를 개발합니다.
+
+## :book: JSX란 무엇인가요?
+JSX는 ECMAScript(JavaScript XML의 약자)에 대한 XML과 같은 확장 구문입니다. HTML과 같은 템플릿 구문과 함께 문법적 설탕인 `React.createElement()` 함수와 사용하여 자바스크립트의 표현력을 제공합니다.
+
+아래의 예제는 `<h1> 태그` 안의 텍스트가 렌더 함수에 의해 자바스크립트 함수로 반환됨을 보여줍니다.
+
+```js
+class App extends React.Component {
+  render() {
+    return(
+      <div>
+        <h1>{'Welcome to React world!'}</h1>
+      </div>
+    )
+  }
+}
+```
+
+## :book: 엘리먼트(Element)와 컴포넌트(Component)의 차이점은?
+엘리먼트는 화면에 표시할 DOM Node와 그 밖의 컴포넌트들을 설명하는 일반적인 객체입니다. 엘리먼트는 다른 엘리먼트의 Props에 포함할 수 있습니다. 리액트의 엘리먼트를 만드는 비용은 매우 저렴하며, 일단 작성된 엘리먼트는 변화(mutated)되지 않습니다.
+
+- 리액트 엘리먼트의 객체 표현은 다음과 같습니다.
+  ```js
+  const element = React.createElement(
+    'div',
+    {id: 'login-btn'},
+    'Login'
+  )
+  ```
+  - 위의 React.createElement() 함수는 객체를 반환합니다.
+    ```js
+    {
+      type: 'div',
+      props: {
+        children: 'Login',
+        id: 'login-btn'
+      }
+    }
+    ```
+  
+  - 마지막으로 `ReactDOM.render()`를 사용하여 DOM에 렌더링합니다.
+    ```html
+    <div id='login-btn'>Login</div>
+    ```
+
+- 반면, 컴포넌트는 여러 가지 다른 방법으로 선언될 수 있습니다. `render()` 메서드를 사용하는 클래스 혹은 함수로 정의할 수 있습니다. 두 경우 모두 입력으로 Props를 사용하고 JSX Tree를 반환합니다.
+  ```jsx
+  const Button = ({ onLogin }) =>
+    <div id={'login-btn'} onClick={onLogin}>Login</div>
+  ```
+  - 그러면 JSX는 React.createElement() 함수 트리로 트랜스파일(transpiled)됩니다.
+    ```js
+    const Button = ({ onLogin }) => React.createElement(
+      'div',
+      { id: 'login-btn', onClick: onLogin },
+      'Login'
+    )
+    ```
+
 ## :book: React에서 컴포넌트를 만드는 방법
-## :book: 함수 컴포넌트와 클래스 컴포넌트의 차이점 경우
-## :book: 순수 컴포넌트란?
-## :book: 리액트의 state는 무엇입니까?
-## :book: 리액트의 props은 무엇입니까?
-## :book: 상태와 props의 차이점은 무엇인가?
+> 컴포넌트를 생성하는 방법에는 두 가지가 있습니다.
+
+### 함수형 컴포넌트
+> 컴포넌트를 만드는 가장 간단한 방법
+
+함수형 컴포넌트는 첫 번째 매개변수로 Props 객체를 넘겨 받아 React 요소를 반환하는 순수 자바스크립트 함수입니다.
+```js
+function Greeting({ message }) {
+  return <h1>{`Hello, ${message}`}</h1>
+
+}
+```
+
+<br>
+
+### 클래스형 컴포넌트
+> ES6 클래스를 사용한 컴포넌트 정의
+
+위의 컴포넌트를 이렇게 정의할 수 있습니다.
+```js
+class Greeting extends React.Component {
+  render() {
+    return <h1>{`Hello, ${this.props.message}`}</h1>
+  }
+}
+```
+
+## :book: 함수형 컴포넌트와 클래스형 컴포넌트의 차이점은?
+컴포넌트에 상태 또는 라이프 사이클 메서드가 필요한 경우 클래스형 컴포넌트를 사용하고 그렇지 않으면 함수형 컴포넌트를 사용합니다. 그러나 Hook이 추가된 React 16.8부터는 상태, 라이프사이클 메소드 및 클래스형 컴포넌트에서만 사용할 수 있던 여러 기능을 함수형 컴포넌트에서 바로 사용할 수 있습니다.
+
+## :book: Pure Component란?
+`React.PureComponent`는 React.Component와 동일하며 `shouldComponentUpdate()` 메서드로 예외를 핸들링할 수 있습니다.
+
+Props 또는 State가 변경되면 `PureComponent`는 Props와 State 모두에서 얕은 비교를 수행하는 반면 컴포넌트는 현재 Props와 State를 다음 컴 소품과 비교하지 않습니다. 따라서 컴포넌트는 `shouldComponentUpdate()`가 호출될 때마다 다시 렌더링됩니다.
+
+## :book: 리액트의 State는 무엇일까요?
+컴포넌트의 State는 컴포넌트의 라이프타임 동안 변경될 수 있는 정보를 포함한 객체입니다. 개발자는 항상 컴포넌트의 State를 최대한 단순하게, State의 수를 최소화하도록 노력해야 합니다.
+
+<br>
+
+<div align='center'>
+
+<img src='./img/react/state.jpg' width='600'/>
+
+<p>State는 컴포넌트의 내부 통신에 사용됩니다.</p>
+
+</div>
+
+<br>
+
+## :book: 리액트의 Props는 무엇일까요?
+Props는 컴포넌트에 대한 입력 값들입니다. 입력 값을 풀어 표현하자면 상위 컴포넌트에서 하위 컴포넌트로 전달되는 데이터입니다. HTML 태그 속성과 유사한 네이밍 규칙이 적용되었으며 컴포넌트 생성 시 전달 되는 파라미터로서, 단일 값 또는 객체가 될 수 있습니다.
+
+리액트에서 Props의 주 목적은 다음과 같은 컴포넌트 기능을 제공하는 것입니다.
+  1. 사용자 정의 데이터를 컴포넌트로 전달합니다.
+  2. State의 변경을 트리거(Trigger)합니다.
+  3. 클래스형 컴포넌트의 경우 `render()` 메서드 내에서 `this.props.reactProp`로 사용할 수 있습니다.
+
+예를 들어 reactProp 프로퍼티를 가진 엘리먼트를 작성해볼까요?
+```js
+<Element reactProp={'1'} />
+```
+
+이 `reactProp(또는 사용자가 정의한)`는 리액트 라이브러리를 사용하여 작성된 모든 컴포넌트에 존재하는 React의 기본 Props 객체의 속성에 저장됩니다.
+```js
+props.reactProp // '1'
+```
+
+## :book: State와 Props의 차이점은요?
 ## :book: 왜 우리가 DOM을 직접 업데이트하지 말아야 하는가?
 ## :book: setState()의 인수로서 콜백 함수의 목적은 무엇인가?
 ## :book: HTML과 React 이벤트 처리의 차이점은 무엇입니까?
