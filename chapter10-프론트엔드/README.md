@@ -303,7 +303,19 @@ HTML5에서는 웹 페이지에서 **많이 사용하는 구조에 의미를 부
 
 # JavaScript
 ## 구문(Syntax)과 문법
-## DOM과 DOM의 조작 방법
+## ❓ DOM과 DOM의 조작 방법
+들어가기 앞서, BOM(Browser Object Model)에 대해 설명합니다.
+
+BOM은 브라우저, 창과 프레임을 제어할 수 있게 만들어주는 객체 모델(Object Model)이며 **window(전역 객체)**의 하위 항목인 `navigator`, `history`, `screen`, `location`과 `document`로 구성됩니다. 이 중 `document` 노드가 바로 DOM(Document Object Model)입니다.
+
+그럼 DOM은 무엇일까요? DOM은 HTML, XML 문서의 프로그래밍 인터페이스입니다. 구조화된 표현을 제공하여 프로그래밍 언어가 DOM 구조에 접근하여 구조, 스타일, 내용 등을 변경할 수 있게 하죠. 최상위 인터페이스는 `Node`가 있습니다. 이러한 DOM은 브라우저가 제공하는 API 들을 활용하여 접근/조작할 수 있습니다.
+
+- [The Document Object Model](https://web.stanford.edu/class/cs98si/slides/the-document-object-model.html)
+- [What is the DOM and BOM in JavaScript?](https://stackoverflow.com/questions/4416317/what-is-the-dom-and-bom-in-javascript)
+- [MDN - DOM](https://developer.mozilla.org/ko/docs/Web/API/Document_Object_Model/Introduction)
+
+<br>
+
 ## Fetch API / Ajax(XHR)
 ## 모듈러 JavaScript와 ES6+
 ## 개념 이해하기
