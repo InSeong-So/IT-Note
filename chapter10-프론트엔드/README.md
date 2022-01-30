@@ -320,7 +320,7 @@ BOM은 브라우저, 창과 프레임을 제어할 수 있게 만들어주는 �
 ## 모듈러 JavaScript와 ES6+
 ## 개념 이해하기
 - 호이스팅
-- 이벤트 버블링
+- 이벤트 버블링과 캡처링, 그리고 위임
 - 스코프
 - 프로토타입
 - Shadow DOM
@@ -339,7 +339,16 @@ BOM은 브라우저, 창과 프레임을 제어할 수 있게 만들어주는 �
 
 # 웹 보안 지식
 ## HTTPS
-## CORS
+## ❓ CORS
+교차 출처 리소스 공유(Cross-Origin Resource Sharing, CORS)는 추가 HTTP 헤더를 사용해 한 출처(도메인)에서 실행 중인 웹 애플리케이션이 다른 출처의 특정 자원에 접근할 수 있는 권한을 부여하도록 브라우저에 알려주는 체제입니다.
+
+
+
+웹에서 다른 출처로의 리소스 요청을 제한하는 다른 정책은 `같은 출처에서만 리소스를 공유할 수 있는` SOP(Same-Origin Policy)가 있으니 참고하세요.
+
+- [MDN - CORS](https://developer.mozilla.org/ko/docs/Web/HTTP/CORS)
+- [CORS는 왜 이렇게 우리를 힘들게 하는걸까?](https://evan-moon.github.io/2020/05/21/about-cors/)
+
 ## 컨텐츠 보안 정책
 ## OWASP 보안 취약점
 
@@ -357,8 +366,10 @@ BOM은 브라우저, 창과 프레임을 제어할 수 있게 만들어주는 �
 
 # CSS의 구조(Architecture)와 전처리기(Preprocessor)
 ## 구조 - BEM
-## 전처리기 - SASS
-## 전처리기 - PostCSS
+
+## ❓ 전처리기
+### 전처리기 - SASS
+### 전처리기 - PostCSS
 
 <hr>
 <br>
@@ -381,6 +392,8 @@ BOM은 브라우저, 창과 프레임을 제어할 수 있게 만들어주는 �
 ## ReactJS
 - Redux
 - Mobx
+- Recoil
+
 ## VueJs
 - VueX
 
@@ -392,7 +405,7 @@ BOM은 브라우저, 창과 프레임을 제어할 수 있게 만들어주는 �
 ## Styled Components
 ## CSS Modules
 ## Styled JSX
-## Emotio
+## Emotion
 
 <hr>
 <br>
