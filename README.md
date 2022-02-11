@@ -1,4 +1,9 @@
 # Developer's Note
+
+<div>
+  <img src="https://hits.sh/github.com/inseong-so.svg?view=today-total&extraCount=18752&label=today&color=0080ff&labelColor=00aeff&logo=github" />
+</div>
+
 ### :blue_heart: 개요 :blue_heart:
 :star2:리뉴얼중입니다!:star2:
 
