@@ -379,12 +379,15 @@
 [원티드](https://www.wanted.co.kr/)
 - 채용보상금이 있습니다. IT 채용관입니다.
 
+[크레딧잡](https://kreditjob.com/)
+- 평균 연봉, JOB에 관련한 게시글, 총 인원에 대한 그래프, 채용관을 확인할 수 있습니다.
+  
 [슈퍼루키](https://www.superookie.com/jobs)
 - IT 채용관입니다.
 
 [링크드인](https://www.linkedin.com/feed/)
 - 글로벌한 IT 채용관입니다.
-
+  
 <br>
 
 <sup>[⏫⏫ 최상단으로 돌아가기 ⏫⏫](https://github.com/InSeong-So/IT-Note#developers-note)</sup>
