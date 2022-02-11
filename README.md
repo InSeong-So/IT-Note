@@ -2,6 +2,7 @@
 
 <div>
   <img src="https://hits.sh/github.com/inseong-so.svg?view=today-total&extraCount=18752&label=today&color=0080ff&labelColor=00aeff&logo=github" />
+  <a href="https://github.com/silentsoft/hits"><i>(hits badge from silentsoft)</i></a>
 </div>
 
 ### :blue_heart: 개요 :blue_heart:
