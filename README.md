@@ -123,10 +123,10 @@
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter02-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C">:dog:운영체제</a></td>
       <td>
-        <p>RAM 과 ROM 에 대해 알려주세요.</p>
-        <p>Process 와 Thread 의 차이점을 알려주세요.</p>
-        <p>Multi-Process 와 Multi-Thread 에 대해 알려주세요.</p>
-        <p>User Thread 와 Kernel Thread 의 차이점은 무엇인가요?</p>
+        <p>RAM과 ROM에 대해 알려주세요.</p>
+        <p>Process와 Thread의 차이점을 알려주세요.</p>
+        <p>Multi-Process와 Multi-Thread에 대해 알려주세요.</p>
+        <p>User Thread와 Kernel Thread의 차이점은 무엇인가요?</p>
         <p>Context-Switching 이 무엇인지 설명해주세요.</p>
         <p>Deadlock 에 대해 알려주세요.</p>
         <p>Mutex 와 Semaphore, Monitor 의 차이점을 알려주세요.</p>
@@ -277,7 +277,7 @@
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C#%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D">:watch:프론트엔드</a></td>
       <td>
-        <p><a href="https://github.com/InSeong-So/IT-Note/blob/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C/INTERVIEW.md">**프론트엔드 개발자 면접 질문 정리**</a></p>
+        <p><a href="https://github.com/InSeong-So/IT-Note/blob/master/chapter10-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C/INTERVIEW.md"><strong>프론트엔드 개발자 면접 질문 정리</strong></a></p>
         <p>인터넷</p>
         <p>HTML</p>
         <p>CSS</p>
@@ -304,28 +304,28 @@
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter11-%EB%B0%A9%EB%B2%95%EB%A1%A0">:bird:방법론</a></td>
       <td>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter11-%EB%B0%A9%EB%B2%95%EB%A1%A0#bar_chart-waterfall">폭포수(Waterfall)</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter11-%EB%B0%A9%EB%B2%95%EB%A1%A0#wrench-agile">애자일(Agile)</a></p>
+        <p>폭포수(Waterfall)</p>
+        <p>애자일(Agile)</p>
       </td>
     </tr>
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter12-%EB%B9%8C%EB%8D%94">:maple_leaf:빌더</a></td>
       <td>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter12-%EB%B9%8C%EB%8D%94#ant">Ant</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter12-%EB%B9%8C%EB%8D%94#maven">Maven</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter12-%EB%B9%8C%EB%8D%94#gradle">Gradle</a></p>
+        <p>Ant</a></p>
+        <p>Maven</a></p>
+        <p>Gradle</a></p>
       </td>
     </tr>
     <tr>
       <td><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8">:cherry_blossom:디자인</a></td>
       <td>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8/01_day#%EA%B0%9C%EC%9A%94">HTML/CSS의 기본 개념</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8/02_day#css-%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EB%B2%95">CSS의 기본 문법 1</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8/03_day#%EB%A9%80%ED%8B%B0%EB%AF%B8%EB%94%94%EC%96%B4%EC%99%80-%EB%82%B4%EC%9E%A5-%EC%BD%98%ED%85%90%EC%B8%A0-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8">CSS의 기본 문법 2</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8/04_day#css">CSS 제어</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8/05_day#css-%EC%86%8D%EC%84%B1---%EB%9D%84%EC%9B%80%EC%A0%95%EB%A0%AC-%EC%9C%84%EC%B9%98">CSS 속성 1</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8/06_day#css-%EC%86%8D%EC%84%B1---%EC%A0%84%ED%99%98--%EB%B3%80%ED%99%98">CSS 속성 2</a></p>
-        <p><a href="https://github.com/InSeong-So/IT-Note/tree/master/chapter13-%EB%94%94%EC%9E%90%EC%9D%B8/07_day#css-%EC%86%8D%EC%84%B1---grid">CSS3 속성</a></p>
+        <p>HTML/CSS의 기본 개념</p>
+        <p>CSS의 기본 문법 1</p>
+        <p>CSS의 기본 문법 2</p>
+        <p>CSS 제어</p>
+        <p>CSS 속성 1</p>
+        <p>CSS 속성 2</p>
+        <p>CSS3 속성</p>
       </td>
     </tr>
     <tr>
