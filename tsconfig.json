@@ -39,8 +39,7 @@
     ]
   },
   "include": [
-    "chapter06-디자인패턴/**/*.ts",
-    "chapter06-디자인패턴/**/types"
+    "**/*.ts",
   ],
   "exclude": [
     "node_modules",
