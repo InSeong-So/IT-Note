@@ -151,7 +151,7 @@ SDK는 API 및 API 사용 메뉴얼, 프로그램 개발에 필요한 코드 편
 ### 📣 Model1
 <div align=center>
 
-<img src="img/model1.JPG" alt="Model1" width="500"/>
+<img src="img/model1.jpg" alt="Model1" width="500"/>
 
 **모든 클라이언트 요청과 응답을 JSP가 담당하는 구조**
 
@@ -168,7 +168,7 @@ SDK는 API 및 API 사용 메뉴얼, 프로그램 개발에 필요한 코드 편
 ### 📣 Model2
 <div align=center>
 
-<img src="img/model2.JPG" alt="Model2" width="500"/>
+<img src="img/model2.jpg" alt="Model2" width="500"/>
 
 **클라이언트의 요청, 응답, 비즈니스 로직 처리 부분을 모듈화한 구조**
 
